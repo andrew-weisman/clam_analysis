@@ -1,0 +1,841 @@
+(clam) weismanal@cn2394:~/notebook/2021-11-11/testing_clam $ python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/RESULTS_DIRECTORY-pinyi --data_slide_dir $working_dir/DATA_DIRECTORY --csv_path $working_dir/RESULTS_DIRECTORY-pinyi/process_list-feature_extraction.csv --feat_dir $working_dir/RESULTS_DIRECTORY-pinyi/features --batch_size 512 --slide_ext .mrxs
+initializing dataset
+loading model checkpoint
+
+progress: 0/16
+0042034876
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0042034876
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1133ccd0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0042034876.h5: total of 225 batches
+batch 0/225, 0 files processed
+batch 20/225, 10240 files processed
+batch 40/225, 20480 files processed
+batch 60/225, 30720 files processed
+batch 80/225, 40960 files processed
+batch 100/225, 51200 files processed
+batch 120/225, 61440 files processed
+batch 140/225, 71680 files processed
+batch 160/225, 81920 files processed
+batch 180/225, 92160 files processed
+batch 200/225, 102400 files processed
+batch 220/225, 112640 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0042034876.h5 took 217.4083354473114 s
+features size:  (114919, 1024)
+coordinates size:  (114919, 2)
+
+progress: 1/16
+0042711961
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0042711961
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1fab3e50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0042711961.h5: total of 490 batches
+batch 0/490, 0 files processed
+batch 20/490, 10240 files processed
+batch 40/490, 20480 files processed
+batch 60/490, 30720 files processed
+batch 80/490, 40960 files processed
+batch 100/490, 51200 files processed
+batch 120/490, 61440 files processed
+batch 140/490, 71680 files processed
+batch 160/490, 81920 files processed
+batch 180/490, 92160 files processed
+batch 200/490, 102400 files processed
+batch 220/490, 112640 files processed
+batch 240/490, 122880 files processed
+batch 260/490, 133120 files processed
+batch 280/490, 143360 files processed
+batch 300/490, 153600 files processed
+batch 320/490, 163840 files processed
+batch 340/490, 174080 files processed
+batch 360/490, 184320 files processed
+batch 380/490, 194560 files processed
+batch 400/490, 204800 files processed
+batch 420/490, 215040 files processed
+batch 440/490, 225280 files processed
+batch 460/490, 235520 files processed
+batch 480/490, 245760 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0042711961.h5 took 470.03070998191833 s
+features size:  (250465, 1024)
+coordinates size:  (250465, 2)
+
+progress: 2/16
+0042951302
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0042951302
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab139a0550>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0042951302.h5: total of 514 batches
+batch 0/514, 0 files processed
+batch 20/514, 10240 files processed
+batch 40/514, 20480 files processed
+batch 60/514, 30720 files processed
+batch 80/514, 40960 files processed
+batch 100/514, 51200 files processed
+batch 120/514, 61440 files processed
+batch 140/514, 71680 files processed
+batch 160/514, 81920 files processed
+batch 180/514, 92160 files processed
+batch 200/514, 102400 files processed
+batch 220/514, 112640 files processed
+batch 240/514, 122880 files processed
+batch 260/514, 133120 files processed
+batch 280/514, 143360 files processed
+batch 300/514, 153600 files processed
+batch 320/514, 163840 files processed
+batch 340/514, 174080 files processed
+batch 360/514, 184320 files processed
+batch 380/514, 194560 files processed
+batch 400/514, 204800 files processed
+batch 420/514, 215040 files processed
+batch 440/514, 225280 files processed
+batch 460/514, 235520 files processed
+batch 480/514, 245760 files processed
+batch 500/514, 256000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0042951302.h5 took 491.7071256637573 s
+features size:  (262833, 1024)
+coordinates size:  (262833, 2)
+
+progress: 3/16
+0046877280
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0046877280
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d8c0790>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0046877280.h5: total of 721 batches
+batch 0/721, 0 files processed
+batch 20/721, 10240 files processed
+batch 40/721, 20480 files processed
+batch 60/721, 30720 files processed
+batch 80/721, 40960 files processed
+batch 100/721, 51200 files processed
+batch 120/721, 61440 files processed
+batch 140/721, 71680 files processed
+batch 160/721, 81920 files processed
+batch 180/721, 92160 files processed
+batch 200/721, 102400 files processed
+batch 220/721, 112640 files processed
+batch 240/721, 122880 files processed
+batch 260/721, 133120 files processed
+batch 280/721, 143360 files processed
+batch 300/721, 153600 files processed
+batch 320/721, 163840 files processed
+batch 340/721, 174080 files processed
+batch 360/721, 184320 files processed
+batch 380/721, 194560 files processed
+batch 400/721, 204800 files processed
+batch 420/721, 215040 files processed
+batch 440/721, 225280 files processed
+batch 460/721, 235520 files processed
+batch 480/721, 245760 files processed
+batch 500/721, 256000 files processed
+batch 520/721, 266240 files processed
+batch 540/721, 276480 files processed
+batch 560/721, 286720 files processed
+batch 580/721, 296960 files processed
+batch 600/721, 307200 files processed
+batch 620/721, 317440 files processed
+batch 640/721, 327680 files processed
+batch 660/721, 337920 files processed
+batch 680/721, 348160 files processed
+batch 700/721, 358400 files processed
+batch 720/721, 368640 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0046877280.h5 took 686.5249700546265 s
+features size:  (369027, 1024)
+coordinates size:  (369027, 2)
+
+progress: 4/16
+0047176089
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0047176089
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d8c0490>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0047176089.h5: total of 443 batches
+batch 0/443, 0 files processed
+batch 20/443, 10240 files processed
+batch 40/443, 20480 files processed
+batch 60/443, 30720 files processed
+batch 80/443, 40960 files processed
+batch 100/443, 51200 files processed
+batch 120/443, 61440 files processed
+batch 140/443, 71680 files processed
+batch 160/443, 81920 files processed
+batch 180/443, 92160 files processed
+batch 200/443, 102400 files processed
+batch 220/443, 112640 files processed
+batch 240/443, 122880 files processed
+batch 260/443, 133120 files processed
+batch 280/443, 143360 files processed
+batch 300/443, 153600 files processed
+batch 320/443, 163840 files processed
+batch 340/443, 174080 files processed
+batch 360/443, 184320 files processed
+batch 380/443, 194560 files processed
+batch 400/443, 204800 files processed
+batch 420/443, 215040 files processed
+batch 440/443, 225280 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0047176089.h5 took 422.72585272789 s
+features size:  (226329, 1024)
+coordinates size:  (226329, 2)
+
+progress: 5/16
+0048086809
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0048086809
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d8c0790>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0048086809.h5: total of 399 batches
+batch 0/399, 0 files processed
+batch 20/399, 10240 files processed
+batch 40/399, 20480 files processed
+batch 60/399, 30720 files processed
+batch 80/399, 40960 files processed
+batch 100/399, 51200 files processed
+batch 120/399, 61440 files processed
+batch 140/399, 71680 files processed
+batch 160/399, 81920 files processed
+batch 180/399, 92160 files processed
+batch 200/399, 102400 files processed
+batch 220/399, 112640 files processed
+batch 240/399, 122880 files processed
+batch 260/399, 133120 files processed
+batch 280/399, 143360 files processed
+batch 300/399, 153600 files processed
+batch 320/399, 163840 files processed
+batch 340/399, 174080 files processed
+batch 360/399, 184320 files processed
+batch 380/399, 194560 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0048086809.h5 took 382.5057363510132 s
+features size:  (204180, 1024)
+coordinates size:  (204180, 2)
+
+progress: 6/16
+0049547258
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0049547258
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab0f335290>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0049547258.h5: total of 742 batches
+batch 0/742, 0 files processed
+batch 20/742, 10240 files processed
+batch 40/742, 20480 files processed
+batch 60/742, 30720 files processed
+batch 80/742, 40960 files processed
+batch 100/742, 51200 files processed
+batch 120/742, 61440 files processed
+batch 140/742, 71680 files processed
+batch 160/742, 81920 files processed
+batch 180/742, 92160 files processed
+batch 200/742, 102400 files processed
+batch 220/742, 112640 files processed
+batch 240/742, 122880 files processed
+batch 260/742, 133120 files processed
+batch 280/742, 143360 files processed
+batch 300/742, 153600 files processed
+batch 320/742, 163840 files processed
+batch 340/742, 174080 files processed
+batch 360/742, 184320 files processed
+batch 380/742, 194560 files processed
+batch 400/742, 204800 files processed
+batch 420/742, 215040 files processed
+batch 440/742, 225280 files processed
+batch 460/742, 235520 files processed
+batch 480/742, 245760 files processed
+batch 500/742, 256000 files processed
+batch 520/742, 266240 files processed
+batch 540/742, 276480 files processed
+batch 560/742, 286720 files processed
+batch 580/742, 296960 files processed
+batch 600/742, 307200 files processed
+batch 620/742, 317440 files processed
+batch 640/742, 327680 files processed
+batch 660/742, 337920 files processed
+batch 680/742, 348160 files processed
+batch 700/742, 358400 files processed
+batch 720/742, 368640 files processed
+batch 740/742, 378880 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0049547258.h5 took 705.6205408573151 s
+features size:  (379486, 1024)
+coordinates size:  (379486, 2)
+
+progress: 7/16
+0057134497
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0057134497
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1fac0710>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0057134497.h5: total of 438 batches
+batch 0/438, 0 files processed
+batch 20/438, 10240 files processed
+batch 40/438, 20480 files processed
+batch 60/438, 30720 files processed
+batch 80/438, 40960 files processed
+batch 100/438, 51200 files processed
+batch 120/438, 61440 files processed
+batch 140/438, 71680 files processed
+batch 160/438, 81920 files processed
+batch 180/438, 92160 files processed
+batch 200/438, 102400 files processed
+batch 220/438, 112640 files processed
+batch 240/438, 122880 files processed
+batch 260/438, 133120 files processed
+batch 280/438, 143360 files processed
+batch 300/438, 153600 files processed
+batch 320/438, 163840 files processed
+batch 340/438, 174080 files processed
+batch 360/438, 184320 files processed
+batch 380/438, 194560 files processed
+batch 400/438, 204800 files processed
+batch 420/438, 215040 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0057134497.h5 took 417.10354447364807 s
+features size:  (224148, 1024)
+coordinates size:  (224148, 2)
+
+progress: 8/16
+0029468706
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 0029468706
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8ecbd0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0029468706.h5: total of 853 batches
+batch 0/853, 0 files processed
+batch 20/853, 10240 files processed
+batch 40/853, 20480 files processed
+batch 60/853, 30720 files processed
+batch 80/853, 40960 files processed
+batch 100/853, 51200 files processed
+batch 120/853, 61440 files processed
+batch 140/853, 71680 files processed
+batch 160/853, 81920 files processed
+batch 180/853, 92160 files processed
+batch 200/853, 102400 files processed
+batch 220/853, 112640 files processed
+batch 240/853, 122880 files processed
+batch 260/853, 133120 files processed
+batch 280/853, 143360 files processed
+batch 300/853, 153600 files processed
+batch 320/853, 163840 files processed
+batch 340/853, 174080 files processed
+batch 360/853, 184320 files processed
+batch 380/853, 194560 files processed
+batch 400/853, 204800 files processed
+batch 420/853, 215040 files processed
+batch 440/853, 225280 files processed
+batch 460/853, 235520 files processed
+batch 480/853, 245760 files processed
+batch 500/853, 256000 files processed
+batch 520/853, 266240 files processed
+batch 540/853, 276480 files processed
+batch 560/853, 286720 files processed
+batch 580/853, 296960 files processed
+batch 600/853, 307200 files processed
+batch 620/853, 317440 files processed
+batch 640/853, 327680 files processed
+batch 660/853, 337920 files processed
+batch 680/853, 348160 files processed
+batch 700/853, 358400 files processed
+batch 720/853, 368640 files processed
+batch 740/853, 378880 files processed
+batch 760/853, 389120 files processed
+batch 780/853, 399360 files processed
+batch 800/853, 409600 files processed
+batch 820/853, 419840 files processed
+batch 840/853, 430080 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0029468706.h5 took 809.5399618148804 s
+features size:  (436417, 1024)
+coordinates size:  (436417, 2)
+
+progress: 9/16
+0047953852
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 0047953852
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab139c4810>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0047953852.h5: total of 608 batches
+batch 0/608, 0 files processed
+batch 20/608, 10240 files processed
+batch 40/608, 20480 files processed
+batch 60/608, 30720 files processed
+batch 80/608, 40960 files processed
+batch 100/608, 51200 files processed
+batch 120/608, 61440 files processed
+batch 140/608, 71680 files processed
+batch 160/608, 81920 files processed
+batch 180/608, 92160 files processed
+batch 200/608, 102400 files processed
+batch 220/608, 112640 files processed
+batch 240/608, 122880 files processed
+batch 260/608, 133120 files processed
+batch 280/608, 143360 files processed
+batch 300/608, 153600 files processed
+batch 320/608, 163840 files processed
+batch 340/608, 174080 files processed
+batch 360/608, 184320 files processed
+batch 380/608, 194560 files processed
+batch 400/608, 204800 files processed
+batch 420/608, 215040 files processed
+batch 440/608, 225280 files processed
+batch 460/608, 235520 files processed
+batch 480/608, 245760 files processed
+batch 500/608, 256000 files processed
+batch 520/608, 266240 files processed
+batch 540/608, 276480 files processed
+batch 560/608, 286720 files processed
+batch 580/608, 296960 files processed
+batch 600/608, 307200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0047953852.h5 took 578.7642734050751 s
+features size:  (311165, 1024)
+coordinates size:  (311165, 2)
+
+progress: 10/16
+0054130784
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 0054130784
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1fac0ad0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0054130784.h5: total of 582 batches
+batch 0/582, 0 files processed
+batch 20/582, 10240 files processed
+batch 40/582, 20480 files processed
+batch 60/582, 30720 files processed
+batch 80/582, 40960 files processed
+batch 100/582, 51200 files processed
+batch 120/582, 61440 files processed
+batch 140/582, 71680 files processed
+batch 160/582, 81920 files processed
+batch 180/582, 92160 files processed
+batch 200/582, 102400 files processed
+batch 220/582, 112640 files processed
+batch 240/582, 122880 files processed
+batch 260/582, 133120 files processed
+batch 280/582, 143360 files processed
+batch 300/582, 153600 files processed
+batch 320/582, 163840 files processed
+batch 340/582, 174080 files processed
+batch 360/582, 184320 files processed
+batch 380/582, 194560 files processed
+batch 400/582, 204800 files processed
+batch 420/582, 215040 files processed
+batch 440/582, 225280 files processed
+batch 460/582, 235520 files processed
+batch 480/582, 245760 files processed
+batch 500/582, 256000 files processed
+batch 520/582, 266240 files processed
+batch 540/582, 276480 files processed
+batch 560/582, 286720 files processed
+batch 580/582, 296960 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0054130784.h5 took 553.6669111251831 s
+features size:  (297492, 1024)
+coordinates size:  (297492, 2)
+
+progress: 11/16
+0055483886
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 0055483886
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e90c450>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/0055483886.h5: total of 519 batches
+batch 0/519, 0 files processed
+batch 20/519, 10240 files processed
+batch 40/519, 20480 files processed
+batch 60/519, 30720 files processed
+batch 80/519, 40960 files processed
+batch 100/519, 51200 files processed
+batch 120/519, 61440 files processed
+batch 140/519, 71680 files processed
+batch 160/519, 81920 files processed
+batch 180/519, 92160 files processed
+batch 200/519, 102400 files processed
+batch 220/519, 112640 files processed
+batch 240/519, 122880 files processed
+batch 260/519, 133120 files processed
+batch 280/519, 143360 files processed
+batch 300/519, 153600 files processed
+batch 320/519, 163840 files processed
+batch 340/519, 174080 files processed
+batch 360/519, 184320 files processed
+batch 380/519, 194560 files processed
+batch 400/519, 204800 files processed
+batch 420/519, 215040 files processed
+batch 440/519, 225280 files processed
+batch 460/519, 235520 files processed
+batch 480/519, 245760 files processed
+batch 500/519, 256000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/0055483886.h5 took 495.3105890750885 s
+features size:  (265313, 1024)
+coordinates size:  (265313, 2)
+
+progress: 12/16
+30
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 30
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e90c950>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/30.h5: total of 1048 batches
+batch 0/1048, 0 files processed
+batch 20/1048, 10240 files processed
+batch 40/1048, 20480 files processed
+batch 60/1048, 30720 files processed
+batch 80/1048, 40960 files processed
+batch 100/1048, 51200 files processed
+batch 120/1048, 61440 files processed
+batch 140/1048, 71680 files processed
+batch 160/1048, 81920 files processed
+batch 180/1048, 92160 files processed
+batch 200/1048, 102400 files processed
+batch 220/1048, 112640 files processed
+batch 240/1048, 122880 files processed
+batch 260/1048, 133120 files processed
+batch 280/1048, 143360 files processed
+batch 300/1048, 153600 files processed
+batch 320/1048, 163840 files processed
+batch 340/1048, 174080 files processed
+batch 360/1048, 184320 files processed
+batch 380/1048, 194560 files processed
+batch 400/1048, 204800 files processed
+batch 420/1048, 215040 files processed
+batch 440/1048, 225280 files processed
+batch 460/1048, 235520 files processed
+batch 480/1048, 245760 files processed
+batch 500/1048, 256000 files processed
+batch 520/1048, 266240 files processed
+batch 540/1048, 276480 files processed
+batch 560/1048, 286720 files processed
+batch 580/1048, 296960 files processed
+batch 600/1048, 307200 files processed
+batch 620/1048, 317440 files processed
+batch 640/1048, 327680 files processed
+batch 660/1048, 337920 files processed
+batch 680/1048, 348160 files processed
+batch 700/1048, 358400 files processed
+batch 720/1048, 368640 files processed
+batch 740/1048, 378880 files processed
+batch 760/1048, 389120 files processed
+batch 780/1048, 399360 files processed
+batch 800/1048, 409600 files processed
+batch 820/1048, 419840 files processed
+batch 840/1048, 430080 files processed
+batch 860/1048, 440320 files processed
+batch 880/1048, 450560 files processed
+batch 900/1048, 460800 files processed
+batch 920/1048, 471040 files processed
+batch 940/1048, 481280 files processed
+batch 960/1048, 491520 files processed
+batch 980/1048, 501760 files processed
+batch 1000/1048, 512000 files processed
+batch 1020/1048, 522240 files processed
+batch 1040/1048, 532480 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/30.h5 took 999.9622464179993 s
+features size:  (536559, 1024)
+coordinates size:  (536559, 2)
+
+progress: 13/16
+DigitalSlide_E6M_15S_1
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name DigitalSlide_E6M_15S_1
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1eb1e8d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/DigitalSlide_E6M_15S_1.h5: total of 908 batches
+batch 0/908, 0 files processed
+batch 20/908, 10240 files processed
+batch 40/908, 20480 files processed
+batch 60/908, 30720 files processed
+batch 80/908, 40960 files processed
+batch 100/908, 51200 files processed
+batch 120/908, 61440 files processed
+batch 140/908, 71680 files processed
+batch 160/908, 81920 files processed
+batch 180/908, 92160 files processed
+batch 200/908, 102400 files processed
+batch 220/908, 112640 files processed
+batch 240/908, 122880 files processed
+batch 260/908, 133120 files processed
+batch 280/908, 143360 files processed
+batch 300/908, 153600 files processed
+batch 320/908, 163840 files processed
+batch 340/908, 174080 files processed
+batch 360/908, 184320 files processed
+batch 380/908, 194560 files processed
+batch 400/908, 204800 files processed
+batch 420/908, 215040 files processed
+batch 440/908, 225280 files processed
+batch 460/908, 235520 files processed
+batch 480/908, 245760 files processed
+batch 500/908, 256000 files processed
+batch 520/908, 266240 files processed
+batch 540/908, 276480 files processed
+batch 560/908, 286720 files processed
+batch 580/908, 296960 files processed
+batch 600/908, 307200 files processed
+batch 620/908, 317440 files processed
+batch 640/908, 327680 files processed
+batch 660/908, 337920 files processed
+batch 680/908, 348160 files processed
+batch 700/908, 358400 files processed
+batch 720/908, 368640 files processed
+batch 740/908, 378880 files processed
+batch 760/908, 389120 files processed
+batch 780/908, 399360 files processed
+batch 800/908, 409600 files processed
+batch 820/908, 419840 files processed
+batch 840/908, 430080 files processed
+batch 860/908, 440320 files processed
+batch 880/908, 450560 files processed
+batch 900/908, 460800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/DigitalSlide_E6M_15S_1.h5 took 863.7039182186127 s
+features size:  (464652, 1024)
+coordinates size:  (464652, 2)
+
+progress: 14/16
+DigitalSlide_E6M_17S_1
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name DigitalSlide_E6M_17S_1
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1eb177d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/DigitalSlide_E6M_17S_1.h5: total of 625 batches
+batch 0/625, 0 files processed
+batch 20/625, 10240 files processed
+batch 40/625, 20480 files processed
+batch 60/625, 30720 files processed
+batch 80/625, 40960 files processed
+batch 100/625, 51200 files processed
+batch 120/625, 61440 files processed
+batch 140/625, 71680 files processed
+batch 160/625, 81920 files processed
+batch 180/625, 92160 files processed
+batch 200/625, 102400 files processed
+batch 220/625, 112640 files processed
+batch 240/625, 122880 files processed
+batch 260/625, 133120 files processed
+batch 280/625, 143360 files processed
+batch 300/625, 153600 files processed
+batch 320/625, 163840 files processed
+batch 340/625, 174080 files processed
+batch 360/625, 184320 files processed
+batch 380/625, 194560 files processed
+batch 400/625, 204800 files processed
+batch 420/625, 215040 files processed
+batch 440/625, 225280 files processed
+batch 460/625, 235520 files processed
+batch 480/625, 245760 files processed
+batch 500/625, 256000 files processed
+batch 520/625, 266240 files processed
+batch 540/625, 276480 files processed
+batch 560/625, 286720 files processed
+batch 580/625, 296960 files processed
+batch 600/625, 307200 files processed
+batch 620/625, 317440 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/DigitalSlide_E6M_17S_1.h5 took 597.6419360637665 s
+features size:  (319787, 1024)
+coordinates size:  (319787, 2)
+
+progress: 15/16
+DigitalSlide_E6M_20S_1
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name DigitalSlide_E6M_20S_1
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-pinyi/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1eb17d10>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/patches/DigitalSlide_E6M_20S_1.h5: total of 1080 batches
+batch 0/1080, 0 files processed
+batch 20/1080, 10240 files processed
+batch 40/1080, 20480 files processed
+batch 60/1080, 30720 files processed
+batch 80/1080, 40960 files processed
+batch 100/1080, 51200 files processed
+batch 120/1080, 61440 files processed
+batch 140/1080, 71680 files processed
+batch 160/1080, 81920 files processed
+batch 180/1080, 92160 files processed
+batch 200/1080, 102400 files processed
+batch 220/1080, 112640 files processed
+batch 240/1080, 122880 files processed
+batch 260/1080, 133120 files processed
+batch 280/1080, 143360 files processed
+batch 300/1080, 153600 files processed
+batch 320/1080, 163840 files processed
+batch 340/1080, 174080 files processed
+batch 360/1080, 184320 files processed
+batch 380/1080, 194560 files processed
+batch 400/1080, 204800 files processed
+batch 420/1080, 215040 files processed
+batch 440/1080, 225280 files processed
+batch 460/1080, 235520 files processed
+batch 480/1080, 245760 files processed
+batch 500/1080, 256000 files processed
+batch 520/1080, 266240 files processed
+batch 540/1080, 276480 files processed
+batch 560/1080, 286720 files processed
+batch 580/1080, 296960 files processed
+batch 600/1080, 307200 files processed
+batch 620/1080, 317440 files processed
+batch 640/1080, 327680 files processed
+batch 660/1080, 337920 files processed
+batch 680/1080, 348160 files processed
+batch 700/1080, 358400 files processed
+batch 720/1080, 368640 files processed
+batch 740/1080, 378880 files processed
+batch 760/1080, 389120 files processed
+batch 780/1080, 399360 files processed
+batch 800/1080, 409600 files processed
+batch 820/1080, 419840 files processed
+batch 840/1080, 430080 files processed
+batch 860/1080, 440320 files processed
+batch 880/1080, 450560 files processed
+batch 900/1080, 460800 files processed
+batch 920/1080, 471040 files processed
+batch 940/1080, 481280 files processed
+batch 960/1080, 491520 files processed
+batch 980/1080, 501760 files processed
+batch 1000/1080, 512000 files processed
+batch 1020/1080, 522240 files processed
+batch 1040/1080, 532480 files processed
+batch 1060/1080, 542720 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/RESULTS_DIRECTORY-pinyi/features/h5_files/DigitalSlide_E6M_20S_1.h5 took 1033.3154242038727 s
+features size:  (552752, 1024)
+coordinates size:  (552752, 2)

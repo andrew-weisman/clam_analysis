@@ -1,0 +1,3 @@
+* process_list-feature_extraction-pinyi.csv is a copy of /home/weismanal/notebook/2021-11-11/testing_clam/results/pinyi/process_list_autogen.csv with the filename extensions removed as advised in the CLAM GitHub
+* process_list-preprocessing-pinyi.csv is a copy of /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/process_list_edited_slides_1-16.csv except with a newline at the end and *.mrxs replacing *.ome.tif
+* preprocessing-pinyi-median.csv contains the median values of the parameters that Pinyi determined were best for the first 16 slides, as originally from /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/process_list_edited_slides_1-16.csv

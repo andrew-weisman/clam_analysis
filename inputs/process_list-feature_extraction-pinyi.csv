@@ -1,0 +1,17 @@
+slide_id,process,status,seg_level,sthresh,mthresh,close,use_otsu,keep_ids,exclude_ids,a_t,a_h,max_n_holes,vis_level,line_thickness,use_padding,contour_fn
+0042034876,0,processed,6,1,11,185,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0042711961,0,processed,6,15,11,2,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0042951302,0,processed,6,1,11,30,False,none,none,25.0,4.0,2,6,50,True,four_pt
+0046877280,0,processed,6,2,11,90,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0047176089,0,processed,6,5,11,2,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0048086809,0,processed,6,1,11,20,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0049547258,0,processed,6,15,11,80,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0057134497,0,processed,6,1,11,250,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0029468706,0,processed,6,1,11,2,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0047953852,0,processed,6,10,11,20,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0054130784,0,processed,6,5,11,120,False,none,none,1.0,1.0,2,6,50,True,four_pt
+0055483886,0,processed,6,1,11,50,False,none,none,1.0,1.0,2,6,50,True,four_pt
+30,0,processed,6,1,11,2,False,none,none,1.0,1.0,2,6,50,True,four_pt
+DigitalSlide_E6M_15S_1,0,processed,6,55,11,100,False,none,none,1.0,1.0,2,6,50,True,four_pt
+DigitalSlide_E6M_17S_1,0,processed,6,1,11,85,False,none,none,1.0,1.0,2,6,50,True,four_pt
+DigitalSlide_E6M_20S_1,0,processed,6,15,11,20,False,none,none,1.0,1.0,2,6,50,True,four_pt

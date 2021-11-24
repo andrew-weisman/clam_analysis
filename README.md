@@ -22,6 +22,8 @@ python $CLAM/create_patches_fp.py --source $working_dir/data-with_data_dirs    -
 python $CLAM/create_patches_fp.py --source $working_dir/data-without_data_dirs --save_dir $working_dir/results/without_data_dirs --patch_size 256 --process_list $working_dir/inputs/first_five.csv --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-without_data_dirs.log
 ```
 
+The results seem to show that without the data directories, segmentation may be performed on some sort of thumbnail present in the `.mrxs` file itself and that while CLAM seems to work on `.mrxs` files, the associated data directories must be present.
+
 Commands that I have run to get an interactive compute node include:
 
 ```bash
@@ -29,15 +31,13 @@ sinteractive --mem=20g --cpus-per-task=12
 sinteractive --mem=20g --gres=gpu:k80:1 --cpus-per-task=12
 ```
 
-The parameters file, `$working_dir/process_list_edited_slides_1-16.csv`, that I am using for generating the "pinyi" results is originally a copy from `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/process_list_edited_slides_1-16.csv`. I am changing the files run from `*.ome.tif` to `*.mrxs`.
-
 To mount the Box drive in Windows somewhere accessible to WSL:
 
 ```bash
 sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
 ```
 
-Note I have concluded that for the default and preset values, the settings for each processed image in the columns of the produced `process_list_autogen.csv` files have unique values. For all three sets of presets, the input `.csv` files have the extra fields `white_thresh` and `black_thresh`, which have values of 5 and 50. Finally, for the fields `seg_level` and `vis_level` for these three sets of presets, input values are always -1 and the output values are always 6. The inputs and outputs of all other fields are the same (and are of course generally different for each of the three sets).
+Note I have concluded that for the default and preset values (i.e., the first four calls to `create_patches_fp.py` above), the settings for each processed image in the columns of the produced `process_list_autogen.csv` files all have unique values. For all three sets of presets, the input `.csv` files have the extra fields `white_thresh` and `black_thresh`, which have values of 5 and 50. Finally, for the fields `seg_level` and `vis_level` for these three sets of presets, input values are always -1 and the output values are always 6. The inputs and outputs of all other fields are the same (and are of course generally different for each of the three sets).
 
 Multiple-step process that I'd guess Pinyi is running, by example per the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM):
 
@@ -49,9 +49,9 @@ python create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY
 Here are the commands I'm running for feature extraction:
 
 ```bash
-python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/RESULTS_DIRECTORY-pinyi --data_slide_dir $working_dir/DATA_DIRECTORY --csv_path $working_dir/RESULTS_DIRECTORY-pinyi/process_list-feature_extraction.csv --feat_dir $working_dir/RESULTS_DIRECTORY-pinyi/features --batch_size 512 --slide_ext .mrxs 2>&1 | tee feature_extraction-pinyi.log
+python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/pinyi --data_slide_dir $working_dir/data --csv_path $working_dir/inputs/process_list-feature_extraction-pinyi.csv --feat_dir $working_dir/results/pinyi/features --batch_size 512 --slide_ext .mrxs 2>&1 | tee $working_dir/logs/feature_extraction-pinyi.log
 ```
 
-This is currently using 9275MiB out of 16280MiB of GPU memory on a P100 GPU, so I can probably try increasing the batch size from 512 to 899 (exactly) or 880 (to be safe). I can also try using multiple GPUs simply by allocating more from SLURM; this should automatically work.
+This used 9275MiB out of 16280MiB of GPU memory on a P100 GPU, so I can probably try increasing the batch size from 512 to 899 (exactly) or 880 (to be safe). I can also try using multiple GPUs simply by allocating more from SLURM; this should automatically work per the CLAM codebase.
 
-**DON'T FORGET TO COPY THE OUTPUT OF THE CURRENT JOB TO feature_extraction-pinyi.log!!!!**
+I should note that Pinyi's segmentation parameters in his original `process_list_edited_slides_1-16.csv` file were based on downsampled `.ome.tif` files, so they may not apply as neatly to the `.mrxs` files; this is something to test.

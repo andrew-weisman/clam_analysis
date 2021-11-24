@@ -179,6 +179,10 @@ The former job (the one with the data directories) contains things in the `masks
 
 ![contents of masks directories](./contents_of_masks_directories.png)
 
+The latter images do indeed look like downsampled, smaller versions of the former images. E.g.:
+
+![sample masks](./sample_masks.png)
+
 **Question:** Does it look to you like CLAM is working on the `.mrxs` files now? Are there any other red flags? It's certainly possible my own installation of OpenSlide fixed the problem you were seeing. I just want to make sure I'm not missing the problem you were seeing!
 
 Thanks so much Pinyi.

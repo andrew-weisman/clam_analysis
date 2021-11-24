@@ -1,0 +1,58 @@
+source:  /home/weismanal/notebook/2021-11-11/testing_clam/data-without_data_dirs
+patch_save_dir:  /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs/patches
+mask_save_dir:  /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs/masks
+stitch_save_dir:  /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs/stitches
+source : /home/weismanal/notebook/2021-11-11/testing_clam/data-without_data_dirs
+save_dir : /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs
+patch_save_dir : /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs/patches
+mask_save_dir : /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs/masks
+stitch_save_dir : /home/weismanal/notebook/2021-11-11/testing_clam/results/without_data_dirs/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/5
+processing 0042034876.mrxs
+Creating patches for:  0042034876 ...
+Total number of contours to process:  0
+segmentation took 0.12459993362426758 seconds
+patching took 5.0067901611328125e-05 seconds
+stitching took -1 seconds
+
+
+progress: 0.20, 1/5
+processing 0042711961.mrxs
+Creating patches for:  0042711961 ...
+Total number of contours to process:  0
+segmentation took 0.06915450096130371 seconds
+patching took 3.790855407714844e-05 seconds
+stitching took -1 seconds
+
+
+progress: 0.40, 2/5
+processing 0042951302.mrxs
+Creating patches for:  0042951302 ...
+Total number of contours to process:  0
+segmentation took 0.06893348693847656 seconds
+patching took 4.267692565917969e-05 seconds
+stitching took -1 seconds
+
+
+progress: 0.60, 3/5
+processing 0046877280.mrxs
+Creating patches for:  0046877280 ...
+Total number of contours to process:  0
+segmentation took 0.07157468795776367 seconds
+patching took 3.933906555175781e-05 seconds
+stitching took -1 seconds
+
+
+progress: 0.80, 4/5
+processing 0047176089.mrxs
+Creating patches for:  0047176089 ...
+Total number of contours to process:  0
+segmentation took 0.06633520126342773 seconds
+patching took 4.00543212890625e-05 seconds
+stitching took -1 seconds
+average segmentation time in s per slide: 0.08011956214904785
+average patching time in s per slide: 4.200935363769531e-05
+average stiching time in s per slide: -1.0

@@ -1,17 +1,25 @@
 # Notes on CLAM
 
-I installed it in the directory containing this README (`/home/weismanal/notebook/2021-11-10/testing_clam`).
+I installed CLAM in `/home/weismanal/notebook/2021-11-10/testing_clam`.
 
-The environment file I created to install and run CLAM is `/home/weismanal/notebook/2021-11-10/testing_clam/clam_env.sh`, and I should source this file to get CLAM working. Further notes are contained in this file.
+The environment file I created to install and run CLAM is `/home/weismanal/notebook/2021-11-10/testing_clam/clam_env.sh` (note this sets the `$CLAM` environment variable), and I should source this file to get CLAM working. Further notes are contained in that file.
 
 I am testing execution of CLAM here: `working_dir="/home/weismanal/notebook/2021-11-11/testing_clam"`. Commands that I have run to generate files in this directory include (preprocessing):
 
 ```bash
-python $CLAM/create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY-bwh_biopsy --patch_size 256 --preset $CLAM/presets/bwh_biopsy.csv --seg --patch --stitch 2>&1 | tee initial_processing_output-bwh_biopsy.txt
-python $CLAM/create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY-bwh_resection --patch_size 256 --preset $CLAM/presets/bwh_resection.csv --seg --patch --stitch 2>&1 | tee initial_processing_output-bwh_resection.txt
-python $CLAM/create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY-tcga --patch_size 256 --preset $CLAM/presets/tcga.csv --seg --patch --stitch 2>&1 | tee initial_processing_output-tcga.txt
-python $CLAM/create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY-pinyi --patch_size 256 --process_list $working_dir/process_list_edited_slides_1-16.csv --seg --patch --stitch 2>&1 | tee initial_processing_output-pinyi.txt
-python $CLAM/create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY-pinyi-median --patch_size 256 --preset $working_dir/pinyi-median.csv --seg --patch --stitch 2>&1 | tee initial_processing_output-pinyi-median.txt
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/default       --patch_size 256                                                                         --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-default.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_biopsy    --patch_size 256 --preset       $CLAM/presets/bwh_biopsy.csv                             --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-bwh_biopsy.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-bwh_resection.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/tcga          --patch_size 256 --preset       $CLAM/presets/tcga.csv                                   --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-tcga.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/pinyi         --patch_size 256 --process_list $working_dir/inputs/process_list-preprocessing-pinyi.csv --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-pinyi.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/pinyi-median  --patch_size 256 --preset       $working_dir/inputs/preprocessing-pinyi-median.csv       --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-pinyi-median.log
+```
+
+Testing with and without MRXS data directories:
+
+```bash
+python $CLAM/create_patches_fp.py --source $working_dir/data-with_data_dirs    --save_dir $working_dir/results/with_data_dirs    --patch_size 256 --process_list $working_dir/inputs/first_five.csv --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-with_data_dirs.log
+python $CLAM/create_patches_fp.py --source $working_dir/data-without_data_dirs --save_dir $working_dir/results/without_data_dirs --patch_size 256 --process_list $working_dir/inputs/first_five.csv --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-without_data_dirs.log
 ```
 
 Commands that I have run to get an interactive compute node include:

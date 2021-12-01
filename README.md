@@ -94,7 +94,7 @@ Run this:
 bash $working_dir/create_data_labels_for_clam.sh $working_dir
 ```
 
-Note that this overwrites the current data labels file, e.g., `/home/weismanal/notebook/2021-11-11/testing_clam/data_labels.csv`.
+Note that this overwrites the current data labels file, e.g., `$working_dir/data_labels.csv`.
 
 ## CLAM codebase modification
 
@@ -105,14 +105,57 @@ Note that the `task` argument to `$CLAM/main.py` corresponds to `idibell` and ad
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    dataset = Generic_MIL_Dataset(csv_path = 'dataset_csv/tumor_subtyping_dummy_clean.csv',
-                            data_dir= os.path.join(args.data_root_dir, 'tumor_subtyping_resnet_features'),
+    working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    dataset_name = 'pinyi'
+    dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
+                            data_dir= os.path.join(working_dir, 'results', dataset_name, 'features', 'pt_files'),
                             shuffle = False, 
                             seed = args.seed, 
                             print_info = True,
-                            label_dict = {'subtype_1':0, 'subtype_2':1, 'subtype_3':2},
+                            label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3},
+                            label_col = 'label',
                             patient_strat= False,
                             ignore=[])
+
+    if args.model_type in ['clam_sb', 'clam_mb']:
+        assert args.subtyping
+```
+
+Add this "task" to the arguments in `main.py` like:
+
+```python
+parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal',  'task_2_tumor_subtyping', 'idibell'])
+```
+
+Likewise, to `$CLAM/create_splits_seq.py` add the block
+
+```python
+elif args.task == 'idibell':
+    args.n_classes=4
+    working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    dataset = Generic_WSI_Classification_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
+                            shuffle = False, 
+                            seed = args.seed, 
+                            print_info = True,
+                            label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3},
+                            label_col = 'label',
+                            patient_strat= True,
+                            patient_voting='maj',
+                            ignore=[])
+```
+
+and the modify the line
+
+```python
+parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal', 'task_2_tumor_subtyping', 'idibell'])
+```
+
+## Data splitting
+
+Run e.g.:
+
+```bash
+python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 0.75 --k 10 2>&1 | tee $working_dir/logs/data_splitting.log
 ```
 
 ## Other notes

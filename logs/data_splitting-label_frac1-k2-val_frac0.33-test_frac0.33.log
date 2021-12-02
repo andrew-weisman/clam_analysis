@@ -1,0 +1,48 @@
+label column: label_dummy
+label dictionary: {'pole': 0, 'lcn': 1, 'p53': 2}
+number of classes: 3
+slide-level counts:  
+ 0    5
+1    5
+2    6
+Name: label, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 5
+Slide-LVL; Number of samples registered in class 0: 5
+Patient-LVL; Number of samples registered in class 1: 5
+Slide-LVL; Number of samples registered in class 1: 5
+Patient-LVL; Number of samples registered in class 2: 6
+Slide-LVL; Number of samples registered in class 2: 6
+
+number of training samples: 4
+number of samples in cls 0: 1
+number of samples in cls 1: 1
+number of samples in cls 2: 2
+
+number of val samples: 6
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+
+number of test samples: 6
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+
+
+
+number of training samples: 4
+number of samples in cls 0: 1
+number of samples in cls 1: 1
+number of samples in cls 2: 2
+
+number of val samples: 6
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+
+number of test samples: 6
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+
+

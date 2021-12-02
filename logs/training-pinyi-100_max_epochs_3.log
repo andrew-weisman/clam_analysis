@@ -1,0 +1,278 @@
+
+Load Dataset
+label column: label
+label dictionary: {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+number of classes: 4
+slide-level counts:  
+ 0    3
+1    1
+2    5
+3    7
+Name: label, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 3
+Slide-LVL; Number of samples registered in class 0: 3
+Patient-LVL; Number of samples registered in class 1: 1
+Slide-LVL; Number of samples registered in class 1: 1
+Patient-LVL; Number of samples registered in class 2: 5
+Slide-LVL; Number of samples registered in class 2: 5
+Patient-LVL; Number of samples registered in class 3: 7
+Slide-LVL; Number of samples registered in class 3: 7
+split_dir:  splits/idibell_100
+################# Settings ###################
+num_splits:  5
+k_start:  -1
+k_end:  -1
+task:  idibell
+max_epochs:  3
+results_dir:  /home/weismanal/notebook/2021-11-11/testing_clam/results/pinyi/training
+lr:  0.0002
+experiment:  idibell_CLAM_100_max_epochs_3
+reg:  1e-05
+label_frac:  1.0
+bag_loss:  ce
+seed:  1
+model_type:  clam_sb
+model_size:  small
+use_drop_out:  True
+weighted_sample:  True
+opt:  adam
+bag_weight:  0.7
+inst_loss:  svm
+B:  8
+split_dir:  splits/idibell_100
+
+Training Fold 0!
+
+Init train/val/test splits... 
+Done!
+Training on 6 samples
+Validating on 5 samples
+Testing on 5 samples
+
+Init loss function... Done!
+
+Init Model... Setting tau to 1.0
+Done!
+CLAM_SB(
+  (attention_net): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.25, inplace=False)
+    (3): Attn_Net_Gated(
+      (attention_a): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Tanh()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_b): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Sigmoid()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_c): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (classifiers): Linear(in_features=512, out_features=4, bias=True)
+  (instance_classifiers): ModuleList(
+    (0): Linear(in_features=512, out_features=2, bias=True)
+    (1): Linear(in_features=512, out_features=2, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+    (3): Linear(in_features=512, out_features=2, bias=True)
+  )
+  (instance_loss_fn): SmoothTop1SVM()
+)
+Total number of parameters: 793869
+Total number of trainable parameters: 793869
+
+Init optimizer ... Done!
+
+Init Loaders... Done!
+
+Setup EarlyStopping... Done!
+
+
+
+
+class 0 clustering acc 0.6875: correct 132/192
+class 1 clustering acc 0.20833333333333334: correct 10/48
+Epoch: 0, train_loss: 1.3419, train_clustering_loss:  1.2884, train_error: 0.5000
+class 0: acc 0.0, correct 0/2
+class 1: acc 1.0, correct 3/3
+class 2: acc None, correct 0/0
+class 3: acc 0.0, correct 0/1
+
+Val Set, val_loss: 1.5304, val_error: 1.0000, auc: 0.1944
+class 0 clustering acc 0.68125: correct 109/160
+class 1 clustering acc 0.15: correct 6/40
+class 0: acc 0.0, correct 0/1
+class 1: acc None, correct 0/0
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+Validation loss decreased (inf --> 1.530389).  Saving model ...
+
+
+
+
+class 0 clustering acc 0.90625: correct 174/192
+class 1 clustering acc 0.0: correct 0/48
+Epoch: 1, train_loss: 1.4536, train_clustering_loss:  1.2189, train_error: 0.8333
+class 0: acc 0.0, correct 0/1
+class 1: acc 1.0, correct 1/1
+class 2: acc 0.0, correct 0/4
+class 3: acc None, correct 0/0
+
+Val Set, val_loss: 1.5452, val_error: 1.0000, auc: 0.2500
+class 0 clustering acc 0.99375: correct 159/160
+class 1 clustering acc 0.0: correct 0/40
+class 0: acc 0.0, correct 0/1
+class 1: acc None, correct 0/0
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+EarlyStopping counter: 1 out of 20
+
+
+
+
+class 0 clustering acc 1.0: correct 192/192
+class 1 clustering acc 0.0: correct 0/48
+Epoch: 2, train_loss: 1.2975, train_clustering_loss:  1.1303, train_error: 0.5000
+class 0: acc 0.0, correct 0/1
+class 1: acc 1.0, correct 3/3
+class 2: acc None, correct 0/0
+class 3: acc 0.0, correct 0/2
+
+Val Set, val_loss: 1.5244, val_error: 1.0000, auc: 0.4167
+class 0 clustering acc 1.0: correct 160/160
+class 1 clustering acc 0.0: correct 0/40
+class 0: acc 0.0, correct 0/1
+class 1: acc None, correct 0/0
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+Validation loss decreased (1.530389 --> 1.524364).  Saving model ...
+Val error: 1.0000, ROC AUC: 0.4167
+Test error: 1.0000, ROC AUC: 0.7222
+class 0: acc 0.0, correct 0/1
+class 1: acc None, correct 0/0
+NOTE: The variable "acc" is None; now setting it to -7777
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+
+Training Fold 1!
+
+Init train/val/test splits... 
+Done!
+Training on 6 samples
+Validating on 5 samples
+Testing on 0 samples
+
+Init loss function... Done!
+
+Init Model... Setting tau to 1.0
+Done!
+CLAM_SB(
+  (attention_net): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.25, inplace=False)
+    (3): Attn_Net_Gated(
+      (attention_a): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Tanh()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_b): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Sigmoid()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_c): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (classifiers): Linear(in_features=512, out_features=4, bias=True)
+  (instance_classifiers): ModuleList(
+    (0): Linear(in_features=512, out_features=2, bias=True)
+    (1): Linear(in_features=512, out_features=2, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+    (3): Linear(in_features=512, out_features=2, bias=True)
+  )
+  (instance_loss_fn): SmoothTop1SVM()
+)
+Total number of parameters: 793869
+Total number of trainable parameters: 793869
+
+Init optimizer ... Done!
+
+Init Loaders... Done!
+
+Setup EarlyStopping... Done!
+
+
+
+
+class 0 clustering acc 0.65625: correct 126/192
+class 1 clustering acc 0.125: correct 6/48
+Epoch: 0, train_loss: 1.4117, train_clustering_loss:  1.2985, train_error: 0.8333
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/1
+class 2: acc 0.0, correct 0/1
+class 3: acc 0.0, correct 0/1
+
+Val Set, val_loss: 1.4531, val_error: 0.8000, auc: 0.6111
+class 0 clustering acc 0.8375: correct 134/160
+class 1 clustering acc 0.4: correct 16/40
+class 0: acc 1.0, correct 1/1
+class 1: acc None, correct 0/0
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+Validation loss decreased (inf --> 1.453077).  Saving model ...
+
+
+
+
+class 0 clustering acc 0.90625: correct 174/192
+class 1 clustering acc 0.020833333333333332: correct 1/48
+Epoch: 1, train_loss: 1.3968, train_clustering_loss:  1.2426, train_error: 0.8333
+class 0: acc 1.0, correct 1/1
+class 1: acc 0.0, correct 0/3
+class 2: acc None, correct 0/0
+class 3: acc 0.0, correct 0/2
+
+Val Set, val_loss: 1.5050, val_error: 0.8000, auc: 0.5000
+class 0 clustering acc 1.0: correct 160/160
+class 1 clustering acc 0.0: correct 0/40
+class 0: acc 1.0, correct 1/1
+class 1: acc None, correct 0/0
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+EarlyStopping counter: 1 out of 20
+
+
+
+
+class 0 clustering acc 1.0: correct 192/192
+class 1 clustering acc 0.0: correct 0/48
+Epoch: 2, train_loss: 1.3216, train_clustering_loss:  1.1794, train_error: 0.5000
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.0, correct 0/1
+class 2: acc 0.0, correct 0/2
+class 3: acc None, correct 0/0
+
+Val Set, val_loss: 1.5126, val_error: 0.8000, auc: 0.5556
+class 0 clustering acc 1.0: correct 160/160
+class 1 clustering acc 0.0: correct 0/40
+class 0: acc 1.0, correct 1/1
+class 1: acc None, correct 0/0
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/2
+EarlyStopping counter: 2 out of 20
+Val error: 0.8000, ROC AUC: 0.6111
+Traceback (most recent call last):
+  File "/home/weismanal/notebook/2021-11-10/testing_clam/repo/main.py", line 227, in <module>
+    results = main(args)
+  File "/home/weismanal/notebook/2021-11-10/testing_clam/repo/main.py", line 49, in main
+    results, test_auc, val_auc, test_acc, val_acc  = train(datasets, i, args)
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/utils/core_utils.py", line 204, in train
+    results_dict, test_error, test_auc, acc_logger = summary(model, test_loader, args.n_classes)
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/utils/core_utils.py", line 518, in summary
+    test_error /= len(loader)
+ZeroDivisionError: float division by zero

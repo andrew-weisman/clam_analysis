@@ -108,7 +108,7 @@ elif args.task == 'idibell':
     working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
     dataset_name = 'pinyi'
     dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
-                            data_dir= os.path.join(working_dir, 'results', dataset_name, 'features', 'pt_files'),
+                            data_dir= os.path.join(working_dir, 'results', dataset_name, 'features'),
                             shuffle = False, 
                             seed = args.seed, 
                             print_info = True,
@@ -155,7 +155,23 @@ parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal', 'task
 Run e.g.:
 
 ```bash
-python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 0.75 --k 10 2>&1 | tee $working_dir/logs/data_splitting.log
+# In general
+python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 5 --val_frac 0.33 --test_frac 0.33 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k5-val_frac0.33-test_frac0.33.log
+
+# My short test
+python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 2 --val_frac 0.33 --test_frac 0.33 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k2-val_frac0.33-test_frac0.33.log
+```
+
+## Training
+
+Run e.g.:
+
+```bash
+# In general
+python $CLAM/main.py --drop_out --early_stopping --lr 2e-4 --k 5 --label_frac 1 --exp_code idibell_CLAM_100 --weighted_sample --bag_loss ce --inst_loss svm --task idibell --model_type clam_sb --log_data --subtyping --data_root_dir $working_dir/results/pinyi --results_dir $working_dir/results/pinyi/training 2>&1 | tee $working_dir/logs/training-pinyi-100.log
+
+# My short test
+python $CLAM/main.py --max_epochs 3 --drop_out --early_stopping --lr 2e-4 --k 2 --label_frac 1 --exp_code idibell_CLAM_100_max_epochs_3_k_2 --weighted_sample --bag_loss ce --inst_loss svm --task idibell --model_type clam_sb --log_data --subtyping --data_root_dir $working_dir/results/pinyi --results_dir $working_dir/results/pinyi/training 2>&1 | tee $working_dir/logs/training-pinyi-100_max_epochs_3_k_2.log
 ```
 
 ## Other notes
@@ -165,3 +181,5 @@ python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 0.75 --k 
 ```bash
 sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
 ```
+
+**Ensure for each script I look at the arguments that I can modify using the `-h` option.**

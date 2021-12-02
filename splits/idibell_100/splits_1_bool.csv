@@ -1,0 +1,17 @@
+,train,val,test
+DigitalSlide_E6M_17S_1,True,False,False
+DigitalSlide_E6M_20S_1,True,False,False
+0047176089,True,False,False
+0054130784,True,False,False
+DigitalSlide_E6M_15S_1,False,True,False
+0055483886,False,True,False
+0029468706,False,True,False
+0049547258,False,True,False
+0042951302,False,True,False
+0042034876,False,True,False
+30,False,False,True
+0046877280,False,False,True
+0057134497,False,False,True
+0048086809,False,False,True
+0047953852,False,False,True
+0042711961,False,False,True

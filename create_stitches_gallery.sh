@@ -11,7 +11,8 @@ function make_website() {
 
     # Determine the number of datasets and the images from the dataset list
     ndatasets=$(echo "$datasets" | awk '{print NF}')
-    images=$(ls "results/$(echo "$datasets" | awk '{print $1}')/stitches")
+    # images=$(ls "results/$(echo "$datasets" | awk '{print $1}')/stitches")
+    images=$(ls "results/$(echo "$datasets" | awk '{print $1}')/stitches/"*.jpg | awk -v FS="/" '{print $NF}')
 
     # Create HTML code
     echo "<html><head><title>Comparison of datasets: $datasets</title></head><body>"

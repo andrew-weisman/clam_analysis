@@ -1,0 +1,1015 @@
+13:56:56.878 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-16714961996193147122
+13:56:56.881 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+13:56:57.135 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+13:57:03.687 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0029468706.mrxs to ome-tiff/0029468706/0029468706.ome.tif (series 1/1)
+13:57:03.688 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 299 tiles)
+13:57:03.691 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+13:57:04.991 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+13:57:06.114 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+13:57:07.300 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+13:57:08.261 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+13:57:09.117 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+13:57:09.998 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+13:57:11.003 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+13:57:12.012 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+13:57:12.858 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+13:57:13.390 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 100% tiles
+source:  ome-tiff/0029468706
+patch_save_dir:  RESULTS_DIRECTORY/0029468706/patches
+mask_save_dir:  RESULTS_DIRECTORY/0029468706/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0029468706/stitches
+source : ome-tiff/0029468706
+save_dir : RESULTS_DIRECTORY/0029468706
+patch_save_dir : RESULTS_DIRECTORY/0029468706/patches
+mask_save_dir : RESULTS_DIRECTORY/0029468706/masks
+stitch_save_dir : RESULTS_DIRECTORY/0029468706/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0029468706.ome.tif
+Creating patches for:  0029468706.ome ...
+Total number of contours to process:  3
+Bounding Box: 4562 6559 1266 1624
+Contour Area: 1413143.0
+Extracted 28 coordinates
+Bounding Box: 309 6112 4565 4866
+Contour Area: 14249048.5
+Extracted 245 coordinates
+Bounding Box: 744 368 5404 5060
+Contour Area: 16392884.0
+Extracted 276 coordinates
+start stitching 0029468706.ome
+original size: 6357 x 11289
+downscaled size for stiching: 6357 x 11289
+number of patches: 549
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/549 stitched
+progress: 55/549 stitched
+progress: 110/549 stitched
+progress: 165/549 stitched
+progress: 220/549 stitched
+progress: 275/549 stitched
+progress: 330/549 stitched
+progress: 385/549 stitched
+progress: 440/549 stitched
+progress: 495/549 stitched
+segmentation took 3.7781102657318115 seconds
+patching took 0.3703460693359375 seconds
+stitching took 0.8803632259368896 seconds
+average segmentation time in s per slide: 3.7781102657318115
+average patching time in s per slide: 0.3703460693359375
+average stiching time in s per slide: 0.8803632259368896
+13:57:44.267 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-18351189068776270397
+13:57:44.270 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+13:57:44.512 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+13:57:47.215 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0042034876.mrxs to ome-tiff/0042034876/0042034876.ome.tif (series 1/1)
+13:57:47.216 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 120 tiles)
+13:57:47.219 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+13:57:47.922 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+13:57:48.303 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+13:57:48.738 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+13:57:49.009 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+13:57:49.200 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+13:57:49.423 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+13:57:49.708 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+13:57:50.001 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+13:57:50.324 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+13:57:50.638 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0042034876
+patch_save_dir:  RESULTS_DIRECTORY/0042034876/patches
+mask_save_dir:  RESULTS_DIRECTORY/0042034876/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0042034876/stitches
+source : ome-tiff/0042034876
+save_dir : RESULTS_DIRECTORY/0042034876
+patch_save_dir : RESULTS_DIRECTORY/0042034876/patches
+mask_save_dir : RESULTS_DIRECTORY/0042034876/masks
+stitch_save_dir : RESULTS_DIRECTORY/0042034876/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0042034876.ome.tif
+Creating patches for:  0042034876.ome ...
+Total number of contours to process:  3
+Bounding Box: 2031 6383 1065 912
+Contour Area: 532886.0
+Extracted 11 coordinates
+Bounding Box: 1109 4252 2816 2537
+Contour Area: 2497240.0
+Extracted 48 coordinates
+Bounding Box: 140 0 2492 3092
+Contour Area: 3124765.5
+Extracted 66 coordinates
+start stitching 0042034876.ome
+original size: 3925 x 7398
+downscaled size for stiching: 3925 x 7398
+number of patches: 125
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/125 stitched
+progress: 13/125 stitched
+progress: 26/125 stitched
+progress: 39/125 stitched
+progress: 52/125 stitched
+progress: 65/125 stitched
+progress: 78/125 stitched
+progress: 91/125 stitched
+progress: 104/125 stitched
+progress: 117/125 stitched
+segmentation took 1.7993814945220947 seconds
+patching took 0.2569601535797119 seconds
+stitching took 0.3131601810455322 seconds
+average segmentation time in s per slide: 1.7993814945220947
+average patching time in s per slide: 0.2569601535797119
+average stiching time in s per slide: 0.3131601810455322
+13:58:11.582 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-6303656877908968434
+13:58:11.586 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+13:58:11.812 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+13:58:16.581 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0042711961.mrxs to ome-tiff/0042711961/0042711961.ome.tif (series 1/1)
+13:58:16.583 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 190 tiles)
+13:58:16.585 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+13:58:17.607 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+13:58:18.326 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+13:58:19.037 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+13:58:19.719 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+13:58:20.156 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+13:58:20.779 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+13:58:21.440 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+13:58:22.088 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+13:58:22.668 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+13:58:23.101 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0042711961
+patch_save_dir:  RESULTS_DIRECTORY/0042711961/patches
+mask_save_dir:  RESULTS_DIRECTORY/0042711961/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0042711961/stitches
+source : ome-tiff/0042711961
+save_dir : RESULTS_DIRECTORY/0042711961
+patch_save_dir : RESULTS_DIRECTORY/0042711961/patches
+mask_save_dir : RESULTS_DIRECTORY/0042711961/masks
+stitch_save_dir : RESULTS_DIRECTORY/0042711961/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0042711961.ome.tif
+Creating patches for:  0042711961.ome ...
+Total number of contours to process:  5
+Bounding Box: 2233 7160 1799 1466
+Contour Area: 1457280.0
+Extracted 26 coordinates
+Bounding Box: 7 4938 4072 4088
+Contour Area: 8648840.5
+Extracted 154 coordinates
+Bounding Box: 979 2076 2213 1506
+Contour Area: 1296801.5
+Extracted 32 coordinates
+Bounding Box: 2746 1458 1959 1569
+Contour Area: 1265122.0
+Extracted 30 coordinates
+Bounding Box: 529 10 3924 2628
+Contour Area: 5768506.0
+Extracted 100 coordinates
+start stitching 0042711961.ome
+original size: 4881 x 9335
+downscaled size for stiching: 4881 x 9335
+number of patches: 342
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/342 stitched
+progress: 35/342 stitched
+progress: 70/342 stitched
+progress: 105/342 stitched
+progress: 140/342 stitched
+progress: 175/342 stitched
+progress: 210/342 stitched
+progress: 245/342 stitched
+progress: 280/342 stitched
+progress: 315/342 stitched
+segmentation took 2.37604022026062 seconds
+patching took 0.3919644355773926 seconds
+stitching took 0.5781216621398926 seconds
+average segmentation time in s per slide: 2.37604022026062
+average patching time in s per slide: 0.3919644355773926
+average stiching time in s per slide: 0.5781216621398926
+13:58:47.266 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-12347952197083379121
+13:58:47.269 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+13:58:47.486 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+13:58:52.451 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0042951302.mrxs to ome-tiff/0042951302/0042951302.ome.tif (series 1/1)
+13:58:52.453 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 190 tiles)
+13:58:52.455 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+13:58:53.271 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+13:58:53.996 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+13:58:54.564 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+13:58:55.036 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+13:58:55.447 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+13:58:56.049 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+13:58:56.568 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+13:58:57.040 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+13:58:57.365 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+13:58:57.744 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0042951302
+patch_save_dir:  RESULTS_DIRECTORY/0042951302/patches
+mask_save_dir:  RESULTS_DIRECTORY/0042951302/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0042951302/stitches
+source : ome-tiff/0042951302
+save_dir : RESULTS_DIRECTORY/0042951302
+patch_save_dir : RESULTS_DIRECTORY/0042951302/patches
+mask_save_dir : RESULTS_DIRECTORY/0042951302/masks
+stitch_save_dir : RESULTS_DIRECTORY/0042951302/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0042951302.ome.tif
+Creating patches for:  0042951302.ome ...
+Total number of contours to process:  2
+Bounding Box: 1043 4460 3863 3399
+Contour Area: 7485102.0
+Extracted 137 coordinates
+Bounding Box: 1239 207 3587 3849
+Contour Area: 8810161.5
+Extracted 149 coordinates
+start stitching 0042951302.ome
+original size: 4906 x 9728
+downscaled size for stiching: 4906 x 9728
+number of patches: 286
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/286 stitched
+progress: 29/286 stitched
+progress: 58/286 stitched
+progress: 87/286 stitched
+progress: 116/286 stitched
+progress: 145/286 stitched
+progress: 174/286 stitched
+progress: 203/286 stitched
+progress: 232/286 stitched
+progress: 261/286 stitched
+segmentation took 2.373112916946411 seconds
+patching took 0.21595191955566406 seconds
+stitching took 0.564323902130127 seconds
+average segmentation time in s per slide: 2.373112916946411
+average patching time in s per slide: 0.21595191955566406
+average stiching time in s per slide: 0.564323902130127
+13:59:22.210 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-9451623255076036941
+13:59:22.214 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+13:59:22.446 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+13:59:27.369 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0046877280.mrxs to ome-tiff/0046877280/0046877280.ome.tif (series 1/1)
+13:59:27.371 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 190 tiles)
+13:59:27.373 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+13:59:28.422 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+13:59:29.278 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+13:59:30.009 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+13:59:30.802 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+13:59:31.284 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+13:59:31.732 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+13:59:32.333 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+13:59:33.060 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+13:59:33.664 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+13:59:34.257 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0046877280
+patch_save_dir:  RESULTS_DIRECTORY/0046877280/patches
+mask_save_dir:  RESULTS_DIRECTORY/0046877280/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0046877280/stitches
+source : ome-tiff/0046877280
+save_dir : RESULTS_DIRECTORY/0046877280
+patch_save_dir : RESULTS_DIRECTORY/0046877280/patches
+mask_save_dir : RESULTS_DIRECTORY/0046877280/masks
+stitch_save_dir : RESULTS_DIRECTORY/0046877280/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0046877280.ome.tif
+Creating patches for:  0046877280.ome ...
+Total number of contours to process:  2
+Bounding Box: 170 5246 4804 4336
+Contour Area: 10996465.0
+Extracted 197 coordinates
+Bounding Box: 0 0 4604 4531
+Contour Area: 14265375.5
+Extracted 247 coordinates
+start stitching 0046877280.ome
+original size: 4974 x 9582
+downscaled size for stiching: 4974 x 9582
+number of patches: 444
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/444 stitched
+progress: 45/444 stitched
+progress: 90/444 stitched
+progress: 135/444 stitched
+progress: 180/444 stitched
+progress: 225/444 stitched
+progress: 270/444 stitched
+progress: 315/444 stitched
+progress: 360/444 stitched
+progress: 405/444 stitched
+segmentation took 2.781965732574463 seconds
+patching took 0.2784595489501953 seconds
+stitching took 0.6385314464569092 seconds
+average segmentation time in s per slide: 2.781965732574463
+average patching time in s per slide: 0.2784595489501953
+average stiching time in s per slide: 0.6385314464569092
+13:59:58.984 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-17453311013885718925
+13:59:58.987 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+13:59:59.211 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:00:04.191 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0047176089.mrxs to ome-tiff/0047176089/0047176089.ome.tif (series 1/1)
+14:00:04.192 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 180 tiles)
+14:00:04.194 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:00:05.152 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:00:05.890 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:00:06.489 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:00:06.966 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:00:07.790 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:00:08.507 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:00:08.950 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:00:09.650 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:00:10.322 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:00:10.822 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0047176089
+patch_save_dir:  RESULTS_DIRECTORY/0047176089/patches
+mask_save_dir:  RESULTS_DIRECTORY/0047176089/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0047176089/stitches
+source : ome-tiff/0047176089
+save_dir : RESULTS_DIRECTORY/0047176089
+patch_save_dir : RESULTS_DIRECTORY/0047176089/patches
+mask_save_dir : RESULTS_DIRECTORY/0047176089/masks
+stitch_save_dir : RESULTS_DIRECTORY/0047176089/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0047176089.ome.tif
+Creating patches for:  0047176089.ome ...
+Total number of contours to process:  10
+Bounding Box: 1128 7382 1107 1243
+Contour Area: 806788.0
+Extracted 18 coordinates
+Bounding Box: 3822 7244 1057 1263
+Contour Area: 768552.5
+Extracted 17 coordinates
+Bounding Box: 65 6544 1771 2093
+Contour Area: 1620814.5
+Extracted 36 coordinates
+Bounding Box: 2746 6469 1694 2107
+Contour Area: 1570891.0
+Extracted 36 coordinates
+Bounding Box: 1033 4422 1106 1257
+Contour Area: 768290.5
+Extracted 18 coordinates
+Bounding Box: 3931 4421 1031 1241
+Contour Area: 748506.5
+Extracted 16 coordinates
+Bounding Box: 2750 3615 1819 2143
+Contour Area: 1606823.5
+Extracted 38 coordinates
+Bounding Box: 13 3561 1831 2020
+Contour Area: 1535878.5
+Extracted 35 coordinates
+Bounding Box: 229 245 2096 2161
+Contour Area: 2594628.0
+Extracted 56 coordinates
+Bounding Box: 2823 186 2131 2280
+Contour Area: 2628671.5
+Extracted 57 coordinates
+start stitching 0047176089.ome
+original size: 4974 x 8874
+downscaled size for stiching: 4974 x 8874
+number of patches: 327
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/327 stitched
+progress: 33/327 stitched
+progress: 66/327 stitched
+progress: 99/327 stitched
+progress: 132/327 stitched
+progress: 165/327 stitched
+progress: 198/327 stitched
+progress: 231/327 stitched
+progress: 264/327 stitched
+progress: 297/327 stitched
+segmentation took 2.2916722297668457 seconds
+patching took 0.564755916595459 seconds
+stitching took 0.5554440021514893 seconds
+average segmentation time in s per slide: 2.2916722297668457
+average patching time in s per slide: 0.564755916595459
+average stiching time in s per slide: 0.5554440021514893
+14:00:35.193 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-7322670977612651190
+14:00:35.197 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:00:35.516 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:00:43.618 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0047953852.mrxs to ome-tiff/0047953852/0047953852.ome.tif (series 1/1)
+14:00:43.620 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 338 tiles)
+14:00:43.623 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:00:44.962 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:00:45.890 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:00:46.697 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:00:47.701 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:00:48.853 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:00:50.050 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:00:51.125 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:00:52.118 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:00:52.833 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:00:53.448 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 100% tiles
+source:  ome-tiff/0047953852
+patch_save_dir:  RESULTS_DIRECTORY/0047953852/patches
+mask_save_dir:  RESULTS_DIRECTORY/0047953852/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0047953852/stitches
+source : ome-tiff/0047953852
+save_dir : RESULTS_DIRECTORY/0047953852
+patch_save_dir : RESULTS_DIRECTORY/0047953852/patches
+mask_save_dir : RESULTS_DIRECTORY/0047953852/masks
+stitch_save_dir : RESULTS_DIRECTORY/0047953852/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0047953852.ome.tif
+Creating patches for:  0047953852.ome ...
+Total number of contours to process:  1
+Bounding Box: 1319 3737 5160 6691
+Contour Area: 20633103.5
+Extracted 369 coordinates
+start stitching 0047953852.ome
+original size: 6493 x 12885
+downscaled size for stiching: 6493 x 12885
+number of patches: 369
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/369 stitched
+progress: 37/369 stitched
+progress: 74/369 stitched
+progress: 111/369 stitched
+progress: 148/369 stitched
+progress: 185/369 stitched
+progress: 222/369 stitched
+progress: 259/369 stitched
+progress: 296/369 stitched
+progress: 333/369 stitched
+segmentation took 3.937242031097412 seconds
+patching took 0.24410033226013184 seconds
+stitching took 0.8482542037963867 seconds
+average segmentation time in s per slide: 3.937242031097412
+average patching time in s per slide: 0.24410033226013184
+average stiching time in s per slide: 0.8482542037963867
+14:01:18.565 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-18370824703846657665
+14:01:18.568 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:01:18.760 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:01:22.855 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0048086809.mrxs to ome-tiff/0048086809/0048086809.ome.tif (series 1/1)
+14:01:22.857 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 171 tiles)
+14:01:22.860 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:01:23.758 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:01:24.411 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:01:25.030 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:01:25.628 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:01:26.241 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:01:26.737 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:01:27.119 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:01:27.419 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:01:27.680 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:01:28.065 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0048086809
+patch_save_dir:  RESULTS_DIRECTORY/0048086809/patches
+mask_save_dir:  RESULTS_DIRECTORY/0048086809/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0048086809/stitches
+source : ome-tiff/0048086809
+save_dir : RESULTS_DIRECTORY/0048086809
+patch_save_dir : RESULTS_DIRECTORY/0048086809/patches
+mask_save_dir : RESULTS_DIRECTORY/0048086809/masks
+stitch_save_dir : RESULTS_DIRECTORY/0048086809/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0048086809.ome.tif
+Creating patches for:  0048086809.ome ...
+Total number of contours to process:  1
+Bounding Box: 580 873 3398 5949
+Contour Area: 14530224.5
+Extracted 242 coordinates
+start stitching 0048086809.ome
+original size: 4258 x 9676
+downscaled size for stiching: 4258 x 9676
+number of patches: 242
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/242 stitched
+progress: 25/242 stitched
+progress: 50/242 stitched
+progress: 75/242 stitched
+progress: 100/242 stitched
+progress: 125/242 stitched
+progress: 150/242 stitched
+progress: 175/242 stitched
+progress: 200/242 stitched
+progress: 225/242 stitched
+segmentation took 2.045438766479492 seconds
+patching took 0.1067204475402832 seconds
+stitching took 0.486224889755249 seconds
+average segmentation time in s per slide: 2.045438766479492
+average patching time in s per slide: 0.1067204475402832
+average stiching time in s per slide: 0.486224889755249
+14:01:44.574 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-7498081305735495785
+14:01:44.577 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:01:44.751 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:01:49.609 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0049547258.mrxs to ome-tiff/0049547258/0049547258.ome.tif (series 1/1)
+14:01:49.610 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 190 tiles)
+14:01:49.613 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:01:50.771 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:01:51.568 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:01:52.286 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:01:52.973 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:01:53.495 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:01:54.327 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:01:54.965 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:01:55.656 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:01:56.202 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:01:56.679 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0049547258
+patch_save_dir:  RESULTS_DIRECTORY/0049547258/patches
+mask_save_dir:  RESULTS_DIRECTORY/0049547258/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0049547258/stitches
+source : ome-tiff/0049547258
+save_dir : RESULTS_DIRECTORY/0049547258
+patch_save_dir : RESULTS_DIRECTORY/0049547258/patches
+mask_save_dir : RESULTS_DIRECTORY/0049547258/masks
+stitch_save_dir : RESULTS_DIRECTORY/0049547258/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0049547258.ome.tif
+Creating patches for:  0049547258.ome ...
+Total number of contours to process:  2
+Bounding Box: 235 4689 4592 4746
+Contour Area: 13623354.0
+Extracted 216 coordinates
+Bounding Box: 150 0 4801 4347
+Contour Area: 13399903.0
+Extracted 211 coordinates
+start stitching 0049547258.ome
+original size: 5017 x 9625
+downscaled size for stiching: 5017 x 9625
+number of patches: 427
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/427 stitched
+progress: 43/427 stitched
+progress: 86/427 stitched
+progress: 129/427 stitched
+progress: 172/427 stitched
+progress: 215/427 stitched
+progress: 258/427 stitched
+progress: 301/427 stitched
+progress: 344/427 stitched
+progress: 387/427 stitched
+segmentation took 2.8288400173187256 seconds
+patching took 0.1704235076904297 seconds
+stitching took 0.63193678855896 seconds
+average segmentation time in s per slide: 2.8288400173187256
+average patching time in s per slide: 0.1704235076904297
+average stiching time in s per slide: 0.63193678855896
+14:02:13.473 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-9086362586764476264
+14:02:13.475 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:02:13.726 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:02:19.959 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0054130784.mrxs to ome-tiff/0054130784/0054130784.ome.tif (series 1/1)
+14:02:19.961 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 260 tiles)
+14:02:19.964 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:02:21.037 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:02:21.866 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:02:22.888 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:02:23.835 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:02:24.720 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:02:25.497 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:02:26.051 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:02:26.486 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:02:26.954 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:02:27.429 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 100% tiles
+source:  ome-tiff/0054130784
+patch_save_dir:  RESULTS_DIRECTORY/0054130784/patches
+mask_save_dir:  RESULTS_DIRECTORY/0054130784/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0054130784/stitches
+source : ome-tiff/0054130784
+save_dir : RESULTS_DIRECTORY/0054130784
+patch_save_dir : RESULTS_DIRECTORY/0054130784/patches
+mask_save_dir : RESULTS_DIRECTORY/0054130784/masks
+stitch_save_dir : RESULTS_DIRECTORY/0054130784/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0054130784.ome.tif
+Creating patches for:  0054130784.ome ...
+Total number of contours to process:  3
+Bounding Box: 672 4207 1365 1845
+Contour Area: 897945.0
+Extracted 18 coordinates
+Bounding Box: 3218 1022 1122 1152
+Contour Area: 707546.5
+Extracted 16 coordinates
+Bounding Box: 362 137 5688 7056
+Contour Area: 17444748.0
+Extracted 298 coordinates
+start stitching 0054130784.ome
+original size: 6280 x 9890
+downscaled size for stiching: 6280 x 9890
+number of patches: 332
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/332 stitched
+progress: 34/332 stitched
+progress: 68/332 stitched
+progress: 102/332 stitched
+progress: 136/332 stitched
+progress: 170/332 stitched
+progress: 204/332 stitched
+progress: 238/332 stitched
+progress: 272/332 stitched
+progress: 306/332 stitched
+segmentation took 3.3292229175567627 seconds
+patching took 0.24663901329040527 seconds
+stitching took 0.667999267578125 seconds
+average segmentation time in s per slide: 3.3292229175567627
+average patching time in s per slide: 0.24663901329040527
+average stiching time in s per slide: 0.667999267578125
+14:02:43.900 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-610497050205641330
+14:02:43.904 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:02:44.174 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:02:48.755 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0055483886.mrxs to ome-tiff/0055483886/0055483886.ome.tif (series 1/1)
+14:02:48.756 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 195 tiles)
+14:02:48.760 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:02:49.661 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:02:50.250 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:02:50.950 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:02:51.555 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:02:52.233 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:02:52.955 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:02:53.906 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:02:54.530 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:02:55.039 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:02:55.574 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0055483886
+patch_save_dir:  RESULTS_DIRECTORY/0055483886/patches
+mask_save_dir:  RESULTS_DIRECTORY/0055483886/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0055483886/stitches
+source : ome-tiff/0055483886
+save_dir : RESULTS_DIRECTORY/0055483886
+patch_save_dir : RESULTS_DIRECTORY/0055483886/patches
+mask_save_dir : RESULTS_DIRECTORY/0055483886/masks
+stitch_save_dir : RESULTS_DIRECTORY/0055483886/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0055483886.ome.tif
+Creating patches for:  0055483886.ome ...
+Total number of contours to process:  4
+Bounding Box: 352 3423 2592 3297
+Contour Area: 5052304.0
+Extracted 91 coordinates
+Bounding Box: 2101 3399 815 877
+Contour Area: 430949.5
+Extracted 10 coordinates
+Bounding Box: 2759 1141 3216 6001
+Contour Area: 8412440.0
+Extracted 157 coordinates
+Bounding Box: 1266 92 2310 3224
+Contour Area: 4775037.0
+Extracted 87 coordinates
+start stitching 0055483886.ome
+original size: 6289 x 7500
+downscaled size for stiching: 6289 x 7500
+number of patches: 345
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/345 stitched
+progress: 35/345 stitched
+progress: 70/345 stitched
+progress: 105/345 stitched
+progress: 140/345 stitched
+progress: 175/345 stitched
+progress: 210/345 stitched
+progress: 245/345 stitched
+progress: 280/345 stitched
+progress: 315/345 stitched
+segmentation took 2.431802749633789 seconds
+patching took 0.2158653736114502 seconds
+stitching took 0.5914061069488525 seconds
+average segmentation time in s per slide: 2.431802749633789
+average patching time in s per slide: 0.2158653736114502
+average stiching time in s per slide: 0.5914061069488525
+14:03:09.381 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-6600856699847319511
+14:03:09.383 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:03:09.537 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:03:12.745 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 0057134497.mrxs to ome-tiff/0057134497/0057134497.ome.tif (series 1/1)
+14:03:12.746 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 150 tiles)
+14:03:12.749 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:03:13.416 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:03:13.894 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:03:14.432 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:03:14.964 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:03:15.544 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:03:15.969 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:03:16.354 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:03:16.606 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:03:16.922 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:03:17.235 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/0057134497
+patch_save_dir:  RESULTS_DIRECTORY/0057134497/patches
+mask_save_dir:  RESULTS_DIRECTORY/0057134497/masks
+stitch_save_dir:  RESULTS_DIRECTORY/0057134497/stitches
+source : ome-tiff/0057134497
+save_dir : RESULTS_DIRECTORY/0057134497
+patch_save_dir : RESULTS_DIRECTORY/0057134497/patches
+mask_save_dir : RESULTS_DIRECTORY/0057134497/masks
+stitch_save_dir : RESULTS_DIRECTORY/0057134497/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 0057134497.ome.tif
+Creating patches for:  0057134497.ome ...
+Total number of contours to process:  1
+Bounding Box: 0 0 4812 5420
+Contour Area: 15803020.5
+Extracted 267 coordinates
+start stitching 0057134497.ome
+original size: 4812 x 7406
+downscaled size for stiching: 4812 x 7406
+number of patches: 267
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/267 stitched
+progress: 27/267 stitched
+progress: 54/267 stitched
+progress: 81/267 stitched
+progress: 108/267 stitched
+progress: 135/267 stitched
+progress: 162/267 stitched
+progress: 189/267 stitched
+progress: 216/267 stitched
+progress: 243/267 stitched
+segmentation took 2.1978814601898193 seconds
+patching took 0.09524798393249512 seconds
+stitching took 0.44216370582580566 seconds
+average segmentation time in s per slide: 2.1978814601898193
+average patching time in s per slide: 0.09524798393249512
+average stiching time in s per slide: 0.44216370582580566
+14:03:29.177 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-7556852317948878151
+14:03:29.180 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:03:29.468 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:03:36.306 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing 30.mrxs to ome-tiff/30/30.ome.tif (series 1/1)
+14:03:36.307 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 276 tiles)
+14:03:36.312 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:03:37.571 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:03:38.755 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:03:39.968 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:03:40.910 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:03:41.939 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:03:42.996 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:03:44.079 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:03:45.208 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:03:46.054 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:03:46.843 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 100% tiles
+source:  ome-tiff/30
+patch_save_dir:  RESULTS_DIRECTORY/30/patches
+mask_save_dir:  RESULTS_DIRECTORY/30/masks
+stitch_save_dir:  RESULTS_DIRECTORY/30/stitches
+source : ome-tiff/30
+save_dir : RESULTS_DIRECTORY/30
+patch_save_dir : RESULTS_DIRECTORY/30/patches
+mask_save_dir : RESULTS_DIRECTORY/30/masks
+stitch_save_dir : RESULTS_DIRECTORY/30/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing 30.ome.tif
+Creating patches for:  30.ome ...
+Total number of contours to process:  2
+Bounding Box: 402 5979 5350 5430
+Contour Area: 18855415.5
+Extracted 323 coordinates
+Bounding Box: 275 130 5290 5694
+Contour Area: 20252820.5
+Extracted 341 coordinates
+start stitching 30.ome
+original size: 6033 x 11750
+downscaled size for stiching: 6033 x 11750
+number of patches: 664
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/664 stitched
+progress: 67/664 stitched
+progress: 134/664 stitched
+progress: 201/664 stitched
+progress: 268/664 stitched
+progress: 335/664 stitched
+progress: 402/664 stitched
+progress: 469/664 stitched
+progress: 536/664 stitched
+progress: 603/664 stitched
+segmentation took 3.6594460010528564 seconds
+patching took 0.2220003604888916 seconds
+stitching took 0.9325687885284424 seconds
+average segmentation time in s per slide: 3.6594460010528564
+average patching time in s per slide: 0.2220003604888916
+average stiching time in s per slide: 0.9325687885284424
+14:04:04.650 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-6001211960532561558
+14:04:04.653 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:04:04.896 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:04:11.195 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing DigitalSlide_E6M_15S_1.mrxs to ome-tiff/DigitalSlide_E6M_15S_1/DigitalSlide_E6M_15S_1.ome.tif (series 1/1)
+14:04:11.197 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 273 tiles)
+14:04:11.200 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:04:12.380 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:04:13.451 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:04:14.689 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:04:15.756 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:04:17.026 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:04:18.022 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:04:18.977 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:04:19.566 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:04:20.055 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:04:20.564 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 100% tiles
+source:  ome-tiff/DigitalSlide_E6M_15S_1
+patch_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1/patches
+mask_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1/masks
+stitch_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1/stitches
+source : ome-tiff/DigitalSlide_E6M_15S_1
+save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1
+patch_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1/patches
+mask_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1/masks
+stitch_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_15S_1/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing DigitalSlide_E6M_15S_1.ome.tif
+Creating patches for:  DigitalSlide_E6M_15S_1.ome ...
+Total number of contours to process:  2
+Bounding Box: 1399 230 1101 718
+Contour Area: 362901.0
+Extracted 8 coordinates
+Bounding Box: 254 200 6222 7948
+Contour Area: 32795220.0
+Extracted 546 coordinates
+start stitching DigitalSlide_E6M_15S_1.ome
+original size: 6476 x 10419
+downscaled size for stiching: 6476 x 10419
+number of patches: 554
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/554 stitched
+progress: 56/554 stitched
+progress: 112/554 stitched
+progress: 168/554 stitched
+progress: 224/554 stitched
+progress: 280/554 stitched
+progress: 336/554 stitched
+progress: 392/554 stitched
+progress: 448/554 stitched
+progress: 504/554 stitched
+segmentation took 4.006843566894531 seconds
+patching took 0.1904158592224121 seconds
+stitching took 0.8315892219543457 seconds
+average segmentation time in s per slide: 4.006843566894531
+average patching time in s per slide: 0.1904158592224121
+average stiching time in s per slide: 0.8315892219543457
+14:04:38.898 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-9963026715296109247
+14:04:38.901 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:04:39.162 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:04:43.528 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing DigitalSlide_E6M_17S_1.mrxs to ome-tiff/DigitalSlide_E6M_17S_1/DigitalSlide_E6M_17S_1.ome.tif (series 1/1)
+14:04:43.529 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 198 tiles)
+14:04:43.532 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:04:44.732 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:04:45.534 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:04:46.189 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:04:46.777 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:04:47.197 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:04:47.879 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:04:48.546 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:04:49.287 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:04:49.844 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:04:50.252 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 99% tiles
+source:  ome-tiff/DigitalSlide_E6M_17S_1
+patch_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1/patches
+mask_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1/masks
+stitch_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1/stitches
+source : ome-tiff/DigitalSlide_E6M_17S_1
+save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1
+patch_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1/patches
+mask_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1/masks
+stitch_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_17S_1/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing DigitalSlide_E6M_17S_1.ome.tif
+Creating patches for:  DigitalSlide_E6M_17S_1.ome ...
+Total number of contours to process:  2
+Bounding Box: 213 4669 4609 4032
+Contour Area: 11061759.5
+Extracted 183 coordinates
+Bounding Box: 290 0 4719 4133
+Contour Area: 11449485.5
+Extracted 192 coordinates
+start stitching DigitalSlide_E6M_17S_1.ome
+original size: 5290 x 8763
+downscaled size for stiching: 5290 x 8763
+number of patches: 375
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/375 stitched
+progress: 38/375 stitched
+progress: 76/375 stitched
+progress: 114/375 stitched
+progress: 152/375 stitched
+progress: 190/375 stitched
+progress: 228/375 stitched
+progress: 266/375 stitched
+progress: 304/375 stitched
+progress: 342/375 stitched
+segmentation took 2.512770652770996 seconds
+patching took 0.15770745277404785 seconds
+stitching took 0.5919713973999023 seconds
+average segmentation time in s per slide: 2.512770652770996
+average patching time in s per slide: 0.15770745277404785
+average stiching time in s per slide: 0.5919713973999023
+14:05:03.465 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - Temp memoization directory created at /tmp/qupath-memo-7787316195050897780
+14:05:03.468 [main] [WARN ] q.l.i.s.b.BioFormatsImageServer - If you want to avoid this warning, either disable Bio-Formats memoization in the preferences or specify a directory to use
+14:05:03.791 [main] [INFO ] q.l.i.s.o.OpenslideServerBuilder - OpenSlide version 3.4.1
+14:05:12.420 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing DigitalSlide_E6M_20S_1.mrxs to ome-tiff/DigitalSlide_E6M_20S_1/DigitalSlide_E6M_20S_1.ome.tif (series 1/1)
+14:05:12.421 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing resolution 1 of 1 (downsample=30.0, 338 tiles)
+14:05:12.424 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Writing plane 1/1
+14:05:14.132 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 10% tiles
+14:05:15.436 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 20% tiles
+14:05:16.913 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 30% tiles
+14:05:17.934 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 40% tiles
+14:05:19.004 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 50% tiles
+14:05:20.547 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 60% tiles
+14:05:21.768 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 70% tiles
+14:05:22.869 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 80% tiles
+14:05:23.577 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 90% tiles
+14:05:24.280 [main] [INFO ] q.l.i.writers.ome.OMEPyramidWriter - Written 100% tiles
+source:  ome-tiff/DigitalSlide_E6M_20S_1
+patch_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1/patches
+mask_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1/masks
+stitch_save_dir:  RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1/stitches
+source : ome-tiff/DigitalSlide_E6M_20S_1
+save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1
+patch_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1/patches
+mask_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1/masks
+stitch_save_dir : RESULTS_DIRECTORY/DigitalSlide_E6M_20S_1/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 8, 'mthresh': 7, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 250}}
+
+
+progress: 0.00, 0/1
+processing DigitalSlide_E6M_20S_1.ome.tif
+Creating patches for:  DigitalSlide_E6M_20S_1.ome ...
+Total number of contours to process:  2
+Bounding Box: 118 5893 6304 5671
+Contour Area: 19822385.0
+Extracted 338 coordinates
+Bounding Box: 0 11 6133 4891
+Contour Area: 19524044.0
+Extracted 326 coordinates
+start stitching DigitalSlide_E6M_20S_1.ome
+original size: 6579 x 13149
+downscaled size for stiching: 6579 x 13149
+number of patches: 664
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 256x256
+progress: 0/664 stitched
+progress: 67/664 stitched
+progress: 134/664 stitched
+progress: 201/664 stitched
+progress: 268/664 stitched
+progress: 335/664 stitched
+progress: 402/664 stitched
+progress: 469/664 stitched
+progress: 536/664 stitched
+progress: 603/664 stitched
+segmentation took 4.6632161140441895 seconds
+patching took 0.2361161708831787 seconds
+stitching took 1.0433614253997803 seconds
+average segmentation time in s per slide: 4.6632161140441895
+average patching time in s per slide: 0.2361161708831787
+average stiching time in s per slide: 1.0433614253997803

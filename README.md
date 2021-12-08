@@ -409,4 +409,18 @@ df_edited.equals(df_new)
 
 being `True` (see `/home/weismanal/notebook/2021-12-07/testing_pinyi_segmentation_pipeline/full/scratch_on_2021-12-07.ipynb`), we know that the outputted segmentation parameters are the same as the inputted ones; we should indeed be segmenting the downsampled `.ome.tif` files using Pinyi's segmentation parameters and can now try visually observing the stitching results.
 
+## Stitching comparisons
+
+```bash
+bash create_stitches_gallery.sh "default bwh_biopsy  bwh_resection tcga  pinyi  pinyi-median pinyi-on-tif-files"
+```
+
+Upon observing the results of the masks and stitches on the `.ome.tif` files, I see that unfortunately just as for the `.mrxs` files the JPEGs of the stiches looked reasonable but the masks looked bad (strange black grid on top of the images), for the `.ome.tif` files the JPEGs of the masks look reasonable but the stitches look bad in the same exact way, rendering impossible visual comparison between the stitches.
+
+Backing up and resizing all stitches using:
+
+```bash
+bash resize_stitches.sh
+```
+
 **Ensure for each script I look at the arguments that I can modify using the `-h` option.**

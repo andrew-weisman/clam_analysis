@@ -197,4 +197,26 @@ python $CLAM/main.py --max_epochs 3 --drop_out --early_stopping --lr 2e-4 --k 2 
 sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
 ```
 
+### To transfer data from Box to Biowulf
+
+After setting up `rclone` for use on Biowulf per [these instructions](https://hpc.nih.gov/docs/box_onedrive.html):
+
+```bash
+module load rclone
+rclone config  # ONLY for rclone setup per above instructions
+read -rs RCLONE_CONFIG_PASS
+export RCLONE_CONFIG_PASS
+cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/
+mkcd batch_003
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch" .
+mkcd ../batch_004
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch" .
+mkcd ../batch_005
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fifth Batch" .
+mkcd ../batch_006
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Sixth batch" .
+mkcd ../batch_007
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch" .
+```
+
 **Ensure for each script I look at the arguments that I can modify using the `-h` option.**

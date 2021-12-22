@@ -38,3 +38,19 @@
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Sixth batch/B04-12726 POLE/DigitalSlide_E10M_7S_1_20210914145322714.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fifth Batch/5th batch/b16-8959 MSI/DigitalSlide_D4M_1S_1_20210922131645990.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fifth Batch/5th batch/b19-25301 MSI/DigitalSlide_D4M_2S_1_20210922131740429.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B03-9015 POLE/DigitalSlide_C10M_1S_1.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B09-7155 POLE/DigitalSlide_C10M_2S_1.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B09-12143 POLE/DigitalSlide_C10M_3S_1.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B15-22750 POLE/0029553565.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B15-29229 POLE/0030657581.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B15-29244 LCN/BB150007349-A-01-001.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B16-14597 LCN/B-160004549-01-B-001.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B16-22644 POLE/0035146620.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B18-8015 POLE/DigitalSlide_C10M_9S_1.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B18-17941 POLE/DigitalSlide_C10M_12S_1.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B19-22798 POLE/0051341579.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B20-27200 p53/0058263272.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B21-857 p53/0059072087.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B21-5996 LCN/DigitalSlide_C10M_19S_1.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B21-28925 MSI/0063366529.mrxs
+./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch/B21-30541 p53/0063610642.mrxs

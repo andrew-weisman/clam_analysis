@@ -1,3 +1,5 @@
+# Note: Must first run "sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box" on work laptop
+
 IFS=$'\n'
 ls -ltr $(find /mnt/box -iname "*.mrxs") | awk -v FS=" /mnt/box/Research_collaboration-IDIBELL" '{printf("./Research_collaboration-IDIBELL%s\n", $2)}' > filenames.txt
 for file in $(cat filenames.txt); do echo $file | rev | awk -v FS="/" '{print $2}' | awk '{print $1}' | rev; done > labels.txt

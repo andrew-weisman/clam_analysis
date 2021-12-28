@@ -199,7 +199,7 @@ Run e.g.:
 
 ```bash
 # In general
-python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 5 --val_frac 0.33 --test_frac 0.33 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k5-val_frac0.33-test_frac0.33.log
+python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 5 --val_frac 0.15 --test_frac 0.15 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k5-val_frac0.15-test_frac0.15.log
 
 # My short test
 python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 2 --val_frac 0.33 --test_frac 0.33 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k2-val_frac0.33-test_frac0.33.log

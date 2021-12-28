@@ -1,4 +1,5 @@
 ,train,val,test
-pole,1,2,2
-lcn,1,2,2
-p53,2,2,2
+pole,9,2,2
+msi,10,2,2
+lcn,9,2,2
+p53,10,2,2

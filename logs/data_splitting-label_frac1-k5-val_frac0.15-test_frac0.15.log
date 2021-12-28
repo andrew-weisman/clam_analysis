@@ -1,0 +1,117 @@
+label column: label
+label dictionary: {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+number of classes: 4
+slide-level counts:  
+ 0    13
+1    14
+2    13
+3    14
+Name: label, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 13
+Slide-LVL; Number of samples registered in class 0: 13
+Patient-LVL; Number of samples registered in class 1: 14
+Slide-LVL; Number of samples registered in class 1: 14
+Patient-LVL; Number of samples registered in class 2: 13
+Slide-LVL; Number of samples registered in class 2: 13
+Patient-LVL; Number of samples registered in class 3: 14
+Slide-LVL; Number of samples registered in class 3: 14
+
+number of training samples: 38
+number of samples in cls 0: 9
+number of samples in cls 1: 10
+number of samples in cls 2: 9
+number of samples in cls 3: 10
+
+number of val samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+number of test samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+
+
+number of training samples: 38
+number of samples in cls 0: 9
+number of samples in cls 1: 10
+number of samples in cls 2: 9
+number of samples in cls 3: 10
+
+number of val samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+number of test samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+
+
+number of training samples: 38
+number of samples in cls 0: 9
+number of samples in cls 1: 10
+number of samples in cls 2: 9
+number of samples in cls 3: 10
+
+number of val samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+number of test samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+
+
+number of training samples: 38
+number of samples in cls 0: 9
+number of samples in cls 1: 10
+number of samples in cls 2: 9
+number of samples in cls 3: 10
+
+number of val samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+number of test samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+
+
+number of training samples: 38
+number of samples in cls 0: 9
+number of samples in cls 1: 10
+number of samples in cls 2: 9
+number of samples in cls 3: 10
+
+number of val samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+number of test samples: 8
+number of samples in cls 0: 2
+number of samples in cls 1: 2
+number of samples in cls 2: 2
+number of samples in cls 3: 2
+
+

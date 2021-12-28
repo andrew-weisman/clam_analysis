@@ -145,14 +145,16 @@ Note that the `task` argument to `$CLAM/main.py` corresponds to `idibell` and ad
 elif args.task == 'idibell':
     args.n_classes=4
     working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
-    dataset_name = 'pinyi'
+    dataset_name = 'bwh_resection'
+    label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+    label_col = 'label'
     dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
                             data_dir= os.path.join(working_dir, 'results', dataset_name, 'features'),
                             shuffle = False, 
                             seed = args.seed, 
                             print_info = True,
-                            label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3},
-                            label_col = 'label',
+                            label_dict = label_dict,
+                            label_col = label_col,
                             patient_strat= False,
                             ignore=[])
 
@@ -172,12 +174,14 @@ Likewise, to `$CLAM/create_splits_seq.py` add the block
 elif args.task == 'idibell':
     args.n_classes=4
     working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+    label_col = 'label'
     dataset = Generic_WSI_Classification_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
                             shuffle = False, 
                             seed = args.seed, 
                             print_info = True,
-                            label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3},
-                            label_col = 'label',
+                            label_dict = label_dict,
+                            label_col = label_col,
                             patient_strat= True,
                             patient_voting='maj',
                             ignore=[])

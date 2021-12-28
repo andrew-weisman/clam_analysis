@@ -1,0 +1,855 @@
+initializing dataset
+loading model checkpoint
+
+progress: 0/54
+0029468706
+skipped 0029468706
+
+progress: 1/54
+0029553565
+skipped 0029553565
+
+progress: 2/54
+0030657581
+skipped 0030657581
+
+progress: 3/54
+0035146620
+skipped 0035146620
+
+progress: 4/54
+0042034876
+skipped 0042034876
+
+progress: 5/54
+0042711961
+skipped 0042711961
+
+progress: 6/54
+0042951302
+skipped 0042951302
+
+progress: 7/54
+0046877280
+skipped 0046877280
+
+progress: 8/54
+0047176089
+skipped 0047176089
+
+progress: 9/54
+0047953852
+skipped 0047953852
+
+progress: 10/54
+0048086809
+skipped 0048086809
+
+progress: 11/54
+0049547258
+skipped 0049547258
+
+progress: 12/54
+0049556653
+skipped 0049556653
+
+progress: 13/54
+0050394746
+skipped 0050394746
+
+progress: 14/54
+0051341579
+skipped 0051341579
+
+progress: 15/54
+0054130784
+skipped 0054130784
+
+progress: 16/54
+0054815807
+skipped 0054815807
+
+progress: 17/54
+0055483886
+skipped 0055483886
+
+progress: 18/54
+0057134497
+skipped 0057134497
+
+progress: 19/54
+0058263272
+skipped 0058263272
+
+progress: 20/54
+0059072087
+skipped 0059072087
+
+progress: 21/54
+0063366529
+skipped 0063366529
+
+progress: 22/54
+0063610642
+skipped 0063610642
+
+progress: 23/54
+30
+skipped 30
+
+progress: 24/54
+B-160004549-01-B-001
+skipped B-160004549-01-B-001
+
+progress: 25/54
+BB150007349-A-01-001
+skipped BB150007349-A-01-001
+
+progress: 26/54
+DigitalSlide_B2M_11S_1_20210826183548302
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_11S_1_20210826183548302
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d663610>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_11S_1_20210826183548302.h5: total of 76 batches
+batch 0/76, 0 files processed
+batch 20/76, 17600 files processed
+batch 40/76, 35200 files processed
+batch 60/76, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_11S_1_20210826183548302.h5 took 126.94760251045227 s
+features size:  (66789, 1024)
+coordinates size:  (66789, 2)
+
+progress: 27/54
+DigitalSlide_B2M_12S_1_20210826183648767
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_12S_1_20210826183648767
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab139a11d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_12S_1_20210826183648767.h5: total of 27 batches
+batch 0/27, 0 files processed
+batch 20/27, 17600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_12S_1_20210826183648767.h5 took 47.62442350387573 s
+features size:  (23122, 1024)
+coordinates size:  (23122, 2)
+
+progress: 28/54
+DigitalSlide_B2M_1S_1_20210826183728179
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_1S_1_20210826183728179
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1134a590>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_1S_1_20210826183728179.h5: total of 65 batches
+batch 0/65, 0 files processed
+batch 20/65, 17600 files processed
+batch 40/65, 35200 files processed
+batch 60/65, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_1S_1_20210826183728179.h5 took 106.73919296264648 s
+features size:  (57038, 1024)
+coordinates size:  (57038, 2)
+
+progress: 29/54
+DigitalSlide_B2M_3S_1_20210826183921228
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_3S_1_20210826183921228
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8a1890>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_3S_1_20210826183921228.h5: total of 74 batches
+batch 0/74, 0 files processed
+batch 20/74, 17600 files processed
+batch 40/74, 35200 files processed
+batch 60/74, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_3S_1_20210826183921228.h5 took 121.16287660598755 s
+features size:  (64834, 1024)
+coordinates size:  (64834, 2)
+
+progress: 30/54
+DigitalSlide_B2M_4S_1_20210826184014839
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_4S_1_20210826184014839
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8a1490>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_4S_1_20210826184014839.h5: total of 21 batches
+batch 0/21, 0 files processed
+batch 20/21, 17600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_4S_1_20210826184014839.h5 took 38.8009729385376 s
+features size:  (18329, 1024)
+coordinates size:  (18329, 2)
+
+progress: 31/54
+DigitalSlide_B2M_5S_1_20210826184054251
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_5S_1_20210826184054251
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d663610>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_5S_1_20210826184054251.h5: total of 93 batches
+batch 0/93, 0 files processed
+batch 20/93, 17600 files processed
+batch 40/93, 35200 files processed
+batch 60/93, 52800 files processed
+batch 80/93, 70400 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_5S_1_20210826184054251.h5 took 150.43488836288452 s
+features size:  (81420, 1024)
+coordinates size:  (81420, 2)
+
+progress: 32/54
+DigitalSlide_B2M_6S_1_20210826184158873
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_6S_1_20210826184158873
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab13482c90>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_6S_1_20210826184158873.h5: total of 119 batches
+batch 0/119, 0 files processed
+batch 20/119, 17600 files processed
+batch 40/119, 35200 files processed
+batch 60/119, 52800 files processed
+batch 80/119, 70400 files processed
+batch 100/119, 88000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_6S_1_20210826184158873.h5 took 191.19091963768005 s
+features size:  (104549, 1024)
+coordinates size:  (104549, 2)
+
+progress: 33/54
+DigitalSlide_B2M_7S_1_20210826184304020
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_7S_1_20210826184304020
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab111f5ad0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_7S_1_20210826184304020.h5: total of 54 batches
+batch 0/54, 0 files processed
+batch 20/54, 17600 files processed
+batch 40/54, 35200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_7S_1_20210826184304020.h5 took 90.2709813117981 s
+features size:  (47433, 1024)
+coordinates size:  (47433, 2)
+
+progress: 34/54
+DigitalSlide_B2M_8S_1_20210826184401956
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_8S_1_20210826184401956
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab13482c90>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_8S_1_20210826184401956.h5: total of 67 batches
+batch 0/67, 0 files processed
+batch 20/67, 17600 files processed
+batch 40/67, 35200 files processed
+batch 60/67, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_8S_1_20210826184401956.h5 took 110.452308177948 s
+features size:  (58270, 1024)
+coordinates size:  (58270, 2)
+
+progress: 35/54
+DigitalSlide_B2M_9S_1_20210826184515465
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_9S_1_20210826184515465
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d681d90>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_9S_1_20210826184515465.h5: total of 19 batches
+batch 0/19, 0 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B2M_9S_1_20210826184515465.h5 took 35.25262713432312 s
+features size:  (16373, 1024)
+coordinates size:  (16373, 2)
+
+progress: 36/54
+DigitalSlide_B9M_11S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_11S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab139c2290>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B9M_11S_1.h5: total of 64 batches
+batch 0/64, 0 files processed
+batch 20/64, 17600 files processed
+batch 40/64, 35200 files processed
+batch 60/64, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B9M_11S_1.h5 took 105.4044497013092 s
+features size:  (56291, 1024)
+coordinates size:  (56291, 2)
+
+progress: 37/54
+DigitalSlide_B9M_14S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_14S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8b4e10>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B9M_14S_1.h5: total of 113 batches
+batch 0/113, 0 files processed
+batch 20/113, 17600 files processed
+batch 40/113, 35200 files processed
+batch 60/113, 52800 files processed
+batch 80/113, 70400 files processed
+batch 100/113, 88000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B9M_14S_1.h5 took 182.28101801872253 s
+features size:  (99257, 1024)
+coordinates size:  (99257, 2)
+
+progress: 38/54
+DigitalSlide_B9M_16S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_16S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f871310>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B9M_16S_1.h5: total of 206 batches
+batch 0/206, 0 files processed
+batch 20/206, 17600 files processed
+batch 40/206, 35200 files processed
+batch 60/206, 52800 files processed
+batch 80/206, 70400 files processed
+batch 100/206, 88000 files processed
+batch 120/206, 105600 files processed
+batch 140/206, 123200 files processed
+batch 160/206, 140800 files processed
+batch 180/206, 158400 files processed
+batch 200/206, 176000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B9M_16S_1.h5 took 328.4908938407898 s
+features size:  (181076, 1024)
+coordinates size:  (181076, 2)
+
+progress: 39/54
+DigitalSlide_B9M_6S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_6S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11344410>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B9M_6S_1.h5: total of 171 batches
+batch 0/171, 0 files processed
+batch 20/171, 17600 files processed
+batch 40/171, 35200 files processed
+batch 60/171, 52800 files processed
+batch 80/171, 70400 files processed
+batch 100/171, 88000 files processed
+batch 120/171, 105600 files processed
+batch 140/171, 123200 files processed
+batch 160/171, 140800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B9M_6S_1.h5 took 273.5169713497162 s
+features size:  (149988, 1024)
+coordinates size:  (149988, 2)
+
+progress: 40/54
+DigitalSlide_B9M_7S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_7S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab121d0750>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B9M_7S_1.h5: total of 186 batches
+batch 0/186, 0 files processed
+batch 20/186, 17600 files processed
+batch 40/186, 35200 files processed
+batch 60/186, 52800 files processed
+batch 80/186, 70400 files processed
+batch 100/186, 88000 files processed
+batch 120/186, 105600 files processed
+batch 140/186, 123200 files processed
+batch 160/186, 140800 files processed
+batch 180/186, 158400 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B9M_7S_1.h5 took 297.16112661361694 s
+features size:  (163352, 1024)
+coordinates size:  (163352, 2)
+
+progress: 41/54
+DigitalSlide_B9M_8S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_8S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1b588d50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B9M_8S_1.h5: total of 239 batches
+batch 0/239, 0 files processed
+batch 20/239, 17600 files processed
+batch 40/239, 35200 files processed
+batch 60/239, 52800 files processed
+batch 80/239, 70400 files processed
+batch 100/239, 88000 files processed
+batch 120/239, 105600 files processed
+batch 140/239, 123200 files processed
+batch 160/239, 140800 files processed
+batch 180/239, 158400 files processed
+batch 200/239, 176000 files processed
+batch 220/239, 193600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_B9M_8S_1.h5 took 380.46052527427673 s
+features size:  (209612, 1024)
+coordinates size:  (209612, 2)
+
+progress: 42/54
+DigitalSlide_C10M_12S_1
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_C10M_12S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11344450>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_C10M_12S_1.h5: total of 68 batches
+batch 0/68, 0 files processed
+batch 20/68, 17600 files processed
+batch 40/68, 35200 files processed
+batch 60/68, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_C10M_12S_1.h5 took 112.22184681892395 s
+features size:  (59350, 1024)
+coordinates size:  (59350, 2)
+
+progress: 43/54
+DigitalSlide_C10M_19S_1
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_C10M_19S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f88f490>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_C10M_19S_1.h5: total of 129 batches
+batch 0/129, 0 files processed
+batch 20/129, 17600 files processed
+batch 40/129, 35200 files processed
+batch 60/129, 52800 files processed
+batch 80/129, 70400 files processed
+batch 100/129, 88000 files processed
+batch 120/129, 105600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_C10M_19S_1.h5 took 209.57077717781067 s
+features size:  (113492, 1024)
+coordinates size:  (113492, 2)
+
+progress: 44/54
+DigitalSlide_C10M_1S_1
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_C10M_1S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f888d10>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_C10M_1S_1.h5: total of 13 batches
+batch 0/13, 0 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_C10M_1S_1.h5 took 27.003675937652588 s
+features size:  (10671, 1024)
+coordinates size:  (10671, 2)
+
+progress: 45/54
+DigitalSlide_C10M_2S_1
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_C10M_2S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f871510>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_C10M_2S_1.h5: total of 50 batches
+batch 0/50, 0 files processed
+batch 20/50, 17600 files processed
+batch 40/50, 35200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_C10M_2S_1.h5 took 84.8807315826416 s
+features size:  (43538, 1024)
+coordinates size:  (43538, 2)
+
+progress: 46/54
+DigitalSlide_C10M_3S_1
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_C10M_3S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f871410>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_C10M_3S_1.h5: total of 149 batches
+batch 0/149, 0 files processed
+batch 20/149, 17600 files processed
+batch 40/149, 35200 files processed
+batch 60/149, 52800 files processed
+batch 80/149, 70400 files processed
+batch 100/149, 88000 files processed
+batch 120/149, 105600 files processed
+batch 140/149, 123200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_C10M_3S_1.h5 took 239.84307670593262 s
+features size:  (130978, 1024)
+coordinates size:  (130978, 2)
+
+progress: 47/54
+DigitalSlide_C10M_9S_1
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_C10M_9S_1
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1b588d50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_C10M_9S_1.h5: total of 16 batches
+batch 0/16, 0 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_C10M_9S_1.h5 took 32.094074726104736 s
+features size:  (13999, 1024)
+coordinates size:  (13999, 2)
+
+progress: 48/54
+DigitalSlide_D4M_1S_1_20210922131645990
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_D4M_1S_1_20210922131645990
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1b588d50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_D4M_1S_1_20210922131645990.h5: total of 79 batches
+batch 0/79, 0 files processed
+batch 20/79, 17600 files processed
+batch 40/79, 35200 files processed
+batch 60/79, 52800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_D4M_1S_1_20210922131645990.h5 took 130.03938555717468 s
+features size:  (69073, 1024)
+coordinates size:  (69073, 2)
+
+progress: 49/54
+DigitalSlide_D4M_2S_1_20210922131740429
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_D4M_2S_1_20210922131740429
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1ecdf210>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_D4M_2S_1_20210922131740429.h5: total of 42 batches
+batch 0/42, 0 files processed
+batch 20/42, 17600 files processed
+batch 40/42, 35200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_D4M_2S_1_20210922131740429.h5 took 72.2198395729065 s
+features size:  (36943, 1024)
+coordinates size:  (36943, 2)
+
+progress: 50/54
+DigitalSlide_E10M_7S_1_20210914145322714
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_E10M_7S_1_20210914145322714
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1ecfd910>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_E10M_7S_1_20210914145322714.h5: total of 22 batches
+batch 0/22, 0 files processed
+batch 20/22, 17600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_E10M_7S_1_20210914145322714.h5 took 39.74915099143982 s
+features size:  (18551, 1024)
+coordinates size:  (18551, 2)
+
+progress: 51/54
+DigitalSlide_E6M_15S_1
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name DigitalSlide_E6M_15S_1
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1ecea0d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_E6M_15S_1.h5: total of 507 batches
+batch 0/507, 0 files processed
+batch 20/507, 17600 files processed
+batch 40/507, 35200 files processed
+batch 60/507, 52800 files processed
+batch 80/507, 70400 files processed
+batch 100/507, 88000 files processed
+batch 120/507, 105600 files processed
+batch 140/507, 123200 files processed
+batch 160/507, 140800 files processed
+batch 180/507, 158400 files processed
+batch 200/507, 176000 files processed
+batch 220/507, 193600 files processed
+batch 240/507, 211200 files processed
+batch 260/507, 228800 files processed
+batch 280/507, 246400 files processed
+batch 300/507, 264000 files processed
+batch 320/507, 281600 files processed
+batch 340/507, 299200 files processed
+batch 360/507, 316800 files processed
+batch 380/507, 334400 files processed
+batch 400/507, 352000 files processed
+batch 420/507, 369600 files processed
+batch 440/507, 387200 files processed
+batch 460/507, 404800 files processed
+batch 480/507, 422400 files processed
+batch 500/507, 440000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_E6M_15S_1.h5 took 800.2074704170227 s
+features size:  (445537, 1024)
+coordinates size:  (445537, 2)
+
+progress: 52/54
+DigitalSlide_E6M_17S_1
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name DigitalSlide_E6M_17S_1
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8bed10>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_E6M_17S_1.h5: total of 253 batches
+batch 0/253, 0 files processed
+batch 20/253, 17600 files processed
+batch 40/253, 35200 files processed
+batch 60/253, 52800 files processed
+batch 80/253, 70400 files processed
+batch 100/253, 88000 files processed
+batch 120/253, 105600 files processed
+batch 140/253, 123200 files processed
+batch 160/253, 140800 files processed
+batch 180/253, 158400 files processed
+batch 200/253, 176000 files processed
+batch 220/253, 193600 files processed
+batch 240/253, 211200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_E6M_17S_1.h5 took 403.1312427520752 s
+features size:  (222326, 1024)
+coordinates size:  (222326, 2)
+
+progress: 53/54
+DigitalSlide_E6M_20S_1
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name DigitalSlide_E6M_20S_1
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1b5976d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_E6M_20S_1.h5: total of 597 batches
+batch 0/597, 0 files processed
+batch 20/597, 17600 files processed
+batch 40/597, 35200 files processed
+batch 60/597, 52800 files processed
+batch 80/597, 70400 files processed
+batch 100/597, 88000 files processed
+batch 120/597, 105600 files processed
+batch 140/597, 123200 files processed
+batch 160/597, 140800 files processed
+batch 180/597, 158400 files processed
+batch 200/597, 176000 files processed
+batch 220/597, 193600 files processed
+batch 240/597, 211200 files processed
+batch 260/597, 228800 files processed
+batch 280/597, 246400 files processed
+batch 300/597, 264000 files processed
+batch 320/597, 281600 files processed
+batch 340/597, 299200 files processed
+batch 360/597, 316800 files processed
+batch 380/597, 334400 files processed
+batch 400/597, 352000 files processed
+batch 420/597, 369600 files processed
+batch 440/597, 387200 files processed
+batch 460/597, 404800 files processed
+batch 480/597, 422400 files processed
+batch 500/597, 440000 files processed
+batch 520/597, 457600 files processed
+batch 540/597, 475200 files processed
+batch 560/597, 492800 files processed
+batch 580/597, 510400 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/DigitalSlide_E6M_20S_1.h5 took 942.000926733017 s
+features size:  (525276, 1024)
+coordinates size:  (525276, 2)

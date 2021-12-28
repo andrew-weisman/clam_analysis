@@ -1,0 +1,422 @@
+initializing dataset
+loading model checkpoint
+
+progress: 0/54
+0029468706
+skipped 0029468706
+
+progress: 1/54
+0029553565
+skipped 0029553565
+
+progress: 2/54
+0030657581
+skipped 0030657581
+
+progress: 3/54
+0035146620
+skipped 0035146620
+
+progress: 4/54
+0042034876
+skipped 0042034876
+
+progress: 5/54
+0042711961
+skipped 0042711961
+
+progress: 6/54
+0042951302
+skipped 0042951302
+
+progress: 7/54
+0046877280
+skipped 0046877280
+
+progress: 8/54
+0047176089
+skipped 0047176089
+
+progress: 9/54
+0047953852
+skipped 0047953852
+
+progress: 10/54
+0048086809
+skipped 0048086809
+
+progress: 11/54
+0049547258
+skipped 0049547258
+
+progress: 12/54
+0049556653
+skipped 0049556653
+
+progress: 13/54
+0050394746
+skipped 0050394746
+
+progress: 14/54
+0051341579
+skipped 0051341579
+
+progress: 15/54
+0054130784
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 0054130784
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d678f10>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0054130784.h5: total of 216 batches
+batch 0/216, 0 files processed
+batch 20/216, 17600 files processed
+batch 40/216, 35200 files processed
+batch 60/216, 52800 files processed
+batch 80/216, 70400 files processed
+batch 100/216, 88000 files processed
+batch 120/216, 105600 files processed
+batch 140/216, 123200 files processed
+batch 160/216, 140800 files processed
+batch 180/216, 158400 files processed
+batch 200/216, 176000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0054130784.h5 took 344.96723318099976 s
+features size:  (189694, 1024)
+coordinates size:  (189694, 2)
+
+progress: 16/54
+0054815807
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0054815807
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f8771d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0054815807.h5: total of 129 batches
+batch 0/129, 0 files processed
+batch 20/129, 17600 files processed
+batch 40/129, 35200 files processed
+batch 60/129, 52800 files processed
+batch 80/129, 70400 files processed
+batch 100/129, 88000 files processed
+batch 120/129, 105600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0054815807.h5 took 207.27634835243225 s
+features size:  (113328, 1024)
+coordinates size:  (113328, 2)
+
+progress: 17/54
+0055483886
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 0055483886
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d65fa10>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0055483886.h5: total of 253 batches
+batch 0/253, 0 files processed
+batch 20/253, 17600 files processed
+batch 40/253, 35200 files processed
+batch 60/253, 52800 files processed
+batch 80/253, 70400 files processed
+batch 100/253, 88000 files processed
+batch 120/253, 105600 files processed
+batch 140/253, 123200 files processed
+batch 160/253, 140800 files processed
+batch 180/253, 158400 files processed
+batch 200/253, 176000 files processed
+batch 220/253, 193600 files processed
+batch 240/253, 211200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0055483886.h5 took 401.8408958911896 s
+features size:  (222491, 1024)
+coordinates size:  (222491, 2)
+
+progress: 18/54
+0057134497
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0057134497
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8afb50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0057134497.h5: total of 20 batches
+batch 0/20, 0 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0057134497.h5 took 38.355600118637085 s
+features size:  (17501, 1024)
+coordinates size:  (17501, 2)
+
+progress: 19/54
+0058263272
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0058263272
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8afb50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0058263272.h5: total of 29 batches
+batch 0/29, 0 files processed
+batch 20/29, 17600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0058263272.h5 took 51.99538826942444 s
+features size:  (25448, 1024)
+coordinates size:  (25448, 2)
+
+progress: 20/54
+0059072087
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0059072087
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8afb50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0059072087.h5: total of 173 batches
+batch 0/173, 0 files processed
+batch 20/173, 17600 files processed
+batch 40/173, 35200 files processed
+batch 60/173, 52800 files processed
+batch 80/173, 70400 files processed
+batch 100/173, 88000 files processed
+batch 120/173, 105600 files processed
+batch 140/173, 123200 files processed
+batch 160/173, 140800 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0059072087.h5 took 277.7489275932312 s
+features size:  (152150, 1024)
+coordinates size:  (152150, 2)
+
+progress: 21/54
+0063366529
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0063366529
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1ecdaf50>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0063366529.h5: total of 151 batches
+batch 0/151, 0 files processed
+batch 20/151, 17600 files processed
+batch 40/151, 35200 files processed
+batch 60/151, 52800 files processed
+batch 80/151, 70400 files processed
+batch 100/151, 88000 files processed
+batch 120/151, 105600 files processed
+batch 140/151, 123200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0063366529.h5 took 241.821270942688 s
+features size:  (132271, 1024)
+coordinates size:  (132271, 2)
+
+progress: 22/54
+0063610642
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0063610642
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1ecf6a90>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/0063610642.h5: total of 56 batches
+batch 0/56, 0 files processed
+batch 20/56, 17600 files processed
+batch 40/56, 35200 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/0063610642.h5 took 93.0765290260315 s
+features size:  (48489, 1024)
+coordinates size:  (48489, 2)
+
+progress: 23/54
+30
+downsample [1. 1.]
+downsampled_level_dim [545536 588800]
+level_dim [545536 588800]
+name 30
+patch_level 0
+patch_size 256
+save_path RESULTS_DIRECTORY-bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab13493150>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/30.h5: total of 516 batches
+batch 0/516, 0 files processed
+batch 20/516, 17600 files processed
+batch 40/516, 35200 files processed
+batch 60/516, 52800 files processed
+batch 80/516, 70400 files processed
+batch 100/516, 88000 files processed
+batch 120/516, 105600 files processed
+batch 140/516, 123200 files processed
+batch 160/516, 140800 files processed
+batch 180/516, 158400 files processed
+batch 200/516, 176000 files processed
+batch 220/516, 193600 files processed
+batch 240/516, 211200 files processed
+batch 260/516, 228800 files processed
+batch 280/516, 246400 files processed
+batch 300/516, 264000 files processed
+batch 320/516, 281600 files processed
+batch 340/516, 299200 files processed
+batch 360/516, 316800 files processed
+batch 380/516, 334400 files processed
+batch 400/516, 352000 files processed
+batch 420/516, 369600 files processed
+batch 440/516, 387200 files processed
+batch 460/516, 404800 files processed
+batch 480/516, 422400 files processed
+batch 500/516, 440000 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/30.h5 took 813.926177740097 s
+features size:  (453871, 1024)
+coordinates size:  (453871, 2)
+
+progress: 24/54
+B-160004549-01-B-001
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name B-160004549-01-B-001
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f8772d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/B-160004549-01-B-001.h5: total of 181 batches
+batch 0/181, 0 files processed
+batch 20/181, 17600 files processed
+batch 40/181, 35200 files processed
+batch 60/181, 52800 files processed
+batch 80/181, 70400 files processed
+batch 100/181, 88000 files processed
+batch 120/181, 105600 files processed
+batch 140/181, 123200 files processed
+batch 160/181, 140800 files processed
+batch 180/181, 158400 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/B-160004549-01-B-001.h5 took 290.00466990470886 s
+features size:  (158432, 1024)
+coordinates size:  (158432, 2)
+
+progress: 25/54
+BB150007349-A-01-001
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name BB150007349-A-01-001
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e8cc4d0>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/BB150007349-A-01-001.h5: total of 27 batches
+batch 0/27, 0 files processed
+batch 20/27, 17600 files processed
+
+computing features for /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/features/h5_files/BB150007349-A-01-001.h5 took 48.77011680603027 s
+features size:  (23349, 1024)
+coordinates size:  (23349, 2)
+
+progress: 26/54
+DigitalSlide_B2M_11S_1_20210826183548302
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name DigitalSlide_B2M_11S_1_20210826183548302
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aaab4129590>
+processing /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches/DigitalSlide_B2M_11S_1_20210826183548302.h5: total of 76 batches
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/torch/utils/data/_utils/pin_memory.py", line 25, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/multiprocessing/queues.py", line 113, in get
+    return _ForkingPickler.loads(res)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/torch/multiprocessing/reductions.py", line 294, in rebuild_storage_fd
+    fd = df.detach()
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/multiprocessing/connection.py", line 492, in Client
+    c = SocketClient(address)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/multiprocessing/connection.py", line 619, in SocketClient
+    s.connect(address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+batch 0/76, 0 files processed
+batch 20/76, 17600 files processed
+Traceback (most recent call last):
+  File "/home/weismanal/notebook/2021-11-10/testing_clam/repo/extract_features_fp.py", line 115, in <module>
+    custom_downsample=args.custom_downsample, target_patch_size=args.target_patch_size)
+  File "/home/weismanal/notebook/2021-11-10/testing_clam/repo/extract_features_fp.py", line 51, in compute_w_loader
+    features = features.cpu().numpy()
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 28152) is killed by signal: Segmentation fault. 

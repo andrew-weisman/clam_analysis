@@ -1,14 +1,14 @@
 # Notes on CLAM
 
-Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM) using the datafiles that Pinyi transferred to Biowulf at `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined`.
+Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM) using the datafiles from Box linked in `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined`.
 
 ## Compute node allocation
 
 Commands that I have run to get an interactive compute node include:
 
 ```bash
-sinteractive --mem=20g --cpus-per-task=12                   # for jobs not requiring a GPU, e.g., preprocessing
-sinteractive --mem=20g --gres=gpu:k80:1 --cpus-per-task=12  # for jobs requiring a GPU, e.g., feature extraction
+sinteractive --mem=5g --cpus-per-task=8                    # for jobs not requiring a GPU, e.g., preprocessing
+sinteractive --mem=20g --gres=gpu:p100:1 --cpus-per-task=8  # for jobs requiring a GPU, e.g., feature extraction
 ```
 
 ## Installation
@@ -40,6 +40,11 @@ While preprocessing includes the segmentation, patching, and stiching steps, the
 Commands that I have run to generate files in the working directory include:
 
 ```bash
+
+# Latest command - this is the best preset Eduard currently suggests based on the first two batches of data
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-bwh_resection-all_55_wsis.log
+
+# Previous commands
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/default       --patch_size 256                                                                         --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-default.log
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_biopsy    --patch_size 256 --preset       $CLAM/presets/bwh_biopsy.csv                             --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-bwh_biopsy.log
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-bwh_resection.log
@@ -48,7 +53,7 @@ python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/pinyi-median  --patch_size 256 --preset       $working_dir/inputs/preprocessing-pinyi-median.csv       --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-pinyi-median.log
 ```
 
-Note I have concluded that for the default and preset values (i.e., the first four calls to `create_patches_fp.py` above), the settings for each processed image in the columns of the produced `process_list_autogen.csv` files all have unique values. For all three sets of presets, the input `.csv` files have the extra fields `white_thresh` and `black_thresh`, which have values of 5 and 50. Finally, for the fields `seg_level` and `vis_level` for these three sets of presets, input values are always -1 and the output values are always 6. The inputs and outputs of all other fields are the same (and are of course generally different for each of the three sets).
+Note I have concluded (looking at the "Previous commands") that for the default and preset values (i.e., the first four calls to `create_patches_fp.py` above), the settings for each processed image in the columns of the produced `process_list_autogen.csv` files all have unique values. For all three sets of presets, the input `.csv` files have the extra fields `white_thresh` and `black_thresh`, which have values of 5 and 50. Finally, for the fields `seg_level` and `vis_level` for these three sets of presets, input values are always -1 and the output values are always 6. The inputs and outputs of all other fields are the same (and are of course generally different for each of the three sets).
 
 Multiple-step process for preprocessing that I believe Pinyi basically ran, by example per the CLAM GitHub page:
 
@@ -88,10 +93,19 @@ bash resize_stitches.sh
 Here are the commands I'm running for feature extraction:
 
 ```bash
+
+# Latest commands
+cp $working_dir/results/bwh_resection/process_list_autogen.csv $working_dir/inputs/process_list-feature_extraction-bwh_resection.csv
+emacs -nw $working_dir/inputs/process_list-feature_extraction-bwh_resection.csv  # then I replaced all occurrences of ".mrxs," with "," per the GH instructions
+python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/bwh_resection --data_slide_dir $working_dir/data --csv_path $working_dir/inputs/process_list-feature_extraction-bwh_resection.csv --feat_dir $working_dir/results/bwh_resection/features --batch_size 880 --slide_ext .mrxs 2>&1 | tee $working_dir/logs/feature_extraction-bwh_resection-all_55_wsis.log
+
+# Previous command
 python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/pinyi --data_slide_dir $working_dir/data --csv_path $working_dir/inputs/process_list-feature_extraction-pinyi.csv --feat_dir $working_dir/results/pinyi/features --batch_size 512 --slide_ext .mrxs 2>&1 | tee $working_dir/logs/feature_extraction-pinyi.log
 ```
 
-This used 9275MiB out of 16280MiB of GPU memory on a P100 GPU, so I can probably try increasing the batch size from 512 to 899 (exactly) or 880 (to be safe). I can also try using multiple GPUs simply by allocating more from SLURM; this should automatically work per the CLAM codebase.
+This used (for the "Previous command") 9275MiB out of 16280MiB of GPU memory on a P100 GPU, so I can probably try increasing the batch size from 512 to 899 (exactly) or 880 (to be safe). I can also try using multiple GPUs simply by allocating more from SLURM; this should automatically work per the CLAM codebase.
+
+For the "Latest comands" step in which I increased the batch size to 880, now 15439MiB out of 16280MiB of GPU memory is being used on a P100 GPU (94.8% memory utilization), so indeed the increase of batch size seems to work as expected.
 
 ## Assumed directory structure
 

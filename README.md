@@ -115,7 +115,17 @@ pinyi_data_dir=$working_dir/results/pinyi/features  # called something like $DAT
 
 Note that the directory one level up (e.g., `$working_dir/results/pinyi`) is what the CLAM README calls `$DATA_ROOT_DIR`. So going forward I may want to set up symbolic links to adhere to this structure.
 
+This variable is not actually needed anywhere in this document as of 12/28/21.
+
 ## Creation of labels file
+
+First create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop
+
+```bash
+bash create_manifest.sh
+```
+
+and move the created `manifest.csv` file to `$working_dir/parameter_comparison_and_manifest_creation_on_laptop` on Biowulf.
 
 Run this:
 
@@ -123,7 +133,7 @@ Run this:
 bash $working_dir/create_data_labels_for_clam.sh $working_dir
 ```
 
-Note that this overwrites the current data labels file, e.g., `$working_dir/data_labels.csv`.
+This will create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file).
 
 ## CLAM codebase modification
 

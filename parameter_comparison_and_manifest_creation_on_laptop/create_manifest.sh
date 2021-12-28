@@ -11,7 +11,7 @@ labels=$(cat labels.txt | sort -u | awk -v ORS=", " '{print}')
 echo "Unique labels: ${labels:0:${#labels}-2}"
 
 # Current output:
-# Number of images: 40
+# Number of images: 56
 # Unique labels: LCN, MSI, POLE, p53
 
 # Helpful for determining that adjacent to each .mrxs file is a single .qpdata file:

@@ -7,7 +7,7 @@ Note the following is based on going through the [CLAM GitHub page](https://gith
 Commands that I have run to get an interactive compute node include:
 
 ```bash
-sinteractive --mem=5g --cpus-per-task=8                    # for jobs not requiring a GPU, e.g., preprocessing
+sinteractive --mem=5g --cpus-per-task=8                     # for jobs not requiring a GPU, e.g., preprocessing
 sinteractive --mem=20g --gres=gpu:p100:1 --cpus-per-task=8  # for jobs requiring a GPU, e.g., feature extraction
 ```
 
@@ -193,6 +193,29 @@ and the modify the line
 parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal', 'task_2_tumor_subtyping', 'idibell'])
 ```
 
+Likewise, to `$CLAM/eval.py` add the block
+
+```python
+elif args.task == 'idibell':
+    args.n_classes = 4
+    working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    dataset_name = 'bwh_resection'
+    label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+    dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
+                            data_dir= os.path.join(working_dir, 'results', dataset_name, 'features'),
+                            shuffle = False, 
+                            print_info = True,
+                            label_dict = label_dict,
+                            patient_strat= False,
+                            ignore=[])
+```
+
+and modify the line
+
+```python
+parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal',  'task_2_tumor_subtyping', 'idibell'])
+```
+
 ## Data splitting
 
 Run e.g.:
@@ -215,6 +238,12 @@ python $CLAM/main.py --drop_out --early_stopping --lr 2e-4 --k 5 --label_frac 1 
 
 # My short test
 python $CLAM/main.py --max_epochs 3 --drop_out --early_stopping --lr 2e-4 --k 2 --label_frac 1 --exp_code idibell_CLAM_100_max_epochs_3_k_2 --weighted_sample --bag_loss ce --inst_loss svm --task idibell --model_type clam_sb --log_data --subtyping --data_root_dir $working_dir/results/pinyi --results_dir $working_dir/results/pinyi/training 2>&1 | tee $working_dir/logs/training-pinyi-100_max_epochs_3_k_2.log
+```
+
+## Evaluation
+
+```bash
+python $CLAM/eval.py --drop_out --k 5 --models_exp_code idibell_CLAM_100_s1 --save_exp_code idibell_CLAM_100_s1_cv --task idibell --model_type clam_sb --results_dir $working_dir/results/bwh_resection/training --data_root_dir $working_dir/results/bwh_resection 2>&1 | tee $working_dir/logs/evaluation-bwh_resection-100.log
 ```
 
 ## Other notes
@@ -246,5 +275,3 @@ rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Si
 mkcd ../batch_007
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch" .
 ```
-
-**Ensure for each script I look at the arguments that I can modify using the `-h` option.**

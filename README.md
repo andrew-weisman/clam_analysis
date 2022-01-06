@@ -251,12 +251,10 @@ mv $working_dir/eval_results $working_dir/results/bwh_resection
 
 ## Heatmap generation
 
-I created the file `$CLAM/heatmaps/configs/config_idibell.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml` that should generally stay the same except with the following modifications:
+I created the file `$working_dir/inputs/heatmap_settings.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml` and ran:
 
-```yaml
-raw_save_dir: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/heatmaps/heatmap_raw_results
-production_save_dir: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/heatmaps/heatmap_production_results
-data_dir: /home/weismanal/notebook/2021-11-11/testing_clam/data/
+```bash
+python $CLAM/create_heatmaps.py --config $working_dir/inputs/heatmap_settings.yaml
 ```
 
 ## Other notes

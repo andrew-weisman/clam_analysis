@@ -16,15 +16,17 @@ data_arguments:
   # column name for key in data_dir (if a dict mapping is used)
   data_dir_key: source
   # csv list containing slide_ids (can additionally have seg/patch paramters, class labels, etc.)
-  process_list: heatmap_demo_dataset.csv
+  process_list: /home/weismanal/notebook/2021-11-11/testing_clam/data_labels.csv
   # preset file for segmentation/patching
-  preset: presets/bwh_biopsy.csv
+  preset: /home/weismanal/notebook/2021-11-10/testing_clam/repo/presets/bwh_resection.csv
   # file extention for slides
-  slide_ext: .svs
+  slide_ext: .mrxs
   # label dictionary for str: interger mapping (optional)
   label_dict:
-    LUAD: 0
-    LSCC: 1                        
+    pole: 0
+    msi: 1
+    lcn: 2
+    p53: 3
 patching_arguments:
   # arguments for patching
   patch_size: 256
@@ -33,7 +35,7 @@ patching_arguments:
   custom_downsample: 1
 model_arguments: 
   # arguments for initializing model from checkpoint
-  ckpt_path: heatmaps/demo/ckpts/s_0_checkpoint.pt
+  ckpt_path: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/training/idibell_CLAM_100_s1/s_4_checkpoint.pt
   model_type: clam_sb # see utils/eval_utils/
   initiate_fn: initiate_model # see utils/eval_utils/
   model_size: small
@@ -73,6 +75,3 @@ sample_arguments:
       seed: 1
       k: 15 # save top-k patches
       mode: topk
-
-
-

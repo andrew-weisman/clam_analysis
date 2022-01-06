@@ -1,1 +1,0 @@
-{'task': 'idibell', 'split': 'test', 'save_dir': './eval_results/EVAL_idibell_CLAM_100_s1_cv', 'models_dir': '/home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/training/idibell_CLAM_100_s1', 'model_type': 'clam_sb', 'drop_out': True, 'model_size': 'small'}

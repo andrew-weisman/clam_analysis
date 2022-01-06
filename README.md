@@ -244,6 +244,19 @@ python $CLAM/main.py --max_epochs 3 --drop_out --early_stopping --lr 2e-4 --k 2 
 
 ```bash
 python $CLAM/eval.py --drop_out --k 5 --models_exp_code idibell_CLAM_100_s1 --save_exp_code idibell_CLAM_100_s1_cv --task idibell --model_type clam_sb --results_dir $working_dir/results/bwh_resection/training --data_root_dir $working_dir/results/bwh_resection 2>&1 | tee $working_dir/logs/evaluation-bwh_resection-100.log
+
+# Since the current directory is hardcoded for storing the results:
+mv $working_dir/eval_results $working_dir/results/bwh_resection
+```
+
+## Heatmap generation
+
+I created the file `$CLAM/heatmaps/configs/config_idibell.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml` that should generally stay the same except with the following modifications:
+
+```yaml
+raw_save_dir: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/heatmaps/heatmap_raw_results
+production_save_dir: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/heatmaps/heatmap_production_results
+data_dir: /home/weismanal/notebook/2021-11-11/testing_clam/data/
 ```
 
 ## Other notes

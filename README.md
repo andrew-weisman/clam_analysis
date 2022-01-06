@@ -254,7 +254,7 @@ mv $working_dir/eval_results $working_dir/results/bwh_resection
 I created the file `$working_dir/inputs/heatmap_settings.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml` and ran:
 
 ```bash
-python $CLAM/create_heatmaps.py --config $working_dir/inputs/heatmap_settings.yaml
+python $CLAM/create_heatmaps.py --config $working_dir/inputs/heatmap_settings.yaml 2>&1 | tee $working_dir/logs/heatmaps-bwh_resection-100.log
 ```
 
 ## Other notes

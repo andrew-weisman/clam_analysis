@@ -1,0 +1,323 @@
+
+exp_arguments
+n_classes : 4
+save_exp_code : HEATMAP_OUTPUT
+raw_save_dir : heatmaps/heatmap_raw_results
+production_save_dir : heatmaps/heatmap_production_results
+batch_size : 868
+
+data_arguments
+data_dir : heatmaps/demo/slides/
+data_dir_key : source
+process_list : data_labels.csv
+preset : /home/weismanal/notebook/2021-11-10/testing_clam/repo/presets/bwh_resection.csv
+slide_ext : .mrxs
+label_dict : {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+
+patching_arguments
+patch_size : 256
+overlap : 0.5
+patch_level : 0
+custom_downsample : 1
+
+model_arguments
+ckpt_path : heatmaps/demo/ckpts/s_4_checkpoint.pt
+model_type : clam_sb
+initiate_fn : initiate_model
+model_size : small
+drop_out : True
+
+heatmap_arguments
+vis_level : 1
+alpha : 0.4
+blank_canvas : False
+save_orig : True
+save_ext : jpg
+use_ref_scores : True
+blur : False
+use_center_shift : True
+use_roi : False
+calc_heatmap : True
+binarize : False
+binary_thresh : -1
+custom_downsample : 1
+cmap : jet
+
+sample_arguments
+samples : [{'name': 'topk_high_attention', 'sample': True, 'seed': 1, 'k': 15, 'mode': 'topk'}]
+Continue? Y/N patch_size: 256 x 256, with 0.50 overlap, step size is 128 x 128
+
+list of slides to process: 
+                                     case_id  ... contour_fn
+0                                 0029468706  ...    four_pt
+1                     DigitalSlide_E6M_20S_1  ...    four_pt
+2                     DigitalSlide_E6M_17S_1  ...    four_pt
+3                                         30  ...    four_pt
+4                                 0047953852  ...    four_pt
+5                                 0054130784  ...    four_pt
+6                     DigitalSlide_E6M_15S_1  ...    four_pt
+7                                 0055483886  ...    four_pt
+8                                 0042034876  ...    four_pt
+9                                 0057134497  ...    four_pt
+10                                0042711961  ...    four_pt
+11                                0046877280  ...    four_pt
+12                                0047176089  ...    four_pt
+13                                0048086809  ...    four_pt
+14                                0049547258  ...    four_pt
+15                                0042951302  ...    four_pt
+16                     DigitalSlide_B9M_7S_1  ...    four_pt
+17                     DigitalSlide_B9M_6S_1  ...    four_pt
+18                     DigitalSlide_B9M_8S_1  ...    four_pt
+19                                0049556653  ...    four_pt
+20                                0050394746  ...    four_pt
+21                    DigitalSlide_B9M_11S_1  ...    four_pt
+22                    DigitalSlide_B9M_14S_1  ...    four_pt
+23                                0054815807  ...    four_pt
+24                    DigitalSlide_B9M_16S_1  ...    four_pt
+25   DigitalSlide_B2M_1S_1_20210826183728179  ...    four_pt
+26   DigitalSlide_B2M_3S_1_20210826183921228  ...    four_pt
+27   DigitalSlide_B2M_6S_1_20210826184158873  ...    four_pt
+28   DigitalSlide_B2M_8S_1_20210826184401956  ...    four_pt
+29  DigitalSlide_B2M_11S_1_20210826183548302  ...    four_pt
+30   DigitalSlide_B2M_4S_1_20210826184014839  ...    four_pt
+31   DigitalSlide_B2M_5S_1_20210826184054251  ...    four_pt
+32   DigitalSlide_B2M_7S_1_20210826184304020  ...    four_pt
+33   DigitalSlide_B2M_9S_1_20210826184515465  ...    four_pt
+34  DigitalSlide_B2M_12S_1_20210826183648767  ...    four_pt
+35   DigitalSlide_D4M_1S_1_20210922131645990  ...    four_pt
+36   DigitalSlide_D4M_2S_1_20210922131740429  ...    four_pt
+37  DigitalSlide_E10M_7S_1_20210914145322714  ...    four_pt
+38                    DigitalSlide_C10M_1S_1  ...    four_pt
+39                    DigitalSlide_C10M_3S_1  ...    four_pt
+40                    DigitalSlide_C10M_2S_1  ...    four_pt
+41                                0029553565  ...    four_pt
+42                                0030657581  ...    four_pt
+43                      BB150007349-A-01-001  ...    four_pt
+44                      B-160004549-01-B-001  ...    four_pt
+45                                0035146620  ...    four_pt
+46                   DigitalSlide_C10M_12S_1  ...    four_pt
+47                    DigitalSlide_C10M_9S_1  ...    four_pt
+48                                0051341579  ...    four_pt
+49                                0058263272  ...    four_pt
+50                                0063366529  ...    four_pt
+51                                0063610642  ...    four_pt
+52                   DigitalSlide_C10M_19S_1  ...    four_pt
+53                                0059072087  ...    four_pt
+
+[54 rows x 19 columns]
+
+initializing model from checkpoint
+
+ckpt path: heatmaps/demo/ckpts/s_4_checkpoint.pt
+Init Model
+CLAM_SB(
+  (attention_net): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.25, inplace=False)
+    (3): Attn_Net_Gated(
+      (attention_a): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Tanh()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_b): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Sigmoid()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_c): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (classifiers): Linear(in_features=512, out_features=4, bias=True)
+  (instance_classifiers): ModuleList(
+    (0): Linear(in_features=512, out_features=2, bias=True)
+    (1): Linear(in_features=512, out_features=2, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+    (3): Linear(in_features=512, out_features=2, bias=True)
+  )
+  (instance_loss_fn): CrossEntropyLoss()
+)
+Total number of parameters: 793869
+Total number of trainable parameters: 793869
+Done!
+
+processing:  0029468706.mrxs
+slide id:  0029468706
+top left:  None  bot right:  None
+seg_level: -1
+sthresh: 15
+mthresh: 11
+close: 4
+use_otsu: False
+keep_ids: []
+exclude_ids: []
+a_t: 100
+a_h: 16
+max_n_holes: 8
+vis_level: -1
+line_thickness: 150
+Initializing WSI object
+Done!
+processing 0/11 contours
+Bounding Box: 459040 292672 10017 14817
+Contour Area: 74659840.0
+Extracted 1090 coordinates
+processing 1/11 contours
+Bounding Box: 475744 280128 8225 6977
+Contour Area: 27545600.0
+Extracted 398 coordinates
+processing 2/11 contours
+Bounding Box: 343296 247040 136641 130561
+Contour Area: 10892025344.0
+Extracted 157547 coordinates
+processing 3/11 contours
+Bounding Box: 471168 245440 37313 48609
+Contour Area: 1112839680.0
+Extracted 16576 coordinates
+processing 4/11 contours
+Bounding Box: 420864 234112 49569 36897
+Contour Area: 868769792.0
+Extracted 12769 coordinates
+processing 5/11 contours
+Bounding Box: 485856 101664 8705 6369
+Contour Area: 27183616.0
+Extracted 393 coordinates
+processing 6/11 contours
+Bounding Box: 372192 92448 16385 20129
+Contour Area: 190953472.0
+Extracted 2855 coordinates
+processing 7/11 contours
+Bounding Box: 391040 81376 16353 15969
+Contour Area: 141023232.0
+Extracted 2095 coordinates
+processing 8/11 contours
+Bounding Box: 356384 80960 140193 130465
+Contour Area: 10911941120.0
+Extracted 158753 coordinates
+processing 9/11 contours
+Bounding Box: 479424 67200 37313 46049
+Contour Area: 1074023424.0
+Extracted 16017 coordinates
+processing 10/11 contours
+Bounding Box: 424864 62560 51585 32673
+Contour Area: 863405056.0
+Extracted 12715 coordinates
+filtered a total of 381208 coordinates
+total number of patches to process:  381208
+number of batches:  440
+procssed 0 / 440
+procssed 22 / 440
+procssed 44 / 440
+procssed 66 / 440
+procssed 88 / 440
+procssed 110 / 440
+procssed 132 / 440
+procssed 154 / 440
+procssed 176 / 440
+procssed 198 / 440
+procssed 220 / 440
+procssed 242 / 440
+procssed 264 / 440
+procssed 286 / 440
+procssed 308 / 440
+procssed 330 / 440
+procssed 352 / 440
+procssed 374 / 440
+procssed 396 / 440
+procssed 418 / 440
+Y_hat: lcn, Y: lcn, Y_prob: ['0.1758', '0.1568', '0.3553', '0.3120']
+sampling topk_high_attention
+coord: [410112 349696] score: 100.000
+coord: [413728 197952] score: 100.000
+coord: [410368 349696] score: 99.999
+coord: [416288 199488] score: 99.999
+coord: [415776 196672] score: 99.999
+coord: [416288 193600] score: 99.999
+coord: [417568 195648] score: 99.998
+coord: [415520 194624] score: 99.998
+coord: [412448 195648] score: 99.998
+coord: [416032 194112] score: 99.998
+coord: [415264 197696] score: 99.997
+coord: [413216 193088] score: 99.997
+coord: [416288 193856] score: 99.997
+coord: [416032 196928] score: 99.997
+coord: [410624 349696] score: 99.996
+
+creating heatmap for: 
+top_left:  (0, 0) bot_right:  (545536, 588800)
+w: 17048, h: 18400
+scaled patch size:  [8 8]
+
+computing foreground tissue mask
+detected 24596998/313683200 of region as tissue
+
+computing heatmap image
+total of 381208 patches
+progress: 76240/381208
+progress: 152481/381208
+progress: 228722/381208
+progress: 304963/381208
+progress: 381204/381208
+Done
+
+computing blend
+using block size: 1024 x 1024
+processing 0/11 contours
+Bounding Box: 459040 292672 10017 14817
+Contour Area: 74659840.0
+Extracted 4341 coordinates
+processing 1/11 contours
+Bounding Box: 475744 280128 8225 6977
+Contour Area: 27545600.0
+Extracted 1562 coordinates
+processing 2/11 contours
+Bounding Box: 343296 247040 136641 130561
+Contour Area: 10892025344.0
+Extracted 629275 coordinates
+processing 3/11 contours
+Bounding Box: 471168 245440 37313 48609
+Contour Area: 1112839680.0
+Extracted 66155 coordinates
+processing 4/11 contours
+Bounding Box: 420864 234112 49569 36897
+Contour Area: 868769792.0
+Extracted 50872 coordinates
+processing 5/11 contours
+Bounding Box: 485856 101664 8705 6369
+Contour Area: 27183616.0
+Extracted 1547 coordinates
+processing 6/11 contours
+Bounding Box: 372192 92448 16385 20129
+Contour Area: 190953472.0
+Extracted 11382 coordinates
+processing 7/11 contours
+Bounding Box: 391040 81376 16353 15969
+Contour Area: 141023232.0
+Extracted 8294 coordinates
+processing 8/11 contours
+Bounding Box: 356384 80960 140193 130465
+Contour Area: 10911941120.0
+Extracted 634242 coordinates
+processing 9/11 contours
+Bounding Box: 479424 67200 37313 46049
+Contour Area: 1074023424.0
+Extracted 63883 coordinates
+processing 10/11 contours
+Bounding Box: 424864 62560 51585 32673
+Contour Area: 863405056.0
+Extracted 50735 coordinates
+filtered a total of 1522288 coordinates
+total number of patches to process:  1522288
+number of batches:  1754
+ERROR: Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm).
+ ERROR: Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm).
+ ERROR: Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm).
+ Traceback (most recent call last):
+  File "/home/weismanal/notebook/2021-11-10/testing_clam/repo/create_heatmaps.py", line 372, in <module>
+    attn_save_path=save_path,  ref_scores=ref_scores)
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/vis_utils/heatmap_utils.py", line 62, in compute_from_patches
+    coords = coords.numpy()
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 57319) is killed by signal: Bus error. It is possible that dataloader's workers are out of shared memory. Please try to raise your shared memory limit.

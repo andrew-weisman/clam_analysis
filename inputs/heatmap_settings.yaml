@@ -16,7 +16,7 @@ data_arguments:
   # column name for key in data_dir (if a dict mapping is used)
   data_dir_key: source
   # csv list containing slide_ids (can additionally have seg/patch paramters, class labels, etc.)
-  process_list: /home/weismanal/notebook/2021-11-11/testing_clam/data_labels.csv
+  process_list: data_labels.csv
   # preset file for segmentation/patching
   preset: /home/weismanal/notebook/2021-11-10/testing_clam/repo/presets/bwh_resection.csv
   # file extention for slides

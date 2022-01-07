@@ -6,13 +6,13 @@ exp_arguments:
   # name tag for saving generated figures and assets
   save_exp_code: HEATMAP_OUTPUT 
   # where to save raw asset files
-  raw_save_dir: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/heatmaps/heatmap_raw_results
+  raw_save_dir: heatmaps/heatmap_raw_results
   # where to save final heatmaps
-  production_save_dir: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/heatmaps/heatmap_production_results
+  production_save_dir: heatmaps/heatmap_production_results
   batch_size: 384
 data_arguments: 
   # where is data stored; can be a single str path or a dictionary of key, data_dir mapping
-  data_dir: /home/weismanal/notebook/2021-11-11/testing_clam/data/
+  data_dir: heatmaps/demo/slides/
   # column name for key in data_dir (if a dict mapping is used)
   data_dir_key: source
   # csv list containing slide_ids (can additionally have seg/patch paramters, class labels, etc.)
@@ -35,7 +35,7 @@ patching_arguments:
   custom_downsample: 1
 model_arguments: 
   # arguments for initializing model from checkpoint
-  ckpt_path: /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/training/idibell_CLAM_100_s1/s_4_checkpoint.pt
+  ckpt_path: heatmaps/demo/ckpts/s_4_checkpoint.pt
   model_type: clam_sb # see utils/eval_utils/
   initiate_fn: initiate_model # see utils/eval_utils/
   model_size: small

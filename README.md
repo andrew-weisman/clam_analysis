@@ -251,10 +251,41 @@ mv $working_dir/eval_results $working_dir/results/bwh_resection
 
 ## Heatmap generation
 
-I created the file `$working_dir/inputs/heatmap_settings.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml` and ran:
+Create the file `$working_dir/inputs/heatmap_settings.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml`.
+
+Run
 
 ```bash
-python $CLAM/create_heatmaps.py --config $working_dir/inputs/heatmap_settings.yaml 2>&1 | tee $working_dir/logs/heatmaps-bwh_resection-100.log
+# Create the main heatmaps folder in the working directory specifically
+mkdir $working_dir/heatmaps
+cd !!:1
+
+# Create the required three subfolders
+mkdir configs demo process_lists
+
+# Populate the configs subdirectory
+ln -s $working_dir/inputs/heatmap_settings.yaml configs/
+
+# Populate the demo subdirectory
+cd demo
+ln -s $working_dir/data slides
+mkdir ckpts
+ln -s $working_dir/results/bwh_resection/training/idibell_CLAM_100_s1/s_4_checkpoint.pt ckpts/s_4_checkpoint.pt
+
+# Populate the process_lists subdirectory
+cd ..
+ln -s $working_dir/data_labels.csv process_lists/data_labels.csv
+
+# Go back to the working directory
+cd $working_dir
+```
+
+since using absolute paths in the heatmap settings YAML file with my own directory structure proved to have multiple issues due to how the CLAM codebase is set up.
+
+Run:
+
+```bash
+python $CLAM/create_heatmaps.py --config $working_dir/heatmaps/configs/heatmap_settings.yaml 2>&1 | tee $working_dir/logs/heatmaps-bwh_resection-100.log
 ```
 
 ## Other notes

@@ -288,6 +288,8 @@ Run:
 python $CLAM/create_heatmaps.py --config $working_dir/heatmaps/configs/heatmap_settings.yaml 2>&1 | tee $working_dir/logs/heatmaps-bwh_resection-100.log
 ```
 
+On a P100 GPU this uses 7127MiB / 16280MiB for a batch size (set in the YAML file) of 384, so I should increase the batch size to 868 for nearly 99% usage instead of 44%.
+
 ## Other notes
 
 ### To mount the Box drive in Windows somewhere accessible to WSL

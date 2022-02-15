@@ -1,6 +1,47 @@
 # Notes on CLAM
 
-Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM) using the datafiles from Box linked in `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined`.
+Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM).
+
+## Transfer data from Box to Biowulf (on Helix)
+
+After setting up `rclone` for use on Biowulf per [these instructions](https://hpc.nih.gov/docs/box_onedrive.html):
+
+```bash
+module load rclone
+rclone config  # ONLY for rclone setup per above instructions
+read -rs RCLONE_CONFIG_PASS
+export RCLONE_CONFIG_PASS
+cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/
+mkcd batch_003
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch" .
+mkcd ../batch_004
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch" .
+mkcd ../batch_005
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fifth Batch" .
+mkcd ../batch_006
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Sixth batch" .
+mkcd ../batch_007
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch" .
+mkcd ../batch_008
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch" .
+```
+
+Note it appears that re-running these commands in e.g. a partially copied directory will not re-copy the files that are currently present, and `rclone` even seems to perform "Checks" on the existing files.
+
+After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running from that directory:
+
+```bash
+bash /home/weismanal/projects/idibell/repo/datafile_organization/link_files.sh
+```
+
+Note this will re-create links to the files
+
+```
+DigitalSlide_B2M_1S_1
+DigitalSlide_B2M_1S_1.mrxs
+```
+
+which I have moved to the directory `not_reading_by_openslide` because they do not appear to be readable by OpenSlide (I believe I am waiting on Eduard for help with this as well as other datafile issues; see my emails to him for details). So, I should delete these two files (the two links).
 
 ## Compute node allocation
 
@@ -26,12 +67,12 @@ I.e., I need to run:
 
 ## Testing setup
 
-I am testing execution of CLAM in `/home/weismanal/notebook/2021-11-11/testing_clam`. I have version-controlled this directory [here](https://github.com/andrew-weisman/clam_analysis) and I can start by opening the file you are reading, e.g., `/home/weismanal/notebook/2021-11-11/testing_clam/README.md`.
+I am testing execution of CLAM in `/home/weismanal/projects/idibell/repo`. I have version-controlled this directory [here](https://github.com/andrew-weisman/clam_analysis) and I can start by opening the file you are reading, e.g., `/home/weismanal/projects/idibell/repo/README.md`.
 
 I.e., I need to run:
 
 ```bash
-working_dir="/home/weismanal/notebook/2021-11-11/testing_clam"
+working_dir="/home/weismanal/projects/idibell/repo"
 ```
 
 ## Preprocessing (i.e., patching)
@@ -142,16 +183,20 @@ bash $working_dir/create_data_labels_for_clam.sh $working_dir
 
 This will create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file).
 
+**Don't forget to delete the lines in /home/weismanal/projects/idibell/repo/data_labels.csv whose corresponding .pt files do not exist at this point (if any, and they would only be in the 7th and 8th batches)!**
+
 ## CLAM codebase modification
 
 The next steps in the CLAM procedure require modification to the CLAM codebase.
 
 Note that the `task` argument to `$CLAM/main.py` corresponds to `idibell` and add the following block after the `elif args.task == 'task_2_tumor_subtyping':` block:
 
+**UPDATE THE LINE BELOW!!!!**
+
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    working_dir = '/home/weismanal/projects/idibell/repo'  # UPDATE THIS LINE!!!!
     dataset_name = 'bwh_resection'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     label_col = 'label'
@@ -177,10 +222,12 @@ parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal',  'tas
 
 Likewise, to `$CLAM/create_splits_seq.py` add the block
 
+**UPDATE THE LINE BELOW!!!!**
+
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    working_dir = '/home/weismanal/projects/idibell/repo'  # UPDATE THIS LINE!!!!
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     label_col = 'label'
     dataset = Generic_WSI_Classification_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
@@ -202,10 +249,12 @@ parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal', 'task
 
 Likewise, to `$CLAM/eval.py` add the block
 
+**UPDATE THE LINE BELOW!!!!**
+
 ```python
 elif args.task == 'idibell':
     args.n_classes = 4
-    working_dir = '/home/weismanal/notebook/2021-11-11/testing_clam'
+    working_dir = '/home/weismanal/projects/idibell/repo'  # UPDATE THIS LINE!!!!
     dataset_name = 'bwh_resection'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
@@ -296,48 +345,3 @@ python $CLAM/create_heatmaps.py --config $working_dir/heatmaps/configs/heatmap_s
 ```
 
 On a P100 GPU this uses 7127MiB / 16280MiB for a batch size (set in the YAML file) of 384, so I should increase the batch size to 868 for nearly 99% usage instead of 44%.
-
-## Other notes
-
-### To create the manifest file locally using the datafiles on Box
-
-### To transfer data from Box to Biowulf
-
-After setting up `rclone` for use on Biowulf per [these instructions](https://hpc.nih.gov/docs/box_onedrive.html):
-
-```bash
-module load rclone
-rclone config  # ONLY for rclone setup per above instructions
-read -rs RCLONE_CONFIG_PASS
-export RCLONE_CONFIG_PASS
-cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/
-mkcd batch_003
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch" .
-mkcd ../batch_004
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch" .
-mkcd ../batch_005
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fifth Batch" .
-mkcd ../batch_006
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Sixth batch" .
-mkcd ../batch_007
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch" .
-mkcd ../batch_008
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch" .
-```
-
-Note it appears that re-running these commands in e.g. a partially copied directory will not re-copy the files that are currently present, and `rclone` even seems to perform "Checks" on the existing files.
-
-After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running from that directory:
-
-```bash
-bash /home/weismanal/projects/idibell/repo/datafile_organization/link_files.sh
-```
-
-Note this will re-create links to the files
-
-```
-DigitalSlide_B2M_1S_1
-DigitalSlide_B2M_1S_1.mrxs
-```
-
-which I have moved to the directory `not_reading_by_openslide` because they do not appear to be readable by OpenSlide (I believe I am waiting on Eduard for help with this as well as other datafile issues; see my emails to him for details). So, I should delete these two files (the two links).

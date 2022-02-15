@@ -120,7 +120,13 @@ This variable is not actually needed anywhere in this document as of 12/28/21.
 
 ## Creation of labels file
 
-First create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop
+First, mount the Box drive in Windows somewhere accessible to WSL:
+
+```bash
+sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
+```
+
+Create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop in the directory `parameter_comparison_and_manifest_creation_on_laptop`
 
 ```bash
 bash create_manifest.sh
@@ -293,11 +299,7 @@ On a P100 GPU this uses 7127MiB / 16280MiB for a batch size (set in the YAML fil
 
 ## Other notes
 
-### To mount the Box drive in Windows somewhere accessible to WSL
-
-```bash
-sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
-```
+### To create the manifest file locally using the datafiles on Box
 
 ### To transfer data from Box to Biowulf
 
@@ -319,4 +321,23 @@ mkcd ../batch_006
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Sixth batch" .
 mkcd ../batch_007
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch" .
+mkcd ../batch_008
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch" .
 ```
+
+Note it appears that re-running these commands in e.g. a partially copied directory will not re-copy the files that are currently present, and `rclone` even seems to perform "Checks" on the existing files.
+
+After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running from that directory:
+
+```bash
+bash /home/weismanal/projects/idibell/repo/datafile_organization/link_files.sh
+```
+
+Note this will re-create links to the files
+
+```
+DigitalSlide_B2M_1S_1
+DigitalSlide_B2M_1S_1.mrxs
+```
+
+which I have moved to the directory `not_reading_by_openslide` because they do not appear to be readable by OpenSlide (I believe I am waiting on Eduard for help with this as well as other datafile issues; see my emails to him for details). So, I should delete these two files (the two links).

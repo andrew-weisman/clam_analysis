@@ -55,14 +55,14 @@ sinteractive --mem=40g --gres=gpu:p100:1 --cpus-per-task=8  # heatmap generation
 
 ## Installation
 
-I installed CLAM in `/home/weismanal/notebook/2021-11-10/testing_clam`.
+I installed CLAM in `/home/weismanal/projects/idibell/links/clam_installation`.
 
-The environment file I created to install and run CLAM is `/home/weismanal/notebook/2021-11-10/testing_clam/clam_env.sh` (note this sets the `$CLAM` environment variable), and I should source this file to get CLAM working. Further notes are contained in that file.
+The environment file I created to install and run CLAM is `/home/weismanal/projects/idibell/links/clam_installation/clam_env.sh` (note this sets the `$CLAM` environment variable), and I should source this file to get CLAM working. Further notes are contained in that file.
 
 I.e., I need to run:
 
 ```bash
-. /home/weismanal/notebook/2021-11-10/testing_clam/clam_env.sh
+. /home/weismanal/projects/idibell/links/clam_installation/clam_env.sh
 ```
 
 ## Testing setup
@@ -79,12 +79,19 @@ working_dir="/home/weismanal/projects/idibell/repo"
 
 While preprocessing includes the segmentation, patching, and stiching steps, the main point of preprocessing is to produce the patches.
 
+The first step is to set up the directory structure in the current clone of the CLAM analysis repository:
+
+```bash
+ln -s /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined $working_dir/data
+ln -s /home/weismanal/projects/idibell/links/original_project_repo/results $working_dir/results
+```
+
 Commands that I have run to generate files in the working directory include:
 
 ```bash
 
 # Latest command - this is the best preset Eduard currently suggests based on the first two batches of data
-python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-bwh_resection-all_55_wsis.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-2022-02-15.log
 
 # Previous commands
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/default       --patch_size 256                                                                         --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-default.log

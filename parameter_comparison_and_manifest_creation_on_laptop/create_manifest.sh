@@ -16,3 +16,9 @@ echo "Unique labels: ${labels:0:${#labels}-2}"
 
 # Helpful for determining that adjacent to each .mrxs file is a single .qpdata file:
 # for filename in $(cat manifest.csv | tail -n +2 | awk -v FS="," '{print $1}'); do find "/mnt/box/$(dirname $filename)" -maxdepth 1 -name "*.qpdata" | wc -l; done
+
+# Output as of 2/14/22:
+# weismanal@NCI-02196596-L:~/notebook/2022-02-14/idibell_manifest_creation/repo/parameter_comparison_and_manifest_creation_on_laptop$ bash create_manifest.sh
+# Note: Reorder entries in manifest.csv manually into the appropriate batch order
+# Number of images: 73
+# Unique labels: LCN, MSI, POLE, p53

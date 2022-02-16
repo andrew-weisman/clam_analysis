@@ -1,0 +1,352 @@
+source:  /home/weismanal/projects/idibell/repo/data
+patch_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+mask_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/masks
+stitch_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/stitches
+source : /home/weismanal/projects/idibell/repo/data
+save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection
+patch_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+mask_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/masks
+stitch_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 15, 'mthresh': 11, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 150}}
+
+
+progress: 0.00, 0/72
+processing 0029468706.mrxs
+0029468706 already exist in destination location, skipped
+
+
+progress: 0.01, 1/72
+processing 0029553565.mrxs
+0029553565 already exist in destination location, skipped
+
+
+progress: 0.03, 2/72
+processing 0030657581.mrxs
+0030657581 already exist in destination location, skipped
+
+
+progress: 0.04, 3/72
+processing 0035146620.mrxs
+0035146620 already exist in destination location, skipped
+
+
+progress: 0.06, 4/72
+processing 0042034876.mrxs
+0042034876 already exist in destination location, skipped
+
+
+progress: 0.07, 5/72
+processing 0042711961.mrxs
+0042711961 already exist in destination location, skipped
+
+
+progress: 0.08, 6/72
+processing 0042951302.mrxs
+0042951302 already exist in destination location, skipped
+
+
+progress: 0.10, 7/72
+processing 0043824438.mrxs
+Creating patches for:  0043824438 ...
+Total number of contours to process:  11
+Bounding Box: 219712 134016 19585 11649
+Contour Area: 127545344.0
+Extracted 2091 coordinates
+Bounding Box: 177280 94464 14977 14529
+Contour Area: 83873792.0
+Extracted 1355 coordinates
+Bounding Box: 200064 83712 12417 13249
+Contour Area: 62730240.0
+Extracted 1069 coordinates
+Bounding Box: 179200 70720 77825 64193
+Contour Area: 2036883456.0
+Extracted 31042 coordinates
+Bounding Box: 258496 69952 8129 8641
+Contour Area: 45101056.0
+Extracted 735 coordinates
+Bounding Box: 174976 66112 8641 14017
+Contour Area: 65040384.0
+Extracted 1016 coordinates
+Bounding Box: 182464 63616 9793 9921
+Contour Area: 44642304.0
+Extracted 741 coordinates
+Bounding Box: 193280 62272 21121 16705
+Contour Area: 166023168.0
+Extracted 2797 coordinates
+Bounding Box: 210688 48896 42177 23873
+Contour Area: 431153152.0
+Extracted 7045 coordinates
+Bounding Box: 243072 46080 12865 16769
+Contour Area: 100116480.0
+Extracted 1678 coordinates
+Bounding Box: 172224 39872 59201 24129
+Contour Area: 615690240.0
+Extracted 9572 coordinates
+start stitching 0043824438
+original size: 272128 x 294144
+downscaled size for stiching: 4252 x 4596
+number of patches: 59141
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 4x4
+progress: 0/59141 stitched
+progress: 5915/59141 stitched
+progress: 11830/59141 stitched
+progress: 17745/59141 stitched
+progress: 23660/59141 stitched
+progress: 29575/59141 stitched
+progress: 35490/59141 stitched
+progress: 41405/59141 stitched
+progress: 47320/59141 stitched
+progress: 53235/59141 stitched
+segmentation took 1.081742763519287 seconds
+patching took 4.546570301055908 seconds
+stitching took 6.242284297943115 seconds
+
+
+progress: 0.11, 8/72
+processing 0044135054.mrxs
+Creating patches for:  0044135054 ...
+Total number of contours to process:  15
+Bounding Box: 27776 164608 42497 36929
+Contour Area: 141719552.0
+Extracted 2461 coordinates
+Bounding Box: 78272 136640 9153 6081
+Contour Area: 27998208.0
+Extracted 475 coordinates
+Bounding Box: 35648 132480 13953 13057
+Contour Area: 88713216.0
+Extracted 1443 coordinates
+Bounding Box: 49984 129664 11713 13441
+Contour Area: 77545472.0
+Extracted 1281 coordinates
+Bounding Box: 63680 123520 7617 11585
+Contour Area: 61790208.0
+Extracted 995 coordinates
+Bounding Box: 71616 117248 23617 21633
+Contour Area: 234369024.0
+Extracted 3646 coordinates
+Bounding Box: 33920 114176 8449 10689
+Contour Area: 39325696.0
+Extracted 675 coordinates
+Bounding Box: 41664 111680 6977 9025
+Contour Area: 33075200.0
+Extracted 567 coordinates
+Bounding Box: 67584 108288 11009 13121
+Contour Area: 61298688.0
+Extracted 1036 coordinates
+Bounding Box: 58880 102656 11329 9345
+Contour Area: 51271680.0
+Extracted 855 coordinates
+Bounding Box: 35136 95616 22785 18625
+Contour Area: 166166528.0
+Extracted 2761 coordinates
+Bounding Box: 84096 94400 7553 5889
+Contour Area: 27703296.0
+Extracted 461 coordinates
+Bounding Box: 76352 92864 7617 12801
+Contour Area: 50208768.0
+Extracted 841 coordinates
+Bounding Box: 53184 84480 22657 13313
+Contour Area: 156674048.0
+Extracted 2579 coordinates
+Bounding Box: 83584 45760 12225 24897
+Contour Area: 169025536.0
+Extracted 2340 coordinates
+start stitching 0044135054
+original size: 272128 x 294144
+downscaled size for stiching: 4252 x 4596
+number of patches: 22416
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 4x4
+progress: 0/22416 stitched
+progress: 2242/22416 stitched
+progress: 4484/22416 stitched
+progress: 6726/22416 stitched
+progress: 8968/22416 stitched
+progress: 11210/22416 stitched
+progress: 13452/22416 stitched
+progress: 15694/22416 stitched
+progress: 17936/22416 stitched
+progress: 20178/22416 stitched
+segmentation took 0.7455577850341797 seconds
+patching took 2.6974244117736816 seconds
+stitching took 2.5300889015197754 seconds
+
+
+progress: 0.12, 9/72
+processing 0046723899.mrxs
+Creating patches for:  0046723899 ...
+Total number of contours to process:  8
+Bounding Box: 96384 183872 8257 17217
+Contour Area: 65331200.0
+Extracted 1091 coordinates
+Bounding Box: 47488 160064 14529 9601
+Contour Area: 83449856.0
+Extracted 1380 coordinates
+Bounding Box: 27648 142208 16513 17665
+Contour Area: 131457024.0
+Extracted 2156 coordinates
+Bounding Box: 31872 108288 6465 9345
+Contour Area: 38066176.0
+Extracted 624 coordinates
+Bounding Box: 39424 107200 57665 77441
+Contour Area: 1632274432.0
+Extracted 24772 coordinates
+Bounding Box: 45312 69888 14593 9601
+Contour Area: 81645568.0
+Extracted 1344 coordinates
+Bounding Box: 26944 51072 16577 17665
+Contour Area: 131844096.0
+Extracted 2162 coordinates
+Bounding Box: 38912 20672 56449 74817
+Contour Area: 1744873472.0
+Extracted 26220 coordinates
+start stitching 0046723899
+original size: 272128 x 294144
+downscaled size for stiching: 4252 x 4596
+number of patches: 59749
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 4x4
+progress: 0/59749 stitched
+progress: 5975/59749 stitched
+progress: 11950/59749 stitched
+progress: 17925/59749 stitched
+progress: 23900/59749 stitched
+progress: 29875/59749 stitched
+progress: 35850/59749 stitched
+progress: 41825/59749 stitched
+progress: 47800/59749 stitched
+progress: 53775/59749 stitched
+segmentation took 0.8190999031066895 seconds
+patching took 5.645626544952393 seconds
+stitching took 6.21740984916687 seconds
+
+
+progress: 0.14, 10/72
+processing 0046877280.mrxs
+0046877280 already exist in destination location, skipped
+
+
+progress: 0.15, 11/72
+processing 0047176089.mrxs
+0047176089 already exist in destination location, skipped
+
+
+progress: 0.17, 12/72
+processing 0047953852.mrxs
+0047953852 already exist in destination location, skipped
+
+
+progress: 0.18, 13/72
+processing 0048086809.mrxs
+0048086809 already exist in destination location, skipped
+
+
+progress: 0.19, 14/72
+processing 0049547258.mrxs
+0049547258 already exist in destination location, skipped
+
+
+progress: 0.21, 15/72
+processing 0049556653.mrxs
+0049556653 already exist in destination location, skipped
+
+
+progress: 0.22, 16/72
+processing 0050394746.mrxs
+0050394746 already exist in destination location, skipped
+
+
+progress: 0.24, 17/72
+processing 0051341579.mrxs
+0051341579 already exist in destination location, skipped
+
+
+progress: 0.25, 18/72
+processing 0053952658.mrxs
+0053952658 already exist in destination location, skipped
+
+
+progress: 0.26, 19/72
+processing 0054130784.mrxs
+0054130784 already exist in destination location, skipped
+
+
+progress: 0.28, 20/72
+processing 0054815807.mrxs
+0054815807 already exist in destination location, skipped
+
+
+progress: 0.29, 21/72
+processing 0055483886.mrxs
+0055483886 already exist in destination location, skipped
+
+
+progress: 0.31, 22/72
+processing 0057134497.mrxs
+0057134497 already exist in destination location, skipped
+
+
+progress: 0.32, 23/72
+processing 0058263272.mrxs
+0058263272 already exist in destination location, skipped
+
+
+progress: 0.33, 24/72
+processing 0059072074.mrxs
+Creating patches for:  0059072074 ...
+Total number of contours to process:  0
+segmentation took 0.060185909271240234 seconds
+patching took 4.673004150390625e-05 seconds
+stitching took -1 seconds
+
+
+progress: 0.35, 25/72
+processing 0059072087.mrxs
+0059072087 already exist in destination location, skipped
+
+
+progress: 0.36, 26/72
+processing 0063366529.mrxs
+0063366529 already exist in destination location, skipped
+
+
+progress: 0.38, 27/72
+processing 0063610642.mrxs
+0063610642 already exist in destination location, skipped
+
+
+progress: 0.39, 28/72
+processing 30.mrxs
+30 already exist in destination location, skipped
+
+
+progress: 0.40, 29/72
+processing B-160004549-01-B-001.mrxs
+B-160004549-01-B-001 already exist in destination location, skipped
+
+
+progress: 0.42, 30/72
+processing BB150007349-A-01-001.mrxs
+BB150007349-A-01-001 already exist in destination location, skipped
+
+
+progress: 0.43, 31/72
+processing DigitalSlide_B1M_14S_1.mrxs
+Traceback (most recent call last):
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/create_patches_fp.py", line 307, in <module>
+    process_list = process_list, auto_skip=args.no_auto_skip)
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/create_patches_fp.py", line 103, in seg_and_patch
+    WSI_object = WholeSlideImage(full_path)
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/wsi_core/WholeSlideImage.py", line 31, in __init__
+    self.wsi = openslide.open_slide(path)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/__init__.py", line 382, in open_slide
+    return OpenSlide(filename)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/__init__.py", line 154, in __init__
+    self._osr = lowlevel.open(filename)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/lowlevel.py", line 178, in _check_open
+    raise OpenSlideError(err)
+openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value

@@ -1,0 +1,344 @@
+source:  /home/weismanal/projects/idibell/repo/data
+patch_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+mask_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/masks
+stitch_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/stitches
+source : /home/weismanal/projects/idibell/repo/data
+save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection
+patch_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+mask_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/masks
+stitch_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 15, 'mthresh': 11, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 150}}
+
+
+progress: 0.00, 0/59
+processing 0029468706.mrxs
+0029468706 already exist in destination location, skipped
+
+
+progress: 0.02, 1/59
+processing 0029553565.mrxs
+0029553565 already exist in destination location, skipped
+
+
+progress: 0.03, 2/59
+processing 0030657581.mrxs
+0030657581 already exist in destination location, skipped
+
+
+progress: 0.05, 3/59
+processing 0035146620.mrxs
+0035146620 already exist in destination location, skipped
+
+
+progress: 0.07, 4/59
+processing 0042034876.mrxs
+0042034876 already exist in destination location, skipped
+
+
+progress: 0.08, 5/59
+processing 0042711961.mrxs
+0042711961 already exist in destination location, skipped
+
+
+progress: 0.10, 6/59
+processing 0042951302.mrxs
+0042951302 already exist in destination location, skipped
+
+
+progress: 0.12, 7/59
+processing 0043824438.mrxs
+0043824438 already exist in destination location, skipped
+
+
+progress: 0.14, 8/59
+processing 0044135054.mrxs
+0044135054 already exist in destination location, skipped
+
+
+progress: 0.15, 9/59
+processing 0046723899.mrxs
+0046723899 already exist in destination location, skipped
+
+
+progress: 0.17, 10/59
+processing 0046877280.mrxs
+0046877280 already exist in destination location, skipped
+
+
+progress: 0.19, 11/59
+processing 0047176089.mrxs
+0047176089 already exist in destination location, skipped
+
+
+progress: 0.20, 12/59
+processing 0047953852.mrxs
+0047953852 already exist in destination location, skipped
+
+
+progress: 0.22, 13/59
+processing 0048086809.mrxs
+0048086809 already exist in destination location, skipped
+
+
+progress: 0.24, 14/59
+processing 0049547258.mrxs
+0049547258 already exist in destination location, skipped
+
+
+progress: 0.25, 15/59
+processing 0049556653.mrxs
+0049556653 already exist in destination location, skipped
+
+
+progress: 0.27, 16/59
+processing 0050394746.mrxs
+0050394746 already exist in destination location, skipped
+
+
+progress: 0.29, 17/59
+processing 0051341579.mrxs
+0051341579 already exist in destination location, skipped
+
+
+progress: 0.31, 18/59
+processing 0053952658.mrxs
+0053952658 already exist in destination location, skipped
+
+
+progress: 0.32, 19/59
+processing 0054130784.mrxs
+0054130784 already exist in destination location, skipped
+
+
+progress: 0.34, 20/59
+processing 0054815807.mrxs
+0054815807 already exist in destination location, skipped
+
+
+progress: 0.36, 21/59
+processing 0055483886.mrxs
+0055483886 already exist in destination location, skipped
+
+
+progress: 0.37, 22/59
+processing 0057134497.mrxs
+0057134497 already exist in destination location, skipped
+
+
+progress: 0.39, 23/59
+processing 0058263272.mrxs
+0058263272 already exist in destination location, skipped
+
+
+progress: 0.41, 24/59
+processing 0059072087.mrxs
+0059072087 already exist in destination location, skipped
+
+
+progress: 0.42, 25/59
+processing 0063366529.mrxs
+0063366529 already exist in destination location, skipped
+
+
+progress: 0.44, 26/59
+processing 0063610642.mrxs
+0063610642 already exist in destination location, skipped
+
+
+progress: 0.46, 27/59
+processing 30.mrxs
+30 already exist in destination location, skipped
+
+
+progress: 0.47, 28/59
+processing B-160004549-01-B-001.mrxs
+B-160004549-01-B-001 already exist in destination location, skipped
+
+
+progress: 0.49, 29/59
+processing BB150007349-A-01-001.mrxs
+BB150007349-A-01-001 already exist in destination location, skipped
+
+
+progress: 0.51, 30/59
+processing DigitalSlide_B2M_11S_1_20210826183548302.mrxs
+DigitalSlide_B2M_11S_1_20210826183548302 already exist in destination location, skipped
+
+
+progress: 0.53, 31/59
+processing DigitalSlide_B2M_12S_1_20210826183648767.mrxs
+DigitalSlide_B2M_12S_1_20210826183648767 already exist in destination location, skipped
+
+
+progress: 0.54, 32/59
+processing DigitalSlide_B2M_1S_1_20210826183728179.mrxs
+DigitalSlide_B2M_1S_1_20210826183728179 already exist in destination location, skipped
+
+
+progress: 0.56, 33/59
+processing DigitalSlide_B2M_3S_1_20210826183921228.mrxs
+DigitalSlide_B2M_3S_1_20210826183921228 already exist in destination location, skipped
+
+
+progress: 0.58, 34/59
+processing DigitalSlide_B2M_4S_1_20210826184014839.mrxs
+DigitalSlide_B2M_4S_1_20210826184014839 already exist in destination location, skipped
+
+
+progress: 0.59, 35/59
+processing DigitalSlide_B2M_5S_1_20210826184054251.mrxs
+DigitalSlide_B2M_5S_1_20210826184054251 already exist in destination location, skipped
+
+
+progress: 0.61, 36/59
+processing DigitalSlide_B2M_6S_1_20210826184158873.mrxs
+DigitalSlide_B2M_6S_1_20210826184158873 already exist in destination location, skipped
+
+
+progress: 0.63, 37/59
+processing DigitalSlide_B2M_7S_1_20210826184304020.mrxs
+DigitalSlide_B2M_7S_1_20210826184304020 already exist in destination location, skipped
+
+
+progress: 0.64, 38/59
+processing DigitalSlide_B2M_8S_1_20210826184401956.mrxs
+DigitalSlide_B2M_8S_1_20210826184401956 already exist in destination location, skipped
+
+
+progress: 0.66, 39/59
+processing DigitalSlide_B2M_9S_1_20210826184515465.mrxs
+DigitalSlide_B2M_9S_1_20210826184515465 already exist in destination location, skipped
+
+
+progress: 0.68, 40/59
+processing DigitalSlide_B9M_11S_1.mrxs
+DigitalSlide_B9M_11S_1 already exist in destination location, skipped
+
+
+progress: 0.69, 41/59
+processing DigitalSlide_B9M_14S_1.mrxs
+DigitalSlide_B9M_14S_1 already exist in destination location, skipped
+
+
+progress: 0.71, 42/59
+processing DigitalSlide_B9M_16S_1.mrxs
+DigitalSlide_B9M_16S_1 already exist in destination location, skipped
+
+
+progress: 0.73, 43/59
+processing DigitalSlide_B9M_6S_1.mrxs
+DigitalSlide_B9M_6S_1 already exist in destination location, skipped
+
+
+progress: 0.75, 44/59
+processing DigitalSlide_B9M_7S_1.mrxs
+DigitalSlide_B9M_7S_1 already exist in destination location, skipped
+
+
+progress: 0.76, 45/59
+processing DigitalSlide_B9M_8S_1.mrxs
+DigitalSlide_B9M_8S_1 already exist in destination location, skipped
+
+
+progress: 0.78, 46/59
+processing DigitalSlide_C10M_12S_1.mrxs
+DigitalSlide_C10M_12S_1 already exist in destination location, skipped
+
+
+progress: 0.80, 47/59
+processing DigitalSlide_C10M_14S_1.mrxs
+Creating patches for:  DigitalSlide_C10M_14S_1 ...
+Total number of contours to process:  5
+Bounding Box: 208960 147840 8961 9473
+Contour Area: 37711872.0
+Extracted 631 coordinates
+Bounding Box: 204480 135936 37889 43905
+Contour Area: 665266176.0
+Extracted 9990 coordinates
+Bounding Box: 210880 126976 12801 9409
+Contour Area: 61855744.0
+Extracted 1026 coordinates
+Bounding Box: 187904 124544 29761 33537
+Contour Area: 540979200.0
+Extracted 8197 coordinates
+Bounding Box: 189440 81216 53697 51841
+Contour Area: 1415620608.0
+Extracted 21985 coordinates
+start stitching DigitalSlide_C10M_14S_1
+original size: 272128 x 294144
+downscaled size for stiching: 4252 x 4596
+number of patches: 41829
+patch size: 256x256 patch level: 0
+ref patch size: (256, 256)x(256, 256)
+downscaled patch size: 4x4
+progress: 0/41829 stitched
+progress: 4183/41829 stitched
+progress: 8366/41829 stitched
+progress: 12549/41829 stitched
+progress: 16732/41829 stitched
+progress: 20915/41829 stitched
+progress: 25098/41829 stitched
+progress: 29281/41829 stitched
+progress: 33464/41829 stitched
+progress: 37647/41829 stitched
+segmentation took 1.0291898250579834 seconds
+patching took 2.8996121883392334 seconds
+stitching took 4.484273672103882 seconds
+
+
+progress: 0.81, 48/59
+processing DigitalSlide_C10M_19S_1.mrxs
+DigitalSlide_C10M_19S_1 already exist in destination location, skipped
+
+
+progress: 0.83, 49/59
+processing DigitalSlide_C10M_1S_1.mrxs
+DigitalSlide_C10M_1S_1 already exist in destination location, skipped
+
+
+progress: 0.85, 50/59
+processing DigitalSlide_C10M_2S_1.mrxs
+DigitalSlide_C10M_2S_1 already exist in destination location, skipped
+
+
+progress: 0.86, 51/59
+processing DigitalSlide_C10M_3S_1.mrxs
+DigitalSlide_C10M_3S_1 already exist in destination location, skipped
+
+
+progress: 0.88, 52/59
+processing DigitalSlide_C10M_9S_1.mrxs
+DigitalSlide_C10M_9S_1 already exist in destination location, skipped
+
+
+progress: 0.90, 53/59
+processing DigitalSlide_D4M_1S_1_20210922131645990.mrxs
+DigitalSlide_D4M_1S_1_20210922131645990 already exist in destination location, skipped
+
+
+progress: 0.92, 54/59
+processing DigitalSlide_D4M_2S_1_20210922131740429.mrxs
+DigitalSlide_D4M_2S_1_20210922131740429 already exist in destination location, skipped
+
+
+progress: 0.93, 55/59
+processing DigitalSlide_E10M_7S_1_20210914145322714.mrxs
+DigitalSlide_E10M_7S_1_20210914145322714 already exist in destination location, skipped
+
+
+progress: 0.95, 56/59
+processing DigitalSlide_E6M_15S_1.mrxs
+DigitalSlide_E6M_15S_1 already exist in destination location, skipped
+
+
+progress: 0.97, 57/59
+processing DigitalSlide_E6M_17S_1.mrxs
+DigitalSlide_E6M_17S_1 already exist in destination location, skipped
+
+
+progress: 0.98, 58/59
+processing DigitalSlide_E6M_20S_1.mrxs
+DigitalSlide_E6M_20S_1 already exist in destination location, skipped
+average segmentation time in s per slide: 0.01744389533996582
+average patching time in s per slide: 0.04914596929388531
+average stiching time in s per slide: 0.07600463851023528

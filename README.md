@@ -34,14 +34,7 @@ After performing the data copy, create links from the datafiles to the main data
 bash /home/weismanal/projects/idibell/repo/datafile_organization/link_files.sh
 ```
 
-Note this will re-create links to the files
-
-```
-DigitalSlide_B2M_1S_1
-DigitalSlide_B2M_1S_1.mrxs
-```
-
-which I have moved to the directory `not_reading_by_openslide` because they do not appear to be readable by OpenSlide (I believe I am waiting on Eduard for help with this as well as other datafile issues; see my emails to him for details). So, I should delete these two files (the two links).
+Note there are currently 13 files in the `converted_files` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 13 files, there are currently (2/17/22) 72 links and 73 files in Box (0059072074 is missing most of its `.dat` files so is not included).
 
 ## Compute node allocation
 
@@ -91,7 +84,7 @@ Commands that I have run to generate files in the working directory include:
 ```bash
 
 # Latest command - this is the best preset Eduard currently suggests based on the first two batches of data
-python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-2022-02-15.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-2022-02-17.log
 
 # Previous commands
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/default       --patch_size 256                                                                         --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-default.log

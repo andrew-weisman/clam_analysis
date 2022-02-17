@@ -137,9 +137,9 @@ Here are the commands I'm running for feature extraction:
 ```bash
 
 # Latest commands
-cp $working_dir/results/bwh_resection/process_list_autogen.csv $working_dir/inputs/process_list-feature_extraction-bwh_resection.csv
-emacs -nw $working_dir/inputs/process_list-feature_extraction-bwh_resection.csv  # then I replaced all occurrences of ".mrxs," with "," per the GH instructions
-python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/bwh_resection --data_slide_dir $working_dir/data --csv_path $working_dir/inputs/process_list-feature_extraction-bwh_resection.csv --feat_dir $working_dir/results/bwh_resection/features --batch_size 880 --slide_ext .mrxs 2>&1 | tee $working_dir/logs/feature_extraction-bwh_resection-all_55_wsis.log
+cp $working_dir/results/bwh_resection/process_list_autogen.csv $working_dir/inputs/process_list-feature_extraction-2022-02-17.csv
+emacs -nw $working_dir/inputs/process_list-feature_extraction-2022-02-17.csv  # then I replaced all occurrences of ".mrxs," with "," per the GH instructions
+python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/bwh_resection --data_slide_dir $working_dir/data --csv_path $working_dir/inputs/process_list-feature_extraction-2022-02-17.csv --feat_dir $working_dir/results/bwh_resection/features --batch_size 895 --slide_ext .mrxs 2>&1 | tee $working_dir/logs/feature_extraction-2022-02-17.log
 
 # Previous command
 python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/pinyi --data_slide_dir $working_dir/data --csv_path $working_dir/inputs/process_list-feature_extraction-pinyi.csv --feat_dir $working_dir/results/pinyi/features --batch_size 512 --slide_ext .mrxs 2>&1 | tee $working_dir/logs/feature_extraction-pinyi.log

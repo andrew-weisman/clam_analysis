@@ -1,0 +1,161 @@
+initializing dataset
+loading model checkpoint
+
+progress: 0/72
+0029468706
+skipped 0029468706
+
+progress: 1/72
+0029553565
+skipped 0029553565
+
+progress: 2/72
+0030657581
+skipped 0030657581
+
+progress: 3/72
+0035146620
+skipped 0035146620
+
+progress: 4/72
+0042034876
+skipped 0042034876
+
+progress: 5/72
+0042711961
+skipped 0042711961
+
+progress: 6/72
+0042951302
+skipped 0042951302
+
+progress: 7/72
+0043824438
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0043824438
+patch_level 0
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d679bd0>
+processing /home/weismanal/projects/idibell/repo/results/bwh_resection/patches/0043824438.h5: total of 67 batches
+batch 0/67, 0 files processed
+batch 20/67, 17900 files processed
+batch 40/67, 35800 files processed
+batch 60/67, 53700 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/bwh_resection/features/h5_files/0043824438.h5 took 115.58135151863098 s
+features size:  (59141, 1024)
+coordinates size:  (59141, 2)
+
+progress: 8/72
+0044135054
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0044135054
+patch_level 0
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f87bc50>
+processing /home/weismanal/projects/idibell/repo/results/bwh_resection/patches/0044135054.h5: total of 26 batches
+batch 0/26, 0 files processed
+batch 20/26, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/bwh_resection/features/h5_files/0044135054.h5 took 46.69119882583618 s
+features size:  (22416, 1024)
+coordinates size:  (22416, 2)
+
+progress: 9/72
+0046723899
+downsample [1. 1.]
+downsampled_level_dim [272128 294144]
+level_dim [272128 294144]
+name 0046723899
+patch_level 0
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1b589950>
+processing /home/weismanal/projects/idibell/repo/results/bwh_resection/patches/0046723899.h5: total of 67 batches
+batch 0/67, 0 files processed
+batch 20/67, 17900 files processed
+batch 40/67, 35800 files processed
+batch 60/67, 53700 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/bwh_resection/features/h5_files/0046723899.h5 took 113.23689699172974 s
+features size:  (59749, 1024)
+coordinates size:  (59749, 2)
+
+progress: 10/72
+0046877280
+skipped 0046877280
+
+progress: 11/72
+0047176089
+skipped 0047176089
+
+progress: 12/72
+0047953852
+skipped 0047953852
+
+progress: 13/72
+0048086809
+skipped 0048086809
+
+progress: 14/72
+0049547258
+skipped 0049547258
+
+progress: 15/72
+0049556653
+skipped 0049556653
+
+progress: 16/72
+0050394746
+skipped 0050394746
+
+progress: 17/72
+0051341579
+skipped 0051341579
+
+progress: 18/72
+0053952658
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0053952658
+patch_level 0
+patch_size 256
+save_path /home/weismanal/notebook/2021-11-11/testing_clam/results/bwh_resection/patches
+
+feature extraction settings
+target patch size:  None
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1f87bf50>
+Traceback (most recent call last):
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/extract_features_fp.py", line 115, in <module>
+    custom_downsample=args.custom_downsample, target_patch_size=args.target_patch_size)
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/extract_features_fp.py", line 36, in compute_w_loader
+    x, y = dataset[0]
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/datasets/dataset_h5.py", line 151, in __getitem__
+    img = self.wsi.read_region(coord, self.patch_level, (self.patch_size, self.patch_size)).convert('RGB')
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/__init__.py", line 223, in read_region
+    level, size[0], size[1])
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/lowlevel.py", line 259, in read_region
+    _read_region(slide, buf, x, y, level, w, h)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/lowlevel.py", line 196, in _check_error
+    raise OpenSlideError(err)
+openslide.lowlevel.OpenSlideError: Couldn't open /home/weismanal/projects/idibell/repo/data/0053952658/Data0011.dat: No such file or directory

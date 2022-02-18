@@ -17,7 +17,6 @@ slide_id,process,status,seg_level,sthresh,mthresh,close,use_otsu,keep_ids,exclud
 0049556653,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt
 0050394746,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt
 0051341579,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt
-0053952658,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt
 0054130784,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt
 0054815807,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt
 0055483886,0,already_exist,-1,15,11,4,False,none,none,100.0,16.0,8,-1,150,True,four_pt

@@ -116,6 +116,8 @@ python $CLAM/create_patches_fp.py --source $working_dir/data-without_data_dirs -
 
 The testing results seem to show that without the data directories, segmentation may be performed on some sort of thumbnail present in the `.mrxs` file itself and that while CLAM seems to work on `.mrxs` files, the associated data directories must be present.
 
+Note this step eliminates `0059072074` because it is missing many `.dat` files (going from 73 to 72 images total).
+
 ## Stitching comparisons
 
 Upon observing the results of the masks and stitches on the `.ome.tif` files, I see that unfortunately just as for the `.mrxs` files the JPEGs of the stiches looked reasonable but the masks looked bad (strange black grid on top of the images), for the `.ome.tif` files the JPEGs of the masks look reasonable but the stitches look bad in the same exact way, rendering impossible visual comparison between the stitches. However, I have pointed the stiches on the `.ome.tif`s to the corresponding masks and used those instead for comparison in the image gallery which I generated using
@@ -148,6 +150,8 @@ python $CLAM/extract_features_fp.py --data_h5_dir $working_dir/results/pinyi --d
 This used (for the "Previous command") 9275MiB out of 16280MiB of GPU memory on a P100 GPU, so I can probably try increasing the batch size from 512 to 899 (exactly) or 880 (to be safe). I can also try using multiple GPUs simply by allocating more from SLURM; this should automatically work per the CLAM codebase.
 
 For the "Latest comands" step in which I increased the batch size to 880, now 15439MiB out of 16280MiB of GPU memory is being used on a P100 GPU (94.8% memory utilization), so indeed the increase of batch size seems to work as expected.
+
+Note this step eliminates `0053952658` because it is missing one `.dat` file (going from 72 to 71 images total).
 
 ## Assumed directory structure
 

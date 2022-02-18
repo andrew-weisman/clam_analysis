@@ -187,7 +187,7 @@ bash $working_dir/create_data_labels_for_clam.sh $working_dir
 
 This will create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file).
 
-**Don't forget to delete the lines in /home/weismanal/projects/idibell/repo/data_labels.csv whose corresponding .pt files do not exist at this point (if any, and they would only be in the 7th and 8th batches)!**
+Don't forget to delete the lines in `/home/weismanal/projects/idibell/repo/data_labels.csv` whose corresponding `.pt` files do not exist at this point, if any.
 
 ## CLAM codebase modification
 
@@ -195,12 +195,10 @@ The next steps in the CLAM procedure require modification to the CLAM codebase.
 
 Note that the `task` argument to `$CLAM/main.py` corresponds to `idibell` and add the following block after the `elif args.task == 'task_2_tumor_subtyping':` block:
 
-**UPDATE THE LINE BELOW!!!!**
-
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    working_dir = '/home/weismanal/projects/idibell/repo'  # UPDATE THIS LINE!!!!
+    working_dir = '/home/weismanal/projects/idibell/repo'
     dataset_name = 'bwh_resection'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     label_col = 'label'
@@ -226,12 +224,10 @@ parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal',  'tas
 
 Likewise, to `$CLAM/create_splits_seq.py` add the block
 
-**UPDATE THE LINE BELOW!!!!**
-
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    working_dir = '/home/weismanal/projects/idibell/repo'  # UPDATE THIS LINE!!!!
+    working_dir = '/home/weismanal/projects/idibell/repo'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     label_col = 'label'
     dataset = Generic_WSI_Classification_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
@@ -245,7 +241,7 @@ elif args.task == 'idibell':
                             ignore=[])
 ```
 
-and the modify the line
+and modify the line
 
 ```python
 parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal', 'task_2_tumor_subtyping', 'idibell'])
@@ -253,12 +249,10 @@ parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal', 'task
 
 Likewise, to `$CLAM/eval.py` add the block
 
-**UPDATE THE LINE BELOW!!!!**
-
 ```python
 elif args.task == 'idibell':
     args.n_classes = 4
-    working_dir = '/home/weismanal/projects/idibell/repo'  # UPDATE THIS LINE!!!!
+    working_dir = '/home/weismanal/projects/idibell/repo'
     dataset_name = 'bwh_resection'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),

@@ -1,0 +1,38 @@
+label column: label
+label dictionary: {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+number of classes: 4
+slide-level counts:  
+ 0    20
+1    18
+2    16
+3    17
+Name: label, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 20
+Slide-LVL; Number of samples registered in class 0: 20
+Patient-LVL; Number of samples registered in class 1: 18
+Slide-LVL; Number of samples registered in class 1: 18
+Patient-LVL; Number of samples registered in class 2: 16
+Slide-LVL; Number of samples registered in class 2: 16
+Patient-LVL; Number of samples registered in class 3: 17
+Slide-LVL; Number of samples registered in class 3: 17
+
+number of training samples: 68
+number of samples in cls 0: 19
+number of samples in cls 1: 17
+number of samples in cls 2: 16
+number of samples in cls 3: 16
+
+number of val samples: 3
+number of samples in cls 0: 1
+number of samples in cls 1: 1
+number of samples in cls 3: 1
+
+number of test samples: 0
+Traceback (most recent call last):
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/create_splits_seq.py", line 80, in <module>
+    save_splits(splits, ['train', 'val', 'test'], os.path.join(split_dir, 'splits_{}.csv'.format(i)))
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/datasets/dataset_generic.py", line 18, in save_splits
+    splits = [split_datasets[i].slide_data['slide_id'] for i in range(len(split_datasets))]
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/datasets/dataset_generic.py", line 18, in <listcomp>
+    splits = [split_datasets[i].slide_data['slide_id'] for i in range(len(split_datasets))]
+AttributeError: 'NoneType' object has no attribute 'slide_data'

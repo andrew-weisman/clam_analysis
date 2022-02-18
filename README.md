@@ -276,7 +276,7 @@ Run e.g.:
 
 ```bash
 # In general
-python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 5 --val_frac 0.15 --test_frac 0.15 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k5-val_frac0.15-test_frac0.15.log
+python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 10 --val_frac 0.15 --test_frac 0.15 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k10-val_frac0.15-test_frac0.15.log
 
 # My short test
 python $CLAM/create_splits_seq.py --task idibell --seed 1 --label_frac 1 --k 2 --val_frac 0.33 --test_frac 0.33 2>&1 | tee $working_dir/logs/data_splitting-label_frac1-k2-val_frac0.33-test_frac0.33.log
@@ -288,7 +288,7 @@ Run e.g.:
 
 ```bash
 # In general
-python $CLAM/main.py --drop_out --early_stopping --lr 2e-4 --k 5 --label_frac 1 --exp_code idibell_CLAM_100 --weighted_sample --bag_loss ce --inst_loss svm --task idibell --model_type clam_sb --log_data --subtyping --data_root_dir $working_dir/results/bwh_resection --results_dir $working_dir/results/bwh_resection/training 2>&1 | tee $working_dir/logs/training-bwh_resection-100.log
+python $CLAM/main.py --drop_out --early_stopping --lr 2e-4 --k 10 --label_frac 1 --exp_code idibell_CLAM_100 --weighted_sample --bag_loss ce --inst_loss svm --task idibell --model_type clam_sb --log_data --subtyping --data_root_dir $working_dir/results/bwh_resection --results_dir $working_dir/results/bwh_resection/training 2>&1 | tee $working_dir/logs/training-2022-02-18.log
 
 # My short test
 python $CLAM/main.py --max_epochs 3 --drop_out --early_stopping --lr 2e-4 --k 2 --label_frac 1 --exp_code idibell_CLAM_100_max_epochs_3_k_2 --weighted_sample --bag_loss ce --inst_loss svm --task idibell --model_type clam_sb --log_data --subtyping --data_root_dir $working_dir/results/pinyi --results_dir $working_dir/results/pinyi/training 2>&1 | tee $working_dir/logs/training-pinyi-100_max_epochs_3_k_2.log

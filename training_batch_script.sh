@@ -11,6 +11,7 @@
 echo "Started: $(date)"
 
 # Setup
+source /data/weismanal/miniconda3/etc/profile.d/conda.sh
 . /home/weismanal/projects/idibell/links/clam_installation/clam_env.sh
 working_dir="/home/weismanal/projects/idibell/repo"
 

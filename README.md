@@ -1,5 +1,8 @@
 # Notes on CLAM
 
+**Note: I have completed the section "Creation of labels file"**
+**Note: Don't forget to appropriately rename the hysterectomy files and directories and document this**
+
 Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM).
 
 ## Transfer data from Box to Biowulf (on Helix)

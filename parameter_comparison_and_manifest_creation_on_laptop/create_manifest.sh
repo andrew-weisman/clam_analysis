@@ -22,3 +22,9 @@ echo "Unique labels: ${labels:0:${#labels}-2}"
 # Note: Reorder entries in manifest.csv manually into the appropriate batch order
 # Number of images: 73
 # Unique labels: LCN, MSI, POLE, p53
+
+# Output as of 3/22/22:
+# weismanal@NCI-02196596-L:~/notebook/2022-03-22/idibell_labels_file_creation/repo/parameter_comparison_and_manifest_creation_on_laptop$ bash create_manifest.sh
+# Note: Reorder entries in manifest.csv manually into the appropriate batch order
+# Number of images: 148
+# Unique labels: LCN, MSI, POLE, p53

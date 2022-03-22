@@ -179,6 +179,12 @@ bash create_manifest.sh
 
 and move the created `manifest.csv` file to `$working_dir/parameter_comparison_and_manifest_creation_on_laptop` on Biowulf.
 
+Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names:
+
+```bash
+bash rename_duplicate_named_files.sh
+```
+
 Run this:
 
 ```bash

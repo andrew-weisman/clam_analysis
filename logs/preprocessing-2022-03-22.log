@@ -1,0 +1,173 @@
+source:  /home/weismanal/projects/idibell/repo/data
+patch_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+mask_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/masks
+stitch_save_dir:  /home/weismanal/projects/idibell/repo/results/bwh_resection/stitches
+source : /home/weismanal/projects/idibell/repo/data
+save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection
+patch_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/patches
+mask_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/masks
+stitch_save_dir : /home/weismanal/projects/idibell/repo/results/bwh_resection/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 15, 'mthresh': 11, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 150}}
+
+
+progress: 0.00, 0/146
+processing 0029468706.mrxs
+0029468706 already exist in destination location, skipped
+
+
+progress: 0.01, 1/146
+processing 0029553565.mrxs
+0029553565 already exist in destination location, skipped
+
+
+progress: 0.01, 2/146
+processing 0030657581.mrxs
+0030657581 already exist in destination location, skipped
+
+
+progress: 0.02, 3/146
+processing 0035146620.mrxs
+0035146620 already exist in destination location, skipped
+
+
+progress: 0.03, 4/146
+processing 0042034876.mrxs
+0042034876 already exist in destination location, skipped
+
+
+progress: 0.03, 5/146
+processing 0042711961.mrxs
+0042711961 already exist in destination location, skipped
+
+
+progress: 0.04, 6/146
+processing 0042951302.mrxs
+0042951302 already exist in destination location, skipped
+
+
+progress: 0.05, 7/146
+processing 0043824438.mrxs
+0043824438 already exist in destination location, skipped
+
+
+progress: 0.05, 8/146
+processing 0044135054.mrxs
+0044135054 already exist in destination location, skipped
+
+
+progress: 0.06, 9/146
+processing 0046723899.mrxs
+0046723899 already exist in destination location, skipped
+
+
+progress: 0.07, 10/146
+processing 0046877280.mrxs
+0046877280 already exist in destination location, skipped
+
+
+progress: 0.08, 11/146
+processing 0047176089.mrxs
+0047176089 already exist in destination location, skipped
+
+
+progress: 0.08, 12/146
+processing 0047953852.mrxs
+0047953852 already exist in destination location, skipped
+
+
+progress: 0.09, 13/146
+processing 0048086809.mrxs
+0048086809 already exist in destination location, skipped
+
+
+progress: 0.10, 14/146
+processing 0049547258.mrxs
+0049547258 already exist in destination location, skipped
+
+
+progress: 0.10, 15/146
+processing 0049556653.mrxs
+0049556653 already exist in destination location, skipped
+
+
+progress: 0.11, 16/146
+processing 0050394746.mrxs
+0050394746 already exist in destination location, skipped
+
+
+progress: 0.12, 17/146
+processing 0051341579.mrxs
+0051341579 already exist in destination location, skipped
+
+
+progress: 0.12, 18/146
+processing 0054130784.mrxs
+0054130784 already exist in destination location, skipped
+
+
+progress: 0.13, 19/146
+processing 0054815807.mrxs
+0054815807 already exist in destination location, skipped
+
+
+progress: 0.14, 20/146
+processing 0055483886.mrxs
+0055483886 already exist in destination location, skipped
+
+
+progress: 0.14, 21/146
+processing 0057134497.mrxs
+0057134497 already exist in destination location, skipped
+
+
+progress: 0.15, 22/146
+processing 0058263272.mrxs
+0058263272 already exist in destination location, skipped
+
+
+progress: 0.16, 23/146
+processing 0059072087.mrxs
+0059072087 already exist in destination location, skipped
+
+
+progress: 0.16, 24/146
+processing 0063366529.mrxs
+0063366529 already exist in destination location, skipped
+
+
+progress: 0.17, 25/146
+processing 0063610642.mrxs
+0063610642 already exist in destination location, skipped
+
+
+progress: 0.18, 26/146
+processing 30.mrxs
+30 already exist in destination location, skipped
+
+
+progress: 0.18, 27/146
+processing B-160004549-01-B-001.mrxs
+B-160004549-01-B-001 already exist in destination location, skipped
+
+
+progress: 0.19, 28/146
+processing BB150007349-A-01-001.mrxs
+BB150007349-A-01-001 already exist in destination location, skipped
+
+
+progress: 0.20, 29/146
+processing DigitalSlide_B1M_10S_1-hysterectomy.mrxs
+Traceback (most recent call last):
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/create_patches_fp.py", line 307, in <module>
+    process_list = process_list, auto_skip=args.no_auto_skip)
+  File "/home/weismanal/projects/idibell/links/clam_installation/repo/create_patches_fp.py", line 103, in seg_and_patch
+    WSI_object = WholeSlideImage(full_path)
+  File "/gpfs/gsfs10/users/weismanal/notebook/2021-11-10/testing_clam/repo/wsi_core/WholeSlideImage.py", line 32, in __init__
+    self.wsi = openslide.open_slide(path)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/__init__.py", line 382, in open_slide
+    return OpenSlide(filename)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/__init__.py", line 154, in __init__
+    self._osr = lowlevel.open(filename)
+  File "/data/weismanal/miniconda3/envs/clam/lib/python3.7/site-packages/openslide/lowlevel.py", line 178, in _check_open
+    raise OpenSlideError(err)
+openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value

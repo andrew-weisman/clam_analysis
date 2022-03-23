@@ -31,7 +31,7 @@ echo $header_line
 cd $working_dir || exit 1
 
 # Loop through all the linked images
-for filename in $(ls -l data/ | grep ^l | awk '{print $9}' | grep "\." | head -n 4); do
+for filename in $(ls -l data/ | grep ^l | awk '{print $9}' | grep "\."); do
 
     # Obtain the full pathname
     # image_pathname="$working_dir/data/BB150007349-A-01-001.mrxs"

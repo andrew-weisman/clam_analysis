@@ -1,7 +1,6 @@
 # Notes on CLAM
 
 **Note: I have completed the section "Creation of labels file"**
-**Note: Don't forget to appropriately rename the hysterectomy files and directories and document this**
 
 Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM).
 
@@ -15,7 +14,7 @@ rclone config  # ONLY for rclone setup per above instructions
 read -rs RCLONE_CONFIG_PASS
 export RCLONE_CONFIG_PASS
 cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/
-mkcd batch_003
+mkcd batch_003  # I never actually did the following for batches 1 and 2 since Pinyi already transferred them
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch" .
 mkcd ../batch_004
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch" .
@@ -27,17 +26,26 @@ mkcd ../batch_007
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Seventh Batch" .
 mkcd ../batch_008
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch" .
+mkcd ../hysterectomy_specimens
+rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens" .
 ```
 
 Note it appears that re-running these commands in e.g. a partially copied directory will not re-copy the files that are currently present, and `rclone` even seems to perform "Checks" on the existing files.
 
+Since the hysterectomy files have the same filenames as the earlier ones, add a suffix to both the `.mrxs` files and their corresponding directories:
+
+```bash
+cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/hysterectomy_specimens
+for mrxs_file in $(find . -iname "*.mrxs"); do mrxs_dir=$(echo $mrxs_file | awk -v FS=.mrxs '{print $1}'); mv $mrxs_dir ${mrxs_dir}-hysterectomy; mv ${mrxs_dir}.mrxs ${mrxs_dir}-hysterectomy.mrxs; done
+```
+
 After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running from that directory:
 
 ```bash
-bash /home/weismanal/projects/idibell/repo/datafile_organization/link_files.sh
+bash /home/weismanal/projects/idibell/repo/link_files.sh
 ```
 
-Note there are currently 13 files in the `converted_files` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 13 files, there are currently (2/17/22) 72 links and 73 files in Box (0059072074 is missing most of its `.dat` files so is not included).
+Note there are currently 13 files in the `converted_images` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 13 files, there are currently (3/22/22) 146 links and 148 files in Box (there are two files in the directory `missing_dat_files` because they are missing some of their `.dat` files and are not included in the main links directory).
 
 ## Compute node allocation
 
@@ -87,7 +95,7 @@ Commands that I have run to generate files in the working directory include:
 ```bash
 
 # Latest command - this is the best preset Eduard currently suggests based on the first two batches of data
-python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-2022-02-17.log
+python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-2022-03-22.log
 
 # Previous commands
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/default       --patch_size 256                                                                         --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-default.log

@@ -87,7 +87,7 @@ Further note that for the time being I am excluding all hysterectomy files becau
 
 ## Metadata exploration
 
-Extract the slide metadata:
+Extract the slide metadata (must be run on Biowulf):
 
 ```bash
 bash extract_slide_metadata.sh > slide_metadata-2022-03-25.csv

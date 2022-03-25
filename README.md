@@ -1,8 +1,42 @@
 # Notes on CLAM
 
-**Note: I have completed the section "Creation of labels file"**
-
 Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM).
+
+## Create the main labels file
+
+First, mount the Box drive in Windows somewhere accessible to WSL:
+
+```bash
+sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
+```
+
+Check for duplicates in the primary (i.e., excluding hysterectomy) images from Box:
+
+```bash
+bash parameter_comparison_and_manifest_creation_on_laptop/check_for_duplicate_images_in_box.sh
+```
+
+If any directories containing duplicate `.mrxs` files are found per the output from this script, then address them using the output message for guidance.
+
+Create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop in the directory `parameter_comparison_and_manifest_creation_on_laptop`
+
+```bash
+bash create_manifest.sh
+```
+
+Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names:
+
+```bash
+bash rename_duplicate_named_files.sh
+```
+
+Create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file):
+
+```bash
+bash $working_dir/create_data_labels_for_clam.sh $working_dir
+```
+
+I can probably start ignoring this (note this whole section used to be lower): Don't forget to delete the lines in `/home/weismanal/projects/idibell/repo/data_labels.csv` whose corresponding `.pt` files do not exist at this point, if any.
 
 ## Transfer data from Box to Biowulf (on Helix)
 
@@ -173,44 +207,6 @@ pinyi_data_dir=$working_dir/results/pinyi/features  # called something like $DAT
 Note that the directory one level up (e.g., `$working_dir/results/pinyi`) is what the CLAM README calls `$DATA_ROOT_DIR`. So going forward I may want to set up symbolic links to adhere to this structure.
 
 This variable is not actually needed anywhere in this document as of 12/28/21.
-
-## Creation of labels file
-
-First, mount the Box drive in Windows somewhere accessible to WSL:
-
-```bash
-sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
-```
-
-Check for duplicates in the primary (i.e., excluding hysterectomy) images from Box:
-
-```bash
-bash parameter_comparison_and_manifest_creation_on_laptop/check_for_duplicate_images_in_box.sh
-```
-
-If any directories containing duplicate `.mrxs` files are found per the output from this script, then address them using the output message for guidance.
-
-Create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop in the directory `parameter_comparison_and_manifest_creation_on_laptop`
-
-```bash
-bash create_manifest.sh
-```
-
-and move the created `manifest.csv` file to `$working_dir/parameter_comparison_and_manifest_creation_on_laptop` on Biowulf.
-
-Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names:
-
-```bash
-bash rename_duplicate_named_files.sh
-```
-
-Create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file):
-
-```bash
-bash $working_dir/create_data_labels_for_clam.sh $working_dir
-```
-
-Don't forget to delete the lines in `/home/weismanal/projects/idibell/repo/data_labels.csv` whose corresponding `.pt` files do not exist at this point, if any.
 
 ## CLAM codebase modification
 

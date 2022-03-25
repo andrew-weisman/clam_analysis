@@ -28,3 +28,8 @@ echo "Unique labels: ${labels:0:${#labels}-2}"
 # Note: Reorder entries in manifest.csv manually into the appropriate batch order
 # Number of images: 148
 # Unique labels: LCN, MSI, POLE, p53
+
+# Output as of 3/25/22 (after deleting a duplicate, unreadable file):
+# Note: Reorder entries in manifest.csv manually into the appropriate batch order
+# Number of images: 147
+# Unique labels: LCN, MSI, POLE, p53

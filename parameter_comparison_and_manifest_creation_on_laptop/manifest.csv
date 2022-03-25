@@ -25,7 +25,6 @@ filename,label
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch/B20 497 p53/0053952658.mrxs,p53
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch/B20 6640 p53/0054815807.mrxs,p53
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch/B20 9975 p53/DigitalSlide_B9M_16S_1.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B15 1488 MSI/DigitalSlide_B2M_1S_1.mrxs,MSI
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B15 1488 MSI/DigitalSlide_B2M_1S_1_20210826183728179.mrxs,MSI
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B16 4758 MSI/DigitalSlide_B2M_3S_1_20210826183921228.mrxs,MSI
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B17 34061 MSI/DigitalSlide_B2M_6S_1_20210826184158873.mrxs,MSI
@@ -72,78 +71,3 @@ filename,label
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch/b17-32663 POLE/DigitalSlide_B1M_2S_1_12-1-2022_17-38-55.mrxs,POLE
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch/b19-6984 MSI/DigitalSlide_B1M_3S_1_12-1-2022_17-40-14.mrxs,MSI
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch/b20-10920 LCN/DigitalSlide_B1M_19S_1.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_10S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_11S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_12S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_13S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_14S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_16S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_17S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_18S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_19S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_1S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_20S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_2S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_4S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_5S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_6S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_8S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B5M_9S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B6M_1S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B6M_2S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/LCN/DigitalSlide_B6M_3S_1-hysterectomy.mrxs,LCN
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_11S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_12S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_13S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_14S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_15S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_16S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_17S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_18S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_19S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_1S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_20S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_2S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_3S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_4S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_5S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_6S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_7S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_8S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B3M_9S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B4M_1S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/MSI/DigitalSlide_B4M_2S_1-hysterectomy.mrxs,MSI
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_10S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_11S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_12S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_13S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_14S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_15S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_16S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_17S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_18S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_19S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_1S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_20S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_2S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_3S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_4S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_5S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_6S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_7S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_8S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B1M_9S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_10S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_11S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_12S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_13S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_14S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_1S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_2S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_3S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_4S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_5S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_6S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_7S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_8S_1-hysterectomy.mrxs,p53
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens/p53/DigitalSlide_B2M_9S_1-hysterectomy.mrxs,p53

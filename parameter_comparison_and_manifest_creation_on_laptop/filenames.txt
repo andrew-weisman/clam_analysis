@@ -24,7 +24,6 @@
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch/B20 9975 p53/DigitalSlide_B9M_16S_1.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Second Batch/B18 29083 p53/0046877280.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Second Batch/b18 3051 p53/0042951302.mrxs
-./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B15 1488 MSI/DigitalSlide_B2M_1S_1.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B20 9602 MSI/DigitalSlide_B2M_11S_1_20210826183548302.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fifth Batch/5th batch/B20-11998 MSI/DigitalSlide_B2M_12S_1_20210826183648767.mrxs
 ./Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch/B15 1488 MSI/DigitalSlide_B2M_1S_1_20210826183728179.mrxs

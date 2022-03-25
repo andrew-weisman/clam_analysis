@@ -85,6 +85,16 @@ Note there are currently 12 files in the `converted_images` subdirectory in `MRX
 
 Further note that for the time being I am excluding all hysterectomy files because (1) they are unreadable by openslide and Eduard is going to convert them in batch and (2) I need to nail down the magnifications for all the main images and see how CLAM performs when using the same magnifications for all images.
 
+## Metadata exploration
+
+Extract the slide metadata:
+
+```bash
+bash extract_slide_metadata.sh > slide_metadata-2022-03-25.csv
+```
+
+Explore the metadata using the Jupyter notebook `study_slide_metadata.ipynb`.
+
 ## Compute node allocation
 
 Commands that I have run to get an interactive compute node include:

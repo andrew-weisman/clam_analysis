@@ -182,6 +182,14 @@ First, mount the Box drive in Windows somewhere accessible to WSL:
 sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
 ```
 
+Check for duplicates in the primary (i.e., excluding hysterectomy) images from Box:
+
+```bash
+bash parameter_comparison_and_manifest_creation_on_laptop/check_for_duplicate_images_in_box.sh
+```
+
+If any directories containing duplicate `.mrxs` files are found per the output from this script, then address them using the output message for guidance.
+
 Create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop in the directory `parameter_comparison_and_manifest_creation_on_laptop`
 
 ```bash
@@ -196,13 +204,11 @@ Since the hysterectomy images have the same names as previous images, we want to
 bash rename_duplicate_named_files.sh
 ```
 
-Run this:
+Create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file):
 
 ```bash
 bash $working_dir/create_data_labels_for_clam.sh $working_dir
 ```
-
-This will create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file).
 
 Don't forget to delete the lines in `/home/weismanal/projects/idibell/repo/data_labels.csv` whose corresponding `.pt` files do not exist at this point, if any.
 

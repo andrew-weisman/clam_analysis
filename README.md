@@ -66,6 +66,8 @@ rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hy
 
 Note it appears that re-running these commands in e.g. a partially copied directory will not re-copy the files that are currently present, and `rclone` even seems to perform "Checks" on the existing files.
 
+However, note that if I've deleted files from Box, these deletions will not sync up here; I likely need to use an `rclone` command other than `copy`. So until I do, make sure I also manually perform the deletions here on Biowulf.
+
 Since the hysterectomy files have the same filenames as the earlier ones, add a suffix to both the `.mrxs` files and their corresponding directories:
 
 ```bash
@@ -73,13 +75,15 @@ cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/hystere
 for mrxs_file in $(find . -iname "*.mrxs"); do mrxs_dir=$(echo $mrxs_file | awk -v FS=.mrxs '{print $1}'); mv $mrxs_dir ${mrxs_dir}-hysterectomy; mv ${mrxs_dir}.mrxs ${mrxs_dir}-hysterectomy.mrxs; done
 ```
 
-After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running from that directory:
+After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running the following from that directory. **WARNING:** Probably only do this for a clean directory structure, otherwise many other files will be linked; for now, it might be best to create the links manually:
 
 ```bash
 bash /home/weismanal/projects/idibell/repo/link_files.sh
 ```
 
-Note there are currently 13 files in the `converted_images` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 13 files, there are currently (3/22/22) 146 links and 148 files in Box (there are two files in the directory `missing_dat_files` because they are missing some of their `.dat` files and are not included in the main links directory).
+Note there are currently 12 files in the `converted_images` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 12 files, there are currently (3/25/22) 70 links and 72 files in Box (there are two files in the directory `missing_dat_files` because they are missing some of their `.dat` files and are not included in the main links directory; I've told Eduard about these).
+
+Further note that for the time being I am excluding all hysterectomy files because (1) they are unreadable by openslide and Eduard is going to convert them in batch and (2) I need to nail down the magnifications for all the main images and see how CLAM performs when using the same magnifications for all images.
 
 ## Compute node allocation
 

@@ -24,7 +24,7 @@ Create the manifest file `$working_dir/parameter_comparison_and_manifest_creatio
 bash create_manifest.sh
 ```
 
-Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names:
+Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names (only in the manifest, not in the actual files):
 
 ```bash
 bash rename_duplicate_named_files.sh
@@ -40,15 +40,16 @@ I can probably start ignoring this (note this whole section used to be lower): D
 
 ## Transfer data from Box to Biowulf (on Helix)
 
-After setting up `rclone` for use on Biowulf per [these instructions](https://hpc.nih.gov/docs/box_onedrive.html):
+After setting up `rclone` for use on Biowulf/Helix per [these instructions](https://hpc.nih.gov/docs/box_onedrive.html):
 
 ```bash
+# DO THE FOLLOWING ON HELIX!!!!
 module load rclone
 rclone config  # ONLY for rclone setup per above instructions
 read -rs RCLONE_CONFIG_PASS
 export RCLONE_CONFIG_PASS
 cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/
-mkcd batch_003  # I never actually did the following for batches 1 and 2 since Pinyi already transferred them
+mkcd batch_003  # I never actually did the following for batches 1 and 2 since Pinyi already transferred them; nor do I have the permissions on these files
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Third Batch" .
 mkcd ../batch_004
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Fourth Batch" .
@@ -61,14 +62,15 @@ rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Se
 mkcd ../batch_008
 rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Eighth Batch" .
 mkcd ../hysterectomy_specimens
-rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens" .
+# rclone copy --progress box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens" .
+rclone copy --progress --exclude="POLE/pole cases.7z" box:"Research_collaboration-IDIBELL-NCI-FNL/MRXS Files/Hysterectomy specimens" .
 ```
 
 Note it appears that re-running these commands in e.g. a partially copied directory will not re-copy the files that are currently present, and `rclone` even seems to perform "Checks" on the existing files.
 
 However, note that if I've deleted files from Box, these deletions will not sync up here; I likely need to use an `rclone` command other than `copy`. So until I do, make sure I also manually perform the deletions here on Biowulf.
 
-Since the hysterectomy files have the same filenames as the earlier ones, add a suffix to both the `.mrxs` files and their corresponding directories:
+Since the hysterectomy files have the same filenames as the earlier ones, add a suffix to both the `.mrxs` files and their corresponding directories, just as we did previously in the manifest/ data labels:
 
 ```bash
 cd /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined/hysterectomy_specimens
@@ -83,7 +85,7 @@ bash /home/weismanal/projects/idibell/repo/link_files.sh
 
 Note there are currently 12 files in the `converted_images` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 12 files, there are currently (3/25/22) 70 links and 72 files in Box (there are two files in the directory `missing_dat_files` because they are missing some of their `.dat` files and are not included in the main links directory; I've told Eduard about these).
 
-Further note that for the time being I am excluding all hysterectomy files because (1) they are unreadable by openslide and Eduard is going to convert them in batch and (2) I need to nail down the magnifications for all the main images and see how CLAM performs when using the same magnifications for all images.
+Further note that for the time being I am excluding all hysterectomy files because I need to nail down the magnifications for all the main images and see how CLAM performs when using the same magnifications for all images.
 
 ## Metadata exploration
 

@@ -1,0 +1,9 @@
+slide_id,seg_level,sthresh,mthresh,close,use_otsu,a_t,a_h,max_n_holes,vis_level,line_thickness,use_padding,contour_fn,keep_ids,exclude_ids,status,process
+0029468706.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+0047953852.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+0054130784.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+0055483886.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+30.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+DigitalSlide_E6M_15S_1.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+DigitalSlide_E6M_17S_1.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1
+DigitalSlide_E6M_20S_1.mrxs,-1,15,11,4,False,100,16,8,-1,150,True,four_pt,none,none,,1

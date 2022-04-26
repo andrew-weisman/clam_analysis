@@ -140,7 +140,7 @@ ln -s /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined $wor
 ln -s /home/weismanal/projects/idibell/links/original_project_repo/results $working_dir/results
 ```
 
-What follows is for posterity; here we should simply use the automatically generated patching commands generated in the [metadata processing section](#metadata-processing).
+What follows is for posterity; here we should simply use the automatically generated patching commands generated in the [metadata processing section](#metadata-processing). **One thing to note however:** don't forget to save the automatically generated process list (`process_list_autogen.csv`) in the results directory after each batch as it will get overwritten for each batch of differently sized images!
 
 Commands that I have run to generate files in the working directory include:
 
@@ -201,6 +201,8 @@ First create the input file for feature extraction by running:
 ```bash
 bash $working_dir/create_feature_extraction_input_file_from_process_lists.sh
 ```
+
+This will create the file `$working_dir/feature_extraction_input.csv`.
 
 Then we should run the automatically generated feature extraction command generated in the [metadata processing section](#metadata-processing). The following is just for posterity.
 

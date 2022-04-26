@@ -1,0 +1,53 @@
+source:  /home/weismanal/projects/idibell/repo/data
+patch_save_dir:  /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/patches
+mask_save_dir:  /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/masks
+stitch_save_dir:  /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/stitches
+source : /home/weismanal/projects/idibell/repo/data
+save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection
+patch_save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/patches
+mask_save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/masks
+stitch_save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 15, 'mthresh': 11, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 150}}
+
+
+progress: 0.00, 0/8
+processing 0029468706.mrxs
+0029468706 already exist in destination location, skipped
+
+
+progress: 0.12, 1/8
+processing 0047953852.mrxs
+0047953852 already exist in destination location, skipped
+
+
+progress: 0.25, 2/8
+processing 0054130784.mrxs
+0054130784 already exist in destination location, skipped
+
+
+progress: 0.38, 3/8
+processing 0055483886.mrxs
+0055483886 already exist in destination location, skipped
+
+
+progress: 0.50, 4/8
+processing 30.mrxs
+30 already exist in destination location, skipped
+
+
+progress: 0.62, 5/8
+processing DigitalSlide_E6M_15S_1.mrxs
+DigitalSlide_E6M_15S_1 already exist in destination location, skipped
+
+
+progress: 0.75, 6/8
+processing DigitalSlide_E6M_17S_1.mrxs
+DigitalSlide_E6M_17S_1 already exist in destination location, skipped
+
+
+progress: 0.88, 7/8
+processing DigitalSlide_E6M_20S_1.mrxs
+DigitalSlide_E6M_20S_1 already exist in destination location, skipped
+average segmentation time in s per slide: 0.0
+average patching time in s per slide: 0.0
+average stiching time in s per slide: 0.0

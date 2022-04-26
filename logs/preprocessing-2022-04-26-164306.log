@@ -1,0 +1,1472 @@
+source:  /home/weismanal/projects/idibell/repo/data
+patch_save_dir:  /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/patches
+mask_save_dir:  /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/masks
+stitch_save_dir:  /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/stitches
+source : /home/weismanal/projects/idibell/repo/data
+save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection
+patch_save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/patches
+mask_save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/masks
+stitch_save_dir : /home/weismanal/projects/idibell/repo/results/41x/bwh_resection/stitches
+{'seg_params': {'seg_level': -1, 'sthresh': 15, 'mthresh': 11, 'close': 4, 'use_otsu': False, 'keep_ids': 'none', 'exclude_ids': 'none'}, 'filter_params': {'a_t': 100, 'a_h': 16, 'max_n_holes': 8}, 'patch_params': {'use_padding': True, 'contour_fn': 'four_pt'}, 'vis_params': {'vis_level': -1, 'line_thickness': 150}}
+
+
+progress: 0.00, 0/17
+processing 0042034876.mrxs
+Creating patches for:  0042034876 ...
+Total number of contours to process:  14
+Bounding Box: 332224 236288 23169 22721
+Contour Area: 253708288.0
+Extracted 1748 coordinates
+Bounding Box: 305984 219264 21185 15169
+Contour Area: 156821504.0
+Extracted 1111 coordinates
+Bounding Box: 365760 218560 7105 7745
+Contour Area: 31991808.0
+Extracted 227 coordinates
+Bounding Box: 366144 199872 12545 10305
+Contour Area: 60979200.0
+Extracted 423 coordinates
+Bounding Box: 336768 196864 21313 24961
+Contour Area: 230191104.0
+Extracted 1625 coordinates
+Bounding Box: 320448 196352 14529 11713
+Contour Area: 57610240.0
+Extracted 418 coordinates
+Bounding Box: 350528 189696 12929 9921
+Contour Area: 70301696.0
+Extracted 490 coordinates
+Bounding Box: 302912 109568 23169 20865
+Contour Area: 233177088.0
+Extracted 1602 coordinates
+Bounding Box: 335744 90560 7553 8641
+Contour Area: 32464896.0
+Extracted 240 coordinates
+Bounding Box: 275200 88000 20161 19905
+Contour Area: 158115840.0
+Extracted 1123 coordinates
+Bounding Box: 335552 71808 12609 10433
+Contour Area: 60672000.0
+Extracted 426 coordinates
+Bounding Box: 289856 67584 14401 13249
+Contour Area: 59287552.0
+Extracted 429 coordinates
+Bounding Box: 306304 61760 26241 35009
+Contour Area: 317931520.0
+Extracted 2253 coordinates
+Bounding Box: 328576 49088 9537 10625
+Contour Area: 39446528.0
+Extracted 297 coordinates
+start stitching 0042034876
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 12412
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/12412 stitched
+progress: 1242/12412 stitched
+progress: 2484/12412 stitched
+progress: 3726/12412 stitched
+progress: 4968/12412 stitched
+progress: 6210/12412 stitched
+progress: 7452/12412 stitched
+progress: 8694/12412 stitched
+progress: 9936/12412 stitched
+progress: 11178/12412 stitched
+segmentation took 1.8704140186309814 seconds
+patching took 1.4710636138916016 seconds
+stitching took 2.252983570098877 seconds
+
+
+progress: 0.06, 1/17
+processing 0042711961.mrxs
+Creating patches for:  0042711961 ...
+Total number of contours to process:  6
+Bounding Box: 88064 250688 53761 43841
+Contour Area: 1321797632.0
+Extracted 7225 coordinates
+Bounding Box: 144128 211776 6593 8193
+Contour Area: 27336704.0
+Extracted 199 coordinates
+Bounding Box: 21184 184064 122113 122561
+Contour Area: 7823988736.0
+Extracted 47738 coordinates
+Bounding Box: 103488 79616 58625 46977
+Contour Area: 1161504768.0
+Extracted 7602 coordinates
+Bounding Box: 155584 38272 6657 8897
+Contour Area: 29712384.0
+Extracted 213 coordinates
+Bounding Box: 36864 36160 117633 107137
+Contour Area: 6457896960.0
+Extracted 39802 coordinates
+start stitching 0042711961
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 102779
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/102779 stitched
+progress: 10278/102779 stitched
+progress: 20556/102779 stitched
+progress: 30834/102779 stitched
+progress: 41112/102779 stitched
+progress: 51390/102779 stitched
+progress: 61668/102779 stitched
+progress: 71946/102779 stitched
+progress: 82224/102779 stitched
+progress: 92502/102779 stitched
+segmentation took 2.0478222370147705 seconds
+patching took 8.974345922470093 seconds
+stitching took 13.668451309204102 seconds
+
+
+progress: 0.12, 2/17
+processing 0042951302.mrxs
+Creating patches for:  0042951302 ...
+Total number of contours to process:  29
+Bounding Box: 347968 246592 9089 5953
+Contour Area: 31723520.0
+Extracted 221 coordinates
+Bounding Box: 373376 240448 10241 14017
+Contour Area: 61784064.0
+Extracted 450 coordinates
+Bounding Box: 325824 234432 19457 15041
+Contour Area: 155041792.0
+Extracted 1074 coordinates
+Bounding Box: 345152 226688 21825 15745
+Contour Area: 100935680.0
+Extracted 737 coordinates
+Bounding Box: 335168 224896 12673 9345
+Contour Area: 39860224.0
+Extracted 298 coordinates
+Bounding Box: 343424 218240 14529 11585
+Contour Area: 60178432.0
+Extracted 437 coordinates
+Bounding Box: 324736 216960 5697 8833
+Contour Area: 32274432.0
+Extracted 233 coordinates
+Bounding Box: 385984 214976 7425 12161
+Contour Area: 39520256.0
+Extracted 290 coordinates
+Bounding Box: 344256 207104 10817 14849
+Contour Area: 57972736.0
+Extracted 421 coordinates
+Bounding Box: 341632 199936 9985 8641
+Contour Area: 29405184.0
+Extracted 220 coordinates
+Bounding Box: 300160 198400 11201 5633
+Contour Area: 26900480.0
+Extracted 201 coordinates
+Bounding Box: 373376 197824 24065 16897
+Contour Area: 159488000.0
+Extracted 1134 coordinates
+Bounding Box: 356544 197184 25793 28033
+Contour Area: 176691200.0
+Extracted 1371 coordinates
+Bounding Box: 357248 195008 8385 10753
+Contour Area: 58052608.0
+Extracted 403 coordinates
+Bounding Box: 321152 194880 9601 7361
+Contour Area: 27025408.0
+Extracted 205 coordinates
+Bounding Box: 371904 189824 7361 8385
+Contour Area: 33247232.0
+Extracted 242 coordinates
+Bounding Box: 351552 124736 9281 6401
+Contour Area: 35153920.0
+Extracted 247 coordinates
+Bounding Box: 377088 118592 9857 13953
+Contour Area: 62083072.0
+Extracted 455 coordinates
+Bounding Box: 329216 111360 18625 20801
+Contour Area: 182345728.0
+Extracted 1300 coordinates
+Bounding Box: 381248 101824 10113 13377
+Contour Area: 34547712.0
+Extracted 285 coordinates
+Bounding Box: 346304 96192 14401 12161
+Contour Area: 66693120.0
+Extracted 486 coordinates
+Bounding Box: 327616 95872 5825 8705
+Contour Area: 32296960.0
+Extracted 230 coordinates
+Bounding Box: 388544 92992 8001 13825
+Contour Area: 43290624.0
+Extracted 326 coordinates
+Bounding Box: 338048 82752 32321 37953
+Contour Area: 287240192.0
+Extracted 1981 coordinates
+Bounding Box: 344128 78208 9857 8769
+Contour Area: 33118208.0
+Extracted 245 coordinates
+Bounding Box: 303040 77888 10881 5953
+Contour Area: 26654720.0
+Extracted 207 coordinates
+Bounding Box: 323840 73536 9665 7361
+Contour Area: 28778496.0
+Extracted 215 coordinates
+Bounding Box: 358144 73152 41665 34113
+Contour Area: 493660160.0
+Extracted 3430 coordinates
+Bounding Box: 373952 67968 7233 8577
+Contour Area: 34490368.0
+Extracted 246 coordinates
+start stitching 0042951302
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 17590
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/17590 stitched
+progress: 1759/17590 stitched
+progress: 3518/17590 stitched
+progress: 5277/17590 stitched
+progress: 7036/17590 stitched
+progress: 8795/17590 stitched
+progress: 10554/17590 stitched
+progress: 12313/17590 stitched
+progress: 14072/17590 stitched
+progress: 15831/17590 stitched
+segmentation took 1.5897893905639648 seconds
+patching took 5.062039136886597 seconds
+stitching took 2.8953723907470703 seconds
+
+
+progress: 0.18, 3/17
+processing 0046877280.mrxs
+Creating patches for:  0046877280 ...
+Total number of contours to process:  31
+Bounding Box: 109568 314944 36609 8449
+Contour Area: 207314944.0
+Extracted 1431 coordinates
+Bounding Box: 124672 303488 20737 10369
+Contour Area: 132618240.0
+Extracted 906 coordinates
+Bounding Box: 96640 288448 27073 23809
+Contour Area: 314425344.0
+Extracted 2141 coordinates
+Bounding Box: 66624 286976 30785 16321
+Contour Area: 304842752.0
+Extracted 2058 coordinates
+Bounding Box: 131712 283008 12865 20737
+Contour Area: 158472192.0
+Extracted 1097 coordinates
+Bounding Box: 46528 267712 11905 9729
+Contour Area: 56276992.0
+Extracted 399 coordinates
+Bounding Box: 30656 264896 16641 15937
+Contour Area: 185272320.0
+Extracted 1232 coordinates
+Bounding Box: 129408 261504 22529 20865
+Contour Area: 220112896.0
+Extracted 1474 coordinates
+Bounding Box: 145856 257984 19585 45697
+Contour Area: 435204096.0
+Extracted 2924 coordinates
+Bounding Box: 105984 252288 33345 33985
+Contour Area: 399276032.0
+Extracted 2648 coordinates
+Bounding Box: 53376 250304 56641 47489
+Contour Area: 767686656.0
+Extracted 5209 coordinates
+Bounding Box: 37440 238528 31937 35393
+Contour Area: 407912448.0
+Extracted 2711 coordinates
+Bounding Box: 52608 236928 9473 11521
+Contour Area: 69787648.0
+Extracted 485 coordinates
+Bounding Box: 21888 222464 22849 20609
+Contour Area: 226365440.0
+Extracted 1535 coordinates
+Bounding Box: 44608 203776 27841 43393
+Contour Area: 511234048.0
+Extracted 3347 coordinates
+Bounding Box: 75328 203712 80321 68993
+Contour Area: 2071263232.0
+Extracted 13972 coordinates
+Bounding Box: 71232 193664 22849 14593
+Contour Area: 212193280.0
+Extracted 1433 coordinates
+Bounding Box: 111808 160384 9217 11265
+Contour Area: 67221504.0
+Extracted 465 coordinates
+Bounding Box: 57344 138432 69313 32833
+Contour Area: 1039663104.0
+Extracted 6972 coordinates
+Bounding Box: 30080 127360 46273 43585
+Contour Area: 507627520.0
+Extracted 3458 coordinates
+Bounding Box: 103488 105728 23617 35201
+Contour Area: 336914432.0
+Extracted 2308 coordinates
+Bounding Box: 46656 105152 31809 17025
+Contour Area: 343263232.0
+Extracted 2320 coordinates
+Bounding Box: 124480 89280 29185 43201
+Contour Area: 545636352.0
+Extracted 3681 coordinates
+Bounding Box: 33024 82944 11137 11137
+Contour Area: 63019008.0
+Extracted 438 coordinates
+Bounding Box: 16704 80000 16577 15169
+Contour Area: 192974848.0
+Extracted 1242 coordinates
+Bounding Box: 35200 67072 59137 47041
+Contour Area: 813254656.0
+Extracted 5577 coordinates
+Bounding Box: 25984 53760 28801 38017
+Contour Area: 464263168.0
+Extracted 3241 coordinates
+Bounding Box: 51968 49344 8961 16065
+Contour Area: 77445120.0
+Extracted 544 coordinates
+Bounding Box: 16576 37504 20673 17985
+Contour Area: 217661440.0
+Extracted 1471 coordinates
+Bounding Box: 37760 36352 26881 17409
+Contour Area: 274628608.0
+Extracted 1835 coordinates
+Bounding Box: 67840 36288 76289 97729
+Contour Area: 3613665280.0
+Extracted 20402 coordinates
+start stitching 0046877280
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 98956
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/98956 stitched
+progress: 9896/98956 stitched
+progress: 19792/98956 stitched
+progress: 29688/98956 stitched
+progress: 39584/98956 stitched
+progress: 49480/98956 stitched
+progress: 59376/98956 stitched
+progress: 69272/98956 stitched
+progress: 79168/98956 stitched
+progress: 89064/98956 stitched
+segmentation took 1.7350831031799316 seconds
+patching took 11.47678279876709 seconds
+stitching took 13.274913549423218 seconds
+
+
+progress: 0.24, 4/17
+processing 0047176089.mrxs
+Creating patches for:  0047176089 ...
+Total number of contours to process:  10
+Bounding Box: 287168 276864 32705 37057
+Contour Area: 703062016.0
+Extracted 4713 coordinates
+Bounding Box: 367936 272512 31233 37889
+Contour Area: 678080512.0
+Extracted 4507 coordinates
+Bounding Box: 255424 251648 52737 62593
+Contour Area: 1402630144.0
+Extracted 9095 coordinates
+Bounding Box: 335808 249472 50497 62977
+Contour Area: 1365868544.0
+Extracted 8818 coordinates
+Bounding Box: 370624 188032 31361 36993
+Contour Area: 662501376.0
+Extracted 4301 coordinates
+Bounding Box: 284224 188032 32705 37441
+Contour Area: 675581952.0
+Extracted 4489 coordinates
+Bounding Box: 335872 163904 52609 64065
+Contour Area: 1384941568.0
+Extracted 9197 coordinates
+Bounding Box: 253632 162176 54785 60417
+Contour Area: 1337405440.0
+Extracted 9018 coordinates
+Bounding Box: 260160 62720 62657 64641
+Contour Area: 2260672512.0
+Extracted 14810 coordinates
+Bounding Box: 337984 61056 63809 68225
+Contour Area: 2276290560.0
+Extracted 14942 coordinates
+start stitching 0047176089
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 83890
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/83890 stitched
+progress: 8389/83890 stitched
+progress: 16778/83890 stitched
+progress: 25167/83890 stitched
+progress: 33556/83890 stitched
+progress: 41945/83890 stitched
+progress: 50334/83890 stitched
+progress: 58723/83890 stitched
+progress: 67112/83890 stitched
+progress: 75501/83890 stitched
+segmentation took 1.7640275955200195 seconds
+patching took 7.871034383773804 seconds
+stitching took 11.733522415161133 seconds
+
+
+progress: 0.29, 5/17
+processing 0048086809.mrxs
+Creating patches for:  0048086809 ...
+Total number of contours to process:  4
+Bounding Box: 56384 185984 74305 52993
+Contour Area: 1987532800.0
+Extracted 12789 coordinates
+Bounding Box: 123072 178112 8641 6465
+Contour Area: 28411904.0
+Extracted 204 coordinates
+Bounding Box: 40704 69248 100481 130817
+Contour Area: 9760933888.0
+Extracted 61309 coordinates
+Bounding Box: 63360 62784 18881 10305
+Contour Area: 114384896.0
+Extracted 786 coordinates
+start stitching 0048086809
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 75088
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/75088 stitched
+progress: 7509/75088 stitched
+progress: 15018/75088 stitched
+progress: 22527/75088 stitched
+progress: 30036/75088 stitched
+progress: 37545/75088 stitched
+progress: 45054/75088 stitched
+progress: 52563/75088 stitched
+progress: 60072/75088 stitched
+progress: 67581/75088 stitched
+segmentation took 1.6304540634155273 seconds
+patching took 5.61271858215332 seconds
+stitching took 10.413617134094238 seconds
+
+
+progress: 0.35, 6/17
+processing 0049547258.mrxs
+Creating patches for:  0049547258 ...
+Total number of contours to process:  8
+Bounding Box: 313344 284480 7873 6401
+Contour Area: 32157696.0
+Extracted 226 coordinates
+Bounding Box: 359680 271360 15937 25025
+Contour Area: 209274880.0
+Extracted 1442 coordinates
+Bounding Box: 259200 177856 136705 131265
+Contour Area: 9937307648.0
+Extracted 56847 coordinates
+Bounding Box: 335744 170944 11329 4097
+Contour Area: 26501120.0
+Extracted 197 coordinates
+Bounding Box: 304192 151552 8577 5761
+Contour Area: 26710016.0
+Extracted 194 coordinates
+Bounding Box: 310336 145728 18561 7873
+Contour Area: 83062784.0
+Extracted 593 coordinates
+Bounding Box: 314560 137344 9537 6849
+Contour Area: 36954112.0
+Extracted 266 coordinates
+Bounding Box: 256192 37248 143425 125889
+Contour Area: 10825062400.0
+Extracted 59002 coordinates
+start stitching 0049547258
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 118767
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/118767 stitched
+progress: 11877/118767 stitched
+progress: 23754/118767 stitched
+progress: 35631/118767 stitched
+progress: 47508/118767 stitched
+progress: 59385/118767 stitched
+progress: 71262/118767 stitched
+progress: 83139/118767 stitched
+progress: 95016/118767 stitched
+progress: 106893/118767 stitched
+segmentation took 1.800680160522461 seconds
+patching took 12.568952560424805 seconds
+stitching took 15.977695941925049 seconds
+
+
+progress: 0.41, 7/17
+processing 0049556653.mrxs
+Creating patches for:  0049556653 ...
+Total number of contours to process:  15
+Bounding Box: 365376 261760 8577 8129
+Contour Area: 41568256.0
+Extracted 294 coordinates
+Bounding Box: 366912 251840 20161 24449
+Contour Area: 165584896.0
+Extracted 1194 coordinates
+Bounding Box: 279232 251776 22657 24257
+Contour Area: 217233408.0
+Extracted 1547 coordinates
+Bounding Box: 367040 184832 11137 8321
+Contour Area: 48277504.0
+Extracted 343 coordinates
+Bounding Box: 279040 180608 15617 8065
+Contour Area: 63744000.0
+Extracted 463 coordinates
+Bounding Box: 373888 177792 9729 7297
+Contour Area: 27863040.0
+Extracted 208 coordinates
+Bounding Box: 366016 171904 8705 7745
+Contour Area: 37980160.0
+Extracted 274 coordinates
+Bounding Box: 267776 170112 9217 7873
+Contour Area: 29274112.0
+Extracted 231 coordinates
+Bounding Box: 384960 168192 4673 11201
+Contour Area: 27133952.0
+Extracted 201 coordinates
+Bounding Box: 276352 166464 10625 7937
+Contour Area: 35424256.0
+Extracted 259 coordinates
+Bounding Box: 297152 164736 5121 11137
+Contour Area: 26925056.0
+Extracted 206 coordinates
+Bounding Box: 370112 163200 14977 14209
+Contour Area: 100001792.0
+Extracted 717 coordinates
+Bounding Box: 283456 158720 14977 22337
+Contour Area: 131063808.0
+Extracted 948 coordinates
+Bounding Box: 363008 74688 15873 29633
+Contour Area: 187351040.0
+Extracted 1315 coordinates
+Bounding Box: 274048 71616 18497 28737
+Contour Area: 182063104.0
+Extracted 1330 coordinates
+start stitching 0049556653
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 9530
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/9530 stitched
+progress: 953/9530 stitched
+progress: 1906/9530 stitched
+progress: 2859/9530 stitched
+progress: 3812/9530 stitched
+progress: 4765/9530 stitched
+progress: 5718/9530 stitched
+progress: 6671/9530 stitched
+progress: 7624/9530 stitched
+progress: 8577/9530 stitched
+segmentation took 1.5610387325286865 seconds
+patching took 2.7351319789886475 seconds
+stitching took 1.7183504104614258 seconds
+
+
+progress: 0.47, 8/17
+processing 0050394746.mrxs
+Creating patches for:  0050394746 ...
+Total number of contours to process:  10
+Bounding Box: 111616 235392 9921 11009
+Contour Area: 51781632.0
+Extracted 383 coordinates
+Bounding Box: 121216 219968 9729 10561
+Contour Area: 52414464.0
+Extracted 376 coordinates
+Bounding Box: 133376 184064 9793 12673
+Contour Area: 67766272.0
+Extracted 473 coordinates
+Bounding Box: 47488 181504 77249 72321
+Contour Area: 3351109632.0
+Extracted 20323 coordinates
+Bounding Box: 102528 174208 8769 7809
+Contour Area: 28940288.0
+Extracted 212 coordinates
+Bounding Box: 117568 103360 9473 12097
+Contour Area: 54857728.0
+Extracted 400 coordinates
+Bounding Box: 127360 88960 9857 11713
+Contour Area: 54317056.0
+Extracted 393 coordinates
+Bounding Box: 53888 47872 77825 73345
+Contour Area: 3424864256.0
+Extracted 20796 coordinates
+Bounding Box: 140608 45952 10561 12353
+Contour Area: 67569664.0
+Extracted 470 coordinates
+Bounding Box: 109696 40448 8641 7169
+Contour Area: 26314752.0
+Extracted 189 coordinates
+start stitching 0050394746
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 44015
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/44015 stitched
+progress: 4402/44015 stitched
+progress: 8804/44015 stitched
+progress: 13206/44015 stitched
+progress: 17608/44015 stitched
+progress: 22010/44015 stitched
+progress: 26412/44015 stitched
+progress: 30814/44015 stitched
+progress: 35216/44015 stitched
+progress: 39618/44015 stitched
+segmentation took 1.7227416038513184 seconds
+patching took 4.494184970855713 seconds
+stitching took 6.159064769744873 seconds
+
+
+progress: 0.53, 9/17
+processing 0054815807.mrxs
+Creating patches for:  0054815807 ...
+Total number of contours to process:  19
+Bounding Box: 74432 259264 17345 26817
+Contour Area: 286760960.0
+Extracted 1929 coordinates
+Bounding Box: 41856 252096 11393 9985
+Contour Area: 68102144.0
+Extracted 484 coordinates
+Bounding Box: 143680 243968 17281 26945
+Contour Area: 287631360.0
+Extracted 1941 coordinates
+Bounding Box: 109440 237888 12161 9601
+Contour Area: 73388032.0
+Extracted 513 coordinates
+Bounding Box: 44800 228160 36097 55681
+Contour Area: 831778816.0
+Extracted 5630 coordinates
+Bounding Box: 112640 213632 36993 55169
+Contour Area: 851634176.0
+Extracted 5745 coordinates
+Bounding Box: 51648 164928 17601 26049
+Contour Area: 289228800.0
+Extracted 1952 coordinates
+Bounding Box: 125184 163712 18177 27201
+Contour Area: 308195328.0
+Extracted 2091 coordinates
+Bounding Box: 93824 150848 12737 9729
+Contour Area: 72257536.0
+Extracted 501 coordinates
+Bounding Box: 22656 149120 12609 9729
+Contour Area: 71274496.0
+Extracted 494 coordinates
+Bounding Box: 29760 128512 35137 54593
+Contour Area: 841172992.0
+Extracted 5671 coordinates
+Bounding Box: 99456 127808 38657 56513
+Contour Area: 879009792.0
+Extracted 5964 coordinates
+Bounding Box: 59136 68288 17281 27201
+Contour Area: 288813056.0
+Extracted 1957 coordinates
+Bounding Box: 128192 65216 18049 26177
+Contour Area: 291948544.0
+Extracted 1985 coordinates
+Bounding Box: 22912 63040 11777 8961
+Contour Area: 62832640.0
+Extracted 449 coordinates
+Bounding Box: 97408 52096 12289 8897
+Contour Area: 67166208.0
+Extracted 467 coordinates
+Bounding Box: 129600 51072 8641 6465
+Contour Area: 28157952.0
+Extracted 202 coordinates
+Bounding Box: 25856 38720 39297 54209
+Contour Area: 826556416.0
+Extracted 5568 coordinates
+Bounding Box: 103552 36224 39169 47425
+Contour Area: 739917824.0
+Extracted 4975 coordinates
+start stitching 0054815807
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 48518
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/48518 stitched
+progress: 4852/48518 stitched
+progress: 9704/48518 stitched
+progress: 14556/48518 stitched
+progress: 19408/48518 stitched
+progress: 24260/48518 stitched
+progress: 29112/48518 stitched
+progress: 33964/48518 stitched
+progress: 38816/48518 stitched
+progress: 43668/48518 stitched
+segmentation took 1.634669542312622 seconds
+patching took 5.860309362411499 seconds
+stitching took 6.742393970489502 seconds
+
+
+progress: 0.59, 10/17
+processing 0057134497.mrxs
+Creating patches for:  0057134497 ...
+Total number of contours to process:  16
+Bounding Box: 90112 229312 23873 13569
+Contour Area: 156170240.0
+Extracted 1095 coordinates
+Bounding Box: 68736 221568 8449 11585
+Contour Area: 41455616.0
+Extracted 308 coordinates
+Bounding Box: 136768 216000 8833 6913
+Contour Area: 39102464.0
+Extracted 275 coordinates
+Bounding Box: 37376 210496 16065 11905
+Contour Area: 94468096.0
+Extracted 657 coordinates
+Bounding Box: 65024 210432 10113 9153
+Contour Area: 43343872.0
+Extracted 320 coordinates
+Bounding Box: 83776 207744 7425 10561
+Contour Area: 26978304.0
+Extracted 210 coordinates
+Bounding Box: 70464 201280 8001 12161
+Contour Area: 35340288.0
+Extracted 254 coordinates
+Bounding Box: 57600 196032 16001 16961
+Contour Area: 81678336.0
+Extracted 614 coordinates
+Bounding Box: 49344 190144 13185 7425
+Contour Area: 39946240.0
+Extracted 300 coordinates
+Bounding Box: 77632 179008 17473 23617
+Contour Area: 220008448.0
+Extracted 1424 coordinates
+Bounding Box: 48128 176320 9665 10497
+Contour Area: 38238208.0
+Extracted 297 coordinates
+Bounding Box: 81792 168064 11137 8385
+Contour Area: 39897088.0
+Extracted 305 coordinates
+Bounding Box: 68864 167040 10881 15169
+Contour Area: 60098560.0
+Extracted 452 coordinates
+Bounding Box: 67200 154240 10177 7681
+Contour Area: 31406080.0
+Extracted 228 coordinates
+Bounding Box: 93312 149440 7169 10177
+Contour Area: 41697280.0
+Extracted 296 coordinates
+Bounding Box: 77312 146880 12161 13313
+Contour Area: 69494784.0
+Extracted 497 coordinates
+start stitching 0057134497
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 7532
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/7532 stitched
+progress: 754/7532 stitched
+progress: 1508/7532 stitched
+progress: 2262/7532 stitched
+progress: 3016/7532 stitched
+progress: 3770/7532 stitched
+progress: 4524/7532 stitched
+progress: 5278/7532 stitched
+progress: 6032/7532 stitched
+progress: 6786/7532 stitched
+segmentation took 1.5472452640533447 seconds
+patching took 2.7039685249328613 seconds
+stitching took 1.3974237442016602 seconds
+
+
+progress: 0.65, 11/17
+processing DigitalSlide_B9M_11S_1.mrxs
+Creating patches for:  DigitalSlide_B9M_11S_1 ...
+Total number of contours to process:  12
+Bounding Box: 103680 248384 39425 47937
+Contour Area: 809054208.0
+Extracted 5282 coordinates
+Bounding Box: 39616 246528 38337 48577
+Contour Area: 793526272.0
+Extracted 5413 coordinates
+Bounding Box: 140800 244544 8641 10689
+Contour Area: 56616960.0
+Extracted 370 coordinates
+Bounding Box: 74304 241728 8449 10497
+Contour Area: 56518656.0
+Extracted 399 coordinates
+Bounding Box: 131264 230976 11777 9601
+Contour Area: 42647552.0
+Extracted 317 coordinates
+Bounding Box: 62976 228800 12161 9345
+Contour Area: 42231808.0
+Extracted 315 coordinates
+Bounding Box: 37312 166400 37953 44737
+Contour Area: 805058560.0
+Extracted 5399 coordinates
+Bounding Box: 102976 164800 38081 48001
+Contour Area: 763893760.0
+Extracted 5253 coordinates
+Bounding Box: 71488 161152 8641 10369
+Contour Area: 51355648.0
+Extracted 386 coordinates
+Bounding Box: 138112 159872 8193 10369
+Contour Area: 48510976.0
+Extracted 358 coordinates
+Bounding Box: 59392 148736 12289 9153
+Contour Area: 42295296.0
+Extracted 308 coordinates
+Bounding Box: 126976 147136 11905 9281
+Contour Area: 40404992.0
+Extracted 302 coordinates
+start stitching DigitalSlide_B9M_11S_1
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 24102
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/24102 stitched
+progress: 2411/24102 stitched
+progress: 4822/24102 stitched
+progress: 7233/24102 stitched
+progress: 9644/24102 stitched
+progress: 12055/24102 stitched
+progress: 14466/24102 stitched
+progress: 16877/24102 stitched
+progress: 19288/24102 stitched
+progress: 21699/24102 stitched
+segmentation took 1.5403058528900146 seconds
+patching took 3.4238178730010986 seconds
+stitching took 3.582249402999878 seconds
+
+
+progress: 0.71, 12/17
+processing DigitalSlide_B9M_14S_1.mrxs
+Creating patches for:  DigitalSlide_B9M_14S_1 ...
+Total number of contours to process:  30
+Bounding Box: 372480 270272 13377 5249
+Contour Area: 44134400.0
+Extracted 322 coordinates
+Bounding Box: 335936 264704 22145 18753
+Contour Area: 197675008.0
+Extracted 1369 coordinates
+Bounding Box: 306176 263936 21057 19137
+Contour Area: 207446016.0
+Extracted 1408 coordinates
+Bounding Box: 264640 251072 22081 23105
+Contour Area: 265132032.0
+Extracted 1792 coordinates
+Bounding Box: 293952 244416 27073 19905
+Contour Area: 303800320.0
+Extracted 2015 coordinates
+Bounding Box: 358016 239680 14337 32193
+Contour Area: 234811392.0
+Extracted 1609 coordinates
+Bounding Box: 352000 235648 5313 9345
+Contour Area: 26804224.0
+Extracted 195 coordinates
+Bounding Box: 274432 235584 15425 10049
+Contour Area: 88592384.0
+Extracted 618 coordinates
+Bounding Box: 326208 235200 23809 30529
+Contour Area: 301230080.0
+Extracted 2079 coordinates
+Bounding Box: 371072 234496 8577 19841
+Contour Area: 52791296.0
+Extracted 396 coordinates
+Bounding Box: 278656 225600 13377 9089
+Contour Area: 50253824.0
+Extracted 358 coordinates
+Bounding Box: 381952 225472 16257 39041
+Contour Area: 404154368.0
+Extracted 2727 coordinates
+Bounding Box: 334784 223360 10049 14273
+Contour Area: 64729088.0
+Extracted 462 coordinates
+Bounding Box: 323840 223296 11905 15489
+Contour Area: 96262144.0
+Extracted 673 coordinates
+Bounding Box: 288320 217984 33665 25025
+Contour Area: 259852288.0
+Extracted 1812 coordinates
+Bounding Box: 341440 213376 36225 21633
+Contour Area: 309348352.0
+Extracted 2108 coordinates
+Bounding Box: 296384 206016 13825 12801
+Contour Area: 99690496.0
+Extracted 687 coordinates
+Bounding Box: 314880 197824 26881 19457
+Contour Area: 295415808.0
+Extracted 1868 coordinates
+Bounding Box: 281344 196352 19265 19137
+Contour Area: 156686336.0
+Extracted 1065 coordinates
+Bounding Box: 273600 196352 9729 16065
+Contour Area: 79276032.0
+Extracted 569 coordinates
+Bounding Box: 301184 196160 8001 9409
+Contour Area: 36380672.0
+Extracted 264 coordinates
+Bounding Box: 338304 183168 19329 11969
+Contour Area: 177020928.0
+Extracted 1192 coordinates
+Bounding Box: 271360 172480 24769 19201
+Contour Area: 212289536.0
+Extracted 1446 coordinates
+Bounding Box: 295552 164480 11777 10561
+Contour Area: 63068160.0
+Extracted 436 coordinates
+Bounding Box: 319744 160064 7105 11265
+Contour Area: 51812352.0
+Extracted 364 coordinates
+Bounding Box: 280128 151168 8193 7425
+Contour Area: 28399616.0
+Extracted 208 coordinates
+Bounding Box: 283200 144128 90369 50945
+Contour Area: 1342156800.0
+Extracted 9082 coordinates
+Bounding Box: 305984 137664 18945 23169
+Contour Area: 142522368.0
+Extracted 1022 coordinates
+Bounding Box: 290112 128768 22145 31425
+Contour Area: 310865920.0
+Extracted 2144 coordinates
+Bounding Box: 353664 124608 29825 29441
+Contour Area: 334809088.0
+Extracted 2279 coordinates
+start stitching DigitalSlide_B9M_14S_1
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 42569
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/42569 stitched
+progress: 4257/42569 stitched
+progress: 8514/42569 stitched
+progress: 12771/42569 stitched
+progress: 17028/42569 stitched
+progress: 21285/42569 stitched
+progress: 25542/42569 stitched
+progress: 29799/42569 stitched
+progress: 34056/42569 stitched
+progress: 38313/42569 stitched
+segmentation took 1.613832712173462 seconds
+patching took 7.06450629234314 seconds
+stitching took 6.01317024230957 seconds
+
+
+progress: 0.76, 13/17
+processing DigitalSlide_B9M_16S_1.mrxs
+Creating patches for:  DigitalSlide_B9M_16S_1 ...
+Total number of contours to process:  40
+Bounding Box: 334848 284992 8513 14337
+Contour Area: 66945024.0
+Extracted 467 coordinates
+Bounding Box: 345216 282240 19073 23041
+Contour Area: 251727872.0
+Extracted 1717 coordinates
+Bounding Box: 343808 272512 11521 12417
+Contour Area: 52338688.0
+Extracted 393 coordinates
+Bounding Box: 306752 271168 13761 12801
+Contour Area: 100665344.0
+Extracted 697 coordinates
+Bounding Box: 259072 262784 13633 11905
+Contour Area: 100007936.0
+Extracted 684 coordinates
+Bounding Box: 359488 259392 13697 24705
+Contour Area: 218798080.0
+Extracted 1438 coordinates
+Bounding Box: 280704 255616 47489 56321
+Contour Area: 853643264.0
+Extracted 5730 coordinates
+Bounding Box: 300160 243968 17793 22849
+Contour Area: 233773056.0
+Extracted 1578 coordinates
+Bounding Box: 359936 233664 41153 26817
+Contour Area: 455989248.0
+Extracted 3077 coordinates
+Bounding Box: 268480 224384 13121 6977
+Contour Area: 46546944.0
+Extracted 333 coordinates
+Bounding Box: 349760 214080 18369 13313
+Contour Area: 151029760.0
+Extracted 1037 coordinates
+Bounding Box: 286528 205632 77825 76865
+Contour Area: 1793271808.0
+Extracted 11945 coordinates
+Bounding Box: 257728 201984 30913 58241
+Contour Area: 665270272.0
+Extracted 4469 coordinates
+Bounding Box: 368832 200256 24449 21569
+Contour Area: 196157440.0
+Extracted 1356 coordinates
+Bounding Box: 293312 199296 11969 6977
+Contour Area: 41738240.0
+Extracted 302 coordinates
+Bounding Box: 311808 196736 11265 18881
+Contour Area: 122169344.0
+Extracted 849 coordinates
+Bounding Box: 342144 189248 24257 25089
+Contour Area: 291119104.0
+Extracted 2011 coordinates
+Bounding Box: 366400 188864 11969 10241
+Contour Area: 82853888.0
+Extracted 571 coordinates
+Bounding Box: 294144 184960 15873 12161
+Contour Area: 93648896.0
+Extracted 644 coordinates
+Bounding Box: 328064 148288 8513 14017
+Contour Area: 66349056.0
+Extracted 464 coordinates
+Bounding Box: 337920 146560 19457 22849
+Contour Area: 251574272.0
+Extracted 1716 coordinates
+Bounding Box: 337600 136640 12033 12097
+Contour Area: 52107264.0
+Extracted 389 coordinates
+Bounding Box: 300672 131968 14017 12673
+Contour Area: 107853824.0
+Extracted 746 coordinates
+Bounding Box: 321024 125440 19265 20033
+Contour Area: 220794880.0
+Extracted 1503 coordinates
+Bounding Box: 354368 124992 13505 24449
+Contour Area: 218650624.0
+Extracted 1456 coordinates
+Bounding Box: 257600 120192 10177 10753
+Contour Area: 77604864.0
+Extracted 530 coordinates
+Bounding Box: 275328 114560 44801 57473
+Contour Area: 850663424.0
+Extracted 5717 coordinates
+Bounding Box: 295552 104768 18497 22209
+Contour Area: 230023168.0
+Extracted 1556 coordinates
+Bounding Box: 356736 99136 40257 28161
+Contour Area: 451629056.0
+Extracted 3043 coordinates
+Bounding Box: 330368 88448 31617 37121
+Contour Area: 595755008.0
+Extracted 3891 coordinates
+Bounding Box: 266880 82368 12929 6721
+Contour Area: 46360576.0
+Extracted 325 coordinates
+Bounding Box: 348160 78976 19009 12801
+Contour Area: 146272256.0
+Extracted 1005 coordinates
+Bounding Box: 369088 66816 23809 22209
+Contour Area: 192350208.0
+Extracted 1331 coordinates
+Bounding Box: 283456 65984 51969 53121
+Contour Area: 943212544.0
+Extracted 6356 coordinates
+Bounding Box: 293248 59584 11969 7233
+Contour Area: 41529344.0
+Extracted 301 coordinates
+Bounding Box: 257472 59200 20097 59009
+Contour Area: 584626176.0
+Extracted 3900 coordinates
+Bounding Box: 311744 58560 11137 18817
+Contour Area: 118640640.0
+Extracted 828 coordinates
+Bounding Box: 367168 55168 11777 10433
+Contour Area: 81702912.0
+Extracted 567 coordinates
+Bounding Box: 342336 54528 24449 24193
+Contour Area: 288704512.0
+Extracted 1986 coordinates
+Bounding Box: 294720 46720 16385 11009
+Contour Area: 90669056.0
+Extracted 634 coordinates
+start stitching DigitalSlide_B9M_16S_1
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 77542
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/77542 stitched
+progress: 7755/77542 stitched
+progress: 15510/77542 stitched
+progress: 23265/77542 stitched
+progress: 31020/77542 stitched
+progress: 38775/77542 stitched
+progress: 46530/77542 stitched
+progress: 54285/77542 stitched
+progress: 62040/77542 stitched
+progress: 69795/77542 stitched
+segmentation took 1.730867862701416 seconds
+patching took 11.043878555297852 seconds
+stitching took 10.734332799911499 seconds
+
+
+progress: 0.82, 14/17
+processing DigitalSlide_B9M_6S_1.mrxs
+Creating patches for:  DigitalSlide_B9M_6S_1 ...
+Total number of contours to process:  9
+Bounding Box: 317760 285952 9409 9857
+Contour Area: 59154432.0
+Extracted 409 coordinates
+Bounding Box: 396096 240576 6337 17345
+Contour Area: 50233344.0
+Extracted 363 coordinates
+Bounding Box: 314176 185024 10561 18369
+Contour Area: 107843584.0
+Extracted 749 coordinates
+Bounding Box: 324672 183936 20417 18689
+Contour Area: 174479360.0
+Extracted 1237 coordinates
+Bounding Box: 358080 173120 28993 11585
+Contour Area: 148058112.0
+Extracted 1051 coordinates
+Bounding Box: 331648 172992 69697 118529
+Contour Area: 4152393728.0
+Extracted 26088 coordinates
+Bounding Box: 329600 172800 14337 9537
+Contour Area: 69378048.0
+Extracted 502 coordinates
+Bounding Box: 261888 164032 80961 129601
+Contour Area: 5193592832.0
+Extracted 32901 coordinates
+Bounding Box: 363008 156736 15169 15105
+Contour Area: 99639296.0
+Extracted 735 coordinates
+start stitching DigitalSlide_B9M_6S_1
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 64035
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/64035 stitched
+progress: 6404/64035 stitched
+progress: 12808/64035 stitched
+progress: 19212/64035 stitched
+progress: 25616/64035 stitched
+progress: 32020/64035 stitched
+progress: 38424/64035 stitched
+progress: 44828/64035 stitched
+progress: 51232/64035 stitched
+progress: 57636/64035 stitched
+segmentation took 1.6167917251586914 seconds
+patching took 6.905670404434204 seconds
+stitching took 9.054444551467896 seconds
+
+
+progress: 0.88, 15/17
+processing DigitalSlide_B9M_7S_1.mrxs
+Creating patches for:  DigitalSlide_B9M_7S_1 ...
+Total number of contours to process:  16
+Bounding Box: 98304 234432 20033 19265
+Contour Area: 182212608.0
+Extracted 1241 coordinates
+Bounding Box: 46080 212800 36097 36225
+Contour Area: 647974912.0
+Extracted 4368 coordinates
+Bounding Box: 25088 206912 9601 9601
+Contour Area: 37271552.0
+Extracted 284 coordinates
+Bounding Box: 88960 184000 47937 60609
+Contour Area: 1368219648.0
+Extracted 8758 coordinates
+Bounding Box: 108928 164480 13953 16001
+Contour Area: 117356544.0
+Extracted 806 coordinates
+Bounding Box: 37248 156608 69761 55617
+Contour Area: 1614088192.0
+Extracted 10723 coordinates
+Bounding Box: 118720 153216 5441 10945
+Contour Area: 33564672.0
+Extracted 241 coordinates
+Bounding Box: 154240 142848 11009 27457
+Contour Area: 197093376.0
+Extracted 1334 coordinates
+Bounding Box: 144192 130432 19137 10369
+Contour Area: 110071808.0
+Extracted 762 coordinates
+Bounding Box: 29888 106752 70465 58433
+Contour Area: 1750927360.0
+Extracted 11542 coordinates
+Bounding Box: 49984 105984 13057 12097
+Contour Area: 86540288.0
+Extracted 594 coordinates
+Bounding Box: 103040 98048 13761 7361
+Contour Area: 49299456.0
+Extracted 352 coordinates
+Bounding Box: 81024 91392 19073 22273
+Contour Area: 256100352.0
+Extracted 1744 coordinates
+Bounding Box: 101504 87232 18817 9345
+Contour Area: 105037824.0
+Extracted 724 coordinates
+Bounding Box: 89728 72448 67265 103745
+Contour Area: 2800687104.0
+Extracted 18288 coordinates
+Bounding Box: 32128 56640 46081 43009
+Contour Area: 1225289728.0
+Extracted 8046 coordinates
+start stitching DigitalSlide_B9M_7S_1
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 69807
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/69807 stitched
+progress: 6981/69807 stitched
+progress: 13962/69807 stitched
+progress: 20943/69807 stitched
+progress: 27924/69807 stitched
+progress: 34905/69807 stitched
+progress: 41886/69807 stitched
+progress: 48867/69807 stitched
+progress: 55848/69807 stitched
+progress: 62829/69807 stitched
+segmentation took 1.6445519924163818 seconds
+patching took 7.303757429122925 seconds
+stitching took 9.480192184448242 seconds
+
+
+progress: 0.94, 16/17
+processing DigitalSlide_B9M_8S_1.mrxs
+Creating patches for:  DigitalSlide_B9M_8S_1 ...
+Total number of contours to process:  70
+Bounding Box: 327488 289088 9025 5953
+Contour Area: 30560256.0
+Extracted 215 coordinates
+Bounding Box: 287104 288576 9793 5953
+Contour Area: 35520512.0
+Extracted 247 coordinates
+Bounding Box: 302592 277568 11393 13953
+Contour Area: 96049152.0
+Extracted 659 coordinates
+Bounding Box: 266432 273280 18497 12353
+Contour Area: 142041088.0
+Extracted 978 coordinates
+Bounding Box: 356352 268352 30977 26241
+Contour Area: 396169216.0
+Extracted 2658 coordinates
+Bounding Box: 288704 265792 16833 19137
+Contour Area: 169836544.0
+Extracted 1160 coordinates
+Bounding Box: 326528 262592 38273 22209
+Contour Area: 468877312.0
+Extracted 3172 coordinates
+Bounding Box: 322624 262208 10369 6273
+Contour Area: 39708672.0
+Extracted 284 coordinates
+Bounding Box: 279616 259072 13313 15233
+Contour Area: 67399680.0
+Extracted 495 coordinates
+Bounding Box: 361344 254400 17665 12609
+Contour Area: 154357760.0
+Extracted 1007 coordinates
+Bounding Box: 297088 243776 28865 44993
+Contour Area: 555843584.0
+Extracted 3799 coordinates
+Bounding Box: 360000 243328 10625 12929
+Contour Area: 54016000.0
+Extracted 385 coordinates
+Bounding Box: 343936 242240 11777 18177
+Contour Area: 110209024.0
+Extracted 766 coordinates
+Bounding Box: 290048 242112 7745 8065
+Contour Area: 36028416.0
+Extracted 255 coordinates
+Bounding Box: 376896 241664 15361 15937
+Contour Area: 116525056.0
+Extracted 815 coordinates
+Bounding Box: 329536 237696 13569 24129
+Contour Area: 221136896.0
+Extracted 1508 coordinates
+Bounding Box: 281664 234368 7937 13057
+Contour Area: 50212864.0
+Extracted 361 coordinates
+Bounding Box: 327104 228160 16193 12481
+Contour Area: 110540800.0
+Extracted 763 coordinates
+Bounding Box: 265984 220928 15809 52033
+Contour Area: 464230400.0
+Extracted 3139 coordinates
+Bounding Box: 334208 210880 11073 17025
+Contour Area: 119197696.0
+Extracted 819 coordinates
+Bounding Box: 345088 206464 23041 41921
+Contour Area: 404418560.0
+Extracted 2747 coordinates
+Bounding Box: 278592 203200 54401 42433
+Contour Area: 899596288.0
+Extracted 6085 coordinates
+Bounding Box: 359680 198336 33473 45697
+Contour Area: 629760000.0
+Extracted 4290 coordinates
+Bounding Box: 265856 194816 33601 19969
+Contour Area: 269496320.0
+Extracted 1814 coordinates
+Bounding Box: 343744 189568 8641 10241
+Contour Area: 48330752.0
+Extracted 350 coordinates
+Bounding Box: 372160 182528 11777 18113
+Contour Area: 134025216.0
+Extracted 936 coordinates
+Bounding Box: 288704 176704 19009 18881
+Contour Area: 173238272.0
+Extracted 1188 coordinates
+Bounding Box: 324416 175872 13057 11329
+Contour Area: 93204480.0
+Extracted 638 coordinates
+Bounding Box: 327936 174528 18049 30785
+Contour Area: 174737408.0
+Extracted 1237 coordinates
+Bounding Box: 308480 174272 15809 24769
+Contour Area: 214730752.0
+Extracted 1457 coordinates
+Bounding Box: 361536 174016 9985 17857
+Contour Area: 101380096.0
+Extracted 700 coordinates
+Bounding Box: 264512 172480 17217 21825
+Contour Area: 200110080.0
+Extracted 1334 coordinates
+Bounding Box: 344640 172096 7873 6017
+Contour Area: 28669952.0
+Extracted 205 coordinates
+Bounding Box: 369728 165632 16641 8193
+Contour Area: 84334592.0
+Extracted 595 coordinates
+Bounding Box: 354944 163840 8129 14465
+Contour Area: 60198912.0
+Extracted 434 coordinates
+Bounding Box: 298624 158592 26817 16705
+Contour Area: 200843264.0
+Extracted 1424 coordinates
+Bounding Box: 364992 142848 12993 5313
+Contour Area: 35868672.0
+Extracted 258 coordinates
+Bounding Box: 291328 139008 9857 6913
+Contour Area: 40046592.0
+Extracted 283 coordinates
+Bounding Box: 330944 136832 16769 11713
+Contour Area: 73422848.0
+Extracted 538 coordinates
+Bounding Box: 307328 132224 10945 11521
+Contour Area: 66267136.0
+Extracted 459 coordinates
+Bounding Box: 360576 122304 30977 18945
+Contour Area: 300230656.0
+Extracted 2032 coordinates
+Bounding Box: 272192 121472 18113 12481
+Contour Area: 135188480.0
+Extracted 931 coordinates
+Bounding Box: 317568 117696 12865 23169
+Contour Area: 196855808.0
+Extracted 1336 coordinates
+Bounding Box: 294144 115712 16705 23745
+Contour Area: 193470464.0
+Extracted 1218 coordinates
+Bounding Box: 331456 114304 37057 21889
+Contour Area: 439947264.0
+Extracted 2887 coordinates
+Bounding Box: 328064 112704 10049 7041
+Contour Area: 48429056.0
+Extracted 339 coordinates
+Bounding Box: 285056 108160 13825 15553
+Contour Area: 72443904.0
+Extracted 520 coordinates
+Bounding Box: 361984 107904 22209 11393
+Contour Area: 138289152.0
+Extracted 917 coordinates
+Bounding Box: 335296 104128 14209 9281
+Contour Area: 86337536.0
+Extracted 600 coordinates
+Bounding Box: 293440 99200 6977 8065
+Contour Area: 27121664.0
+Extracted 196 coordinates
+Bounding Box: 382336 94976 15809 16577
+Contour Area: 122560512.0
+Extracted 865 coordinates
+Bounding Box: 303296 92416 25601 26305
+Contour Area: 404779008.0
+Extracted 2698 coordinates
+Bounding Box: 296256 90688 8001 8257
+Contour Area: 38316032.0
+Extracted 274 coordinates
+Bounding Box: 349056 89216 12545 23745
+Contour Area: 147458048.0
+Extracted 1026 coordinates
+Bounding Box: 359936 89024 12353 11201
+Contour Area: 89532416.0
+Extracted 615 coordinates
+Bounding Box: 337088 88512 11265 14913
+Contour Area: 131938304.0
+Extracted 901 coordinates
+Bounding Box: 327104 86784 6913 11457
+Contour Area: 33294336.0
+Extracted 253 coordinates
+Bounding Box: 305600 84608 10561 9921
+Contour Area: 59607040.0
+Extracted 425 coordinates
+Bounding Box: 288448 82368 7809 14209
+Contour Area: 52201472.0
+Extracted 385 coordinates
+Bounding Box: 273024 68352 16129 48129
+Contour Area: 387448832.0
+Extracted 2547 coordinates
+Bounding Box: 342144 55488 32513 33537
+Contour Area: 411762688.0
+Extracted 2773 coordinates
+Bounding Box: 284992 55168 65345 35521
+Contour Area: 770881536.0
+Extracted 5195 coordinates
+Bounding Box: 303232 51584 24513 13185
+Contour Area: 126195712.0
+Extracted 858 coordinates
+Bounding Box: 274752 42048 33985 18049
+Contour Area: 266815488.0
+Extracted 1822 coordinates
+Bounding Box: 352576 38848 9281 10497
+Contour Area: 48181248.0
+Extracted 355 coordinates
+Bounding Box: 274048 37376 12225 3585
+Contour Area: 27516928.0
+Extracted 196 coordinates
+Bounding Box: 320960 37312 10049 9473
+Contour Area: 68151296.0
+Extracted 466 coordinates
+Bounding Box: 300864 37312 13761 5697
+Contour Area: 54325248.0
+Extracted 379 coordinates
+Bounding Box: 336960 37184 13121 16129
+Contour Area: 112848896.0
+Extracted 791 coordinates
+Bounding Box: 365696 37120 34817 72641
+Contour Area: 836276224.0
+Extracted 5648 coordinates
+start stitching DigitalSlide_B9M_8S_1
+original size: 410368 x 438784
+downscaled size for stiching: 6412 x 6856
+number of patches: 89905
+patch size: 392x392 patch level: 0
+ref patch size: (392, 392)x(392, 392)
+downscaled patch size: 7x7
+progress: 0/89905 stitched
+progress: 8991/89905 stitched
+progress: 17982/89905 stitched
+progress: 26973/89905 stitched
+progress: 35964/89905 stitched
+progress: 44955/89905 stitched
+progress: 53946/89905 stitched
+progress: 62937/89905 stitched
+progress: 71928/89905 stitched
+progress: 80919/89905 stitched
+segmentation took 1.7943451404571533 seconds
+patching took 15.646890878677368 seconds
+stitching took 12.460227727890015 seconds
+average segmentation time in s per slide: 1.696744764552397
+average patching time in s per slide: 7.071709015790154
+average stiching time in s per slide: 8.091670947916368

@@ -140,12 +140,11 @@ ln -s /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined $wor
 ln -s /home/weismanal/projects/idibell/links/original_project_repo/results $working_dir/results
 ```
 
-What follows is for posterity; here we should use the automatically generated patching commands generated in the [metadata processing section](#metadata-processing).
+What follows is for posterity; here we should simply use the automatically generated patching commands generated in the [metadata processing section](#metadata-processing).
 
 Commands that I have run to generate files in the working directory include:
 
 ```bash
-
 # Latest manual command - this is the best preset Eduard currently suggests based on the first two batches of data
 python $CLAM/create_patches_fp.py --source $working_dir/data --save_dir $working_dir/results/bwh_resection --patch_size 256 --preset       $CLAM/presets/bwh_resection.csv                          --seg --patch --stitch 2>&1 | tee $working_dir/logs/preprocessing-2022-03-22.log
 

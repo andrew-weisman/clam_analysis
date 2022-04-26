@@ -87,16 +87,6 @@ Note there are currently 12 files in the `converted_images` subdirectory in `MRX
 
 Further note that for the time being I am excluding all hysterectomy files because I need to nail down the magnifications for all the main images and see how CLAM performs when using the same magnifications for all images.
 
-## Metadata exploration
-
-Extract the slide metadata (must be run on Biowulf):
-
-```bash
-bash extract_slide_metadata.sh > slide_metadata-2022-03-25.csv
-```
-
-Explore the metadata using the Jupyter notebook `study_slide_metadata.ipynb`.
-
 ## Compute node allocation
 
 Commands that I have run to get an interactive compute node include:
@@ -106,6 +96,16 @@ sinteractive --mem=5g --cpus-per-task=8                     # for jobs not requi
 sinteractive --mem=20g --gres=gpu:p100:1 --cpus-per-task=8  # for jobs requiring a GPU, e.g., feature extraction
 sinteractive --mem=40g --gres=gpu:p100:1 --cpus-per-task=8  # heatmap generation requires at least 25g of memory, so choosing 40 to be safe
 ```
+
+## Metadata processing
+
+Extract the slide metadata (must be run on Biowulf):
+
+```bash
+bash extract_slide_metadata.sh > slide_metadata-2022-04-25.csv
+```
+
+(1) Explore the metadata and (2) print the patching/feature extraction commands to be run (and generate separate process lists) by running the Jupyter notebook `study_slide_metadata.ipynb`.
 
 ## Installation
 

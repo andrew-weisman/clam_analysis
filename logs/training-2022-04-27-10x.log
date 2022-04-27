@@ -1,4 +1,4 @@
-Started: Wed Apr 27 13:21:11 EDT 2022
+Started: Wed Apr 27 14:50:14 EDT 2022
 [-] Unloading zlib 1.2.11  ... 
 [+] Loading zlib 1.2.11  ... 
 [-] Unloading gcc  7.2.0  ... 
@@ -41,9 +41,9 @@ k_start:  -1
 k_end:  -1
 task:  idibell
 max_epochs:  200
-results_dir:  /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/training
+results_dir:  /home/weismanal/projects/idibell/repo/results/10x/bwh_resection/training
 lr:  0.0002
-experiment:  2022-04-27-21x
+experiment:  2022-04-27-10x
 reg:  1e-05
 label_frac:  1.0
 bag_loss:  ce
@@ -12565,4 +12565,4 @@ class 2: acc 0.0, correct 0/2
 class 3: acc 1.0, correct 3/3
 finished!
 end script
-Completed: Wed Apr 27 16:00:56 EDT 2022
+Completed: Wed Apr 27 17:11:25 EDT 2022

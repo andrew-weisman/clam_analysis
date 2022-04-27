@@ -1,0 +1,2322 @@
+Started: Wed Apr 27 13:21:11 EDT 2022
+[-] Unloading zlib 1.2.11  ... 
+[+] Loading zlib 1.2.11  ... 
+[-] Unloading gcc  7.2.0  ... 
+[-] Unloading libpng 1.6.37  ... 
+[+] Loading gcc  10.2.0  ... 
+[+] Loading libpng 1.6.37  ... 
+[-] Unloading libjpeg-turbo 2.0.6  ... 
+[+] Loading libjpeg-turbo 2.0.6  ... 
+[-] Unloading gcc  10.2.0  ... 
+[-] Unloading libtiff libraries v 4.0.9  ... 
+[+] Loading gcc  7.2.0  ... 
+[+] Loading libtiff libraries v 4.0.9  ... 
+[-] Unloading openjpeg  2.3.1  ... 
+[+] Loading openjpeg  2.3.1  ... 
+[-] Unloading SQLite 3.34.1  for gcc 4.8.5  ... 
+[+] Loading SQLite 3.34.1  for gcc 4.8.5  ... 
+
+Load Dataset
+label column: label
+label dictionary: {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
+number of classes: 4
+slide-level counts:  
+ 0    20
+1    17
+2    15
+3    17
+Name: label, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 20
+Slide-LVL; Number of samples registered in class 0: 20
+Patient-LVL; Number of samples registered in class 1: 17
+Slide-LVL; Number of samples registered in class 1: 17
+Patient-LVL; Number of samples registered in class 2: 15
+Slide-LVL; Number of samples registered in class 2: 15
+Patient-LVL; Number of samples registered in class 3: 17
+Slide-LVL; Number of samples registered in class 3: 17
+split_dir:  splits/idibell_100
+################# Settings ###################
+num_splits:  10
+k_start:  -1
+k_end:  -1
+task:  idibell
+max_epochs:  200
+results_dir:  /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/training
+lr:  0.0002
+experiment:  2022-04-27-21x
+reg:  1e-05
+label_frac:  1.0
+bag_loss:  ce
+seed:  1
+model_type:  clam_sb
+model_size:  small
+use_drop_out:  True
+weighted_sample:  True
+opt:  adam
+bag_weight:  0.7
+inst_loss:  svm
+B:  8
+split_dir:  splits/idibell_100
+
+Training Fold 0!
+
+Init train/val/test splits... 
+Done!
+Training on 47 samples
+Validating on 11 samples
+Testing on 11 samples
+
+Init loss function... Done!
+
+Init Model... Setting tau to 1.0
+Done!
+CLAM_SB(
+  (attention_net): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.25, inplace=False)
+    (3): Attn_Net_Gated(
+      (attention_a): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Tanh()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_b): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Sigmoid()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_c): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (classifiers): Linear(in_features=512, out_features=4, bias=True)
+  (instance_classifiers): ModuleList(
+    (0): Linear(in_features=512, out_features=2, bias=True)
+    (1): Linear(in_features=512, out_features=2, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+    (3): Linear(in_features=512, out_features=2, bias=True)
+  )
+  (instance_loss_fn): SmoothTop1SVM()
+)
+Total number of parameters: 793869
+Total number of trainable parameters: 793869
+
+Init optimizer ... Done!
+
+Init Loaders... Done!
+
+Setup EarlyStopping... Done!
+
+
+batch 19, loss: 0.9092, instance_loss: 1.0231, weighted_loss: 0.9433, label: 2, bag_size: 113492
+batch 39, loss: 1.8537, instance_loss: 0.9303, weighted_loss: 1.5767, label: 1, bag_size: 23122
+
+
+class 0 clustering acc 0.9534574468085106: correct 1434/1504
+class 1 clustering acc 0.03723404255319149: correct 14/376
+Epoch: 0, train_loss: 1.4040, train_clustering_loss:  1.0297, train_error: 0.6596
+class 0: acc 0.0, correct 0/9
+class 1: acc 0.0, correct 0/9
+class 2: acc 1.0, correct 16/16
+class 3: acc 0.0, correct 0/13
+
+Val Set, val_loss: 1.4476, val_error: 0.8182, auc: 0.6910
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+Validation loss decreased (inf --> 1.447559).  Saving model ...
+
+
+batch 19, loss: 1.3315, instance_loss: 0.6949, weighted_loss: 1.1405, label: 2, bag_size: 44015
+batch 39, loss: 1.2080, instance_loss: 0.7239, weighted_loss: 1.0628, label: 1, bag_size: 47433
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 1, train_loss: 1.3991, train_clustering_loss:  0.7489, train_error: 0.6809
+class 0: acc 0.0, correct 0/11
+class 1: acc 0.4666666666666667, correct 7/15
+class 2: acc 0.1, correct 1/10
+class 3: acc 0.6363636363636364, correct 7/11
+
+Val Set, val_loss: 1.3705, val_error: 0.7273, auc: 0.7535
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 1.0, correct 3/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+Validation loss decreased (1.447559 --> 1.370536).  Saving model ...
+
+
+batch 19, loss: 1.5428, instance_loss: 0.6625, weighted_loss: 1.2787, label: 2, bag_size: 75088
+batch 39, loss: 1.4896, instance_loss: 0.6597, weighted_loss: 1.2406, label: 2, bag_size: 54449
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 2, train_loss: 1.3899, train_clustering_loss:  0.6419, train_error: 0.7021
+class 0: acc 0.0, correct 0/11
+class 1: acc 0.8571428571428571, correct 12/14
+class 2: acc 0.0, correct 0/10
+class 3: acc 0.16666666666666666, correct 2/12
+
+Val Set, val_loss: 1.3683, val_error: 0.5455, auc: 0.6771
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 1.0, correct 3/3
+Validation loss decreased (1.370536 --> 1.368294).  Saving model ...
+
+
+batch 19, loss: 1.3747, instance_loss: 0.6321, weighted_loss: 1.1519, label: 0, bag_size: 6353
+batch 39, loss: 1.9764, instance_loss: 0.6700, weighted_loss: 1.5845, label: 2, bag_size: 118767
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 3, train_loss: 1.3702, train_clustering_loss:  0.6112, train_error: 0.6383
+class 0: acc 0.0, correct 0/14
+class 1: acc 1.0, correct 15/15
+class 2: acc 0.0, correct 0/7
+class 3: acc 0.18181818181818182, correct 2/11
+
+Val Set, val_loss: 1.3692, val_error: 0.6364, auc: 0.6285
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 1 out of 20
+
+
+batch 19, loss: 1.6435, instance_loss: 0.6466, weighted_loss: 1.3444, label: 2, bag_size: 9530
+batch 39, loss: 1.6807, instance_loss: 0.6072, weighted_loss: 1.3587, label: 1, bag_size: 20030
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 4, train_loss: 1.4036, train_clustering_loss:  0.6081, train_error: 0.6809
+class 0: acc 1.0, correct 14/14
+class 1: acc 0.0, correct 0/10
+class 2: acc 0.0, correct 0/11
+class 3: acc 0.08333333333333333, correct 1/12
+
+Val Set, val_loss: 1.3724, val_error: 0.7273, auc: 0.6146
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.6666666666666666, correct 2/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 2 out of 20
+
+
+batch 19, loss: 1.6306, instance_loss: 0.5871, weighted_loss: 1.3176, label: 0, bag_size: 70920
+batch 39, loss: 1.6539, instance_loss: 0.6025, weighted_loss: 1.3385, label: 0, bag_size: 13999
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 5, train_loss: 1.3488, train_clustering_loss:  0.6078, train_error: 0.7021
+class 0: acc 0.0, correct 0/8
+class 1: acc 0.6875, correct 11/16
+class 2: acc 0.2, correct 3/15
+class 3: acc 0.0, correct 0/8
+
+Val Set, val_loss: 1.4129, val_error: 0.7273, auc: 0.5972
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 1.0, correct 3/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 3 out of 20
+
+
+batch 19, loss: 1.2622, instance_loss: 0.6037, weighted_loss: 1.0647, label: 2, bag_size: 9530
+batch 39, loss: 1.5316, instance_loss: 0.6056, weighted_loss: 1.2538, label: 2, bag_size: 44015
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 6, train_loss: 1.3473, train_clustering_loss:  0.6019, train_error: 0.7021
+class 0: acc 0.0, correct 0/13
+class 1: acc 0.36363636363636365, correct 4/11
+class 2: acc 0.125, correct 1/8
+class 3: acc 0.6, correct 9/15
+
+Val Set, val_loss: 1.3862, val_error: 0.7273, auc: 0.5069
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 1.0, correct 3/3
+EarlyStopping counter: 4 out of 20
+
+
+batch 19, loss: 1.0550, instance_loss: 0.6249, weighted_loss: 0.9260, label: 0, bag_size: 6353
+batch 39, loss: 1.0966, instance_loss: 0.6210, weighted_loss: 0.9539, label: 0, bag_size: 70920
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 7, train_loss: 1.3090, train_clustering_loss:  0.6120, train_error: 0.5957
+class 0: acc 0.7647058823529411, correct 13/17
+class 1: acc 0.45454545454545453, correct 5/11
+class 2: acc 0.0, correct 0/12
+class 3: acc 0.14285714285714285, correct 1/7
+
+Val Set, val_loss: 1.4116, val_error: 0.7273, auc: 0.5556
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 5 out of 20
+
+
+batch 19, loss: 0.7528, instance_loss: 0.6019, weighted_loss: 0.7075, label: 0, bag_size: 59350
+batch 39, loss: 1.9883, instance_loss: 0.7045, weighted_loss: 1.6031, label: 3, bag_size: 66523
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 8, train_loss: 1.2556, train_clustering_loss:  0.6060, train_error: 0.5957
+class 0: acc 1.0, correct 18/18
+class 1: acc 0.0, correct 0/11
+class 2: acc 0.08333333333333333, correct 1/12
+class 3: acc 0.0, correct 0/6
+
+Val Set, val_loss: 1.4604, val_error: 0.7273, auc: 0.4549
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 6 out of 20
+
+
+batch 19, loss: 1.0328, instance_loss: 0.5897, weighted_loss: 0.8999, label: 1, bag_size: 58270
+batch 39, loss: 1.3142, instance_loss: 0.6179, weighted_loss: 1.1053, label: 1, bag_size: 23122
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 9, train_loss: 1.2297, train_clustering_loss:  0.5968, train_error: 0.5745
+class 0: acc 0.125, correct 1/8
+class 1: acc 0.26666666666666666, correct 4/15
+class 2: acc 0.7894736842105263, correct 15/19
+class 3: acc 0.0, correct 0/5
+
+Val Set, val_loss: 1.5381, val_error: 0.6364, auc: 0.4167
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 7 out of 20
+
+
+batch 19, loss: 0.7413, instance_loss: 0.5201, weighted_loss: 0.6749, label: 2, bag_size: 44015
+batch 39, loss: 1.7158, instance_loss: 0.6166, weighted_loss: 1.3860, label: 1, bag_size: 47433
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 10, train_loss: 1.2953, train_clustering_loss:  0.6059, train_error: 0.5745
+class 0: acc 0.0, correct 0/11
+class 1: acc 0.5714285714285714, correct 4/7
+class 2: acc 0.8235294117647058, correct 14/17
+class 3: acc 0.16666666666666666, correct 2/12
+
+Val Set, val_loss: 1.5091, val_error: 0.8182, auc: 0.4201
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 8 out of 20
+
+
+batch 19, loss: 1.0115, instance_loss: 0.6196, weighted_loss: 0.8940, label: 0, bag_size: 18551
+batch 39, loss: 0.8100, instance_loss: 0.5884, weighted_loss: 0.7435, label: 3, bag_size: 77542
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 11, train_loss: 1.2659, train_clustering_loss:  0.6058, train_error: 0.5957
+class 0: acc 0.6875, correct 11/16
+class 1: acc 0.26666666666666666, correct 4/15
+class 2: acc 0.25, correct 2/8
+class 3: acc 0.25, correct 2/8
+
+Val Set, val_loss: 1.4610, val_error: 0.8182, auc: 0.3785
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 9 out of 20
+
+
+batch 19, loss: 1.1715, instance_loss: 0.6194, weighted_loss: 1.0058, label: 3, bag_size: 24102
+batch 39, loss: 1.3950, instance_loss: 0.6169, weighted_loss: 1.1616, label: 2, bag_size: 9530
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 12, train_loss: 1.2824, train_clustering_loss:  0.5976, train_error: 0.5745
+class 0: acc 0.2, correct 2/10
+class 1: acc 0.8125, correct 13/16
+class 2: acc 0.0, correct 0/9
+class 3: acc 0.4166666666666667, correct 5/12
+
+Val Set, val_loss: 1.4766, val_error: 0.8182, auc: 0.4201
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 10 out of 20
+
+
+batch 19, loss: 1.6479, instance_loss: 0.6497, weighted_loss: 1.3485, label: 2, bag_size: 75088
+batch 39, loss: 1.4816, instance_loss: 0.6321, weighted_loss: 1.2268, label: 2, bag_size: 9530
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 13, train_loss: 1.2522, train_clustering_loss:  0.5945, train_error: 0.6170
+class 0: acc 0.46153846153846156, correct 6/13
+class 1: acc 0.4, correct 4/10
+class 2: acc 0.09090909090909091, correct 1/11
+class 3: acc 0.5384615384615384, correct 7/13
+
+Val Set, val_loss: 1.4556, val_error: 0.9091, auc: 0.4826
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 11 out of 20
+
+
+batch 19, loss: 1.5796, instance_loss: 0.6137, weighted_loss: 1.2899, label: 0, bag_size: 6353
+batch 39, loss: 0.9237, instance_loss: 0.5712, weighted_loss: 0.8180, label: 3, bag_size: 102779
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 14, train_loss: 1.1762, train_clustering_loss:  0.5886, train_error: 0.5319
+class 0: acc 0.14285714285714285, correct 1/7
+class 1: acc 0.0, correct 0/9
+class 2: acc 0.8888888888888888, correct 16/18
+class 3: acc 0.38461538461538464, correct 5/13
+
+Val Set, val_loss: 1.5151, val_error: 0.9091, auc: 0.4618
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 12 out of 20
+
+
+batch 19, loss: 1.3494, instance_loss: 0.6313, weighted_loss: 1.1339, label: 0, bag_size: 22124
+batch 39, loss: 1.1419, instance_loss: 0.5668, weighted_loss: 0.9694, label: 3, bag_size: 152150
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 15, train_loss: 1.1211, train_clustering_loss:  0.5775, train_error: 0.5532
+class 0: acc 0.18181818181818182, correct 2/11
+class 1: acc 0.8666666666666667, correct 13/15
+class 2: acc 0.1, correct 1/10
+class 3: acc 0.45454545454545453, correct 5/11
+
+Val Set, val_loss: 1.4396, val_error: 0.6364, auc: 0.5347
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 13 out of 20
+
+
+batch 19, loss: 0.9473, instance_loss: 0.5679, weighted_loss: 0.8335, label: 2, bag_size: 9530
+batch 39, loss: 1.2573, instance_loss: 0.6529, weighted_loss: 1.0760, label: 0, bag_size: 59350
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 16, train_loss: 1.0952, train_clustering_loss:  0.5739, train_error: 0.4043
+class 0: acc 0.2, correct 2/10
+class 1: acc 0.7272727272727273, correct 8/11
+class 2: acc 0.8461538461538461, correct 11/13
+class 3: acc 0.5384615384615384, correct 7/13
+
+Val Set, val_loss: 1.4514, val_error: 0.9091, auc: 0.4931
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 14 out of 20
+
+
+batch 19, loss: 0.3653, instance_loss: 0.4227, weighted_loss: 0.3825, label: 3, bag_size: 42569
+batch 39, loss: 1.3423, instance_loss: 0.6246, weighted_loss: 1.1270, label: 0, bag_size: 54249
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 17, train_loss: 0.9977, train_clustering_loss:  0.5686, train_error: 0.2766
+class 0: acc 0.6923076923076923, correct 9/13
+class 1: acc 0.7, correct 7/10
+class 2: acc 0.8235294117647058, correct 14/17
+class 3: acc 0.5714285714285714, correct 4/7
+
+Val Set, val_loss: 1.5140, val_error: 0.9091, auc: 0.5035
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 15 out of 20
+
+
+batch 19, loss: 1.3612, instance_loss: 0.6018, weighted_loss: 1.1334, label: 3, bag_size: 102779
+batch 39, loss: 0.2685, instance_loss: 0.4114, weighted_loss: 0.3114, label: 3, bag_size: 42569
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 18, train_loss: 0.9446, train_clustering_loss:  0.5576, train_error: 0.3191
+class 0: acc 0.9230769230769231, correct 12/13
+class 1: acc 0.42857142857142855, correct 6/14
+class 2: acc 1.0, correct 9/9
+class 3: acc 0.45454545454545453, correct 5/11
+
+Val Set, val_loss: 1.5014, val_error: 0.7273, auc: 0.5417
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 16 out of 20
+
+
+batch 19, loss: 1.5484, instance_loss: 0.6061, weighted_loss: 1.2657, label: 0, bag_size: 70920
+batch 39, loss: 0.4342, instance_loss: 0.4607, weighted_loss: 0.4421, label: 3, bag_size: 83890
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 19, train_loss: 1.0251, train_clustering_loss:  0.5666, train_error: 0.4255
+class 0: acc 0.3333333333333333, correct 4/12
+class 1: acc 0.8, correct 8/10
+class 2: acc 0.5714285714285714, correct 8/14
+class 3: acc 0.6363636363636364, correct 7/11
+
+Val Set, val_loss: 1.6093, val_error: 0.8182, auc: 0.5139
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 17 out of 20
+
+
+batch 19, loss: 2.2956, instance_loss: 0.6770, weighted_loss: 1.8100, label: 3, bag_size: 25448
+batch 39, loss: 1.4868, instance_loss: 0.6393, weighted_loss: 1.2326, label: 0, bag_size: 56983
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 20, train_loss: 1.0432, train_clustering_loss:  0.5550, train_error: 0.4894
+class 0: acc 0.42857142857142855, correct 3/7
+class 1: acc 0.4666666666666667, correct 7/15
+class 2: acc 0.8461538461538461, correct 11/13
+class 3: acc 0.25, correct 3/12
+
+Val Set, val_loss: 1.5578, val_error: 0.6364, auc: 0.5139
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 18 out of 20
+
+
+batch 19, loss: 1.5162, instance_loss: 0.6136, weighted_loss: 1.2454, label: 3, bag_size: 16626
+batch 39, loss: 0.6271, instance_loss: 0.5743, weighted_loss: 0.6113, label: 1, bag_size: 58270
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 21, train_loss: 0.8664, train_clustering_loss:  0.5283, train_error: 0.2766
+class 0: acc 0.3333333333333333, correct 3/9
+class 1: acc 0.8888888888888888, correct 16/18
+class 2: acc 0.8, correct 8/10
+class 3: acc 0.7, correct 7/10
+
+Val Set, val_loss: 1.5235, val_error: 0.7273, auc: 0.5660
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 19 out of 20
+
+
+batch 19, loss: 1.1772, instance_loss: 0.5502, weighted_loss: 0.9891, label: 3, bag_size: 24102
+batch 39, loss: 0.5224, instance_loss: 0.4698, weighted_loss: 0.5066, label: 2, bag_size: 158432
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 22, train_loss: 0.9161, train_clustering_loss:  0.5300, train_error: 0.3830
+class 0: acc 0.3076923076923077, correct 4/13
+class 1: acc 1.0, correct 15/15
+class 2: acc 0.75, correct 6/8
+class 3: acc 0.36363636363636365, correct 4/11
+
+Val Set, val_loss: 1.6166, val_error: 0.7273, auc: 0.5069
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 20 out of 20
+
+
+batch 19, loss: 1.0098, instance_loss: 0.5467, weighted_loss: 0.8709, label: 3, bag_size: 24102
+batch 39, loss: 1.7382, instance_loss: 0.7408, weighted_loss: 1.4389, label: 0, bag_size: 56348
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 23, train_loss: 0.9009, train_clustering_loss:  0.5274, train_error: 0.3191
+class 0: acc 0.6153846153846154, correct 8/13
+class 1: acc 0.6666666666666666, correct 6/9
+class 2: acc 1.0, correct 11/11
+class 3: acc 0.5, correct 7/14
+
+Val Set, val_loss: 1.6896, val_error: 0.6364, auc: 0.5278
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 21 out of 20
+
+
+batch 19, loss: 0.9661, instance_loss: 0.5590, weighted_loss: 0.8440, label: 2, bag_size: 9530
+batch 39, loss: 0.7646, instance_loss: 0.5383, weighted_loss: 0.6967, label: 0, bag_size: 10671
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 24, train_loss: 0.8207, train_clustering_loss:  0.5162, train_error: 0.2128
+class 0: acc 0.9285714285714286, correct 13/14
+class 1: acc 0.5, correct 4/8
+class 2: acc 0.9230769230769231, correct 12/13
+class 3: acc 0.6666666666666666, correct 8/12
+
+Val Set, val_loss: 1.5885, val_error: 0.7273, auc: 0.5486
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 22 out of 20
+
+
+batch 19, loss: 0.2213, instance_loss: 0.3984, weighted_loss: 0.2744, label: 0, bag_size: 18551
+batch 39, loss: 0.6811, instance_loss: 0.5038, weighted_loss: 0.6279, label: 1, bag_size: 20030
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 25, train_loss: 0.7772, train_clustering_loss:  0.5022, train_error: 0.3191
+class 0: acc 0.8571428571428571, correct 12/14
+class 1: acc 0.45454545454545453, correct 5/11
+class 2: acc 1.0, correct 13/13
+class 3: acc 0.2222222222222222, correct 2/9
+
+Val Set, val_loss: 1.6063, val_error: 0.7273, auc: 0.5729
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 23 out of 20
+
+
+batch 19, loss: 0.6171, instance_loss: 0.4759, weighted_loss: 0.5747, label: 1, bag_size: 23122
+batch 39, loss: 0.7314, instance_loss: 0.5380, weighted_loss: 0.6734, label: 1, bag_size: 69073
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 26, train_loss: 0.8481, train_clustering_loss:  0.5070, train_error: 0.3617
+class 0: acc 0.23076923076923078, correct 3/13
+class 1: acc 0.5454545454545454, correct 6/11
+class 2: acc 1.0, correct 14/14
+class 3: acc 0.7777777777777778, correct 7/9
+
+Val Set, val_loss: 1.6772, val_error: 0.6364, auc: 0.5278
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 24 out of 20
+
+
+batch 19, loss: 0.4704, instance_loss: 0.4026, weighted_loss: 0.4500, label: 2, bag_size: 54449
+batch 39, loss: 1.2327, instance_loss: 0.6209, weighted_loss: 1.0492, label: 3, bag_size: 4963
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 27, train_loss: 0.7284, train_clustering_loss:  0.4862, train_error: 0.2340
+class 0: acc 0.8333333333333334, correct 10/12
+class 1: acc 0.7777777777777778, correct 7/9
+class 2: acc 1.0, correct 13/13
+class 3: acc 0.46153846153846156, correct 6/13
+
+Val Set, val_loss: 1.7660, val_error: 0.6364, auc: 0.5833
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 25 out of 20
+
+
+batch 19, loss: 1.3053, instance_loss: 0.5324, weighted_loss: 1.0734, label: 0, bag_size: 65047
+batch 39, loss: 1.3440, instance_loss: 0.6775, weighted_loss: 1.1441, label: 0, bag_size: 54249
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.023936170212765957: correct 9/376
+Epoch: 28, train_loss: 0.6774, train_clustering_loss:  0.4601, train_error: 0.1915
+class 0: acc 0.5, correct 6/12
+class 1: acc 0.8181818181818182, correct 9/11
+class 2: acc 0.9, correct 9/10
+class 3: acc 1.0, correct 14/14
+
+Val Set, val_loss: 1.5378, val_error: 0.7273, auc: 0.6181
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 26 out of 20
+
+
+batch 19, loss: 0.5478, instance_loss: 0.3608, weighted_loss: 0.4917, label: 3, bag_size: 83890
+batch 39, loss: 0.7428, instance_loss: 0.4711, weighted_loss: 0.6613, label: 2, bag_size: 113492
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.023936170212765957: correct 9/376
+Epoch: 29, train_loss: 0.6705, train_clustering_loss:  0.4555, train_error: 0.2340
+class 0: acc 0.6, correct 6/10
+class 1: acc 0.9230769230769231, correct 12/13
+class 2: acc 0.875, correct 7/8
+class 3: acc 0.6875, correct 11/16
+
+Val Set, val_loss: 1.7770, val_error: 0.6364, auc: 0.5833
+class 0 clustering acc 0.9772727272727273: correct 344/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 27 out of 20
+
+
+batch 19, loss: 0.6312, instance_loss: 0.4523, weighted_loss: 0.5775, label: 2, bag_size: 75088
+batch 39, loss: 0.4855, instance_loss: 0.4392, weighted_loss: 0.4716, label: 0, bag_size: 56983
+
+
+class 0 clustering acc 0.9993351063829787: correct 1503/1504
+class 1 clustering acc 0.02127659574468085: correct 8/376
+Epoch: 30, train_loss: 0.6036, train_clustering_loss:  0.4566, train_error: 0.1277
+class 0: acc 1.0, correct 16/16
+class 1: acc 1.0, correct 4/4
+class 2: acc 1.0, correct 12/12
+class 3: acc 0.6, correct 9/15
+
+Val Set, val_loss: 2.0119, val_error: 0.7273, auc: 0.5903
+class 0 clustering acc 0.9602272727272727: correct 338/352
+class 1 clustering acc 0.011363636363636364: correct 1/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 28 out of 20
+
+
+batch 19, loss: 0.6230, instance_loss: 0.5115, weighted_loss: 0.5896, label: 1, bag_size: 47433
+batch 39, loss: 0.4269, instance_loss: 0.4214, weighted_loss: 0.4253, label: 1, bag_size: 20030
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.08244680851063829: correct 31/376
+Epoch: 31, train_loss: 0.4964, train_clustering_loss:  0.4104, train_error: 0.1064
+class 0: acc 0.8461538461538461, correct 11/13
+class 1: acc 0.9090909090909091, correct 10/11
+class 2: acc 1.0, correct 15/15
+class 3: acc 0.75, correct 6/8
+
+Val Set, val_loss: 1.6416, val_error: 0.7273, auc: 0.5938
+class 0 clustering acc 0.9943181818181818: correct 350/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 29 out of 20
+
+
+batch 19, loss: 0.7007, instance_loss: 0.5140, weighted_loss: 0.6447, label: 3, bag_size: 16626
+batch 39, loss: 0.6451, instance_loss: 0.5008, weighted_loss: 0.6018, label: 3, bag_size: 16626
+
+
+class 0 clustering acc 0.9986702127659575: correct 1502/1504
+class 1 clustering acc 0.02925531914893617: correct 11/376
+Epoch: 32, train_loss: 0.8621, train_clustering_loss:  0.4856, train_error: 0.3191
+class 0: acc 0.6363636363636364, correct 7/11
+class 1: acc 0.5833333333333334, correct 7/12
+class 2: acc 0.9230769230769231, correct 12/13
+class 3: acc 0.5454545454545454, correct 6/11
+
+Val Set, val_loss: 1.7126, val_error: 0.8182, auc: 0.6285
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.6666666666666666, correct 2/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 30 out of 20
+
+
+batch 19, loss: 2.5391, instance_loss: 0.6575, weighted_loss: 1.9746, label: 0, bag_size: 10671
+batch 39, loss: 0.3596, instance_loss: 0.3290, weighted_loss: 0.3504, label: 3, bag_size: 77542
+
+
+class 0 clustering acc 0.9993351063829787: correct 1503/1504
+class 1 clustering acc 0.0797872340425532: correct 30/376
+Epoch: 33, train_loss: 1.0396, train_clustering_loss:  0.5051, train_error: 0.4894
+class 0: acc 0.46153846153846156, correct 6/13
+class 1: acc 0.5, correct 4/8
+class 2: acc 0.6428571428571429, correct 9/14
+class 3: acc 0.4166666666666667, correct 5/12
+
+Val Set, val_loss: 1.3774, val_error: 0.6364, auc: 0.5972
+class 0 clustering acc 0.9801136363636364: correct 345/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 31 out of 20
+
+
+batch 19, loss: 0.4689, instance_loss: 0.4781, weighted_loss: 0.4717, label: 3, bag_size: 4963
+batch 39, loss: 0.4710, instance_loss: 0.4542, weighted_loss: 0.4660, label: 0, bag_size: 56983
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.061170212765957445: correct 23/376
+Epoch: 34, train_loss: 0.7034, train_clustering_loss:  0.4632, train_error: 0.2553
+class 0: acc 0.5, correct 7/14
+class 1: acc 0.7692307692307693, correct 10/13
+class 2: acc 0.8571428571428571, correct 6/7
+class 3: acc 0.9230769230769231, correct 12/13
+
+Val Set, val_loss: 1.6247, val_error: 0.6364, auc: 0.5625
+class 0 clustering acc 0.9744318181818182: correct 343/352
+class 1 clustering acc 0.056818181818181816: correct 5/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 32 out of 20
+
+
+batch 19, loss: 1.2548, instance_loss: 0.5687, weighted_loss: 1.0490, label: 1, bag_size: 77634
+batch 39, loss: 1.2282, instance_loss: 0.6234, weighted_loss: 1.0467, label: 0, bag_size: 54249
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0398936170212766: correct 15/376
+Epoch: 35, train_loss: 0.5796, train_clustering_loss:  0.4295, train_error: 0.1915
+class 0: acc 0.6666666666666666, correct 6/9
+class 1: acc 0.8, correct 8/10
+class 2: acc 1.0, correct 14/14
+class 3: acc 0.7142857142857143, correct 10/14
+
+Val Set, val_loss: 1.8295, val_error: 0.6364, auc: 0.5451
+class 0 clustering acc 0.9630681818181818: correct 339/352
+class 1 clustering acc 0.09090909090909091: correct 8/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 33 out of 20
+
+
+batch 19, loss: 0.2093, instance_loss: 0.3342, weighted_loss: 0.2468, label: 1, bag_size: 20030
+batch 39, loss: 0.4757, instance_loss: 0.4741, weighted_loss: 0.4752, label: 0, bag_size: 56983
+
+
+class 0 clustering acc 0.9993351063829787: correct 1503/1504
+class 1 clustering acc 0.14095744680851063: correct 53/376
+Epoch: 36, train_loss: 0.4124, train_clustering_loss:  0.3784, train_error: 0.0213
+class 0: acc 0.9166666666666666, correct 11/12
+class 1: acc 1.0, correct 13/13
+class 2: acc 1.0, correct 8/8
+class 3: acc 1.0, correct 14/14
+
+Val Set, val_loss: 1.9257, val_error: 0.6364, auc: 0.5590
+class 0 clustering acc 0.9460227272727273: correct 333/352
+class 1 clustering acc 0.10227272727272728: correct 9/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 34 out of 20
+
+
+batch 19, loss: 0.3446, instance_loss: 0.4660, weighted_loss: 0.3810, label: 1, bag_size: 20030
+batch 39, loss: 0.2276, instance_loss: 0.2819, weighted_loss: 0.2439, label: 1, bag_size: 58270
+
+
+class 0 clustering acc 0.9933510638297872: correct 1494/1504
+class 1 clustering acc 0.2712765957446808: correct 102/376
+Epoch: 37, train_loss: 0.4253, train_clustering_loss:  0.3700, train_error: 0.0851
+class 0: acc 0.75, correct 9/12
+class 1: acc 1.0, correct 10/10
+class 2: acc 1.0, correct 9/9
+class 3: acc 0.9375, correct 15/16
+
+Val Set, val_loss: 1.7408, val_error: 0.6364, auc: 0.6076
+class 0 clustering acc 0.9630681818181818: correct 339/352
+class 1 clustering acc 0.125: correct 11/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 35 out of 20
+
+
+batch 19, loss: 0.3696, instance_loss: 0.4377, weighted_loss: 0.3901, label: 0, bag_size: 22124
+batch 39, loss: 0.1556, instance_loss: 0.2691, weighted_loss: 0.1897, label: 2, bag_size: 75088
+
+
+class 0 clustering acc 0.9980053191489362: correct 1501/1504
+class 1 clustering acc 0.18085106382978725: correct 68/376
+Epoch: 38, train_loss: 0.3891, train_clustering_loss:  0.3604, train_error: 0.0426
+class 0: acc 0.9285714285714286, correct 13/14
+class 1: acc 1.0, correct 9/9
+class 2: acc 1.0, correct 14/14
+class 3: acc 0.9, correct 9/10
+
+Val Set, val_loss: 1.8228, val_error: 0.6364, auc: 0.5833
+class 0 clustering acc 0.9488636363636364: correct 334/352
+class 1 clustering acc 0.11363636363636363: correct 10/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 36 out of 20
+
+
+batch 19, loss: 0.4562, instance_loss: 0.4531, weighted_loss: 0.4553, label: 3, bag_size: 16626
+batch 39, loss: 0.4220, instance_loss: 0.3983, weighted_loss: 0.4149, label: 2, bag_size: 23349
+
+
+class 0 clustering acc 0.9867021276595744: correct 1484/1504
+class 1 clustering acc 0.19946808510638298: correct 75/376
+Epoch: 39, train_loss: 0.4726, train_clustering_loss:  0.3913, train_error: 0.1277
+class 0: acc 0.8125, correct 13/16
+class 1: acc 1.0, correct 9/9
+class 2: acc 1.0, correct 11/11
+class 3: acc 0.7272727272727273, correct 8/11
+
+Val Set, val_loss: 1.8844, val_error: 0.6364, auc: 0.6076
+class 0 clustering acc 0.9630681818181818: correct 339/352
+class 1 clustering acc 0.11363636363636363: correct 10/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 37 out of 20
+
+
+batch 19, loss: 0.4546, instance_loss: 0.3662, weighted_loss: 0.4281, label: 1, bag_size: 132271
+batch 39, loss: 0.1097, instance_loss: 0.2373, weighted_loss: 0.1479, label: 2, bag_size: 75088
+
+
+class 0 clustering acc 0.9913563829787234: correct 1491/1504
+class 1 clustering acc 0.2393617021276596: correct 90/376
+Epoch: 40, train_loss: 0.3769, train_clustering_loss:  0.3509, train_error: 0.1064
+class 0: acc 0.7777777777777778, correct 7/9
+class 1: acc 0.8461538461538461, correct 11/13
+class 2: acc 1.0, correct 15/15
+class 3: acc 0.9, correct 9/10
+
+Val Set, val_loss: 1.6264, val_error: 0.5455, auc: 0.6285
+class 0 clustering acc 0.9772727272727273: correct 344/352
+class 1 clustering acc 0.17045454545454544: correct 15/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 1.0, correct 3/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 38 out of 20
+
+
+batch 19, loss: 0.0367, instance_loss: 0.1032, weighted_loss: 0.0566, label: 3, bag_size: 66523
+batch 39, loss: 0.2182, instance_loss: 0.3409, weighted_loss: 0.2550, label: 3, bag_size: 24102
+
+
+class 0 clustering acc 0.9980053191489362: correct 1501/1504
+class 1 clustering acc 0.3271276595744681: correct 123/376
+Epoch: 41, train_loss: 0.3654, train_clustering_loss:  0.3409, train_error: 0.1064
+class 0: acc 0.5714285714285714, correct 4/7
+class 1: acc 1.0, correct 12/12
+class 2: acc 1.0, correct 11/11
+class 3: acc 0.8823529411764706, correct 15/17
+
+Val Set, val_loss: 2.1027, val_error: 0.6364, auc: 0.5590
+class 0 clustering acc 0.9318181818181818: correct 328/352
+class 1 clustering acc 0.19318181818181818: correct 17/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 39 out of 20
+
+
+batch 19, loss: 0.3081, instance_loss: 0.3361, weighted_loss: 0.3165, label: 1, bag_size: 77634
+batch 39, loss: 1.0278, instance_loss: 0.5771, weighted_loss: 0.8926, label: 3, bag_size: 4963
+
+
+class 0 clustering acc 0.9973404255319149: correct 1500/1504
+class 1 clustering acc 0.2925531914893617: correct 110/376
+Epoch: 42, train_loss: 0.3677, train_clustering_loss:  0.3547, train_error: 0.0426
+class 0: acc 1.0, correct 10/10
+class 1: acc 1.0, correct 11/11
+class 2: acc 1.0, correct 12/12
+class 3: acc 0.8571428571428571, correct 12/14
+
+Val Set, val_loss: 2.0237, val_error: 0.6364, auc: 0.6042
+class 0 clustering acc 0.9318181818181818: correct 328/352
+class 1 clustering acc 0.1590909090909091: correct 14/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 40 out of 20
+
+
+batch 19, loss: 0.1815, instance_loss: 0.2080, weighted_loss: 0.1894, label: 1, bag_size: 81420
+batch 39, loss: 0.0569, instance_loss: 0.0925, weighted_loss: 0.0676, label: 3, bag_size: 77542
+
+
+class 0 clustering acc 0.9933510638297872: correct 1494/1504
+class 1 clustering acc 0.4122340425531915: correct 155/376
+Epoch: 43, train_loss: 0.3521, train_clustering_loss:  0.3368, train_error: 0.0426
+class 0: acc 0.9166666666666666, correct 11/12
+class 1: acc 1.0, correct 15/15
+class 2: acc 1.0, correct 8/8
+class 3: acc 0.9166666666666666, correct 11/12
+
+Val Set, val_loss: 2.0642, val_error: 0.6364, auc: 0.5833
+class 0 clustering acc 0.9375: correct 330/352
+class 1 clustering acc 0.2159090909090909: correct 19/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 41 out of 20
+
+
+batch 19, loss: 0.2913, instance_loss: 0.3948, weighted_loss: 0.3224, label: 3, bag_size: 12412
+batch 39, loss: 0.5452, instance_loss: 0.4003, weighted_loss: 0.5017, label: 0, bag_size: 6353
+
+
+class 0 clustering acc 0.9900265957446809: correct 1489/1504
+class 1 clustering acc 0.3803191489361702: correct 143/376
+Epoch: 44, train_loss: 0.3354, train_clustering_loss:  0.3305, train_error: 0.0638
+class 0: acc 0.8947368421052632, correct 17/19
+class 1: acc 1.0, correct 11/11
+class 2: acc 1.0, correct 12/12
+class 3: acc 0.8, correct 4/5
+
+Val Set, val_loss: 1.8547, val_error: 0.7273, auc: 0.5938
+class 0 clustering acc 0.9573863636363636: correct 337/352
+class 1 clustering acc 0.1590909090909091: correct 14/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 42 out of 20
+
+
+batch 19, loss: 0.1996, instance_loss: 0.2689, weighted_loss: 0.2204, label: 0, bag_size: 18551
+batch 39, loss: 0.1142, instance_loss: 0.1679, weighted_loss: 0.1303, label: 0, bag_size: 19277
+
+
+class 0 clustering acc 0.9946808510638298: correct 1496/1504
+class 1 clustering acc 0.4654255319148936: correct 175/376
+Epoch: 45, train_loss: 0.3539, train_clustering_loss:  0.3098, train_error: 0.0851
+class 0: acc 0.9333333333333333, correct 14/15
+class 1: acc 1.0, correct 10/10
+class 2: acc 1.0, correct 10/10
+class 3: acc 0.75, correct 9/12
+
+Val Set, val_loss: 2.0142, val_error: 0.6364, auc: 0.5938
+class 0 clustering acc 0.9261363636363636: correct 326/352
+class 1 clustering acc 0.17045454545454544: correct 15/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 43 out of 20
+
+
+batch 19, loss: 0.2400, instance_loss: 0.2484, weighted_loss: 0.2425, label: 1, bag_size: 69073
+batch 39, loss: 0.8478, instance_loss: 0.6200, weighted_loss: 0.7795, label: 3, bag_size: 4963
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.4787234042553192: correct 180/376
+Epoch: 46, train_loss: 0.2885, train_clustering_loss:  0.2988, train_error: 0.0638
+class 0: acc 0.9230769230769231, correct 12/13
+class 1: acc 1.0, correct 12/12
+class 2: acc 1.0, correct 11/11
+class 3: acc 0.8181818181818182, correct 9/11
+
+Val Set, val_loss: 1.9435, val_error: 0.6364, auc: 0.6042
+class 0 clustering acc 0.9431818181818182: correct 332/352
+class 1 clustering acc 0.23863636363636365: correct 21/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 44 out of 20
+
+
+batch 19, loss: 0.0718, instance_loss: 0.1548, weighted_loss: 0.0967, label: 2, bag_size: 44015
+batch 39, loss: 1.6470, instance_loss: 0.8048, weighted_loss: 1.3943, label: 0, bag_size: 56348
+
+
+class 0 clustering acc 0.9820478723404256: correct 1477/1504
+class 1 clustering acc 0.43882978723404253: correct 165/376
+Epoch: 47, train_loss: 0.4178, train_clustering_loss:  0.3241, train_error: 0.1489
+class 0: acc 0.6153846153846154, correct 8/13
+class 1: acc 1.0, correct 13/13
+class 2: acc 1.0, correct 11/11
+class 3: acc 0.8, correct 8/10
+
+Val Set, val_loss: 1.9218, val_error: 0.6364, auc: 0.6285
+class 0 clustering acc 0.9346590909090909: correct 329/352
+class 1 clustering acc 0.17045454545454544: correct 15/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 45 out of 20
+
+
+batch 19, loss: 0.4606, instance_loss: 0.4327, weighted_loss: 0.4523, label: 2, bag_size: 22416
+batch 39, loss: 0.0573, instance_loss: 0.0969, weighted_loss: 0.0692, label: 1, bag_size: 47433
+
+
+class 0 clustering acc 0.9787234042553191: correct 1472/1504
+class 1 clustering acc 0.48936170212765956: correct 184/376
+Epoch: 48, train_loss: 0.4156, train_clustering_loss:  0.3528, train_error: 0.1489
+class 0: acc 0.8, correct 8/10
+class 1: acc 1.0, correct 15/15
+class 2: acc 1.0, correct 8/8
+class 3: acc 0.6428571428571429, correct 9/14
+
+Val Set, val_loss: 1.9436, val_error: 0.6364, auc: 0.5938
+class 0 clustering acc 0.9431818181818182: correct 332/352
+class 1 clustering acc 0.25: correct 22/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 46 out of 20
+
+
+batch 19, loss: 0.5893, instance_loss: 0.4864, weighted_loss: 0.5584, label: 2, bag_size: 23349
+batch 39, loss: 0.9161, instance_loss: 0.6771, weighted_loss: 0.8444, label: 3, bag_size: 25448
+
+
+class 0 clustering acc 0.9886968085106383: correct 1487/1504
+class 1 clustering acc 0.38563829787234044: correct 145/376
+Epoch: 49, train_loss: 0.3603, train_clustering_loss:  0.3478, train_error: 0.1064
+class 0: acc 0.7692307692307693, correct 10/13
+class 1: acc 1.0, correct 7/7
+class 2: acc 1.0, correct 9/9
+class 3: acc 0.8888888888888888, correct 16/18
+
+Val Set, val_loss: 2.3798, val_error: 0.5455, auc: 0.5903
+class 0 clustering acc 0.9204545454545454: correct 324/352
+class 1 clustering acc 0.23863636363636365: correct 21/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 1.0, correct 3/3
+EarlyStopping counter: 47 out of 20
+
+
+batch 19, loss: 0.2520, instance_loss: 0.3562, weighted_loss: 0.2833, label: 3, bag_size: 24102
+batch 39, loss: 0.2026, instance_loss: 0.2391, weighted_loss: 0.2136, label: 1, bag_size: 23122
+
+
+class 0 clustering acc 0.9867021276595744: correct 1484/1504
+class 1 clustering acc 0.523936170212766: correct 197/376
+Epoch: 50, train_loss: 0.3256, train_clustering_loss:  0.3150, train_error: 0.0638
+class 0: acc 0.7777777777777778, correct 7/9
+class 1: acc 1.0, correct 15/15
+class 2: acc 1.0, correct 12/12
+class 3: acc 0.9090909090909091, correct 10/11
+
+Val Set, val_loss: 2.1517, val_error: 0.6364, auc: 0.6042
+class 0 clustering acc 0.9431818181818182: correct 332/352
+class 1 clustering acc 0.25: correct 22/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 48 out of 20
+
+
+batch 19, loss: 0.1088, instance_loss: 0.1834, weighted_loss: 0.1312, label: 2, bag_size: 54449
+batch 39, loss: 0.0672, instance_loss: 0.1414, weighted_loss: 0.0895, label: 3, bag_size: 152150
+
+
+class 0 clustering acc 0.9847074468085106: correct 1481/1504
+class 1 clustering acc 0.43351063829787234: correct 163/376
+Epoch: 51, train_loss: 0.3945, train_clustering_loss:  0.3505, train_error: 0.1489
+class 0: acc 0.8666666666666667, correct 13/15
+class 1: acc 0.9166666666666666, correct 11/12
+class 2: acc 1.0, correct 9/9
+class 3: acc 0.6363636363636364, correct 7/11
+
+Val Set, val_loss: 2.1692, val_error: 0.6364, auc: 0.6042
+class 0 clustering acc 0.9318181818181818: correct 328/352
+class 1 clustering acc 0.2727272727272727: correct 24/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.6666666666666666, correct 2/3
+EarlyStopping counter: 49 out of 20
+Early stopping
+Val error: 0.5455, ROC AUC: 0.6771
+Test error: 0.5455, ROC AUC: 0.8229
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 1.0, correct 3/3
+
+Training Fold 1!
+
+Init train/val/test splits... 
+Done!
+Training on 47 samples
+Validating on 11 samples
+Testing on 11 samples
+
+Init loss function... Done!
+
+Init Model... Setting tau to 1.0
+Done!
+CLAM_SB(
+  (attention_net): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.25, inplace=False)
+    (3): Attn_Net_Gated(
+      (attention_a): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Tanh()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_b): Sequential(
+        (0): Linear(in_features=512, out_features=256, bias=True)
+        (1): Sigmoid()
+        (2): Dropout(p=0.25, inplace=False)
+      )
+      (attention_c): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (classifiers): Linear(in_features=512, out_features=4, bias=True)
+  (instance_classifiers): ModuleList(
+    (0): Linear(in_features=512, out_features=2, bias=True)
+    (1): Linear(in_features=512, out_features=2, bias=True)
+    (2): Linear(in_features=512, out_features=2, bias=True)
+    (3): Linear(in_features=512, out_features=2, bias=True)
+  )
+  (instance_loss_fn): SmoothTop1SVM()
+)
+Total number of parameters: 793869
+Total number of trainable parameters: 793869
+
+Init optimizer ... Done!
+
+Init Loaders... Done!
+
+Setup EarlyStopping... Done!
+
+
+batch 19, loss: 1.6424, instance_loss: 1.0794, weighted_loss: 1.4735, label: 0, bag_size: 41829
+batch 39, loss: 1.5148, instance_loss: 0.9729, weighted_loss: 1.3522, label: 1, bag_size: 23122
+
+
+class 0 clustering acc 0.9381648936170213: correct 1411/1504
+class 1 clustering acc 0.07180851063829788: correct 27/376
+Epoch: 0, train_loss: 1.4068, train_clustering_loss:  1.0629, train_error: 0.7660
+class 0: acc 0.0, correct 0/9
+class 1: acc 0.0, correct 0/13
+class 2: acc 0.35714285714285715, correct 5/14
+class 3: acc 0.5454545454545454, correct 6/11
+
+Val Set, val_loss: 1.4201, val_error: 0.8182, auc: 0.4722
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+Validation loss decreased (inf --> 1.420086).  Saving model ...
+
+
+batch 19, loss: 1.2052, instance_loss: 0.8249, weighted_loss: 1.0911, label: 2, bag_size: 64035
+batch 39, loss: 1.1133, instance_loss: 0.6541, weighted_loss: 0.9756, label: 1, bag_size: 81420
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 1, train_loss: 1.3861, train_clustering_loss:  0.7746, train_error: 0.6809
+class 0: acc 0.0, correct 0/7
+class 1: acc 0.875, correct 14/16
+class 2: acc 0.09090909090909091, correct 1/11
+class 3: acc 0.0, correct 0/13
+
+Val Set, val_loss: 1.4189, val_error: 0.7273, auc: 0.5625
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 1.0, correct 3/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+Validation loss decreased (1.420086 --> 1.418868).  Saving model ...
+
+
+batch 19, loss: 1.2820, instance_loss: 0.6573, weighted_loss: 1.0946, label: 3, bag_size: 83890
+batch 39, loss: 1.3333, instance_loss: 0.6290, weighted_loss: 1.1220, label: 2, bag_size: 54449
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 2, train_loss: 1.4044, train_clustering_loss:  0.6346, train_error: 0.7021
+class 0: acc 0.0, correct 0/11
+class 1: acc 0.6666666666666666, correct 8/12
+class 2: acc 0.0, correct 0/13
+class 3: acc 0.5454545454545454, correct 6/11
+
+Val Set, val_loss: 1.4093, val_error: 0.9091, auc: 0.5833
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.3333333333333333, correct 1/3
+Validation loss decreased (1.418868 --> 1.409289).  Saving model ...
+
+
+batch 19, loss: 0.9491, instance_loss: 0.5618, weighted_loss: 0.8329, label: 1, bag_size: 77634
+batch 39, loss: 1.2936, instance_loss: 0.6327, weighted_loss: 1.0953, label: 2, bag_size: 75088
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 3, train_loss: 1.3938, train_clustering_loss:  0.6078, train_error: 0.7021
+class 0: acc 0.0, correct 0/8
+class 1: acc 0.8235294117647058, correct 14/17
+class 2: acc 0.0, correct 0/12
+class 3: acc 0.0, correct 0/10
+
+Val Set, val_loss: 1.4073, val_error: 0.7273, auc: 0.6806
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 1.0, correct 3/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+Validation loss decreased (1.409289 --> 1.407340).  Saving model ...
+
+
+batch 19, loss: 1.1940, instance_loss: 0.5866, weighted_loss: 1.0118, label: 3, bag_size: 17590
+batch 39, loss: 1.3272, instance_loss: 0.6079, weighted_loss: 1.1114, label: 0, bag_size: 65047
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 4, train_loss: 1.3729, train_clustering_loss:  0.6029, train_error: 0.6809
+class 0: acc 0.0, correct 0/13
+class 1: acc 0.0, correct 0/9
+class 2: acc 0.8461538461538461, correct 11/13
+class 3: acc 0.3333333333333333, correct 4/12
+
+Val Set, val_loss: 1.4080, val_error: 0.9091, auc: 0.6111
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 1 out of 20
+
+
+batch 19, loss: 1.3387, instance_loss: 0.6147, weighted_loss: 1.1215, label: 0, bag_size: 10671
+batch 39, loss: 1.6621, instance_loss: 0.6166, weighted_loss: 1.3484, label: 2, bag_size: 22416
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 5, train_loss: 1.3179, train_clustering_loss:  0.5918, train_error: 0.6383
+class 0: acc 0.5, correct 9/18
+class 1: acc 0.0, correct 0/8
+class 2: acc 0.0, correct 0/11
+class 3: acc 0.8, correct 8/10
+
+Val Set, val_loss: 1.4255, val_error: 0.7273, auc: 0.5938
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 2 out of 20
+
+
+batch 19, loss: 0.9843, instance_loss: 0.4871, weighted_loss: 0.8352, label: 3, bag_size: 17590
+batch 39, loss: 0.9848, instance_loss: 0.4983, weighted_loss: 0.8389, label: 3, bag_size: 17590
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 6, train_loss: 1.3193, train_clustering_loss:  0.5875, train_error: 0.5957
+class 0: acc 0.7692307692307693, correct 10/13
+class 1: acc 0.18181818181818182, correct 2/11
+class 2: acc 0.0, correct 0/9
+class 3: acc 0.5, correct 7/14
+
+Val Set, val_loss: 1.4218, val_error: 0.9091, auc: 0.4965
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 3 out of 20
+
+
+batch 19, loss: 1.2100, instance_loss: 0.5638, weighted_loss: 1.0161, label: 1, bag_size: 77634
+batch 39, loss: 1.1327, instance_loss: 0.5721, weighted_loss: 0.9645, label: 0, bag_size: 18551
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 7, train_loss: 1.2777, train_clustering_loss:  0.5802, train_error: 0.6383
+class 0: acc 0.6428571428571429, correct 9/14
+class 1: acc 0.3333333333333333, correct 5/15
+class 2: acc 0.0, correct 0/9
+class 3: acc 0.3333333333333333, correct 3/9
+
+Val Set, val_loss: 1.5345, val_error: 0.9091, auc: 0.4653
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 4 out of 20
+
+
+batch 19, loss: 1.1803, instance_loss: 0.5893, weighted_loss: 1.0030, label: 2, bag_size: 158432
+batch 39, loss: 1.1971, instance_loss: 0.5585, weighted_loss: 1.0055, label: 2, bag_size: 99232
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 8, train_loss: 1.2864, train_clustering_loss:  0.5870, train_error: 0.5532
+class 0: acc 0.5, correct 6/12
+class 1: acc 0.0, correct 0/7
+class 2: acc 0.6, correct 12/20
+class 3: acc 0.375, correct 3/8
+
+Val Set, val_loss: 1.6271, val_error: 0.8182, auc: 0.5660
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 5 out of 20
+
+
+batch 19, loss: 1.4732, instance_loss: 0.6007, weighted_loss: 1.2114, label: 1, bag_size: 57038
+batch 39, loss: 1.4528, instance_loss: 0.6050, weighted_loss: 1.1985, label: 1, bag_size: 23122
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 9, train_loss: 1.2591, train_clustering_loss:  0.5677, train_error: 0.5319
+class 0: acc 0.42857142857142855, correct 6/14
+class 1: acc 0.0, correct 0/9
+class 2: acc 1.0, correct 15/15
+class 3: acc 0.1111111111111111, correct 1/9
+
+Val Set, val_loss: 1.6208, val_error: 0.7273, auc: 0.5347
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 6 out of 20
+
+
+batch 19, loss: 1.1535, instance_loss: 0.5128, weighted_loss: 0.9613, label: 2, bag_size: 64035
+batch 39, loss: 1.7023, instance_loss: 0.6545, weighted_loss: 1.3879, label: 1, bag_size: 81420
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 10, train_loss: 1.2491, train_clustering_loss:  0.5929, train_error: 0.5106
+class 0: acc 0.9090909090909091, correct 10/11
+class 1: acc 0.0, correct 0/9
+class 2: acc 0.5714285714285714, correct 8/14
+class 3: acc 0.38461538461538464, correct 5/13
+
+Val Set, val_loss: 1.6245, val_error: 0.7273, auc: 0.5451
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 7 out of 20
+
+
+batch 19, loss: 0.9180, instance_loss: 0.5963, weighted_loss: 0.8215, label: 1, bag_size: 36943
+batch 39, loss: 0.3675, instance_loss: 0.4445, weighted_loss: 0.3906, label: 3, bag_size: 77542
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 11, train_loss: 1.1683, train_clustering_loss:  0.5657, train_error: 0.4894
+class 0: acc 0.3076923076923077, correct 4/13
+class 1: acc 0.6666666666666666, correct 10/15
+class 2: acc 0.5555555555555556, correct 5/9
+class 3: acc 0.5, correct 5/10
+
+Val Set, val_loss: 1.5697, val_error: 0.8182, auc: 0.5972
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 8 out of 20
+
+
+batch 19, loss: 1.2154, instance_loss: 0.5322, weighted_loss: 1.0105, label: 2, bag_size: 64035
+batch 39, loss: 1.5279, instance_loss: 0.6252, weighted_loss: 1.2571, label: 2, bag_size: 118767
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 12, train_loss: 1.1116, train_clustering_loss:  0.5604, train_error: 0.4043
+class 0: acc 0.375, correct 3/8
+class 1: acc 0.8333333333333334, correct 10/12
+class 2: acc 0.4166666666666667, correct 5/12
+class 3: acc 0.6666666666666666, correct 10/15
+
+Val Set, val_loss: 1.6750, val_error: 0.7273, auc: 0.5972
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 9 out of 20
+
+
+batch 19, loss: 0.1512, instance_loss: 0.3724, weighted_loss: 0.2176, label: 3, bag_size: 83890
+batch 39, loss: 0.2401, instance_loss: 0.3651, weighted_loss: 0.2776, label: 3, bag_size: 17590
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.0: correct 0/376
+Epoch: 13, train_loss: 1.0488, train_clustering_loss:  0.5372, train_error: 0.4681
+class 0: acc 0.5, correct 6/12
+class 1: acc 0.45454545454545453, correct 5/11
+class 2: acc 0.3333333333333333, correct 3/9
+class 3: acc 0.7333333333333333, correct 11/15
+
+Val Set, val_loss: 1.7154, val_error: 0.8182, auc: 0.5972
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 10 out of 20
+
+
+batch 19, loss: 1.1681, instance_loss: 0.5792, weighted_loss: 0.9914, label: 1, bag_size: 77634
+batch 39, loss: 0.2638, instance_loss: 0.3462, weighted_loss: 0.2885, label: 3, bag_size: 102779
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.005319148936170213: correct 2/376
+Epoch: 14, train_loss: 1.0179, train_clustering_loss:  0.5338, train_error: 0.4255
+class 0: acc 0.8333333333333334, correct 10/12
+class 1: acc 0.25, correct 2/8
+class 2: acc 0.18181818181818182, correct 2/11
+class 3: acc 0.8125, correct 13/16
+
+Val Set, val_loss: 1.6553, val_error: 0.8182, auc: 0.5972
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 11 out of 20
+
+
+batch 19, loss: 0.9399, instance_loss: 0.5085, weighted_loss: 0.8105, label: 0, bag_size: 47775
+batch 39, loss: 1.3422, instance_loss: 0.5715, weighted_loss: 1.1110, label: 1, bag_size: 132271
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.010638297872340425: correct 4/376
+Epoch: 15, train_loss: 0.8403, train_clustering_loss:  0.5056, train_error: 0.2340
+class 0: acc 1.0, correct 14/14
+class 1: acc 0.2727272727272727, correct 3/11
+class 2: acc 0.75, correct 6/8
+class 3: acc 0.9285714285714286, correct 13/14
+
+Val Set, val_loss: 1.9440, val_error: 0.9091, auc: 0.5243
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 12 out of 20
+
+
+batch 19, loss: 0.1217, instance_loss: 0.2718, weighted_loss: 0.1667, label: 3, bag_size: 17590
+batch 39, loss: 0.4569, instance_loss: 0.5079, weighted_loss: 0.4722, label: 2, bag_size: 158432
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.04521276595744681: correct 17/376
+Epoch: 16, train_loss: 0.8158, train_clustering_loss:  0.5071, train_error: 0.2766
+class 0: acc 1.0, correct 6/6
+class 1: acc 0.45454545454545453, correct 5/11
+class 2: acc 0.7058823529411765, correct 12/17
+class 3: acc 0.8461538461538461, correct 11/13
+
+Val Set, val_loss: 1.9712, val_error: 0.5455, auc: 0.5556
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 13 out of 20
+
+
+batch 19, loss: 0.2177, instance_loss: 0.2792, weighted_loss: 0.2362, label: 3, bag_size: 42569
+batch 39, loss: 1.9234, instance_loss: 0.8906, weighted_loss: 1.6135, label: 0, bag_size: 130978
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.026595744680851064: correct 10/376
+Epoch: 17, train_loss: 0.8577, train_clustering_loss:  0.5085, train_error: 0.2979
+class 0: acc 0.46153846153846156, correct 6/13
+class 1: acc 1.0, correct 8/8
+class 2: acc 0.8125, correct 13/16
+class 3: acc 0.6, correct 6/10
+
+Val Set, val_loss: 1.5628, val_error: 0.8182, auc: 0.6285
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 14 out of 20
+
+
+batch 19, loss: 0.2179, instance_loss: 0.2754, weighted_loss: 0.2351, label: 3, bag_size: 102779
+batch 39, loss: 0.4062, instance_loss: 0.4229, weighted_loss: 0.4112, label: 3, bag_size: 24102
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.06914893617021277: correct 26/376
+Epoch: 18, train_loss: 0.9784, train_clustering_loss:  0.5163, train_error: 0.4043
+class 0: acc 0.8333333333333334, correct 10/12
+class 1: acc 0.16666666666666666, correct 2/12
+class 2: acc 0.5555555555555556, correct 5/9
+class 3: acc 0.7857142857142857, correct 11/14
+
+Val Set, val_loss: 2.1702, val_error: 0.8182, auc: 0.5972
+class 0 clustering acc 0.9602272727272727: correct 338/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 15 out of 20
+
+
+batch 19, loss: 0.9717, instance_loss: 0.4683, weighted_loss: 0.8207, label: 0, bag_size: 18551
+batch 39, loss: 0.6857, instance_loss: 0.4598, weighted_loss: 0.6179, label: 3, bag_size: 98956
+
+
+class 0 clustering acc 0.9980053191489362: correct 1501/1504
+class 1 clustering acc 0.02925531914893617: correct 11/376
+Epoch: 19, train_loss: 0.7892, train_clustering_loss:  0.4925, train_error: 0.2979
+class 0: acc 0.8461538461538461, correct 11/13
+class 1: acc 0.4444444444444444, correct 4/9
+class 2: acc 0.5333333333333333, correct 8/15
+class 3: acc 1.0, correct 10/10
+
+Val Set, val_loss: 2.0442, val_error: 0.6364, auc: 0.5868
+class 0 clustering acc 0.9971590909090909: correct 351/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 16 out of 20
+
+
+batch 19, loss: 0.1733, instance_loss: 0.3161, weighted_loss: 0.2162, label: 2, bag_size: 59749
+batch 39, loss: 1.5522, instance_loss: 0.6777, weighted_loss: 1.2898, label: 2, bag_size: 99232
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.023936170212765957: correct 9/376
+Epoch: 20, train_loss: 0.7474, train_clustering_loss:  0.4708, train_error: 0.2979
+class 0: acc 0.9, correct 9/10
+class 1: acc 0.3076923076923077, correct 4/13
+class 2: acc 0.9230769230769231, correct 12/13
+class 3: acc 0.7272727272727273, correct 8/11
+
+Val Set, val_loss: 2.0783, val_error: 0.6364, auc: 0.5868
+class 0 clustering acc 0.96875: correct 341/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 17 out of 20
+
+
+batch 19, loss: 0.5777, instance_loss: 0.4285, weighted_loss: 0.5330, label: 3, bag_size: 48489
+batch 39, loss: 0.4705, instance_loss: 0.4517, weighted_loss: 0.4648, label: 1, bag_size: 57038
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.047872340425531915: correct 18/376
+Epoch: 21, train_loss: 0.7625, train_clustering_loss:  0.4785, train_error: 0.2979
+class 0: acc 0.3, correct 3/10
+class 1: acc 0.9, correct 18/20
+class 2: acc 0.6666666666666666, correct 4/6
+class 3: acc 0.7272727272727273, correct 8/11
+
+Val Set, val_loss: 2.1496, val_error: 0.7273, auc: 0.5868
+class 0 clustering acc 0.9545454545454546: correct 336/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.0, correct 0/3
+class 1: acc 1.0, correct 3/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 18 out of 20
+
+
+batch 19, loss: 1.3104, instance_loss: 0.6795, weighted_loss: 1.1212, label: 2, bag_size: 64035
+batch 39, loss: 0.8414, instance_loss: 0.4614, weighted_loss: 0.7274, label: 0, bag_size: 54249
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.07712765957446809: correct 29/376
+Epoch: 22, train_loss: 0.7141, train_clustering_loss:  0.4718, train_error: 0.3404
+class 0: acc 0.23076923076923078, correct 3/13
+class 1: acc 0.9230769230769231, correct 12/13
+class 2: acc 0.75, correct 9/12
+class 3: acc 0.7777777777777778, correct 7/9
+
+Val Set, val_loss: 2.0243, val_error: 0.5455, auc: 0.5868
+class 0 clustering acc 0.9659090909090909: correct 340/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 19 out of 20
+
+
+batch 19, loss: 0.3764, instance_loss: 0.3929, weighted_loss: 0.3813, label: 3, bag_size: 24102
+batch 39, loss: 1.1618, instance_loss: 0.5681, weighted_loss: 0.9837, label: 1, bag_size: 112135
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.06914893617021277: correct 26/376
+Epoch: 23, train_loss: 0.7976, train_clustering_loss:  0.4693, train_error: 0.3191
+class 0: acc 1.0, correct 12/12
+class 1: acc 0.2727272727272727, correct 3/11
+class 2: acc 0.75, correct 6/8
+class 3: acc 0.6875, correct 11/16
+
+Val Set, val_loss: 1.5268, val_error: 0.5455, auc: 0.7431
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 20 out of 20
+
+
+batch 19, loss: 1.4640, instance_loss: 0.6554, weighted_loss: 1.2214, label: 2, bag_size: 118767
+batch 39, loss: 0.9955, instance_loss: 0.5283, weighted_loss: 0.8554, label: 1, bag_size: 36943
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.09308510638297872: correct 35/376
+Epoch: 24, train_loss: 0.8483, train_clustering_loss:  0.4836, train_error: 0.3617
+class 0: acc 1.0, correct 14/14
+class 1: acc 0.4, correct 4/10
+class 2: acc 0.3, correct 3/10
+class 3: acc 0.6923076923076923, correct 9/13
+
+Val Set, val_loss: 2.2127, val_error: 0.9091, auc: 0.5972
+class 0 clustering acc 0.9517045454545454: correct 335/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.0, correct 0/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 21 out of 20
+
+
+batch 19, loss: 0.8297, instance_loss: 0.5610, weighted_loss: 0.7491, label: 1, bag_size: 36943
+batch 39, loss: 0.5803, instance_loss: 0.3703, weighted_loss: 0.5173, label: 0, bag_size: 65047
+
+
+class 0 clustering acc 0.9966755319148937: correct 1499/1504
+class 1 clustering acc 0.10638297872340426: correct 40/376
+Epoch: 25, train_loss: 0.7245, train_clustering_loss:  0.4515, train_error: 0.2128
+class 0: acc 1.0, correct 12/12
+class 1: acc 0.6, correct 6/10
+class 2: acc 0.6666666666666666, correct 8/12
+class 3: acc 0.8461538461538461, correct 11/13
+
+Val Set, val_loss: 1.8125, val_error: 0.6364, auc: 0.6597
+class 0 clustering acc 0.9801136363636364: correct 345/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 22 out of 20
+
+
+batch 19, loss: 0.5699, instance_loss: 0.4970, weighted_loss: 0.5480, label: 1, bag_size: 23122
+batch 39, loss: 0.8815, instance_loss: 0.5508, weighted_loss: 0.7823, label: 1, bag_size: 69073
+
+
+class 0 clustering acc 0.9933510638297872: correct 1494/1504
+class 1 clustering acc 0.14627659574468085: correct 55/376
+Epoch: 26, train_loss: 0.6913, train_clustering_loss:  0.4445, train_error: 0.2766
+class 0: acc 1.0, correct 12/12
+class 1: acc 0.36363636363636365, correct 4/11
+class 2: acc 0.8181818181818182, correct 9/11
+class 3: acc 0.6923076923076923, correct 9/13
+
+Val Set, val_loss: 2.1773, val_error: 0.7273, auc: 0.5972
+class 0 clustering acc 0.9545454545454546: correct 336/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 23 out of 20
+
+
+batch 19, loss: 2.6304, instance_loss: 0.8802, weighted_loss: 2.1053, label: 2, bag_size: 54449
+batch 39, loss: 0.2585, instance_loss: 0.3467, weighted_loss: 0.2850, label: 2, bag_size: 113492
+
+
+class 0 clustering acc 0.9913563829787234: correct 1491/1504
+class 1 clustering acc 0.06648936170212766: correct 25/376
+Epoch: 27, train_loss: 0.7375, train_clustering_loss:  0.4692, train_error: 0.3191
+class 0: acc 0.9090909090909091, correct 10/11
+class 1: acc 0.3333333333333333, correct 3/9
+class 2: acc 0.8125, correct 13/16
+class 3: acc 0.5454545454545454, correct 6/11
+
+Val Set, val_loss: 1.4580, val_error: 0.4545, auc: 0.7535
+class 0 clustering acc 1.0: correct 352/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 24 out of 20
+
+
+batch 19, loss: 2.4742, instance_loss: 0.8848, weighted_loss: 1.9974, label: 0, bag_size: 6353
+batch 39, loss: 0.5207, instance_loss: 0.3885, weighted_loss: 0.4810, label: 0, bag_size: 10671
+
+
+class 0 clustering acc 1.0: correct 1504/1504
+class 1 clustering acc 0.1276595744680851: correct 48/376
+Epoch: 28, train_loss: 0.7503, train_clustering_loss:  0.4816, train_error: 0.2766
+class 0: acc 0.9, correct 9/10
+class 1: acc 0.6153846153846154, correct 8/13
+class 2: acc 0.6666666666666666, correct 6/9
+class 3: acc 0.7333333333333333, correct 11/15
+
+Val Set, val_loss: 2.1166, val_error: 0.5455, auc: 0.5972
+class 0 clustering acc 0.9545454545454546: correct 336/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 25 out of 20
+
+
+batch 19, loss: 1.0595, instance_loss: 0.5204, weighted_loss: 0.8978, label: 3, bag_size: 98956
+batch 39, loss: 0.9008, instance_loss: 0.4518, weighted_loss: 0.7661, label: 0, bag_size: 13999
+
+
+class 0 clustering acc 0.9980053191489362: correct 1501/1504
+class 1 clustering acc 0.10638297872340426: correct 40/376
+Epoch: 29, train_loss: 0.6594, train_clustering_loss:  0.4383, train_error: 0.2553
+class 0: acc 0.5, correct 5/10
+class 1: acc 0.8666666666666667, correct 13/15
+class 2: acc 0.8181818181818182, correct 9/11
+class 3: acc 0.7272727272727273, correct 8/11
+
+Val Set, val_loss: 2.1599, val_error: 0.5455, auc: 0.6215
+class 0 clustering acc 0.9545454545454546: correct 336/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 26 out of 20
+
+
+batch 19, loss: 0.1272, instance_loss: 0.1422, weighted_loss: 0.1317, label: 3, bag_size: 83890
+batch 39, loss: 0.4183, instance_loss: 0.4297, weighted_loss: 0.4218, label: 2, bag_size: 99232
+
+
+class 0 clustering acc 0.9973404255319149: correct 1500/1504
+class 1 clustering acc 0.22340425531914893: correct 84/376
+Epoch: 30, train_loss: 0.4420, train_clustering_loss:  0.3586, train_error: 0.1064
+class 0: acc 0.9411764705882353, correct 16/17
+class 1: acc 0.4, correct 2/5
+class 2: acc 1.0, correct 13/13
+class 3: acc 0.9166666666666666, correct 11/12
+
+Val Set, val_loss: 2.4139, val_error: 0.7273, auc: 0.5972
+class 0 clustering acc 0.9431818181818182: correct 332/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 27 out of 20
+
+
+batch 19, loss: 1.4403, instance_loss: 0.6840, weighted_loss: 1.2134, label: 1, bag_size: 81420
+batch 39, loss: 0.3878, instance_loss: 0.2903, weighted_loss: 0.3585, label: 0, bag_size: 65047
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.22340425531914893: correct 84/376
+Epoch: 31, train_loss: 0.6072, train_clustering_loss:  0.4082, train_error: 0.2340
+class 0: acc 1.0, correct 13/13
+class 1: acc 0.45454545454545453, correct 5/11
+class 2: acc 0.8666666666666667, correct 13/15
+class 3: acc 0.625, correct 5/8
+
+Val Set, val_loss: 2.4340, val_error: 0.6364, auc: 0.5972
+class 0 clustering acc 0.9232954545454546: correct 325/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 28 out of 20
+
+
+batch 19, loss: 0.2525, instance_loss: 0.3362, weighted_loss: 0.2776, label: 3, bag_size: 48489
+batch 39, loss: 0.1917, instance_loss: 0.3010, weighted_loss: 0.2245, label: 3, bag_size: 48489
+
+
+class 0 clustering acc 0.9913563829787234: correct 1491/1504
+class 1 clustering acc 0.22340425531914893: correct 84/376
+Epoch: 32, train_loss: 0.6306, train_clustering_loss:  0.4032, train_error: 0.2553
+class 0: acc 0.9411764705882353, correct 16/17
+class 1: acc 0.2222222222222222, correct 2/9
+class 2: acc 0.8571428571428571, correct 6/7
+class 3: acc 0.7857142857142857, correct 11/14
+
+Val Set, val_loss: 2.5407, val_error: 0.8182, auc: 0.5972
+class 0 clustering acc 0.9261363636363636: correct 326/352
+class 1 clustering acc 0.011363636363636364: correct 1/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.0, correct 0/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 29 out of 20
+
+
+batch 19, loss: 0.8117, instance_loss: 0.5936, weighted_loss: 0.7463, label: 1, bag_size: 36943
+batch 39, loss: 0.0196, instance_loss: 0.0845, weighted_loss: 0.0391, label: 3, bag_size: 42569
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.2154255319148936: correct 81/376
+Epoch: 33, train_loss: 0.6583, train_clustering_loss:  0.4149, train_error: 0.2766
+class 0: acc 0.8888888888888888, correct 8/9
+class 1: acc 0.5, correct 6/12
+class 2: acc 0.8333333333333334, correct 10/12
+class 3: acc 0.7142857142857143, correct 10/14
+
+Val Set, val_loss: 2.4248, val_error: 0.6364, auc: 0.5347
+class 0 clustering acc 0.9090909090909091: correct 320/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 30 out of 20
+
+
+batch 19, loss: 0.6227, instance_loss: 0.3413, weighted_loss: 0.5383, label: 2, bag_size: 113492
+batch 39, loss: 0.3591, instance_loss: 0.3533, weighted_loss: 0.3574, label: 2, bag_size: 99232
+
+
+class 0 clustering acc 0.9980053191489362: correct 1501/1504
+class 1 clustering acc 0.13297872340425532: correct 50/376
+Epoch: 34, train_loss: 0.7788, train_clustering_loss:  0.4568, train_error: 0.2340
+class 0: acc 0.7, correct 7/10
+class 1: acc 0.7142857142857143, correct 10/14
+class 2: acc 0.875, correct 14/16
+class 3: acc 0.7142857142857143, correct 5/7
+
+Val Set, val_loss: 2.2471, val_error: 0.5455, auc: 0.5972
+class 0 clustering acc 0.9346590909090909: correct 329/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 31 out of 20
+
+
+batch 19, loss: 1.7016, instance_loss: 0.7510, weighted_loss: 1.4164, label: 3, bag_size: 152150
+batch 39, loss: 0.3247, instance_loss: 0.4203, weighted_loss: 0.3534, label: 0, bag_size: 130978
+
+
+class 0 clustering acc 0.9966755319148937: correct 1499/1504
+class 1 clustering acc 0.2074468085106383: correct 78/376
+Epoch: 35, train_loss: 0.5227, train_clustering_loss:  0.3947, train_error: 0.1489
+class 0: acc 1.0, correct 9/9
+class 1: acc 1.0, correct 9/9
+class 2: acc 0.8, correct 8/10
+class 3: acc 0.7368421052631579, correct 14/19
+
+Val Set, val_loss: 2.3640, val_error: 0.6364, auc: 0.6076
+class 0 clustering acc 0.9460227272727273: correct 333/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 32 out of 20
+
+
+batch 19, loss: 0.3036, instance_loss: 0.3243, weighted_loss: 0.3098, label: 0, bag_size: 65047
+batch 39, loss: 0.4203, instance_loss: 0.4015, weighted_loss: 0.4147, label: 2, bag_size: 99232
+
+
+class 0 clustering acc 0.9920212765957447: correct 1492/1504
+class 1 clustering acc 0.13829787234042554: correct 52/376
+Epoch: 36, train_loss: 0.5342, train_clustering_loss:  0.3955, train_error: 0.1915
+class 0: acc 1.0, correct 16/16
+class 1: acc 0.5833333333333334, correct 7/12
+class 2: acc 0.7777777777777778, correct 7/9
+class 3: acc 0.8, correct 8/10
+
+Val Set, val_loss: 2.3282, val_error: 0.6364, auc: 0.6215
+class 0 clustering acc 0.9176136363636364: correct 323/352
+class 1 clustering acc 0.011363636363636364: correct 1/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 33 out of 20
+
+
+batch 19, loss: 0.4481, instance_loss: 0.2919, weighted_loss: 0.4012, label: 0, bag_size: 65047
+batch 39, loss: 0.0096, instance_loss: 0.0565, weighted_loss: 0.0237, label: 3, bag_size: 77542
+
+
+class 0 clustering acc 0.9920212765957447: correct 1492/1504
+class 1 clustering acc 0.24202127659574468: correct 91/376
+Epoch: 37, train_loss: 0.6774, train_clustering_loss:  0.3987, train_error: 0.2766
+class 0: acc 0.8461538461538461, correct 11/13
+class 1: acc 0.4, correct 4/10
+class 2: acc 0.7272727272727273, correct 8/11
+class 3: acc 0.8461538461538461, correct 11/13
+
+Val Set, val_loss: 2.3076, val_error: 0.6364, auc: 0.6076
+class 0 clustering acc 0.9403409090909091: correct 331/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 34 out of 20
+
+
+batch 19, loss: 0.5886, instance_loss: 0.3689, weighted_loss: 0.5227, label: 0, bag_size: 47775
+batch 39, loss: 0.0457, instance_loss: 0.1083, weighted_loss: 0.0645, label: 3, bag_size: 83890
+
+
+class 0 clustering acc 0.9946808510638298: correct 1496/1504
+class 1 clustering acc 0.21808510638297873: correct 82/376
+Epoch: 38, train_loss: 0.5911, train_clustering_loss:  0.3960, train_error: 0.2340
+class 0: acc 1.0, correct 10/10
+class 1: acc 0.6363636363636364, correct 7/11
+class 2: acc 0.6363636363636364, correct 7/11
+class 3: acc 0.8, correct 12/15
+
+Val Set, val_loss: 2.3665, val_error: 0.5455, auc: 0.6424
+class 0 clustering acc 0.9375: correct 330/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 35 out of 20
+
+
+batch 19, loss: 0.1817, instance_loss: 0.2330, weighted_loss: 0.1971, label: 3, bag_size: 48489
+batch 39, loss: 0.2843, instance_loss: 0.2608, weighted_loss: 0.2772, label: 0, bag_size: 70920
+
+
+class 0 clustering acc 0.9980053191489362: correct 1501/1504
+class 1 clustering acc 0.18882978723404256: correct 71/376
+Epoch: 39, train_loss: 0.6441, train_clustering_loss:  0.4065, train_error: 0.1915
+class 0: acc 0.9375, correct 15/16
+class 1: acc 0.6666666666666666, correct 8/12
+class 2: acc 0.7, correct 7/10
+class 3: acc 0.8888888888888888, correct 8/9
+
+Val Set, val_loss: 1.5188, val_error: 0.4545, auc: 0.6910
+class 0 clustering acc 0.9744318181818182: correct 343/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 1.0, correct 3/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 36 out of 20
+
+
+batch 19, loss: 0.8929, instance_loss: 0.4138, weighted_loss: 0.7492, label: 0, bag_size: 13999
+batch 39, loss: 0.0653, instance_loss: 0.1537, weighted_loss: 0.0918, label: 3, bag_size: 83890
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.19414893617021275: correct 73/376
+Epoch: 40, train_loss: 0.7408, train_clustering_loss:  0.4461, train_error: 0.2766
+class 0: acc 0.8333333333333334, correct 10/12
+class 1: acc 0.7, correct 7/10
+class 2: acc 0.7272727272727273, correct 8/11
+class 3: acc 0.6428571428571429, correct 9/14
+
+Val Set, val_loss: 2.4170, val_error: 0.6364, auc: 0.6215
+class 0 clustering acc 0.9488636363636364: correct 334/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 37 out of 20
+
+
+batch 19, loss: 0.3335, instance_loss: 0.2654, weighted_loss: 0.3131, label: 0, bag_size: 56983
+batch 39, loss: 0.1128, instance_loss: 0.2159, weighted_loss: 0.1438, label: 3, bag_size: 24102
+
+
+class 0 clustering acc 0.9986702127659575: correct 1502/1504
+class 1 clustering acc 0.2074468085106383: correct 78/376
+Epoch: 41, train_loss: 0.5139, train_clustering_loss:  0.3826, train_error: 0.1489
+class 0: acc 1.0, correct 11/11
+class 1: acc 0.8181818181818182, correct 9/11
+class 2: acc 0.8461538461538461, correct 11/13
+class 3: acc 0.75, correct 9/12
+
+Val Set, val_loss: 2.3899, val_error: 0.5455, auc: 0.6181
+class 0 clustering acc 0.9318181818181818: correct 328/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 38 out of 20
+
+
+batch 19, loss: 0.7407, instance_loss: 0.4490, weighted_loss: 0.6532, label: 3, bag_size: 152150
+batch 39, loss: 0.3232, instance_loss: 0.2895, weighted_loss: 0.3131, label: 2, bag_size: 113492
+
+
+class 0 clustering acc 0.9960106382978723: correct 1498/1504
+class 1 clustering acc 0.2925531914893617: correct 110/376
+Epoch: 42, train_loss: 0.3800, train_clustering_loss:  0.3232, train_error: 0.1064
+class 0: acc 1.0, correct 12/12
+class 1: acc 0.6666666666666666, correct 6/9
+class 2: acc 0.8888888888888888, correct 8/9
+class 3: acc 0.9411764705882353, correct 16/17
+
+Val Set, val_loss: 2.6460, val_error: 0.6364, auc: 0.6076
+class 0 clustering acc 0.9119318181818182: correct 321/352
+class 1 clustering acc 0.056818181818181816: correct 5/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 39 out of 20
+
+
+batch 19, loss: 0.6598, instance_loss: 0.5520, weighted_loss: 0.6275, label: 1, bag_size: 66789
+batch 39, loss: 0.0070, instance_loss: 0.0244, weighted_loss: 0.0123, label: 3, bag_size: 77542
+
+
+class 0 clustering acc 0.9946808510638298: correct 1496/1504
+class 1 clustering acc 0.24202127659574468: correct 91/376
+Epoch: 43, train_loss: 0.6073, train_clustering_loss:  0.4003, train_error: 0.2766
+class 0: acc 0.5555555555555556, correct 5/9
+class 1: acc 0.6470588235294118, correct 11/17
+class 2: acc 0.7272727272727273, correct 8/11
+class 3: acc 1.0, correct 10/10
+
+Val Set, val_loss: 2.3976, val_error: 0.5455, auc: 0.6285
+class 0 clustering acc 0.9318181818181818: correct 328/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 40 out of 20
+
+
+batch 19, loss: 0.8587, instance_loss: 0.4821, weighted_loss: 0.7457, label: 3, bag_size: 12412
+batch 39, loss: 0.1651, instance_loss: 0.2746, weighted_loss: 0.1979, label: 1, bag_size: 77634
+
+
+class 0 clustering acc 0.995345744680851: correct 1497/1504
+class 1 clustering acc 0.23138297872340424: correct 87/376
+Epoch: 44, train_loss: 0.4895, train_clustering_loss:  0.3702, train_error: 0.2128
+class 0: acc 0.8666666666666667, correct 13/15
+class 1: acc 0.8333333333333334, correct 10/12
+class 2: acc 0.7777777777777778, correct 7/9
+class 3: acc 0.6363636363636364, correct 7/11
+
+Val Set, val_loss: 2.4948, val_error: 0.5455, auc: 0.6181
+class 0 clustering acc 0.9119318181818182: correct 321/352
+class 1 clustering acc 0.011363636363636364: correct 1/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.3333333333333333, correct 1/3
+class 2: acc 1.0, correct 2/2
+class 3: acc 0.3333333333333333, correct 1/3
+EarlyStopping counter: 41 out of 20
+
+
+batch 19, loss: 0.8871, instance_loss: 0.4814, weighted_loss: 0.7654, label: 1, bag_size: 36943
+batch 39, loss: 0.3804, instance_loss: 0.3267, weighted_loss: 0.3643, label: 0, bag_size: 22124
+
+
+class 0 clustering acc 0.9906914893617021: correct 1490/1504
+class 1 clustering acc 0.1702127659574468: correct 64/376
+Epoch: 45, train_loss: 0.6140, train_clustering_loss:  0.4119, train_error: 0.3404
+class 0: acc 0.7692307692307693, correct 10/13
+class 1: acc 0.5714285714285714, correct 8/14
+class 2: acc 0.7777777777777778, correct 7/9
+class 3: acc 0.5454545454545454, correct 6/11
+
+Val Set, val_loss: 2.7556, val_error: 0.6364, auc: 0.6076
+class 0 clustering acc 0.9318181818181818: correct 328/352
+class 1 clustering acc 0.0: correct 0/88
+class 0: acc 0.3333333333333333, correct 1/3
+class 1: acc 0.6666666666666666, correct 2/3
+class 2: acc 0.5, correct 1/2
+class 3: acc 0.0, correct 0/3
+EarlyStopping counter: 42 out of 20
+
+

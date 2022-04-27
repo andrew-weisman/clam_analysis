@@ -1,0 +1,1474 @@
+initializing dataset
+loading model checkpoint
+
+progress: 0/69
+0029553565
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0029553565
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab10f84f50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0029553565.h5: total of 21 batches
+batch 0/21, 0 files processed
+batch 20/21, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0029553565.h5 took 43.702861070632935 s
+features size:  (18417, 1024)
+coordinates size:  (18417, 2)
+
+progress: 1/69
+0030657581
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0030657581
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6b5190>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0030657581.h5: total of 16 batches
+batch 0/16, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0030657581.h5 took 32.4548134803772 s
+features size:  (14055, 1024)
+coordinates size:  (14055, 2)
+
+progress: 2/69
+0035146620
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0035146620
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0610>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0035146620.h5: total of 14 batches
+batch 0/14, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0035146620.h5 took 28.913228273391724 s
+features size:  (12246, 1024)
+coordinates size:  (12246, 2)
+
+progress: 3/69
+0043824438
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0043824438
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5190>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0043824438.h5: total of 18 batches
+batch 0/18, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0043824438.h5 took 35.04539704322815 s
+features size:  (15265, 1024)
+coordinates size:  (15265, 2)
+
+progress: 4/69
+0044135054
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0044135054
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11355450>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0044135054.h5: total of 7 batches
+batch 0/7, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0044135054.h5 took 17.297192335128784 s
+features size:  (5938, 1024)
+coordinates size:  (5938, 2)
+
+progress: 5/69
+0046723899
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0046723899
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e69b810>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0046723899.h5: total of 18 batches
+batch 0/18, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0046723899.h5 took 34.849366426467896 s
+features size:  (15369, 1024)
+coordinates size:  (15369, 2)
+
+progress: 6/69
+0051341579
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0051341579
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11355650>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0051341579.h5: total of 31 batches
+batch 0/31, 0 files processed
+batch 20/31, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0051341579.h5 took 58.066811323165894 s
+features size:  (27370, 1024)
+coordinates size:  (27370, 2)
+
+progress: 7/69
+0058263272
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0058263272
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11206510>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0058263272.h5: total of 8 batches
+batch 0/8, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0058263272.h5 took 18.83784055709839 s
+features size:  (6572, 1024)
+coordinates size:  (6572, 2)
+
+progress: 8/69
+0059072087
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0059072087
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0f50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0059072087.h5: total of 44 batches
+batch 0/44, 0 files processed
+batch 20/44, 17900 files processed
+batch 40/44, 35800 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0059072087.h5 took 79.38090205192566 s
+features size:  (39178, 1024)
+coordinates size:  (39178, 2)
+
+progress: 9/69
+0063366529
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0063366529
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6be410>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0063366529.h5: total of 38 batches
+batch 0/38, 0 files processed
+batch 20/38, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0063366529.h5 took 68.70659971237183 s
+features size:  (33605, 1024)
+coordinates size:  (33605, 2)
+
+progress: 10/69
+0063610642
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name 0063610642
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbde990>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0063610642.h5: total of 15 batches
+batch 0/15, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0063610642.h5 took 30.293537616729736 s
+features size:  (12796, 1024)
+coordinates size:  (12796, 2)
+
+progress: 11/69
+B-160004549-01-B-001
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name B-160004549-01-B-001
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6ad610>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/B-160004549-01-B-001.h5: total of 45 batches
+batch 0/45, 0 files processed
+batch 20/45, 17900 files processed
+batch 40/45, 35800 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/B-160004549-01-B-001.h5 took 79.6470000743866 s
+features size:  (40177, 1024)
+coordinates size:  (40177, 2)
+
+progress: 12/69
+BB150007349-A-01-001
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name BB150007349-A-01-001
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5090>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/BB150007349-A-01-001.h5: total of 7 batches
+batch 0/7, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/BB150007349-A-01-001.h5 took 17.262566328048706 s
+features size:  (6102, 1024)
+coordinates size:  (6102, 2)
+
+progress: 13/69
+DigitalSlide_B1M_14S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_14S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e69b810>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_14S_1.h5: total of 7 batches
+batch 0/7, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_14S_1.h5 took 16.296939611434937 s
+features size:  (5751, 1024)
+coordinates size:  (5751, 2)
+
+progress: 14/69
+DigitalSlide_B1M_15S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_15S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbde590>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_15S_1.h5: total of 5 batches
+batch 0/5, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_15S_1.h5 took 13.808750867843628 s
+features size:  (4443, 1024)
+coordinates size:  (4443, 2)
+
+progress: 15/69
+DigitalSlide_B1M_16S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_16S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbdec10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_16S_1.h5: total of 2 batches
+batch 0/2, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_16S_1.h5 took 8.345115661621094 s
+features size:  (1295, 1024)
+coordinates size:  (1295, 2)
+
+progress: 16/69
+DigitalSlide_B1M_18S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_18S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbc14d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_18S_1.h5: total of 23 batches
+batch 0/23, 0 files processed
+batch 20/23, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_18S_1.h5 took 41.549636363983154 s
+features size:  (19756, 1024)
+coordinates size:  (19756, 2)
+
+progress: 17/69
+DigitalSlide_B1M_19S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_19S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbe4d50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_19S_1.h5: total of 16 batches
+batch 0/16, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_19S_1.h5 took 32.32380485534668 s
+features size:  (14084, 1024)
+coordinates size:  (14084, 2)
+
+progress: 18/69
+DigitalSlide_B1M_1S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_1S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbea750>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_1S_1.h5: total of 15 batches
+batch 0/15, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_1S_1.h5 took 30.10181450843811 s
+features size:  (12737, 1024)
+coordinates size:  (12737, 2)
+
+progress: 19/69
+DigitalSlide_B1M_1S_1_12-1-2022_17-37-26
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_1S_1_12-1-2022_17-37-26
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbead10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_1S_1_12-1-2022_17-37-26.h5: total of 15 batches
+batch 0/15, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_1S_1_12-1-2022_17-37-26.h5 took 29.829969882965088 s
+features size:  (12821, 1024)
+coordinates size:  (12821, 2)
+
+progress: 20/69
+DigitalSlide_B1M_2S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_2S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbead10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_2S_1.h5: total of 7 batches
+batch 0/7, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_2S_1.h5 took 16.71727180480957 s
+features size:  (5626, 1024)
+coordinates size:  (5626, 2)
+
+progress: 21/69
+DigitalSlide_B1M_2S_1_12-1-2022_17-38-55
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_2S_1_12-1-2022_17-38-55
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6be650>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_2S_1_12-1-2022_17-38-55.h5: total of 19 batches
+batch 0/19, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_2S_1_12-1-2022_17-38-55.h5 took 37.3941388130188 s
+features size:  (16555, 1024)
+coordinates size:  (16555, 2)
+
+progress: 22/69
+DigitalSlide_B1M_3S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_3S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5ed0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_3S_1.h5: total of 2 batches
+batch 0/2, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_3S_1.h5 took 8.988043785095215 s
+features size:  (1677, 1024)
+coordinates size:  (1677, 2)
+
+progress: 23/69
+DigitalSlide_B1M_3S_1_12-1-2022_17-40-14
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_3S_1_12-1-2022_17-40-14
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5090>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_3S_1_12-1-2022_17-40-14.h5: total of 7 batches
+batch 0/7, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_3S_1_12-1-2022_17-40-14.h5 took 15.972596645355225 s
+features size:  (5424, 1024)
+coordinates size:  (5424, 2)
+
+progress: 24/69
+DigitalSlide_B1M_5S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B1M_5S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5910>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B1M_5S_1.h5: total of 6 batches
+batch 0/6, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B1M_5S_1.h5 took 15.140942573547363 s
+features size:  (5007, 1024)
+coordinates size:  (5007, 2)
+
+progress: 25/69
+DigitalSlide_B2M_11S_1_20210826183548302
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_11S_1_20210826183548302
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5090>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_11S_1_20210826183548302.h5: total of 20 batches
+batch 0/20, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_11S_1_20210826183548302.h5 took 37.22801685333252 s
+features size:  (17027, 1024)
+coordinates size:  (17027, 2)
+
+progress: 26/69
+DigitalSlide_B2M_12S_1_20210826183648767
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_12S_1_20210826183648767
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5090>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_12S_1_20210826183648767.h5: total of 7 batches
+batch 0/7, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_12S_1_20210826183648767.h5 took 18.554083824157715 s
+features size:  (6021, 1024)
+coordinates size:  (6021, 2)
+
+progress: 27/69
+DigitalSlide_B2M_1S_1_20210826183728179
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_1S_1_20210826183728179
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbc1a50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_1S_1_20210826183728179.h5: total of 17 batches
+batch 0/17, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_1S_1_20210826183728179.h5 took 33.615551471710205 s
+features size:  (14785, 1024)
+coordinates size:  (14785, 2)
+
+progress: 28/69
+DigitalSlide_B2M_3S_1_20210826183921228
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_3S_1_20210826183921228
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbe2a50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_3S_1_20210826183921228.h5: total of 19 batches
+batch 0/19, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_3S_1_20210826183921228.h5 took 37.021422386169434 s
+features size:  (16680, 1024)
+coordinates size:  (16680, 2)
+
+progress: 29/69
+DigitalSlide_B2M_4S_1_20210826184014839
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_4S_1_20210826184014839
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbe3fd0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_4S_1_20210826184014839.h5: total of 6 batches
+batch 0/6, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_4S_1_20210826184014839.h5 took 15.598664283752441 s
+features size:  (4747, 1024)
+coordinates size:  (4747, 2)
+
+progress: 30/69
+DigitalSlide_B2M_5S_1_20210826184054251
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_5S_1_20210826184054251
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e69bd10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_5S_1_20210826184054251.h5: total of 24 batches
+batch 0/24, 0 files processed
+batch 20/24, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_5S_1_20210826184054251.h5 took 44.373863697052 s
+features size:  (20684, 1024)
+coordinates size:  (20684, 2)
+
+progress: 31/69
+DigitalSlide_B2M_6S_1_20210826184158873
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_6S_1_20210826184158873
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e69bb10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_6S_1_20210826184158873.h5: total of 30 batches
+batch 0/30, 0 files processed
+batch 20/30, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_6S_1_20210826184158873.h5 took 55.86539363861084 s
+features size:  (26697, 1024)
+coordinates size:  (26697, 2)
+
+progress: 32/69
+DigitalSlide_B2M_7S_1_20210826184304020
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_7S_1_20210826184304020
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11206d10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_7S_1_20210826184304020.h5: total of 14 batches
+batch 0/14, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_7S_1_20210826184304020.h5 took 30.79168725013733 s
+features size:  (12367, 1024)
+coordinates size:  (12367, 2)
+
+progress: 33/69
+DigitalSlide_B2M_8S_1_20210826184401956
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_8S_1_20210826184401956
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11206510>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_8S_1_20210826184401956.h5: total of 17 batches
+batch 0/17, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_8S_1_20210826184401956.h5 took 34.08733105659485 s
+features size:  (15079, 1024)
+coordinates size:  (15079, 2)
+
+progress: 34/69
+DigitalSlide_B2M_9S_1_20210826184515465
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_B2M_9S_1_20210826184515465
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1399d1d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B2M_9S_1_20210826184515465.h5: total of 5 batches
+batch 0/5, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B2M_9S_1_20210826184515465.h5 took 14.115887880325317 s
+features size:  (4387, 1024)
+coordinates size:  (4387, 2)
+
+progress: 35/69
+DigitalSlide_C10M_12S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_12S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e612550>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_12S_1.h5: total of 17 batches
+batch 0/17, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_12S_1.h5 took 34.14188838005066 s
+features size:  (15101, 1024)
+coordinates size:  (15101, 2)
+
+progress: 36/69
+DigitalSlide_C10M_14S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_14S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1399d1d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_14S_1.h5: total of 12 batches
+batch 0/12, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_14S_1.h5 took 26.365015029907227 s
+features size:  (10695, 1024)
+coordinates size:  (10695, 2)
+
+progress: 37/69
+DigitalSlide_C10M_19S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_19S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab11206510>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_19S_1.h5: total of 33 batches
+batch 0/33, 0 files processed
+batch 20/33, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_19S_1.h5 took 59.17709445953369 s
+features size:  (28856, 1024)
+coordinates size:  (28856, 2)
+
+progress: 38/69
+DigitalSlide_C10M_1S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_1S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6120d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_1S_1.h5: total of 4 batches
+batch 0/4, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_1S_1.h5 took 13.182912349700928 s
+features size:  (2928, 1024)
+coordinates size:  (2928, 2)
+
+progress: 39/69
+DigitalSlide_C10M_2S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_2S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbc2790>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_2S_1.h5: total of 13 batches
+batch 0/13, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_2S_1.h5 took 27.106534719467163 s
+features size:  (11326, 1024)
+coordinates size:  (11326, 2)
+
+progress: 40/69
+DigitalSlide_C10M_3S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_3S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0650>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_3S_1.h5: total of 38 batches
+batch 0/38, 0 files processed
+batch 20/38, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_3S_1.h5 took 67.32126212120056 s
+features size:  (33379, 1024)
+coordinates size:  (33379, 2)
+
+progress: 41/69
+DigitalSlide_C10M_9S_1
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_C10M_9S_1
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0810>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_C10M_9S_1.h5: total of 5 batches
+batch 0/5, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_C10M_9S_1.h5 took 13.871785640716553 s
+features size:  (3710, 1024)
+coordinates size:  (3710, 2)
+
+progress: 42/69
+DigitalSlide_D4M_1S_1_20210922131645990
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_D4M_1S_1_20210922131645990
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0810>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_D4M_1S_1_20210922131645990.h5: total of 20 batches
+batch 0/20, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_D4M_1S_1_20210922131645990.h5 took 38.046337842941284 s
+features size:  (17691, 1024)
+coordinates size:  (17691, 2)
+
+progress: 43/69
+DigitalSlide_D4M_2S_1_20210922131740429
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_D4M_2S_1_20210922131740429
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1399d1d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_D4M_2S_1_20210922131740429.h5: total of 11 batches
+batch 0/11, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_D4M_2S_1_20210922131740429.h5 took 25.422060012817383 s
+features size:  (9703, 1024)
+coordinates size:  (9703, 2)
+
+progress: 44/69
+DigitalSlide_E10M_7S_1_20210914145322714
+downsample [2. 2.]
+downsampled_level_dim [136064 147072]
+level_dim [136064 147072]
+name DigitalSlide_E10M_7S_1_20210914145322714
+patch_level 1
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6be3d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_E10M_7S_1_20210914145322714.h5: total of 6 batches
+batch 0/6, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_E10M_7S_1_20210914145322714.h5 took 14.583667516708374 s
+features size:  (4729, 1024)
+coordinates size:  (4729, 2)
+
+progress: 45/69
+0042034876
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0042034876
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6adf90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0042034876.h5: total of 4 batches
+batch 0/4, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0042034876.h5 took 31.037235736846924 s
+features size:  (3355, 1024)
+coordinates size:  (3355, 2)
+
+progress: 46/69
+0042711961
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0042711961
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5a90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0042711961.h5: total of 30 batches
+batch 0/30, 0 files processed
+batch 20/30, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0042711961.h5 took 190.69706845283508 s
+features size:  (26172, 1024)
+coordinates size:  (26172, 2)
+
+progress: 47/69
+0042951302
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0042951302
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6c5a90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0042951302.h5: total of 6 batches
+batch 0/6, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0042951302.h5 took 52.17872428894043 s
+features size:  (4892, 1024)
+coordinates size:  (4892, 2)
+
+progress: 48/69
+0046877280
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0046877280
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0150>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0046877280.h5: total of 29 batches
+batch 0/29, 0 files processed
+batch 20/29, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0046877280.h5 took 191.56396174430847 s
+features size:  (25817, 1024)
+coordinates size:  (25817, 2)
+
+progress: 49/69
+0047176089
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0047176089
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6bed50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0047176089.h5: total of 25 batches
+batch 0/25, 0 files processed
+batch 20/25, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0047176089.h5 took 155.37786149978638 s
+features size:  (21991, 1024)
+coordinates size:  (21991, 2)
+
+progress: 50/69
+0048086809
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0048086809
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6128d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0048086809.h5: total of 22 batches
+batch 0/22, 0 files processed
+batch 20/22, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0048086809.h5 took 143.83045601844788 s
+features size:  (19134, 1024)
+coordinates size:  (19134, 2)
+
+progress: 51/69
+0049547258
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0049547258
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6128d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0049547258.h5: total of 34 batches
+batch 0/34, 0 files processed
+batch 20/34, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0049547258.h5 took 216.3613739013672 s
+features size:  (30302, 1024)
+coordinates size:  (30302, 2)
+
+progress: 52/69
+0049556653
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0049556653
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2a90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0049556653.h5: total of 3 batches
+batch 0/3, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0049556653.h5 took 30.4238920211792 s
+features size:  (2632, 1024)
+coordinates size:  (2632, 2)
+
+progress: 53/69
+0050394746
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0050394746
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2e90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0050394746.h5: total of 13 batches
+batch 0/13, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0050394746.h5 took 89.01460146903992 s
+features size:  (11341, 1024)
+coordinates size:  (11341, 2)
+
+progress: 54/69
+0054815807
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0054815807
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2e90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0054815807.h5: total of 15 batches
+batch 0/15, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0054815807.h5 took 100.23170518875122 s
+features size:  (12626, 1024)
+coordinates size:  (12626, 2)
+
+progress: 55/69
+0057134497
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name 0057134497
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e61fe10>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0057134497.h5: total of 3 batches
+batch 0/3, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0057134497.h5 took 30.034095287322998 s
+features size:  (2078, 1024)
+coordinates size:  (2078, 2)
+
+progress: 56/69
+DigitalSlide_B9M_11S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_11S_1
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0150>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B9M_11S_1.h5: total of 8 batches
+batch 0/8, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B9M_11S_1.h5 took 53.46246528625488 s
+features size:  (6377, 1024)
+coordinates size:  (6377, 2)
+
+progress: 57/69
+DigitalSlide_B9M_14S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_14S_1
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e6adf90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B9M_14S_1.h5: total of 13 batches
+batch 0/13, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B9M_14S_1.h5 took 85.07661604881287 s
+features size:  (11206, 1024)
+coordinates size:  (11206, 2)
+
+progress: 58/69
+DigitalSlide_B9M_16S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_16S_1
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e61fed0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B9M_16S_1.h5: total of 23 batches
+batch 0/23, 0 files processed
+batch 20/23, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B9M_16S_1.h5 took 151.6939196586609 s
+features size:  (20225, 1024)
+coordinates size:  (20225, 2)
+
+progress: 59/69
+DigitalSlide_B9M_6S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_6S_1
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e61fd50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B9M_6S_1.h5: total of 19 batches
+batch 0/19, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B9M_6S_1.h5 took 133.18731427192688 s
+features size:  (16556, 1024)
+coordinates size:  (16556, 2)
+
+progress: 60/69
+DigitalSlide_B9M_7S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_7S_1
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbdd7d0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B9M_7S_1.h5: total of 21 batches
+batch 0/21, 0 files processed
+batch 20/21, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B9M_7S_1.h5 took 137.2381694316864 s
+features size:  (18012, 1024)
+coordinates size:  (18012, 2)
+
+progress: 61/69
+DigitalSlide_B9M_8S_1
+downsample [1. 1.]
+downsampled_level_dim [410368 438784]
+level_dim [410368 438784]
+name DigitalSlide_B9M_8S_1
+patch_level 0
+patch_size 783
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1e61c510>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_B9M_8S_1.h5: total of 27 batches
+batch 0/27, 0 files processed
+batch 20/27, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_B9M_8S_1.h5 took 181.5258207321167 s
+features size:  (23737, 1024)
+coordinates size:  (23737, 2)
+
+progress: 62/69
+0029468706
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name 0029468706
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1d5b0150>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0029468706.h5: total of 29 batches
+batch 0/29, 0 files processed
+batch 20/29, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0029468706.h5 took 56.137561559677124 s
+features size:  (25227, 1024)
+coordinates size:  (25227, 2)
+
+progress: 63/69
+0047953852
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name 0047953852
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbc2b90>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0047953852.h5: total of 20 batches
+batch 0/20, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0047953852.h5 took 39.48021054267883 s
+features size:  (17024, 1024)
+coordinates size:  (17024, 2)
+
+progress: 64/69
+0054130784
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name 0054130784
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2f50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0054130784.h5: total of 15 batches
+batch 0/15, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0054130784.h5 took 31.26016354560852 s
+features size:  (12708, 1024)
+coordinates size:  (12708, 2)
+
+progress: 65/69
+0055483886
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name 0055483886
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2f50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/0055483886.h5: total of 17 batches
+batch 0/17, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/0055483886.h5 took 34.604103803634644 s
+features size:  (14436, 1024)
+coordinates size:  (14436, 2)
+
+progress: 66/69
+30
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name 30
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2fd0>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/30.h5: total of 33 batches
+batch 0/33, 0 files processed
+batch 20/33, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/30.h5 took 63.297720193862915 s
+features size:  (29269, 1024)
+coordinates size:  (29269, 2)
+
+progress: 67/69
+DigitalSlide_E6M_15S_1
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name DigitalSlide_E6M_15S_1
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2f50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_E6M_15S_1.h5: total of 32 batches
+batch 0/32, 0 files processed
+batch 20/32, 17900 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_E6M_15S_1.h5 took 60.706230878829956 s
+features size:  (28374, 1024)
+coordinates size:  (28374, 2)
+
+progress: 68/69
+DigitalSlide_E6M_17S_1
+downsample [4. 4.]
+downsampled_level_dim [136384 147200]
+level_dim [136384 147200]
+name DigitalSlide_E6M_17S_1
+patch_level 2
+patch_size 256
+save_path /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches
+
+feature extraction settings
+target patch size:  (256, 256)
+pretrained:  True
+transformations:  <torchvision.transforms.Compose object at 0x2aab1dbd2e50>
+processing /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/patches/DigitalSlide_E6M_17S_1.h5: total of 17 batches
+batch 0/17, 0 files processed
+
+computing features for /home/weismanal/projects/idibell/repo/results/21x/bwh_resection/features/h5_files/DigitalSlide_E6M_17S_1.h5 took 35.51748728752136 s
+features size:  (14952, 1024)
+coordinates size:  (14952, 2)

@@ -1685,3 +1685,281 @@ Original Traceback (most recent call last):
     raise OpenSlideError(err)
 openslide.lowlevel.OpenSlideError: Couldn't open /home/weismanal/projects/idibell/repo/data/DigitalSlide_E6M_20S_1/Data0002.dat: No such file or directory
 
+initializing dataset
+loading model checkpoint
+
+progress: 0/69
+0029553565
+skipped 0029553565
+
+progress: 1/69
+0030657581
+skipped 0030657581
+
+progress: 2/69
+0035146620
+skipped 0035146620
+
+progress: 3/69
+0043824438
+skipped 0043824438
+
+progress: 4/69
+0044135054
+skipped 0044135054
+
+progress: 5/69
+0046723899
+skipped 0046723899
+
+progress: 6/69
+0051341579
+skipped 0051341579
+
+progress: 7/69
+0058263272
+skipped 0058263272
+
+progress: 8/69
+0059072087
+skipped 0059072087
+
+progress: 9/69
+0063366529
+skipped 0063366529
+
+progress: 10/69
+0063610642
+skipped 0063610642
+
+progress: 11/69
+B-160004549-01-B-001
+skipped B-160004549-01-B-001
+
+progress: 12/69
+BB150007349-A-01-001
+skipped BB150007349-A-01-001
+
+progress: 13/69
+DigitalSlide_B1M_14S_1
+skipped DigitalSlide_B1M_14S_1
+
+progress: 14/69
+DigitalSlide_B1M_15S_1
+skipped DigitalSlide_B1M_15S_1
+
+progress: 15/69
+DigitalSlide_B1M_16S_1
+skipped DigitalSlide_B1M_16S_1
+
+progress: 16/69
+DigitalSlide_B1M_18S_1
+skipped DigitalSlide_B1M_18S_1
+
+progress: 17/69
+DigitalSlide_B1M_19S_1
+skipped DigitalSlide_B1M_19S_1
+
+progress: 18/69
+DigitalSlide_B1M_1S_1
+skipped DigitalSlide_B1M_1S_1
+
+progress: 19/69
+DigitalSlide_B1M_1S_1_12-1-2022_17-37-26
+skipped DigitalSlide_B1M_1S_1_12-1-2022_17-37-26
+
+progress: 20/69
+DigitalSlide_B1M_2S_1
+skipped DigitalSlide_B1M_2S_1
+
+progress: 21/69
+DigitalSlide_B1M_2S_1_12-1-2022_17-38-55
+skipped DigitalSlide_B1M_2S_1_12-1-2022_17-38-55
+
+progress: 22/69
+DigitalSlide_B1M_3S_1
+skipped DigitalSlide_B1M_3S_1
+
+progress: 23/69
+DigitalSlide_B1M_3S_1_12-1-2022_17-40-14
+skipped DigitalSlide_B1M_3S_1_12-1-2022_17-40-14
+
+progress: 24/69
+DigitalSlide_B1M_5S_1
+skipped DigitalSlide_B1M_5S_1
+
+progress: 25/69
+DigitalSlide_B2M_11S_1_20210826183548302
+skipped DigitalSlide_B2M_11S_1_20210826183548302
+
+progress: 26/69
+DigitalSlide_B2M_12S_1_20210826183648767
+skipped DigitalSlide_B2M_12S_1_20210826183648767
+
+progress: 27/69
+DigitalSlide_B2M_1S_1_20210826183728179
+skipped DigitalSlide_B2M_1S_1_20210826183728179
+
+progress: 28/69
+DigitalSlide_B2M_3S_1_20210826183921228
+skipped DigitalSlide_B2M_3S_1_20210826183921228
+
+progress: 29/69
+DigitalSlide_B2M_4S_1_20210826184014839
+skipped DigitalSlide_B2M_4S_1_20210826184014839
+
+progress: 30/69
+DigitalSlide_B2M_5S_1_20210826184054251
+skipped DigitalSlide_B2M_5S_1_20210826184054251
+
+progress: 31/69
+DigitalSlide_B2M_6S_1_20210826184158873
+skipped DigitalSlide_B2M_6S_1_20210826184158873
+
+progress: 32/69
+DigitalSlide_B2M_7S_1_20210826184304020
+skipped DigitalSlide_B2M_7S_1_20210826184304020
+
+progress: 33/69
+DigitalSlide_B2M_8S_1_20210826184401956
+skipped DigitalSlide_B2M_8S_1_20210826184401956
+
+progress: 34/69
+DigitalSlide_B2M_9S_1_20210826184515465
+skipped DigitalSlide_B2M_9S_1_20210826184515465
+
+progress: 35/69
+DigitalSlide_C10M_12S_1
+skipped DigitalSlide_C10M_12S_1
+
+progress: 36/69
+DigitalSlide_C10M_14S_1
+skipped DigitalSlide_C10M_14S_1
+
+progress: 37/69
+DigitalSlide_C10M_19S_1
+skipped DigitalSlide_C10M_19S_1
+
+progress: 38/69
+DigitalSlide_C10M_1S_1
+skipped DigitalSlide_C10M_1S_1
+
+progress: 39/69
+DigitalSlide_C10M_2S_1
+skipped DigitalSlide_C10M_2S_1
+
+progress: 40/69
+DigitalSlide_C10M_3S_1
+skipped DigitalSlide_C10M_3S_1
+
+progress: 41/69
+DigitalSlide_C10M_9S_1
+skipped DigitalSlide_C10M_9S_1
+
+progress: 42/69
+DigitalSlide_D4M_1S_1_20210922131645990
+skipped DigitalSlide_D4M_1S_1_20210922131645990
+
+progress: 43/69
+DigitalSlide_D4M_2S_1_20210922131740429
+skipped DigitalSlide_D4M_2S_1_20210922131740429
+
+progress: 44/69
+DigitalSlide_E10M_7S_1_20210914145322714
+skipped DigitalSlide_E10M_7S_1_20210914145322714
+
+progress: 45/69
+0042034876
+skipped 0042034876
+
+progress: 46/69
+0042711961
+skipped 0042711961
+
+progress: 47/69
+0042951302
+skipped 0042951302
+
+progress: 48/69
+0046877280
+skipped 0046877280
+
+progress: 49/69
+0047176089
+skipped 0047176089
+
+progress: 50/69
+0048086809
+skipped 0048086809
+
+progress: 51/69
+0049547258
+skipped 0049547258
+
+progress: 52/69
+0049556653
+skipped 0049556653
+
+progress: 53/69
+0050394746
+skipped 0050394746
+
+progress: 54/69
+0054815807
+skipped 0054815807
+
+progress: 55/69
+0057134497
+skipped 0057134497
+
+progress: 56/69
+DigitalSlide_B9M_11S_1
+skipped DigitalSlide_B9M_11S_1
+
+progress: 57/69
+DigitalSlide_B9M_14S_1
+skipped DigitalSlide_B9M_14S_1
+
+progress: 58/69
+DigitalSlide_B9M_16S_1
+skipped DigitalSlide_B9M_16S_1
+
+progress: 59/69
+DigitalSlide_B9M_6S_1
+skipped DigitalSlide_B9M_6S_1
+
+progress: 60/69
+DigitalSlide_B9M_7S_1
+skipped DigitalSlide_B9M_7S_1
+
+progress: 61/69
+DigitalSlide_B9M_8S_1
+skipped DigitalSlide_B9M_8S_1
+
+progress: 62/69
+0029468706
+skipped 0029468706
+
+progress: 63/69
+0047953852
+skipped 0047953852
+
+progress: 64/69
+0054130784
+skipped 0054130784
+
+progress: 65/69
+0055483886
+skipped 0055483886
+
+progress: 66/69
+30
+skipped 30
+
+progress: 67/69
+DigitalSlide_E6M_15S_1
+skipped DigitalSlide_E6M_15S_1
+
+progress: 68/69
+DigitalSlide_E6M_17S_1
+skipped DigitalSlide_E6M_17S_1

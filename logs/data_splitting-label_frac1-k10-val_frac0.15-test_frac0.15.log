@@ -3,23 +3,23 @@ label dictionary: {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
 number of classes: 4
 slide-level counts:  
  0    20
-1    18
-2    16
+1    17
+2    15
 3    17
 Name: label, dtype: int64
 Patient-LVL; Number of samples registered in class 0: 20
 Slide-LVL; Number of samples registered in class 0: 20
-Patient-LVL; Number of samples registered in class 1: 18
-Slide-LVL; Number of samples registered in class 1: 18
-Patient-LVL; Number of samples registered in class 2: 16
-Slide-LVL; Number of samples registered in class 2: 16
+Patient-LVL; Number of samples registered in class 1: 17
+Slide-LVL; Number of samples registered in class 1: 17
+Patient-LVL; Number of samples registered in class 2: 15
+Slide-LVL; Number of samples registered in class 2: 15
 Patient-LVL; Number of samples registered in class 3: 17
 Slide-LVL; Number of samples registered in class 3: 17
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -36,10 +36,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -56,10 +56,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -76,10 +76,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -96,10 +96,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -116,10 +116,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -136,10 +136,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -156,10 +156,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -176,10 +176,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11
@@ -196,10 +196,10 @@ number of samples in cls 3: 3
 
 
 
-number of training samples: 49
+number of training samples: 47
 number of samples in cls 0: 14
-number of samples in cls 1: 12
-number of samples in cls 2: 12
+number of samples in cls 1: 11
+number of samples in cls 2: 11
 number of samples in cls 3: 11
 
 number of val samples: 11

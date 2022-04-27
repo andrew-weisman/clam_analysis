@@ -209,7 +209,6 @@ Then we should run the automatically generated feature extraction command genera
 Here are the commands I'm running for feature extraction:
 
 ```bash
-
 # Latest commands
 cp $working_dir/results/bwh_resection/process_list_autogen.csv $working_dir/inputs/process_list-feature_extraction-2022-02-17.csv
 emacs -nw $working_dir/inputs/process_list-feature_extraction-2022-02-17.csv  # then I replaced all occurrences of ".mrxs," with "," per the GH instructions

@@ -5,8 +5,8 @@
 #SBATCH --gres=gpu:p100:1
 #SBATCH --mem=20G
 #SBATCH --time=04:00:00
-#SBATCH -o ./logs/training-2022-04-27-10x.log
-#SBATCH -e ./logs/training-2022-04-27-10x.log
+#SBATCH -o ./logs/training-2022-04-27-10x-take_2.log
+#SBATCH -e ./logs/training-2022-04-27-10x-take_2.log
 
 echo "Started: $(date)"
 
@@ -20,7 +20,7 @@ cd $working_dir
 
 # Run the main script
 
-mydate="2022-04-27"
+mydate="2022-04-27-take_2"
 target_resolution="10x"
 preset="bwh_resection"
 

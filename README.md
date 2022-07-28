@@ -2,43 +2,9 @@
 
 Note the following is based on going through the [CLAM GitHub page](https://github.com/mahmoodlab/CLAM).
 
-## Create the main labels file
-
-First, mount the Box drive in Windows somewhere accessible to WSL:
-
-```bash
-sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
-```
-
-Check for duplicates in the primary (i.e., excluding hysterectomy) images from Box:
-
-```bash
-bash parameter_comparison_and_manifest_creation_on_laptop/check_for_duplicate_images_in_box.sh
-```
-
-If any directories containing duplicate `.mrxs` files are found per the output from this script, then address them using the output message for guidance.
-
-Create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop in the directory `parameter_comparison_and_manifest_creation_on_laptop`
-
-```bash
-bash create_manifest.sh
-```
-
-Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names (only in the manifest, not in the actual files):
-
-```bash
-bash rename_duplicate_named_files.sh
-```
-
-Create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file):
-
-```bash
-bash $working_dir/create_data_labels_for_clam.sh $working_dir
-```
-
-I can probably start ignoring this (note this whole section used to be lower): Don't forget to delete the lines in `/home/weismanal/projects/idibell/repo/data_labels.csv` whose corresponding `.pt` files do not exist at this point, if any.
-
 ## Transfer data from Box to Biowulf (on Helix)
+
+**NOTE: Once Eduard rescans and uploads the new images, these exact steps may be different. But the point here is to copy his images from Box (if you're using Box) to the `data` directory.**
 
 After setting up `rclone` for use on Biowulf/Helix per [these instructions](https://hpc.nih.gov/docs/box_onedrive.html):
 
@@ -80,12 +46,48 @@ for mrxs_file in $(find . -iname "*.mrxs"); do mrxs_dir=$(echo $mrxs_file | awk 
 After performing the data copy, create links from the datafiles to the main data directory `/data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined` by running the following from that directory. **WARNING:** Probably only do this for a clean directory structure, otherwise many other files will be linked; for now, it might be best to create the links manually:
 
 ```bash
-bash /home/weismanal/projects/idibell/repo/link_files.sh
+bash /data/BIDS-HPC/private/projects/idibell/repo/link_files.sh
 ```
 
 Note there are currently 12 files in the `converted_images` subdirectory in `MRXScombined` that I had to make readable by OpenSlide (which is used by CLAM) by opening the files originally in the `batch_*` folders in Case Viewer on my laptop and converting them from MRXS to MRXS (you read that right). Otherwise those files died during the preprocessing step with `openslide.lowlevel.OpenSlideError: Cannot read slide position info: Expected 1 value`. Links to the bad files on Biowulf are located in the `not_reading_by_openslide` subdirectory. Including these 12 files, there are currently (4/26/22) 69 links and 72 files in Box (there are three files in the directory `missing_dat_files` because they are missing some of their `.dat` files and are not included in the main links directory; I've told Eduard about these).
 
 Further note that for the time being I am excluding all hysterectomy files because I need to nail down the magnifications for all the main images and see how CLAM performs when using the same magnifications for all images.
+
+## Create the main labels file
+
+**NOTE: The point of this section is to create a file called `data_labels.csv` containing the case ID, slide ID, and label. The first two fields are always equal, so far. The label is one of the four molecular subtypes. See `data_labels.csv` in the repository for an example. George you cannot perform the following steps because they are particular to Windows and WSL2, so this section is for posterity only. Eduard has changed the file naming convention and directory structure pretty regularly anyway so it's very likely with his new batch of rescanned images that the following will not apply anyway. All you have to do here is create `data_labels.csv`!**
+
+First, mount the Box drive in Windows somewhere accessible to WSL:
+
+```bash
+sudo mount -t drvfs 'C:\Users\weismanal\Box' /mnt/box
+```
+
+Check for duplicates in the primary (i.e., excluding hysterectomy) images from Box:
+
+```bash
+bash parameter_comparison_and_manifest_creation_on_laptop/check_for_duplicate_images_in_box.sh
+```
+
+If any directories containing duplicate `.mrxs` files are found per the output from this script, then address them using the output message for guidance.
+
+Create the manifest file `$working_dir/parameter_comparison_and_manifest_creation_on_laptop/manifest.csv`, e.g., run on my laptop in the directory `parameter_comparison_and_manifest_creation_on_laptop`
+
+```bash
+bash create_manifest.sh
+```
+
+Since the hysterectomy images have the same names as previous images, we want to append "-hysterectomy" to these file names (only in the manifest, not in the actual files):
+
+```bash
+bash rename_duplicate_named_files.sh
+```
+
+Create the data labels file `$working_dir/data_labels.csv` if it doesn't already exist (and won't overwrite an existing file):
+
+```bash
+bash $working_dir/create_data_labels_for_clam.sh $working_dir
+```
 
 ## Compute node allocation
 
@@ -109,24 +111,24 @@ bash extract_slide_metadata.sh > slide_metadata-2022-04-25.csv
 
 ## Installation
 
-I installed CLAM in `/home/weismanal/projects/idibell/links/clam_installation`.
+I installed CLAM in `/data/BIDS-HPC/private/projects/idibell/clam_installation`.
 
-The environment file I created to install and run CLAM is `/home/weismanal/projects/idibell/links/clam_installation/clam_env.sh` (note this sets the `$CLAM` environment variable), and I should source this file to get CLAM working. Further notes are contained in that file.
+The environment file I created to install and run CLAM is `/data/BIDS-HPC/private/projects/idibell/clam_installation/clam_env.sh` (note this sets the `$CLAM` environment variable), and I should source this file to get CLAM working. Further notes are contained in that file.
 
 I.e., I need to run:
 
 ```bash
-. /home/weismanal/projects/idibell/links/clam_installation/clam_env.sh
+. /data/BIDS-HPC/private/projects/idibell/clam_installation/clam_env.sh
 ```
 
 ## Testing setup
 
-I am testing execution of CLAM in `/home/weismanal/projects/idibell/repo`. I have version-controlled this directory [here](https://github.com/andrew-weisman/clam_analysis) and I can start by opening the file you are reading, e.g., `/home/weismanal/projects/idibell/repo/README.md`.
+I am testing execution of CLAM in `/data/BIDS-HPC/private/projects/idibell/repo`. I have version-controlled this directory [here](https://github.com/fnlcr-bids-sdsi/clam_analysis) and I can start by opening the file you are reading, e.g., `/data/BIDS-HPC/private/projects/idibell/repo/README.md`.
 
 I.e., I need to run:
 
 ```bash
-working_dir="/home/weismanal/projects/idibell/repo"
+working_dir="/data/BIDS-HPC/private/projects/idibell/repo"
 ```
 
 ## Preprocessing (i.e., patching)
@@ -136,8 +138,8 @@ While preprocessing includes the segmentation, patching, and stiching steps, the
 The first step is to set up the directory structure in the current clone of the CLAM analysis repository:
 
 ```bash
-ln -s /data/BIDS-HPC/private/projects/IDIBELL-NCI-FNL/data/wsi/MRXScombined $working_dir/data
-ln -s /home/weismanal/projects/idibell/links/original_project_repo/results $working_dir/results
+ln -s /data/BIDS-HPC/private/projects/idibell/data $working_dir/data
+ln -s /data/BIDS-HPC/private/projects/idibell/results $working_dir/results
 ```
 
 What follows is for posterity; here we should simply use the automatically generated patching commands generated in the [metadata processing section](#metadata-processing). **One thing to note however:** don't forget to save the automatically generated process list (`process_list_autogen.csv`) in the results directory after each batch as it will get overwritten for each batch of differently sized images!
@@ -182,6 +184,8 @@ Note this step eliminates `0059072074` because it is missing many `.dat` files (
 
 ## Stitching comparisons
 
+**NOTE: The "black grid" problem below is now solved by having installed a particular version of `pixman` in the CLAM Python environment.**
+
 Upon observing the results of the masks and stitches on the `.ome.tif` files, I see that unfortunately just as for the `.mrxs` files the JPEGs of the stiches looked reasonable but the masks looked bad (strange black grid on top of the images), for the `.ome.tif` files the JPEGs of the masks look reasonable but the stitches look bad in the same exact way, rendering impossible visual comparison between the stitches. However, I have pointed the stiches on the `.ome.tif`s to the corresponding masks and used those instead for comparison in the image gallery which I generated using
 
 ```bash
@@ -224,16 +228,6 @@ For the "Latest comands" step in which I increased the batch size to 880, now 15
 
 Note this step eliminates `0053952658` because it is missing one `.dat` file (going from 72 to 71 images total).
 
-## Assumed directory structure
-
-```bash
-pinyi_data_dir=$working_dir/results/pinyi/features  # called something like $DATASET_3_DATA_DIR in the CLAM GH README, which contains the directories h5_files and pt_files generated by the feature extraction step
-```
-
-Note that the directory one level up (e.g., `$working_dir/results/pinyi`) is what the CLAM README calls `$DATA_ROOT_DIR`. So going forward I may want to set up symbolic links to adhere to this structure.
-
-This variable is not actually needed anywhere in this document as of 12/28/21.
-
 ## CLAM codebase modification
 
 The next steps in the CLAM procedure require modification to the CLAM codebase.
@@ -243,7 +237,7 @@ Note that the `task` argument to `$CLAM/main.py` corresponds to `idibell` and ad
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    working_dir = '/home/weismanal/projects/idibell/repo'
+    working_dir = '/data/BIDS-HPC/private/projects/idibell/repo'
     dataset_name = 'bwh_resection'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     label_col = 'label'
@@ -272,7 +266,7 @@ Likewise, to `$CLAM/create_splits_seq.py` add the block
 ```python
 elif args.task == 'idibell':
     args.n_classes=4
-    working_dir = '/home/weismanal/projects/idibell/repo'
+    working_dir = '/data/BIDS-HPC/private/projects/idibell/repo'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     label_col = 'label'
     dataset = Generic_WSI_Classification_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
@@ -297,7 +291,7 @@ Likewise, to `$CLAM/eval.py` add the block
 ```python
 elif args.task == 'idibell':
     args.n_classes = 4
-    working_dir = '/home/weismanal/projects/idibell/repo'
+    working_dir = '/data/BIDS-HPC/private/projects/idibell/repo'
     dataset_name = 'bwh_resection'
     label_dict = {'pole': 0, 'msi': 1, 'lcn': 2, 'p53': 3}
     dataset = Generic_MIL_Dataset(csv_path = os.path.join(working_dir, 'data_labels.csv'),
@@ -349,6 +343,8 @@ mv $working_dir/eval_results $working_dir/results/bwh_resection
 ```
 
 ## Heatmap generation
+
+**NOTE: I never successfully generated the heatmaps because they were taking too long, as our images to date have been very large.**
 
 Create the file `$working_dir/inputs/heatmap_settings.yaml` from the template `$CLAM/heatmaps/configs/config_template.yaml`.
 
